@@ -1,0 +1,99 @@
+{
+    "version":  "partition-coarsening-surface-1.0",
+    "locked_at":  "2026-08-10",
+    "research_question":  "When six frozen learned views are progressively merged into fewer registered components, does PACT\u0027s analytic evidence-budget order determine its empirical selective-decision order?",
+    "scope":  "PACT-specific exhaustive coarsening analysis over frozen HandWritten-Mfeat TMC and RCML per-view evidence. It evaluates every set partition of six observed views and every one-step merge relation. It does not test false splitting, learn a provenance partition, or compare registration-blind operators across the 203 partitions.",
+    "partition_space":  {
+                            "views":  6,
+                            "partitions":  203,
+                            "stirling_counts_by_component_count":  {
+                                                                       "1":  1,
+                                                                       "2":  31,
+                                                                       "3":  90,
+                                                                       "4":  65,
+                                                                       "5":  15,
+                                                                       "6":  1
+                                                                   },
+                            "directed_cover_edges":  856,
+                            "edge_direction":  "fine-to-coarse by merging exactly two registered components",
+                            "declared_policy":  "six singleton acquisition views; this is the unique finest partition and its rank is therefore not an empirical estimand"
+                        },
+    "primary_estimand":  {
+                             "name":  "cover-edge selective-order transfer",
+                             "definition":  "For each of the 856 fixed fine-to-coarse cover edges, compute delta ncsAURC = ncsAURC(coarse) - ncsAURC(fine). Report the fractions for which coarsening improves, worsens, or ties selective risk.",
+                             "falsifiable_reference":  "Universal transfer of the analytic budget order to selective risk permits no cover edge on which coarsening improves ncsAURC.",
+                             "interpretation":  "A nonzero coarsening-improves fraction shows that evidence-budget monotonicity alone does not fix the empirical selective ordering on these frozen outputs; it is not a general sufficiency theorem."
+                         },
+    "secondary_estimands":  [
+                                "Within each component count k, IQR, range, and median absolute deviation of ncsAURC across partitions, quantifying composition dependence beyond component count.",
+                                "Accuracy, mean evidence budget, and posterior L1 displacement from the six-singleton partition for every partition.",
+                                "Score-tie diagnostics for every partition and frozen emitter realization."
+                            ],
+    "scores":  {
+                   "primary":  "PACT native non-vacuity (one minus vacuity)",
+                   "secondary":  "maximum posterior probability",
+                   "reporting_rule":  "Both score analyses are reported regardless of direction; no score is selected from test outcomes."
+               },
+    "selective_metric":  {
+                             "name":  "continuous tie-aware normalized common-support area under the risk-coverage curve",
+                             "abbreviation":  "ncsAURC",
+                             "support":  [
+                                             0.1,
+                                             0.9
+                                         ],
+                             "support_rule":  "Fixed before outcome inspection and shared by every partition and pair; no partition may shrink the evaluation support.",
+                             "tie_rule":  "Analytic fractional inclusion within each equal-score group.",
+                             "integration":  "Closed-form continuous integral over the fixed coverage interval rather than an arbitrary record ordering within ties.",
+                             "lower_is_better":  true
+                         },
+    "bootstrap":  {
+                      "draws":  2000,
+                      "seed":  20260810,
+                      "unit":  "class-stratified dataset record identifier",
+                      "pairing":  "All five frozen emitter realizations, all 203 partitions, all 856 cover edges, and both predeclared scores attached to each sampled record are carried together.",
+                      "aggregation":  "Compute each partition metric within emitter realization, then average the five frozen realizations. Do not treat realizations as independent observations.",
+                      "interval":  "two-sided percentile 95% confidence interval",
+                      "interpretation":  "Intervals are conditional on the five frozen emitter realizations.",
+                      "cross_pair_pooling":  false
+                  },
+    "integrity_gates":  {
+                            "float64_tolerance":  1E-12,
+                            "required":  [
+                                             "Bell(6) partition count equals 203.",
+                                             "Stirling component-count profile equals 1,31,90,65,15,1.",
+                                             "The directed one-merge cover graph contains 856 edges.",
+                                             "For every record, emitter realization, and cover edge, coarse evidence budget does not exceed fine evidence budget.",
+                                             "Both HandWritten-Mfeat pairs contain exactly five frozen emitter realizations and the locked record denominators."
+                                         ],
+                            "failure_action":  "Stop outcome reporting and emit the failed gate."
+                        },
+    "pairs":  [
+                  {
+                      "pair_id":  "HandWritten-Mfeat__TMC",
+                      "records_per_seed":  200,
+                      "views":  6,
+                      "frozen_emitter_realizations":  5
+                  },
+                  {
+                      "pair_id":  "HandWritten-Mfeat__RCML",
+                      "records_per_seed":  400,
+                      "views":  6,
+                      "frozen_emitter_realizations":  5
+                  }
+              ],
+    "reporting_constraints":  [
+                                  "Report TMC and RCML separately; do not pool their outcomes.",
+                                  "Do not report a declared-partition rank because the six-singleton policy is constructively the finest partition.",
+                                  "Do not interpret the 203-partition surface as a false-splitting test; false splitting remains the separate registered-copy intervention.",
+                                  "Do not tune registration, scores, support, or reporting direction from test labels.",
+                                  "Report results even if the declared accounting policy is not outcome-optimal.",
+                                  "Describe the structural budget check as implementation consistency, not empirical proof of the analytic corollary."
+                              ],
+    "frozen_inputs":  {
+                          "per_view_evidence_sha256":  "2245CD2B272542F0AA1BD0E4DAFF94DC962FCBE8B6B620247D5828E83D8EAB98",
+                          "per_view_evidence_bytes":  8084570,
+                          "analysis_script_sha256":  "B6D2F884976533FF9C00A6FE039EA233D39467A48FE1707D7BCE491469CE8575",
+                          "pcecf_sha256":  "20173A49C27100AEBE1A631E4318F8F727F561370141A406520F219EB9667D5C",
+                          "topology_interventions_sha256":  "97EB5F6DA4F10E2449EF64A29355F43E93395C45D530E1ED630309BA88F21CF5"
+                      }
+}

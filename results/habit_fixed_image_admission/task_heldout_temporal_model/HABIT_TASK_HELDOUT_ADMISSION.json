@@ -1,0 +1,237 @@
+{
+  "status": "hold",
+  "analysis_role": "task-held-out transfer of the conventional temporal evidence source across six HABIT release-related tasks",
+  "claim_boundary": "Only the temporal source is trained without the evaluated task; the semantic candidate is frozen and target identity remains dataset native.",
+  "folds": [
+    {
+      "held_out_sid": "S6759",
+      "task": "Power Cable",
+      "development_rows": 726,
+      "development_episodes": 71,
+      "test_rows": 558,
+      "test_episodes": 93,
+      "selected_c": 10.0,
+      "cv_log_loss": "{\"0.01\": 0.6886655513496607, \"0.1\": 0.6531971493677562, \"1.0\": 0.4685333155209952, \"10.0\": 0.20431760847654096}",
+      "instruction_vocabulary_size": 76
+    },
+    {
+      "held_out_sid": "S7025",
+      "task": "Organizing box",
+      "development_rows": 624,
+      "development_episodes": 68,
+      "test_rows": 1404,
+      "test_episodes": 117,
+      "selected_c": 10.0,
+      "cv_log_loss": "{\"0.01\": 0.6879286596940687, \"0.1\": 0.6470066771814574, \"1.0\": 0.44889348605669793, \"10.0\": 0.18601134768680969}",
+      "instruction_vocabulary_size": 81
+    },
+    {
+      "held_out_sid": "S7414",
+      "task": "Paper to-go box",
+      "development_rows": 432,
+      "development_episodes": 52,
+      "test_rows": 3180,
+      "test_episodes": 265,
+      "selected_c": 10.0,
+      "cv_log_loss": "{\"0.01\": 0.6903235788488454, \"0.1\": 0.6668277188374697, \"1.0\": 0.5194476354598305, \"10.0\": 0.24541307348718744}",
+      "instruction_vocabulary_size": 62
+    },
+    {
+      "held_out_sid": "S7788",
+      "task": "iced cup",
+      "development_rows": 780,
+      "development_episodes": 80,
+      "test_rows": 66,
+      "test_episodes": 10,
+      "selected_c": 10.0,
+      "cv_log_loss": "{\"0.01\": 0.6884020016858837, \"0.1\": 0.6510196547453347, \"1.0\": 0.4590460126240612, \"10.0\": 0.19392750833322364}",
+      "instruction_vocabulary_size": 73
+    },
+    {
+      "held_out_sid": "S8940",
+      "task": "Airtight Container lid",
+      "development_rows": 684,
+      "development_episodes": 70,
+      "test_rows": 906,
+      "test_episodes": 102,
+      "selected_c": 10.0,
+      "cv_log_loss": "{\"0.01\": 0.6884602572912031, \"0.1\": 0.6512335864177792, \"1.0\": 0.4590087139316587, \"10.0\": 0.19272611603993264}",
+      "instruction_vocabulary_size": 75
+    },
+    {
+      "held_out_sid": "S8975",
+      "task": "100 cm Hotel Towel",
+      "development_rows": 714,
+      "development_episodes": 69,
+      "test_rows": 654,
+      "test_episodes": 109,
+      "selected_c": 10.0,
+      "cv_log_loss": "{\"0.01\": 0.6887939686040605, \"0.1\": 0.65369575824201, \"1.0\": 0.46629948561548296, \"10.0\": 0.201099749159839}",
+      "instruction_vocabulary_size": 71
+    }
+  ],
+  "phase_metrics": {
+    "task_macro_auroc": 0.8631623892426464,
+    "task_macro_brier": 0.2289800889634448,
+    "task_macro_ece10": 0.25102864007931425,
+    "worst_task_auroc": 0.7419651056014692,
+    "worst_task_sid": "S7788"
+  },
+  "candidate_only": {
+    "n": 720,
+    "admitted": 144,
+    "coverage": 0.2,
+    "correct_authorization_all": 0.07361111111111111,
+    "wrong_authorization_all": 0.12638888888888888,
+    "wrong_authorization_admitted": 0.6319444444444444,
+    "authorization_accuracy": 0.8638888888888889,
+    "ready_factual_recall": 0.8833333333333333
+  },
+  "task_heldout_full_admission": {
+    "n": 720,
+    "admitted": 47,
+    "coverage": 0.06527777777777778,
+    "correct_authorization_all": 0.05138888888888889,
+    "wrong_authorization_all": 0.013888888888888888,
+    "wrong_authorization_admitted": 0.2127659574468085,
+    "authorization_accuracy": 0.9541666666666667,
+    "ready_factual_recall": 0.6166666666666667
+  },
+  "task_heldout_task_macro": {
+    "coverage": 0.06527777777777778,
+    "correct_authorization_all": 0.051388888888888894,
+    "wrong_authorization_all": 0.013888888888888888,
+    "wrong_authorization_admitted": 0.11507936507936507,
+    "authorization_accuracy": 0.9541666666666666,
+    "ready_factual_recall": 0.6166666666666667,
+    "worst_task_ready_factual_recall": 0.0,
+    "worst_task_sid": "S7414"
+  },
+  "task_heldout_by_task": [
+    {
+      "sid": "S6759",
+      "task": "Power Cable",
+      "n": 120,
+      "admitted": 4,
+      "coverage": 0.03333333333333333,
+      "correct_authorization_all": 0.03333333333333333,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 0.95,
+      "ready_factual_recall": 0.4
+    },
+    {
+      "sid": "S7025",
+      "task": "Organizing box",
+      "n": 120,
+      "admitted": 15,
+      "coverage": 0.125,
+      "correct_authorization_all": 0.08333333333333333,
+      "wrong_authorization_all": 0.041666666666666664,
+      "wrong_authorization_admitted": 0.3333333333333333,
+      "authorization_accuracy": 0.9583333333333334,
+      "ready_factual_recall": 1.0
+    },
+    {
+      "sid": "S7414",
+      "task": "Paper to-go box",
+      "n": 120,
+      "admitted": 0,
+      "coverage": 0.0,
+      "correct_authorization_all": 0.0,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 0.9166666666666666,
+      "ready_factual_recall": 0.0
+    },
+    {
+      "sid": "S7788",
+      "task": "iced cup",
+      "n": 120,
+      "admitted": 4,
+      "coverage": 0.03333333333333333,
+      "correct_authorization_all": 0.03333333333333333,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 0.95,
+      "ready_factual_recall": 0.4
+    },
+    {
+      "sid": "S8940",
+      "task": "Airtight Container lid",
+      "n": 120,
+      "admitted": 10,
+      "coverage": 0.08333333333333333,
+      "correct_authorization_all": 0.08333333333333333,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 1.0,
+      "ready_factual_recall": 1.0
+    },
+    {
+      "sid": "S8975",
+      "task": "100 cm Hotel Towel",
+      "n": 120,
+      "admitted": 14,
+      "coverage": 0.11666666666666667,
+      "correct_authorization_all": 0.075,
+      "wrong_authorization_all": 0.041666666666666664,
+      "wrong_authorization_admitted": 0.35714285714285715,
+      "authorization_accuracy": 0.95,
+      "ready_factual_recall": 0.9
+    }
+  ],
+  "in_domain_full_admission": {
+    "n": 720,
+    "admitted": 52,
+    "coverage": 0.07222222222222222,
+    "correct_authorization_all": 0.07083333333333333,
+    "wrong_authorization_all": 0.001388888888888889,
+    "wrong_authorization_admitted": 0.019230769230769232,
+    "authorization_accuracy": 0.9861111111111112,
+    "ready_factual_recall": 0.85
+  },
+  "paired_task_balanced_bootstrap": [
+    {
+      "metric": "wrong_authorization_all",
+      "task_heldout_minus_in_domain": 0.012499999999999999,
+      "ci95_low": 0.005555555555555556,
+      "ci95_high": 0.019444444444444445,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "metric": "correct_authorization_all",
+      "task_heldout_minus_in_domain": -0.019444444444444438,
+      "ci95_low": -0.024999999999999988,
+      "ci95_high": -0.015277777777777772,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "metric": "ready_factual_recall",
+      "task_heldout_minus_in_domain": -0.23333333333333328,
+      "ci95_low": -0.29999999999999993,
+      "ci95_high": -0.18333333333333324,
+      "bootstrap_iterations": 10000
+    }
+  ],
+  "promotion_checks": {
+    "wrong_all_below_candidate": true,
+    "candidate_correct_retention_at_least_0_90": false,
+    "correct_all_drop_vs_in_domain_at_most_0_01": false,
+    "task_folds_not_worse_than_in_domain_wrong_all": 4,
+    "development_test_leakage_zero": true
+  },
+  "development_test_separation": {
+    "development_episodes": 82,
+    "test_episodes": 696,
+    "episode_overlap": 0,
+    "identifier_overlap": 0,
+    "exact_image_sha256_overlap": 0
+  },
+  "input_sha256": {
+    "results\\habit_level2\\nonfm_baseline\\resnet50_development_features.npz": "f6ce660d91e50b57b91d70d8c4490ee123c890fe73bbcdb9459d1a4cbcbbc9e6",
+    "results\\habit_level2\\nonfm_baseline\\resnet50_test_features.npz": "262d3fb44bbbf59ee8abb6ceb81c666f27e7f9aa9d54fb50b92277dea1d3985b",
+    "results\\habit_level2\\counterfactual_semantics\\scored_rows.csv": "1e6ebed8092374c62e411cb8d103b200c16ab34192d6af52f317e8a38fe3c097",
+    "scripts\\run_habit_task_heldout_admission.py": "eab3e03bbbacec72275b8fcff7e869b99c56c8041e36add4ebcbe03d2a10639d"
+  }
+}

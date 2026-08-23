@@ -1,0 +1,63 @@
+{
+  "analysis_unit": "scene-clustered held-out decision record",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 2052,
+  "cost_definition": "ratio * wrong_admission + nonadmission, divided by all records; always-withhold = 1",
+  "cost_optima": [
+    {
+      "minimum_relative_cost": 0.6310576923076923,
+      "point_optimal_policies": [
+        "always_continue"
+      ],
+      "wrong_to_nonadmission_ratio": 1
+    },
+    {
+      "minimum_relative_cost": 0.8702564102564102,
+      "point_optimal_policies": [
+        "B_multi_source_three_component"
+      ],
+      "wrong_to_nonadmission_ratio": 2
+    },
+    {
+      "minimum_relative_cost": 0.8702564102564102,
+      "point_optimal_policies": [
+        "B_multi_source_three_component"
+      ],
+      "wrong_to_nonadmission_ratio": 5
+    },
+    {
+      "minimum_relative_cost": 0.8702564102564102,
+      "point_optimal_policies": [
+        "B_multi_source_three_component"
+      ],
+      "wrong_to_nonadmission_ratio": 10
+    },
+    {
+      "minimum_relative_cost": 0.8702564102564102,
+      "point_optimal_policies": [
+        "B_multi_source_three_component"
+      ],
+      "wrong_to_nonadmission_ratio": 20
+    },
+    {
+      "minimum_relative_cost": 0.8702564102564102,
+      "point_optimal_policies": [
+        "B_multi_source_three_component"
+      ],
+      "wrong_to_nonadmission_ratio": 50
+    }
+  ],
+  "manuscript_weights": "5:0.5 corresponds to ratio 10",
+  "nu_sensitivity": "A_unanimous_three_source versus A_unanimous_two_component holds the trigger semantics fixed",
+  "policies_frozen_before_run": [
+    "A_unanimous_three_source",
+    "B_multi_source_three_component",
+    "C_required_role_two_component",
+    "A_unanimous_two_component"
+  ],
+  "policy_selection": "none; all prespecified policies and boundaries retained",
+  "records": 31200,
+  "scenes": 48,
+  "status": "PASS",
+  "target_coverage": 0.13
+}

@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "configurations": 9,
+  "pact_sv_full_evidence_admission_range": [
+    0.4,
+    0.47
+  ],
+  "raw_registered_violation_range": [
+    283,
+    330
+  ],
+  "pact_sv_violation_range": [
+    0,
+    0
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "analysis": "topology-multiplicity stress test",
+  "arms": {
+    "all_merge": "all opinion entries receive one common parent",
+    "registered": "geometry copies inherit the geometry parents; original two-component topology retained",
+    "singleton": "every opinion entry receives a distinct parent (F0 false split)"
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed_base": 52002,
+    "unit": "scene"
+  },
+  "claim_guard": "topology-multiplicity stress test; do not call a scaling law",
+  "co_primary": [
+    "registered exact-copy invariance and evidence-budget response",
+    "ncsAURC(F0,V0)-ncsAURC(F1,V0) on [0.10,0.39]"
+  ],
+  "copied_source": "geometry",
+  "directional_success_gate": "none",
+  "inputs": {
+    "config": {
+      "path": "configs/controlled_study.json",
+      "sha256": "a57d30e911b0bc9ae4c6ebbabb0f780b11924dcdd06448f593796e6387384424"
+    },
+    "frozen_2x2_cells": {
+      "path": "results/minimal_attribution_2x2/ncsaurc_cells.csv",
+      "sha256": "1bc462ad8fd6c08ae73536f7df859269369b573e1e045335cc2f7ddab814d6b6"
+    },
+    "labels": {
+      "path": "data/controlled/evaluation_labels.jsonl.gz",
+      "sha256": "36d794850c1dea5dc878328d3b71a88eeca7be3ab7a8b452d60d08784705ecb8"
+    },
+    "operator": {
+      "path": "src/action_admission/pcecf.py",
+      "sha256": "20173a49c27100aebe1a631e4318f8f727f561370141a406520f219eb9667d5c"
+    },
+    "records": {
+      "path": "data/controlled/source_records.jsonl.gz",
+      "sha256": "d2f32efbf1674f8fa29e8d83e1453ec565c0ddd2b50031368fcc00cdf8b2784a"
+    },
+    "runner": {
+      "path": "results/topology_multiplicity/run.py",
+      "sha256": "450bb93186fab1a77de0b68ee11c0a0a1be1cb891d3e5c2cabd084aeb94d7f77"
+    },
+    "study": {
+      "path": "experiments/pcecf_study.py",
+      "sha256": "8a403c4be7f870d38d17ce6d6a3c516e0271b274cd85c90a29e779188e822ad6"
+    },
+    "verifier": {
+      "path": "src/action_admission/verifier.py",
+      "sha256": "365b614b7e44e6a53ceb7661400de90ca428dfb806dfc7663d43d33ef073867a"
+    }
+  },
+  "multiplicities": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "multiplicity_definition": "total count of the geometry opinion including the original",
+  "sensitivities": [
+    "same contrast on [0.10,0.35]",
+    "raw partial AURC",
+    "coverage/wrong/correct at outer-training target 0.13"
+  ],
+  "status": "FROZEN_BEFORE_RUN",
+  "true_registered_components": 2,
+  "verifier": "V0 disables only the registered-corroboration predicate; other predicates and the registered verifier graph remain fixed"
+}

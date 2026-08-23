@@ -1,0 +1,82 @@
+{
+  "common_score_contrasts": [
+    {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "estimate": 0.0,
+      "m": 1,
+      "positive_draw_fraction": 0.0
+    },
+    {
+      "ci_high": 0.015990001465175173,
+      "ci_low": -0.016916068928099867,
+      "estimate": -0.00424741275909879,
+      "m": 2,
+      "positive_draw_fraction": 0.278
+    },
+    {
+      "ci_high": 0.002358325299294627,
+      "ci_low": -0.03572390526796439,
+      "estimate": -0.01563815894421408,
+      "m": 4,
+      "positive_draw_fraction": 0.049
+    }
+  ],
+  "episodes": 696,
+  "hashes": {
+    "analysis_amendment": "26a2020990e890ae015e024f91744516a45d3afbdbd15c8d7a473fd6d262bd25",
+    "analysis_lock": "b7ec18160e547529bd9b6a9e7df09f14863c253648807031a31441408529cf60",
+    "environment": "3be82996e7202054fd5247e450ce0cae3776139444a13d3c6b4c1ffbfe968a2b",
+    "outputs": "30a6c9590cd1f94229314b5e1518d8bcb9a0352ba5fd63800d39501fa4664e2d",
+    "prompt_pack": "1b7e6112b12a12d56826840b7e1f659a2f83b5f6e1419992495b5aea955f959a",
+    "protocol_lock": "a112e6221b69b316c0be005767f9bdf757a41edce172171fbb798cdb4b7c3b71",
+    "test_analysis_lock": "d6c027fcb520e92b1cee3e5675ee3e94e1a20a257a086790dc773da9904e97f7"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-VL-8B-Instruct",
+    "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "role": "replication"
+  },
+  "primary_contrasts": [
+    {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "estimate": 0.0,
+      "m": 1,
+      "positive_draw_fraction": 0.0
+    },
+    {
+      "ci_high": 0.19878156419937204,
+      "ci_low": 0.14898065760059906,
+      "estimate": 0.17277228428291336,
+      "m": 2,
+      "positive_draw_fraction": 1.0
+    },
+    {
+      "ci_high": 0.1495101697610471,
+      "ci_low": 0.08925080286878569,
+      "estimate": 0.12022891909135464,
+      "m": 4,
+      "positive_draw_fraction": 1.0
+    }
+  ],
+  "status": "COMPLETE_WITH_LOCKED_TIE_CORRECTION",
+  "task_level_m4_common_score_contrasts": {
+    "task_01": 0.0070756184699424796,
+    "task_02": 0.001451042015246797,
+    "task_03": -0.004682811805731962,
+    "task_04": -0.00538758411908416,
+    "task_05": -0.08530931144675102,
+    "task_06": -0.006975906778906998
+  },
+  "task_level_m4_contrasts": {
+    "task_01": 0.11730038707868362,
+    "task_02": 0.0221629942430736,
+    "task_03": 0.35726862969958895,
+    "task_04": 0.28224154915656485,
+    "task_05": -0.3101829756879264,
+    "task_06": 0.2525829300581435
+  },
+  "tasks": 6,
+  "units": 2256
+}

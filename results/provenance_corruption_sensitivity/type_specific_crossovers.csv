@@ -1,0 +1,9 @@
+condition,metric,no_lineage_value,crossover_rate,status
+false_split,expected_cost,0.8532692307692308,1.0,identified_on_grid
+false_merge,expected_cost,0.8532692307692308,,not_identified_within_grid
+hidden_edge_deletion,expected_cost,0.8532692307692308,,not_identified_within_grid
+forged_independence,expected_cost,0.8532692307692308,1.0,identified_on_grid
+false_split,wrong_all,0.08753205128205128,1.0,identified_on_grid
+false_merge,wrong_all,0.08753205128205128,,not_identified_within_grid
+hidden_edge_deletion,wrong_all,0.08753205128205128,,not_identified_within_grid
+forged_independence,wrong_all,0.08753205128205128,1.0,identified_on_grid

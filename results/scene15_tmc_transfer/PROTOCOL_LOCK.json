@@ -1,0 +1,115 @@
+﻿{
+    "schema_version":  "scene15-tmc-prospective-lock-1.0",
+    "locked_utc":  "2026-08-13T00:26:37.1329754Z",
+    "purpose":  "Prospective native-reproduction eligibility gate; no manuscript claim unless PASS",
+    "phases":  {
+                   "phase_1":  "Native TMC reproduction only",
+                   "phase_2":  "Exact-copy, false-split, and all-view-merge interventions only after Phase 1 PASS"
+               },
+    "source":  {
+                   "tmc_repository":  "https://github.com/hanmenghan/TMC",
+                   "tmc_commit":  "a3272b8746861c76a3461943b5eee51df5b5a8fe",
+                   "rcml_repository_for_scene15_payload":  "https://github.com/jiajunsi/RCML",
+                   "rcml_commit":  "c9c5ab41e6fe62a85e5f6441a4dc7b568e1fa421",
+                   "tmc_paper":  "Han et al., Trusted Multi-View Classification, ICLR 2021",
+                   "tmc_paper_pdf_sha256":  "64814df40ce1c45ab57e3c44bb8c612ad0998ee19ad063b9ed8baab62129ff4a"
+               },
+    "dataset":  {
+                    "name":  "Scene15",
+                    "payload_remote":  "/mnt/nvme2/david_workspace/e3hrc_v111_render/comparators/official/rcml/data/scene15_mtv.mat",
+                    "payload_sha256":  "52a71c6c675d5b0c1e07189778716bc52b972b17b58d8156c01422bcce2e4442",
+                    "instances":  4485,
+                    "classes":  15,
+                    "views":  [
+                                  "GIST:20",
+                                  "PHOG:59",
+                                  "LBP:40"
+                              ],
+                    "payload_rationale":  "The TMC public repository lacks Scene15; the pinned RCML repository contains the standard 4485-instance, 15-class, three-view GIST/PHOG/LBP payload described by the TMC paper."
+                },
+    "native_protocol":  {
+                            "runs":  30,
+                            "seeds":  [
+                                          11,
+                                          23,
+                                          37,
+                                          53,
+                                          71,
+                                          89,
+                                          107,
+                                          127,
+                                          149,
+                                          173,
+                                          197,
+                                          223,
+                                          251,
+                                          281,
+                                          313,
+                                          347,
+                                          383,
+                                          421,
+                                          461,
+                                          503,
+                                          547,
+                                          593,
+                                          641,
+                                          691,
+                                          743,
+                                          797,
+                                          853,
+                                          911,
+                                          971,
+                                          1031
+                                      ],
+                            "outer_split":  "Per-run stratified random 80/20 train/test split",
+                            "normalization":  "TMC-loader-faithful MinMax scaling fitted separately on the full training and test partitions",
+                            "network":  "One Linear+Softplus classifier per view; dimensions 20, 59, 40; 15 classes; TMC Dempster-Shafer combination",
+                            "optimizer":  "Adam; weight decay 1e-5",
+                            "epochs":  500,
+                            "batch_size":  200,
+                            "lambda_epochs":  50,
+                            "learning_rates":  [
+                                                   0.003,
+                                                   0.001,
+                                                   0.0003,
+                                                   0.0001
+                                               ],
+                            "learning_rate_selection":  "Five-fold stratified CV within each training partition; maximize mean validation accuracy; published candidate order breaks exact ties",
+                            "reported_metric":  "Mean and population standard deviation of test accuracy across 30 runs",
+                            "published_accuracy_mean":  0.6774,
+                            "published_accuracy_std":  0.0036
+                        },
+    "acceptance":  {
+                       "status_if_pass":  "All 30 runs complete and absolute mean-accuracy deviation from 0.6774 is at most 0.02",
+                       "tolerance_absolute":  0.02,
+                       "no_retries_or_tuning_after_observation":  true,
+                       "failure_action":  "Record MISMATCH and stop; do not run Phase 2 or modify manuscript"
+                   },
+    "phase_2_if_pass":  {
+                            "analysis_seeds":  [
+                                                   11,
+                                                   23,
+                                                   37,
+                                                   53,
+                                                   71
+                                               ],
+                            "interventions":  [
+                                                  "registered exact copy",
+                                                  "false split",
+                                                  "all-view merge"
+                                              ],
+                            "frozen_outputs_only":  true,
+                            "no_retraining_after_intervention":  true
+                        },
+    "execution":  {
+                      "remote_alias":  "einstein",
+                      "gpu_physical_index":  1,
+                      "python":  "/mnt/nvme2/david_workspace/conda_envs/e3hrc-isaacsim-5.0/bin/python",
+                      "runner_sha256":  "0cd1ce0bef43dcc91e911dd9640f6b55d1fb3805f802606bd1af4c3ebe3f535f"
+                  },
+    "manuscript_state":  {
+                             "tex_sha256":  "78b4554db8928966ddd283d74da45c13a09971484da0d94bb17506e33d7c466f",
+                             "bib_sha256":  "60c75bf4eb05a7d6be81f224084c588dd7f87d9916874414624527b78f876e9f",
+                             "manuscript_modified_before_gate":  false
+                         }
+}

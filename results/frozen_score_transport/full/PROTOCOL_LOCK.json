@@ -1,0 +1,43 @@
+{
+  "analysis": "frozen shared-score transport under topology multiplicity",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed_base": 58002,
+    "unit": "scene"
+  },
+  "evaluation": {
+    "common_eligibility": "at least two originally observed and structurally valid source roles",
+    "primary_endpoint": "ncsAURC on [0.10,0.39] before verification",
+    "thresholds": "outer-training score quantiles are recomputed at each multiplicity without labels",
+    "verifier": "disabled"
+  },
+  "frozen_score": {
+    "features": [
+      "posterior coordinates",
+      "posterior entropy",
+      "posterior peak",
+      "top-two margin",
+      "observed opinion count"
+    ],
+    "fit_data": "m=1 outer-training rows pooled across product, nested Dirichlet, global cautious, and PACT; method identity excluded",
+    "refit_at_larger_multiplicity": false
+  },
+  "methods": {
+    "nested_unaware": "nested Dirichlet composition receives all geometry copies and ignores registration",
+    "pact_all_merge": "all opinions share one registered parent",
+    "pact_registered": "geometry copies inherit the geometry parent; the original two-component topology is retained",
+    "pact_singleton": "every copied opinion receives a separate parent"
+  },
+  "multiplicities": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "multiplicity_definition": "total geometry-opinion count including the original",
+  "outcome_rule": "retain every result and sign; manuscript claim strength follows the frozen result",
+  "released_runner": "results/frozen_score_transport/full/run.py",
+  "status": "FROZEN_BEFORE_RUN"
+}

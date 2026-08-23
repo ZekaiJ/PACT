@@ -1,0 +1,40 @@
+{
+  "status": "HOLD_UNRESOLVED_RELEASE_PROTOCOL",
+  "completed_utc": "2026-07-27T16:37:19Z",
+  "dataset": "Scene15",
+  "emitter": "RCML",
+  "integration_authorized": false,
+  "published_accuracy": 0.7619,
+  "probes": {
+    "official_style_80_20": {
+      "seeds": 5,
+      "mean_accuracy": 0.6972129319955407,
+      "standard_deviation": 0.0130886600860104,
+      "delta_percentage_points": -6.47
+    },
+    "train_calibration_test_60_20_20": {
+      "seeds": 5,
+      "mean_accuracy": 0.6944196428571429,
+      "standard_deviation": 0.01555148522174141,
+      "delta_percentage_points": -6.75
+    }
+  },
+  "released_code_audit": {
+    "repository_commit": "c9c5ab41e6fe62a85e5f6441a4dc7b568e1fa421",
+    "normal_entry_point_dataset": "HandWritten",
+    "conflict_entry_point_dataset": "PIE",
+    "scene_loader_defined": true,
+    "scene_training_entry_point_released": false,
+    "scene_split_file_released": false
+  },
+  "sha256": {
+    "main.py": "f85751fe7d589bc4341f0f40984e6a908f7b7dacfd3a4f908ad85d3598a01020",
+    "data.py": "9be7f75e53e3a0534e1cf3556eca666cac8833817768f6ba3c46a86601c0ab3a",
+    "model.py": "42bf3fb0d877c7c55f6391035f530ae5a5accf1b8a84aed1b8f2577fe1ebc4ab",
+    "loss_function.py": "2044693be41b481716ee831b8ba01b43e9da4856c5b47455ca532a63eeeb3bed",
+    "scene15_mtv.mat": "52a71c6c675d5b0c1e07189778716bc52b972b17b58d8156c01422bcce2e4442",
+    "paper_pdf": "061119a7fd82f7e3d6f81f854ee26445225be44c626422638a7a6abdc722aa2e",
+    "supplement_pdf": "3aa34587a3c9b7c230980a6cd1b900cb48121bec817469096a43dc94a7bf72ee"
+  },
+  "resume_condition": "author-supplied Scene15 split/configuration or released training entry point reproduces the native result without outcome-guided tuning"
+}

@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a reproducible problem in the package or command-line analyses.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve PACT. Please remove private or restricted data from all logs.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Provide the shortest command or code snippet that reproduces the problem.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include operating system, Python version, package version or commit, and relevant dependency versions.
+      placeholder: Windows 11; Python 3.11; commit abc1234
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Paste a concise traceback or log excerpt. Do not include credentials or restricted data.
+      render: text

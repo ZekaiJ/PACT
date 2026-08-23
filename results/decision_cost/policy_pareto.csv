@@ -1,0 +1,5 @@
+policy,ncsaurc_0p10_0p39,coverage_at_0p13,wrong_all_at_0p13,correct_all_at_0p13,pareto_nondominated,dominated_by
+A_unanimous_three_source,0.08612194505919865,0.12958333333333333,0.0,0.12958333333333333,False,B_multi_source_three_component
+B_multi_source_three_component,0.08675926216579642,0.12974358974358974,0.0,0.12974358974358974,True,
+C_required_role_two_component,0.3891164502870042,0.1303525641025641,0.07692307692307693,0.05342948717948718,False,A_unanimous_three_source;B_multi_source_three_component
+A_unanimous_two_component,0.3891164502870042,0.1303525641025641,0.07692307692307693,0.05342948717948718,False,A_unanimous_three_source;B_multi_source_three_component

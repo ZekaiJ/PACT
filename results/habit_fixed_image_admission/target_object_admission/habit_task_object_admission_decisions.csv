@@ -1,0 +1,721 @@
+id,event_id,episode_id,sid,task,window,condition,query_target_sid,candidate_admit,target_verified_admit,temporal_verified_admit,verified_admit,verified_decision,decision_reason,phase_probability,reference_admit
+habit_cf_0001,004948_01,004948,S6759,Power Cable,early,factual,S6759,False,False,False,False,hold_confirm,target_not_visually_supported,0.15308127076882982,False
+habit_cf_0002,004948_01,004948,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.15308127076882982,False
+habit_cf_0003,004948_01,004948,S6759,Power Cable,ready,factual,S6759,False,False,False,False,hold_confirm,candidate_not_ready,0.8384648946822499,True
+habit_cf_0004,004948_01,004948,S6759,Power Cable,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.8384648946822499,False
+habit_cf_0005,004949_01,004949,S6759,Power Cable,early,factual,S6759,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.13048453457444595,False
+habit_cf_0006,004949_01,004949,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.13048453457444595,False
+habit_cf_0007,004949_01,004949,S6759,Power Cable,ready,factual,S6759,True,True,True,True,release,supported_release,0.8842966714126388,True
+habit_cf_0008,004949_01,004949,S6759,Power Cable,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.8842966714126388,False
+habit_cf_0009,004951_01,004951,S6759,Power Cable,early,factual,S6759,False,False,False,False,hold_confirm,target_not_visually_supported,0.15175626103596065,False
+habit_cf_0010,004951_01,004951,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.15175626103596065,False
+habit_cf_0011,004951_01,004951,S6759,Power Cable,ready,factual,S6759,True,True,True,True,release,supported_release,0.9351768611083192,True
+habit_cf_0012,004951_01,004951,S6759,Power Cable,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.9351768611083192,False
+habit_cf_0013,004952_01,004952,S6759,Power Cable,early,factual,S6759,False,False,False,False,hold_confirm,candidate_not_ready,0.056116241526315086,False
+habit_cf_0014,004952_01,004952,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.056116241526315086,False
+habit_cf_0015,004952_01,004952,S6759,Power Cable,ready,factual,S6759,False,False,False,False,hold_confirm,candidate_not_ready,0.8578653177788428,True
+habit_cf_0016,004952_01,004952,S6759,Power Cable,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.8578653177788428,False
+habit_cf_0017,004953_01,004953,S6759,Power Cable,early,factual,S6759,False,False,False,False,hold_confirm,target_not_visually_supported,0.11118390400204595,False
+habit_cf_0018,004953_01,004953,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.11118390400204595,False
+habit_cf_0019,004953_01,004953,S6759,Power Cable,ready,factual,S6759,False,False,False,False,hold_confirm,candidate_not_ready,0.9180686525454822,True
+habit_cf_0020,004953_01,004953,S6759,Power Cable,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9180686525454822,False
+habit_cf_0021,004954_01,004954,S6759,Power Cable,early,factual,S6759,False,False,False,False,hold_confirm,target_not_visually_supported,0.08374231253656353,False
+habit_cf_0022,004954_01,004954,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.08374231253656353,False
+habit_cf_0023,004954_01,004954,S6759,Power Cable,ready,factual,S6759,False,False,False,False,hold_confirm,target_not_visually_supported,0.8716693864517571,True
+habit_cf_0024,004954_01,004954,S6759,Power Cable,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8716693864517571,False
+habit_cf_0025,004956_01,004956,S6759,Power Cable,early,factual,S6759,False,False,False,False,hold_confirm,target_not_visually_supported,0.05278341147136873,False
+habit_cf_0026,004956_01,004956,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.05278341147136873,False
+habit_cf_0027,004956_01,004956,S6759,Power Cable,ready,factual,S6759,False,False,False,False,hold_confirm,target_not_visually_supported,0.8340399944900204,True
+habit_cf_0028,004956_01,004956,S6759,Power Cable,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.8340399944900204,False
+habit_cf_0029,004957_01,004957,S6759,Power Cable,early,factual,S6759,False,False,False,False,hold_confirm,target_not_visually_supported,0.07842228353937,False
+habit_cf_0030,004957_01,004957,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.07842228353937,False
+habit_cf_0031,004957_01,004957,S6759,Power Cable,ready,factual,S6759,True,True,True,True,release,supported_release,0.6363702052033519,True
+habit_cf_0032,004957_01,004957,S6759,Power Cable,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.6363702052033519,False
+habit_cf_0033,004958_01,004958,S6759,Power Cable,early,factual,S6759,False,False,False,False,hold_confirm,target_not_visually_supported,0.1533417227464273,False
+habit_cf_0034,004958_01,004958,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.1533417227464273,False
+habit_cf_0035,004958_01,004958,S6759,Power Cable,ready,factual,S6759,True,True,True,True,release,supported_release,0.9322060714815534,True
+habit_cf_0036,004958_01,004958,S6759,Power Cable,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.9322060714815534,False
+habit_cf_0037,004959_01,004959,S6759,Power Cable,early,factual,S6759,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.15710903436247226,False
+habit_cf_0038,004959_01,004959,S6759,Power Cable,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.15710903436247226,False
+habit_cf_0039,004959_01,004959,S6759,Power Cable,ready,factual,S6759,True,True,True,True,release,supported_release,0.9415433412329893,True
+habit_cf_0040,004959_01,004959,S6759,Power Cable,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.9415433412329893,False
+habit_cf_0041,000124_01,000124,S7025,Organizing box,early,factual,S7025,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.03906875802938428,False
+habit_cf_0042,000124_01,000124,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.03906875802938428,False
+habit_cf_0043,000124_01,000124,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.7391181806705732,True
+habit_cf_0044,000124_01,000124,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.7391181806705732,False
+habit_cf_0045,000126_01,000126,S7025,Organizing box,early,factual,S7025,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.3138824767842424,False
+habit_cf_0046,000126_01,000126,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.3138824767842424,False
+habit_cf_0047,000126_01,000126,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.8190265844841018,True
+habit_cf_0048,000126_01,000126,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8190265844841018,False
+habit_cf_0049,000128_01,000128,S7025,Organizing box,early,factual,S7025,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.167905293545071,False
+habit_cf_0050,000128_01,000128,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.167905293545071,False
+habit_cf_0051,000128_01,000128,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.8126090763853152,True
+habit_cf_0052,000128_01,000128,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8126090763853152,False
+habit_cf_0053,000129_01,000129,S7025,Organizing box,early,factual,S7025,False,False,False,False,hold_confirm,candidate_not_ready,0.06589370068350783,False
+habit_cf_0054,000129_01,000129,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.06589370068350783,False
+habit_cf_0055,000129_01,000129,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.8144532328877675,True
+habit_cf_0056,000129_01,000129,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8144532328877675,False
+habit_cf_0057,000130_01,000130,S7025,Organizing box,early,factual,S7025,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.14259786536340488,False
+habit_cf_0058,000130_01,000130,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.14259786536340488,False
+habit_cf_0059,000130_01,000130,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.8117728476573336,True
+habit_cf_0060,000130_01,000130,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8117728476573336,False
+habit_cf_0061,000131_01,000131,S7025,Organizing box,early,factual,S7025,False,False,False,False,hold_confirm,target_not_visually_supported,0.19783759657247613,False
+habit_cf_0062,000131_01,000131,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.19783759657247613,False
+habit_cf_0063,000131_01,000131,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.7901020094103496,True
+habit_cf_0064,000131_01,000131,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.7901020094103496,False
+habit_cf_0065,000132_01,000132,S7025,Organizing box,early,factual,S7025,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.19048278194698187,False
+habit_cf_0066,000132_01,000132,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.19048278194698187,False
+habit_cf_0067,000132_01,000132,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.8781667797315407,True
+habit_cf_0068,000132_01,000132,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8781667797315407,False
+habit_cf_0069,000133_01,000133,S7025,Organizing box,early,factual,S7025,False,False,False,False,hold_confirm,candidate_not_ready,0.07572702811386726,False
+habit_cf_0070,000133_01,000133,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.07572702811386726,False
+habit_cf_0071,000133_01,000133,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.7684737584993587,True
+habit_cf_0072,000133_01,000133,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.7684737584993587,False
+habit_cf_0073,000135_01,000135,S7025,Organizing box,early,factual,S7025,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.12293778248442891,False
+habit_cf_0074,000135_01,000135,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.12293778248442891,False
+habit_cf_0075,000135_01,000135,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.7248025267514352,True
+habit_cf_0076,000135_01,000135,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.7248025267514352,False
+habit_cf_0077,000137_01,000137,S7025,Organizing box,early,factual,S7025,False,False,False,False,hold_confirm,target_not_visually_supported,0.10578522902506014,False
+habit_cf_0078,000137_01,000137,S7025,Organizing box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.10578522902506014,False
+habit_cf_0079,000137_01,000137,S7025,Organizing box,ready,factual,S7025,True,True,True,True,release,supported_release,0.6759478065224412,True
+habit_cf_0080,000137_01,000137,S7025,Organizing box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.6759478065224412,False
+habit_cf_0081,002888_01,002888,S7414,Paper to-go box,early,factual,S7414,False,False,False,False,hold_confirm,target_not_visually_supported,0.07117928918823074,False
+habit_cf_0082,002888_01,002888,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.07117928918823074,False
+habit_cf_0083,002888_01,002888,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.8850806330906826,True
+habit_cf_0084,002888_01,002888,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8850806330906826,False
+habit_cf_0085,002889_01,002889,S7414,Paper to-go box,early,factual,S7414,False,False,False,False,hold_confirm,target_not_visually_supported,0.09293049839995662,False
+habit_cf_0086,002889_01,002889,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.09293049839995662,False
+habit_cf_0087,002889_01,002889,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.8769195361704208,True
+habit_cf_0088,002889_01,002889,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8769195361704208,False
+habit_cf_0089,002890_01,002890,S7414,Paper to-go box,early,factual,S7414,False,False,False,False,hold_confirm,target_not_visually_supported,0.06571778796290739,False
+habit_cf_0090,002890_01,002890,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.06571778796290739,False
+habit_cf_0091,002890_01,002890,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.9338272611196587,True
+habit_cf_0092,002890_01,002890,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9338272611196587,False
+habit_cf_0093,002891_01,002891,S7414,Paper to-go box,early,factual,S7414,False,False,False,False,hold_confirm,target_not_visually_supported,0.08839160031579293,False
+habit_cf_0094,002891_01,002891,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.08839160031579293,False
+habit_cf_0095,002891_01,002891,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.8697436915734554,True
+habit_cf_0096,002891_01,002891,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8697436915734554,False
+habit_cf_0097,002892_01,002892,S7414,Paper to-go box,early,factual,S7414,False,False,False,False,hold_confirm,target_not_visually_supported,0.06858834909109414,False
+habit_cf_0098,002892_01,002892,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.06858834909109414,False
+habit_cf_0099,002892_01,002892,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.9158603303197418,True
+habit_cf_0100,002892_01,002892,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9158603303197418,False
+habit_cf_0101,002894_01,002894,S7414,Paper to-go box,early,factual,S7414,False,False,False,False,hold_confirm,target_not_visually_supported,0.11632166499284465,False
+habit_cf_0102,002894_01,002894,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.11632166499284465,False
+habit_cf_0103,002894_01,002894,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.9439196781546667,True
+habit_cf_0104,002894_01,002894,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9439196781546667,False
+habit_cf_0105,002895_01,002895,S7414,Paper to-go box,early,factual,S7414,False,False,False,False,hold_confirm,target_not_visually_supported,0.09998402488102902,False
+habit_cf_0106,002895_01,002895,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.09998402488102902,False
+habit_cf_0107,002895_01,002895,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.9469735732150207,True
+habit_cf_0108,002895_01,002895,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9469735732150207,False
+habit_cf_0109,002896_01,002896,S7414,Paper to-go box,early,factual,S7414,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.09198282586988146,False
+habit_cf_0110,002896_01,002896,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.09198282586988146,False
+habit_cf_0111,002896_01,002896,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.8218464134321105,True
+habit_cf_0112,002896_01,002896,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8218464134321105,False
+habit_cf_0113,002898_01,002898,S7414,Paper to-go box,early,factual,S7414,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.09067443574199707,False
+habit_cf_0114,002898_01,002898,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.09067443574199707,False
+habit_cf_0115,002898_01,002898,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.9099393990914546,True
+habit_cf_0116,002898_01,002898,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9099393990914546,False
+habit_cf_0117,002899_01,002899,S7414,Paper to-go box,early,factual,S7414,False,False,False,False,hold_confirm,target_not_visually_supported,0.09935265519841559,False
+habit_cf_0118,002899_01,002899,S7414,Paper to-go box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.09935265519841559,False
+habit_cf_0119,002899_01,002899,S7414,Paper to-go box,ready,factual,S7414,True,True,True,True,release,supported_release,0.9297348387139566,True
+habit_cf_0120,002899_01,002899,S7414,Paper to-go box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9297348387139566,False
+habit_cf_0121,008354_01,008354,S7788,iced cup,early,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.2756970854754759,False
+habit_cf_0122,008354_01,008354,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.2756970854754759,False
+habit_cf_0123,008354_01,008354,S7788,iced cup,ready,factual,S7788,True,True,True,True,release,supported_release,0.7106319191020816,True
+habit_cf_0124,008354_01,008354,S7788,iced cup,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.7106319191020816,False
+habit_cf_0125,008364_01,008364,S7788,iced cup,early,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.4337464916931842,False
+habit_cf_0126,008364_01,008364,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.4337464916931842,False
+habit_cf_0127,008364_01,008364,S7788,iced cup,ready,factual,S7788,True,True,True,True,release,supported_release,0.9093373452458308,True
+habit_cf_0128,008364_01,008364,S7788,iced cup,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9093373452458308,False
+habit_cf_0129,008372_02,008372,S7788,iced cup,early,factual,S7788,True,True,True,True,release,supported_release,0.5698434889308098,False
+habit_cf_0130,008372_02,008372,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.5698434889308098,False
+habit_cf_0131,008372_02,008372,S7788,iced cup,ready,factual,S7788,True,True,True,True,release,supported_release,0.8293892339355269,True
+habit_cf_0132,008372_02,008372,S7788,iced cup,ready,counterfactual,S8940,True,False,True,False,hold_confirm,target_state_mismatch,0.8293892339355269,False
+habit_cf_0133,008462_01,008462,S7788,iced cup,early,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.352746657404116,False
+habit_cf_0134,008462_01,008462,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.352746657404116,False
+habit_cf_0135,008462_01,008462,S7788,iced cup,ready,factual,S7788,True,True,True,True,release,supported_release,0.875546244241227,True
+habit_cf_0136,008462_01,008462,S7788,iced cup,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.875546244241227,False
+habit_cf_0137,008475_01,008475,S7788,iced cup,early,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.2941236671573512,False
+habit_cf_0138,008475_01,008475,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.2941236671573512,False
+habit_cf_0139,008475_01,008475,S7788,iced cup,ready,factual,S7788,True,True,True,True,release,supported_release,0.7734430440173119,True
+habit_cf_0140,008475_01,008475,S7788,iced cup,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.7734430440173119,False
+habit_cf_0141,008495_02,008495,S7788,iced cup,early,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.4352436003562298,False
+habit_cf_0142,008495_02,008495,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.4352436003562298,False
+habit_cf_0143,008495_02,008495,S7788,iced cup,ready,factual,S7788,True,True,True,True,release,supported_release,0.5999592899593257,True
+habit_cf_0144,008495_02,008495,S7788,iced cup,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.5999592899593257,False
+habit_cf_0145,008524_02,008524,S7788,iced cup,early,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.30223392581451386,False
+habit_cf_0146,008524_02,008524,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.30223392581451386,False
+habit_cf_0147,008524_02,008524,S7788,iced cup,ready,factual,S7788,True,True,True,True,release,supported_release,0.5059317025217817,True
+habit_cf_0148,008524_02,008524,S7788,iced cup,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.5059317025217817,False
+habit_cf_0149,009796_02,009796,S7788,iced cup,early,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.1418504191278284,False
+habit_cf_0150,009796_02,009796,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.1418504191278284,False
+habit_cf_0151,009796_02,009796,S7788,iced cup,ready,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.4523197288687617,True
+habit_cf_0152,009796_02,009796,S7788,iced cup,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.4523197288687617,False
+habit_cf_0153,009797_02,009797,S7788,iced cup,early,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.12301382169682357,False
+habit_cf_0154,009797_02,009797,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.12301382169682357,False
+habit_cf_0155,009797_02,009797,S7788,iced cup,ready,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.17972383020721805,True
+habit_cf_0156,009797_02,009797,S7788,iced cup,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.17972383020721805,False
+habit_cf_0157,009801_02,009801,S7788,iced cup,early,factual,S7788,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.1370770066018925,False
+habit_cf_0158,009801_02,009801,S7788,iced cup,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.1370770066018925,False
+habit_cf_0159,009801_02,009801,S7788,iced cup,ready,factual,S7788,False,False,False,False,hold_confirm,candidate_not_ready,0.09278854646302195,True
+habit_cf_0160,009801_02,009801,S7788,iced cup,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.09278854646302195,False
+habit_cf_0161,007309_01,007309,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.15362660860230165,False
+habit_cf_0162,007309_01,007309,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.15362660860230165,False
+habit_cf_0163,007309_01,007309,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.8802933259424847,True
+habit_cf_0164,007309_01,007309,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8802933259424847,False
+habit_cf_0165,007310_01,007310,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.09064752451156366,False
+habit_cf_0166,007310_01,007310,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.09064752451156366,False
+habit_cf_0167,007310_01,007310,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.8393579383379276,True
+habit_cf_0168,007310_01,007310,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8393579383379276,False
+habit_cf_0169,007312_01,007312,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.08678174114717235,False
+habit_cf_0170,007312_01,007312,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.08678174114717235,False
+habit_cf_0171,007312_01,007312,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.8848110689785276,True
+habit_cf_0172,007312_01,007312,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8848110689785276,False
+habit_cf_0173,007313_01,007313,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.09920401601832542,False
+habit_cf_0174,007313_01,007313,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.09920401601832542,False
+habit_cf_0175,007313_01,007313,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.9073147454776027,True
+habit_cf_0176,007313_01,007313,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9073147454776027,False
+habit_cf_0177,007314_01,007314,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.09078680373478579,False
+habit_cf_0178,007314_01,007314,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.09078680373478579,False
+habit_cf_0179,007314_01,007314,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.8876257132372228,True
+habit_cf_0180,007314_01,007314,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8876257132372228,False
+habit_cf_0181,007315_01,007315,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.1384753344730794,False
+habit_cf_0182,007315_01,007315,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.1384753344730794,False
+habit_cf_0183,007315_01,007315,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.836361134028381,True
+habit_cf_0184,007315_01,007315,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.836361134028381,False
+habit_cf_0185,007316_01,007316,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.07805624052736453,False
+habit_cf_0186,007316_01,007316,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.07805624052736453,False
+habit_cf_0187,007316_01,007316,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.9328541876769552,True
+habit_cf_0188,007316_01,007316,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9328541876769552,False
+habit_cf_0189,007317_01,007317,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.03390499846130472,False
+habit_cf_0190,007317_01,007317,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.03390499846130472,False
+habit_cf_0191,007317_01,007317,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.8892940608877898,True
+habit_cf_0192,007317_01,007317,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8892940608877898,False
+habit_cf_0193,007321_01,007321,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.08685742760766907,False
+habit_cf_0194,007321_01,007321,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.08685742760766907,False
+habit_cf_0195,007321_01,007321,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.9612387835801528,True
+habit_cf_0196,007321_01,007321,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9612387835801528,False
+habit_cf_0197,007322_01,007322,S8940,Airtight Container lid,early,factual,S8940,False,False,False,False,hold_confirm,target_not_visually_supported,0.0840677091742321,False
+habit_cf_0198,007322_01,007322,S8940,Airtight Container lid,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.0840677091742321,False
+habit_cf_0199,007322_01,007322,S8940,Airtight Container lid,ready,factual,S8940,True,True,True,True,release,supported_release,0.9468591375438491,True
+habit_cf_0200,007322_01,007322,S8940,Airtight Container lid,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9468591375438491,False
+habit_cf_0201,005687_01,005687,S8975,100 cm Hotel Towel,early,factual,S8975,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.13526361494986008,False
+habit_cf_0202,005687_01,005687,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.13526361494986008,False
+habit_cf_0203,005687_01,005687,S8975,100 cm Hotel Towel,ready,factual,S8975,True,True,True,True,release,supported_release,0.8921289323394731,True
+habit_cf_0204,005687_01,005687,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8921289323394731,False
+habit_cf_0205,005688_01,005688,S8975,100 cm Hotel Towel,early,factual,S8975,False,False,False,False,hold_confirm,candidate_not_ready,0.17343695786203922,False
+habit_cf_0206,005688_01,005688,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.17343695786203922,False
+habit_cf_0207,005688_01,005688,S8975,100 cm Hotel Towel,ready,factual,S8975,False,False,False,False,hold_confirm,candidate_not_ready,0.8274731719688633,True
+habit_cf_0208,005688_01,005688,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8274731719688633,False
+habit_cf_0209,005691_01,005691,S8975,100 cm Hotel Towel,early,factual,S8975,False,False,False,False,hold_confirm,candidate_not_ready,0.2173794409155415,False
+habit_cf_0210,005691_01,005691,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.2173794409155415,False
+habit_cf_0211,005691_01,005691,S8975,100 cm Hotel Towel,ready,factual,S8975,True,True,True,True,release,supported_release,0.9632364023524762,True
+habit_cf_0212,005691_01,005691,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9632364023524762,False
+habit_cf_0213,005692_01,005692,S8975,100 cm Hotel Towel,early,factual,S8975,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.07463346840987095,False
+habit_cf_0214,005692_01,005692,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.07463346840987095,False
+habit_cf_0215,005692_01,005692,S8975,100 cm Hotel Towel,ready,factual,S8975,True,True,True,True,release,supported_release,0.9685934670971063,True
+habit_cf_0216,005692_01,005692,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9685934670971063,False
+habit_cf_0217,005693_01,005693,S8975,100 cm Hotel Towel,early,factual,S8975,False,False,False,False,hold_confirm,candidate_not_ready,0.1601314203164515,False
+habit_cf_0218,005693_01,005693,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.1601314203164515,False
+habit_cf_0219,005693_01,005693,S8975,100 cm Hotel Towel,ready,factual,S8975,True,True,True,True,release,supported_release,0.9330952305113103,True
+habit_cf_0220,005693_01,005693,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9330952305113103,False
+habit_cf_0221,005694_01,005694,S8975,100 cm Hotel Towel,early,factual,S8975,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.1376208536925431,False
+habit_cf_0222,005694_01,005694,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.1376208536925431,False
+habit_cf_0223,005694_01,005694,S8975,100 cm Hotel Towel,ready,factual,S8975,True,True,True,True,release,supported_release,0.9597224076017676,True
+habit_cf_0224,005694_01,005694,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9597224076017676,False
+habit_cf_0225,005695_01,005695,S8975,100 cm Hotel Towel,early,factual,S8975,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.07763728156449755,False
+habit_cf_0226,005695_01,005695,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.07763728156449755,False
+habit_cf_0227,005695_01,005695,S8975,100 cm Hotel Towel,ready,factual,S8975,True,True,True,True,release,supported_release,0.939338348591294,True
+habit_cf_0228,005695_01,005695,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.939338348591294,False
+habit_cf_0229,005696_01,005696,S8975,100 cm Hotel Towel,early,factual,S8975,True,True,False,False,hold_confirm,temporal_evidence_not_ready,0.17975789327022199,False
+habit_cf_0230,005696_01,005696,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.17975789327022199,False
+habit_cf_0231,005696_01,005696,S8975,100 cm Hotel Towel,ready,factual,S8975,True,True,True,True,release,supported_release,0.9335241164932431,True
+habit_cf_0232,005696_01,005696,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9335241164932431,False
+habit_cf_0233,005697_01,005697,S8975,100 cm Hotel Towel,early,factual,S8975,False,False,False,False,hold_confirm,candidate_not_ready,0.08129516065073251,False
+habit_cf_0234,005697_01,005697,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.08129516065073251,False
+habit_cf_0235,005697_01,005697,S8975,100 cm Hotel Towel,ready,factual,S8975,True,True,True,True,release,supported_release,0.9275869781370472,True
+habit_cf_0236,005697_01,005697,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9275869781370472,False
+habit_cf_0237,005698_01,005698,S8975,100 cm Hotel Towel,early,factual,S8975,False,False,False,False,hold_confirm,candidate_not_ready,0.0846057787399409,False
+habit_cf_0238,005698_01,005698,S8975,100 cm Hotel Towel,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.0846057787399409,False
+habit_cf_0239,005698_01,005698,S8975,100 cm Hotel Towel,ready,factual,S8975,True,True,True,True,release,supported_release,0.979608839198447,True
+habit_cf_0240,005698_01,005698,S8975,100 cm Hotel Towel,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.979608839198447,False
+habit_cfx_0001,004948_01,004948,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.15308127076882982,False
+habit_cfx_0002,004948_01,004948,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.15308127076882982,False
+habit_cfx_0003,004948_01,004948,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.15308127076882982,False
+habit_cfx_0004,004948_01,004948,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.15308127076882982,False
+habit_cfx_0005,004948_01,004948,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8384648946822499,False
+habit_cfx_0006,004948_01,004948,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8384648946822499,False
+habit_cfx_0007,004948_01,004948,S6759,Power Cable,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8384648946822499,False
+habit_cfx_0008,004948_01,004948,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8384648946822499,False
+habit_cfx_0009,004949_01,004949,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.13048453457444595,False
+habit_cfx_0010,004949_01,004949,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.13048453457444595,False
+habit_cfx_0011,004949_01,004949,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.13048453457444595,False
+habit_cfx_0012,004949_01,004949,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.13048453457444595,False
+habit_cfx_0013,004949_01,004949,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8842966714126388,False
+habit_cfx_0014,004949_01,004949,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8842966714126388,False
+habit_cfx_0015,004949_01,004949,S6759,Power Cable,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8842966714126388,False
+habit_cfx_0016,004949_01,004949,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8842966714126388,False
+habit_cfx_0017,004951_01,004951,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.15175626103596065,False
+habit_cfx_0018,004951_01,004951,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.15175626103596065,False
+habit_cfx_0019,004951_01,004951,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.15175626103596065,False
+habit_cfx_0020,004951_01,004951,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.15175626103596065,False
+habit_cfx_0021,004951_01,004951,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9351768611083192,False
+habit_cfx_0022,004951_01,004951,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9351768611083192,False
+habit_cfx_0023,004951_01,004951,S6759,Power Cable,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9351768611083192,False
+habit_cfx_0024,004951_01,004951,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9351768611083192,False
+habit_cfx_0025,004952_01,004952,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.056116241526315086,False
+habit_cfx_0026,004952_01,004952,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.056116241526315086,False
+habit_cfx_0027,004952_01,004952,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.056116241526315086,False
+habit_cfx_0028,004952_01,004952,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.056116241526315086,False
+habit_cfx_0029,004952_01,004952,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8578653177788428,False
+habit_cfx_0030,004952_01,004952,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8578653177788428,False
+habit_cfx_0031,004952_01,004952,S6759,Power Cable,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8578653177788428,False
+habit_cfx_0032,004952_01,004952,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8578653177788428,False
+habit_cfx_0033,004953_01,004953,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.11118390400204595,False
+habit_cfx_0034,004953_01,004953,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.11118390400204595,False
+habit_cfx_0035,004953_01,004953,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.11118390400204595,False
+habit_cfx_0036,004953_01,004953,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.11118390400204595,False
+habit_cfx_0037,004953_01,004953,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9180686525454822,False
+habit_cfx_0038,004953_01,004953,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9180686525454822,False
+habit_cfx_0039,004953_01,004953,S6759,Power Cable,ready,counterfactual,S8940,True,False,True,False,hold_confirm,target_state_mismatch,0.9180686525454822,False
+habit_cfx_0040,004953_01,004953,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9180686525454822,False
+habit_cfx_0041,004954_01,004954,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.08374231253656353,False
+habit_cfx_0042,004954_01,004954,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.08374231253656353,False
+habit_cfx_0043,004954_01,004954,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.08374231253656353,False
+habit_cfx_0044,004954_01,004954,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.08374231253656353,False
+habit_cfx_0045,004954_01,004954,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8716693864517571,False
+habit_cfx_0046,004954_01,004954,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8716693864517571,False
+habit_cfx_0047,004954_01,004954,S6759,Power Cable,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8716693864517571,False
+habit_cfx_0048,004954_01,004954,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8716693864517571,False
+habit_cfx_0049,004956_01,004956,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.05278341147136873,False
+habit_cfx_0050,004956_01,004956,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.05278341147136873,False
+habit_cfx_0051,004956_01,004956,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.05278341147136873,False
+habit_cfx_0052,004956_01,004956,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.05278341147136873,False
+habit_cfx_0053,004956_01,004956,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8340399944900204,False
+habit_cfx_0054,004956_01,004956,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8340399944900204,False
+habit_cfx_0055,004956_01,004956,S6759,Power Cable,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8340399944900204,False
+habit_cfx_0056,004956_01,004956,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8340399944900204,False
+habit_cfx_0057,004957_01,004957,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.07842228353937,False
+habit_cfx_0058,004957_01,004957,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.07842228353937,False
+habit_cfx_0059,004957_01,004957,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.07842228353937,False
+habit_cfx_0060,004957_01,004957,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.07842228353937,False
+habit_cfx_0061,004957_01,004957,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.6363702052033519,False
+habit_cfx_0062,004957_01,004957,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.6363702052033519,False
+habit_cfx_0063,004957_01,004957,S6759,Power Cable,ready,counterfactual,S8940,True,False,True,False,hold_confirm,target_state_mismatch,0.6363702052033519,False
+habit_cfx_0064,004957_01,004957,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.6363702052033519,False
+habit_cfx_0065,004958_01,004958,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.1533417227464273,False
+habit_cfx_0066,004958_01,004958,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.1533417227464273,False
+habit_cfx_0067,004958_01,004958,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.1533417227464273,False
+habit_cfx_0068,004958_01,004958,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.1533417227464273,False
+habit_cfx_0069,004958_01,004958,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9322060714815534,False
+habit_cfx_0070,004958_01,004958,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9322060714815534,False
+habit_cfx_0071,004958_01,004958,S6759,Power Cable,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9322060714815534,False
+habit_cfx_0072,004958_01,004958,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9322060714815534,False
+habit_cfx_0073,004959_01,004959,S6759,Power Cable,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.15710903436247226,False
+habit_cfx_0074,004959_01,004959,S6759,Power Cable,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.15710903436247226,False
+habit_cfx_0075,004959_01,004959,S6759,Power Cable,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.15710903436247226,False
+habit_cfx_0076,004959_01,004959,S6759,Power Cable,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.15710903436247226,False
+habit_cfx_0077,004959_01,004959,S6759,Power Cable,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9415433412329893,False
+habit_cfx_0078,004959_01,004959,S6759,Power Cable,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9415433412329893,False
+habit_cfx_0079,004959_01,004959,S6759,Power Cable,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9415433412329893,False
+habit_cfx_0080,004959_01,004959,S6759,Power Cable,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9415433412329893,False
+habit_cfx_0081,000124_01,000124,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.03906875802938428,False
+habit_cfx_0082,000124_01,000124,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.03906875802938428,False
+habit_cfx_0083,000124_01,000124,S7025,Organizing box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.03906875802938428,False
+habit_cfx_0084,000124_01,000124,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.03906875802938428,False
+habit_cfx_0085,000124_01,000124,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.7391181806705732,False
+habit_cfx_0086,000124_01,000124,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.7391181806705732,False
+habit_cfx_0087,000124_01,000124,S7025,Organizing box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.7391181806705732,False
+habit_cfx_0088,000124_01,000124,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.7391181806705732,False
+habit_cfx_0089,000126_01,000126,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.3138824767842424,False
+habit_cfx_0090,000126_01,000126,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.3138824767842424,False
+habit_cfx_0091,000126_01,000126,S7025,Organizing box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.3138824767842424,False
+habit_cfx_0092,000126_01,000126,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.3138824767842424,False
+habit_cfx_0093,000126_01,000126,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8190265844841018,False
+habit_cfx_0094,000126_01,000126,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8190265844841018,False
+habit_cfx_0095,000126_01,000126,S7025,Organizing box,ready,counterfactual,S8940,True,False,True,False,hold_confirm,target_state_mismatch,0.8190265844841018,False
+habit_cfx_0096,000126_01,000126,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8190265844841018,False
+habit_cfx_0097,000128_01,000128,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.167905293545071,False
+habit_cfx_0098,000128_01,000128,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.167905293545071,False
+habit_cfx_0099,000128_01,000128,S7025,Organizing box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.167905293545071,False
+habit_cfx_0100,000128_01,000128,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.167905293545071,False
+habit_cfx_0101,000128_01,000128,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8126090763853152,False
+habit_cfx_0102,000128_01,000128,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8126090763853152,False
+habit_cfx_0103,000128_01,000128,S7025,Organizing box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8126090763853152,False
+habit_cfx_0104,000128_01,000128,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8126090763853152,False
+habit_cfx_0105,000129_01,000129,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.06589370068350783,False
+habit_cfx_0106,000129_01,000129,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.06589370068350783,False
+habit_cfx_0107,000129_01,000129,S7025,Organizing box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.06589370068350783,False
+habit_cfx_0108,000129_01,000129,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.06589370068350783,False
+habit_cfx_0109,000129_01,000129,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8144532328877675,False
+habit_cfx_0110,000129_01,000129,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8144532328877675,False
+habit_cfx_0111,000129_01,000129,S7025,Organizing box,ready,counterfactual,S8940,True,False,True,False,hold_confirm,target_state_mismatch,0.8144532328877675,False
+habit_cfx_0112,000129_01,000129,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8144532328877675,False
+habit_cfx_0113,000130_01,000130,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.14259786536340488,False
+habit_cfx_0114,000130_01,000130,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.14259786536340488,False
+habit_cfx_0115,000130_01,000130,S7025,Organizing box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.14259786536340488,False
+habit_cfx_0116,000130_01,000130,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.14259786536340488,False
+habit_cfx_0117,000130_01,000130,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8117728476573336,False
+habit_cfx_0118,000130_01,000130,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8117728476573336,False
+habit_cfx_0119,000130_01,000130,S7025,Organizing box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8117728476573336,False
+habit_cfx_0120,000130_01,000130,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8117728476573336,False
+habit_cfx_0121,000131_01,000131,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.19783759657247613,False
+habit_cfx_0122,000131_01,000131,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.19783759657247613,False
+habit_cfx_0123,000131_01,000131,S7025,Organizing box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.19783759657247613,False
+habit_cfx_0124,000131_01,000131,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.19783759657247613,False
+habit_cfx_0125,000131_01,000131,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.7901020094103496,False
+habit_cfx_0126,000131_01,000131,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.7901020094103496,False
+habit_cfx_0127,000131_01,000131,S7025,Organizing box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.7901020094103496,False
+habit_cfx_0128,000131_01,000131,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.7901020094103496,False
+habit_cfx_0129,000132_01,000132,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.19048278194698187,False
+habit_cfx_0130,000132_01,000132,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.19048278194698187,False
+habit_cfx_0131,000132_01,000132,S7025,Organizing box,early,counterfactual,S8940,True,False,False,False,hold_confirm,target_state_mismatch,0.19048278194698187,False
+habit_cfx_0132,000132_01,000132,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.19048278194698187,False
+habit_cfx_0133,000132_01,000132,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8781667797315407,False
+habit_cfx_0134,000132_01,000132,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8781667797315407,False
+habit_cfx_0135,000132_01,000132,S7025,Organizing box,ready,counterfactual,S8940,True,False,True,False,hold_confirm,target_state_mismatch,0.8781667797315407,False
+habit_cfx_0136,000132_01,000132,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8781667797315407,False
+habit_cfx_0137,000133_01,000133,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.07572702811386726,False
+habit_cfx_0138,000133_01,000133,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.07572702811386726,False
+habit_cfx_0139,000133_01,000133,S7025,Organizing box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.07572702811386726,False
+habit_cfx_0140,000133_01,000133,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.07572702811386726,False
+habit_cfx_0141,000133_01,000133,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.7684737584993587,False
+habit_cfx_0142,000133_01,000133,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.7684737584993587,False
+habit_cfx_0143,000133_01,000133,S7025,Organizing box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.7684737584993587,False
+habit_cfx_0144,000133_01,000133,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.7684737584993587,False
+habit_cfx_0145,000135_01,000135,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.12293778248442891,False
+habit_cfx_0146,000135_01,000135,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.12293778248442891,False
+habit_cfx_0147,000135_01,000135,S7025,Organizing box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.12293778248442891,False
+habit_cfx_0148,000135_01,000135,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.12293778248442891,False
+habit_cfx_0149,000135_01,000135,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.7248025267514352,False
+habit_cfx_0150,000135_01,000135,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.7248025267514352,False
+habit_cfx_0151,000135_01,000135,S7025,Organizing box,ready,counterfactual,S8940,True,False,True,False,hold_confirm,target_state_mismatch,0.7248025267514352,False
+habit_cfx_0152,000135_01,000135,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.7248025267514352,False
+habit_cfx_0153,000137_01,000137,S7025,Organizing box,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.10578522902506014,False
+habit_cfx_0154,000137_01,000137,S7025,Organizing box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.10578522902506014,False
+habit_cfx_0155,000137_01,000137,S7025,Organizing box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.10578522902506014,False
+habit_cfx_0156,000137_01,000137,S7025,Organizing box,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.10578522902506014,False
+habit_cfx_0157,000137_01,000137,S7025,Organizing box,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.6759478065224412,False
+habit_cfx_0158,000137_01,000137,S7025,Organizing box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.6759478065224412,False
+habit_cfx_0159,000137_01,000137,S7025,Organizing box,ready,counterfactual,S8940,True,False,True,False,hold_confirm,target_state_mismatch,0.6759478065224412,False
+habit_cfx_0160,000137_01,000137,S7025,Organizing box,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.6759478065224412,False
+habit_cfx_0161,002888_01,002888,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.07117928918823074,False
+habit_cfx_0162,002888_01,002888,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.07117928918823074,False
+habit_cfx_0163,002888_01,002888,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.07117928918823074,False
+habit_cfx_0164,002888_01,002888,S7414,Paper to-go box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.07117928918823074,False
+habit_cfx_0165,002888_01,002888,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8850806330906826,False
+habit_cfx_0166,002888_01,002888,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8850806330906826,False
+habit_cfx_0167,002888_01,002888,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8850806330906826,False
+habit_cfx_0168,002888_01,002888,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8850806330906826,False
+habit_cfx_0169,002889_01,002889,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.09293049839995662,False
+habit_cfx_0170,002889_01,002889,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.09293049839995662,False
+habit_cfx_0171,002889_01,002889,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.09293049839995662,False
+habit_cfx_0172,002889_01,002889,S7414,Paper to-go box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.09293049839995662,False
+habit_cfx_0173,002889_01,002889,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8769195361704208,False
+habit_cfx_0174,002889_01,002889,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8769195361704208,False
+habit_cfx_0175,002889_01,002889,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8769195361704208,False
+habit_cfx_0176,002889_01,002889,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8769195361704208,False
+habit_cfx_0177,002890_01,002890,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.06571778796290739,False
+habit_cfx_0178,002890_01,002890,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.06571778796290739,False
+habit_cfx_0179,002890_01,002890,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.06571778796290739,False
+habit_cfx_0180,002890_01,002890,S7414,Paper to-go box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.06571778796290739,False
+habit_cfx_0181,002890_01,002890,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9338272611196587,False
+habit_cfx_0182,002890_01,002890,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9338272611196587,False
+habit_cfx_0183,002890_01,002890,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9338272611196587,False
+habit_cfx_0184,002890_01,002890,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9338272611196587,False
+habit_cfx_0185,002891_01,002891,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.08839160031579293,False
+habit_cfx_0186,002891_01,002891,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.08839160031579293,False
+habit_cfx_0187,002891_01,002891,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.08839160031579293,False
+habit_cfx_0188,002891_01,002891,S7414,Paper to-go box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.08839160031579293,False
+habit_cfx_0189,002891_01,002891,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8697436915734554,False
+habit_cfx_0190,002891_01,002891,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8697436915734554,False
+habit_cfx_0191,002891_01,002891,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8697436915734554,False
+habit_cfx_0192,002891_01,002891,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8697436915734554,False
+habit_cfx_0193,002892_01,002892,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.06858834909109414,False
+habit_cfx_0194,002892_01,002892,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.06858834909109414,False
+habit_cfx_0195,002892_01,002892,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.06858834909109414,False
+habit_cfx_0196,002892_01,002892,S7414,Paper to-go box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.06858834909109414,False
+habit_cfx_0197,002892_01,002892,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9158603303197418,False
+habit_cfx_0198,002892_01,002892,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9158603303197418,False
+habit_cfx_0199,002892_01,002892,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9158603303197418,False
+habit_cfx_0200,002892_01,002892,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9158603303197418,False
+habit_cfx_0201,002894_01,002894,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.11632166499284465,False
+habit_cfx_0202,002894_01,002894,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.11632166499284465,False
+habit_cfx_0203,002894_01,002894,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.11632166499284465,False
+habit_cfx_0204,002894_01,002894,S7414,Paper to-go box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.11632166499284465,False
+habit_cfx_0205,002894_01,002894,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9439196781546667,False
+habit_cfx_0206,002894_01,002894,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9439196781546667,False
+habit_cfx_0207,002894_01,002894,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9439196781546667,False
+habit_cfx_0208,002894_01,002894,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9439196781546667,False
+habit_cfx_0209,002895_01,002895,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.09998402488102902,False
+habit_cfx_0210,002895_01,002895,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.09998402488102902,False
+habit_cfx_0211,002895_01,002895,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.09998402488102902,False
+habit_cfx_0212,002895_01,002895,S7414,Paper to-go box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.09998402488102902,False
+habit_cfx_0213,002895_01,002895,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9469735732150207,False
+habit_cfx_0214,002895_01,002895,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9469735732150207,False
+habit_cfx_0215,002895_01,002895,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9469735732150207,False
+habit_cfx_0216,002895_01,002895,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9469735732150207,False
+habit_cfx_0217,002896_01,002896,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.09198282586988146,False
+habit_cfx_0218,002896_01,002896,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.09198282586988146,False
+habit_cfx_0219,002896_01,002896,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.09198282586988146,False
+habit_cfx_0220,002896_01,002896,S7414,Paper to-go box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.09198282586988146,False
+habit_cfx_0221,002896_01,002896,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8218464134321105,False
+habit_cfx_0222,002896_01,002896,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.8218464134321105,False
+habit_cfx_0223,002896_01,002896,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8218464134321105,False
+habit_cfx_0224,002896_01,002896,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8218464134321105,False
+habit_cfx_0225,002898_01,002898,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.09067443574199707,False
+habit_cfx_0226,002898_01,002898,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.09067443574199707,False
+habit_cfx_0227,002898_01,002898,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.09067443574199707,False
+habit_cfx_0228,002898_01,002898,S7414,Paper to-go box,early,counterfactual,S8940,True,False,False,False,hold_confirm,target_state_mismatch,0.09067443574199707,False
+habit_cfx_0229,002898_01,002898,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9099393990914546,False
+habit_cfx_0230,002898_01,002898,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9099393990914546,False
+habit_cfx_0231,002898_01,002898,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9099393990914546,False
+habit_cfx_0232,002898_01,002898,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9099393990914546,False
+habit_cfx_0233,002899_01,002899,S7414,Paper to-go box,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.09935265519841559,False
+habit_cfx_0234,002899_01,002899,S7414,Paper to-go box,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.09935265519841559,False
+habit_cfx_0235,002899_01,002899,S7414,Paper to-go box,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.09935265519841559,False
+habit_cfx_0236,002899_01,002899,S7414,Paper to-go box,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.09935265519841559,False
+habit_cfx_0237,002899_01,002899,S7414,Paper to-go box,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9297348387139566,False
+habit_cfx_0238,002899_01,002899,S7414,Paper to-go box,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9297348387139566,False
+habit_cfx_0239,002899_01,002899,S7414,Paper to-go box,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9297348387139566,False
+habit_cfx_0240,002899_01,002899,S7414,Paper to-go box,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9297348387139566,False
+habit_cfx_0241,008354_01,008354,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.2756970854754759,False
+habit_cfx_0242,008354_01,008354,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.2756970854754759,False
+habit_cfx_0243,008354_01,008354,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.2756970854754759,False
+habit_cfx_0244,008354_01,008354,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.2756970854754759,False
+habit_cfx_0245,008354_01,008354,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.7106319191020816,False
+habit_cfx_0246,008354_01,008354,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.7106319191020816,False
+habit_cfx_0247,008354_01,008354,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.7106319191020816,False
+habit_cfx_0248,008354_01,008354,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.7106319191020816,False
+habit_cfx_0249,008364_01,008364,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.4337464916931842,False
+habit_cfx_0250,008364_01,008364,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.4337464916931842,False
+habit_cfx_0251,008364_01,008364,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.4337464916931842,False
+habit_cfx_0252,008364_01,008364,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.4337464916931842,False
+habit_cfx_0253,008364_01,008364,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9093373452458308,False
+habit_cfx_0254,008364_01,008364,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.9093373452458308,False
+habit_cfx_0255,008364_01,008364,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9093373452458308,False
+habit_cfx_0256,008364_01,008364,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9093373452458308,False
+habit_cfx_0257,008372_02,008372,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.5698434889308098,False
+habit_cfx_0258,008372_02,008372,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.5698434889308098,False
+habit_cfx_0259,008372_02,008372,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.5698434889308098,False
+habit_cfx_0260,008372_02,008372,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.5698434889308098,False
+habit_cfx_0261,008372_02,008372,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8293892339355269,False
+habit_cfx_0262,008372_02,008372,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.8293892339355269,False
+habit_cfx_0263,008372_02,008372,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8293892339355269,False
+habit_cfx_0264,008372_02,008372,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8293892339355269,False
+habit_cfx_0265,008462_01,008462,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.352746657404116,False
+habit_cfx_0266,008462_01,008462,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.352746657404116,False
+habit_cfx_0267,008462_01,008462,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.352746657404116,False
+habit_cfx_0268,008462_01,008462,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.352746657404116,False
+habit_cfx_0269,008462_01,008462,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.875546244241227,False
+habit_cfx_0270,008462_01,008462,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.875546244241227,False
+habit_cfx_0271,008462_01,008462,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.875546244241227,False
+habit_cfx_0272,008462_01,008462,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.875546244241227,False
+habit_cfx_0273,008475_01,008475,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.2941236671573512,False
+habit_cfx_0274,008475_01,008475,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.2941236671573512,False
+habit_cfx_0275,008475_01,008475,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.2941236671573512,False
+habit_cfx_0276,008475_01,008475,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.2941236671573512,False
+habit_cfx_0277,008475_01,008475,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.7734430440173119,False
+habit_cfx_0278,008475_01,008475,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.7734430440173119,False
+habit_cfx_0279,008475_01,008475,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.7734430440173119,False
+habit_cfx_0280,008475_01,008475,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.7734430440173119,False
+habit_cfx_0281,008495_02,008495,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.4352436003562298,False
+habit_cfx_0282,008495_02,008495,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.4352436003562298,False
+habit_cfx_0283,008495_02,008495,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.4352436003562298,False
+habit_cfx_0284,008495_02,008495,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.4352436003562298,False
+habit_cfx_0285,008495_02,008495,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.5999592899593257,False
+habit_cfx_0286,008495_02,008495,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.5999592899593257,False
+habit_cfx_0287,008495_02,008495,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.5999592899593257,False
+habit_cfx_0288,008495_02,008495,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.5999592899593257,False
+habit_cfx_0289,008524_02,008524,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.30223392581451386,False
+habit_cfx_0290,008524_02,008524,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.30223392581451386,False
+habit_cfx_0291,008524_02,008524,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.30223392581451386,False
+habit_cfx_0292,008524_02,008524,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.30223392581451386,False
+habit_cfx_0293,008524_02,008524,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.5059317025217817,False
+habit_cfx_0294,008524_02,008524,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.5059317025217817,False
+habit_cfx_0295,008524_02,008524,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.5059317025217817,False
+habit_cfx_0296,008524_02,008524,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.5059317025217817,False
+habit_cfx_0297,009796_02,009796,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.1418504191278284,False
+habit_cfx_0298,009796_02,009796,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.1418504191278284,False
+habit_cfx_0299,009796_02,009796,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.1418504191278284,False
+habit_cfx_0300,009796_02,009796,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.1418504191278284,False
+habit_cfx_0301,009796_02,009796,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.4523197288687617,False
+habit_cfx_0302,009796_02,009796,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.4523197288687617,False
+habit_cfx_0303,009796_02,009796,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.4523197288687617,False
+habit_cfx_0304,009796_02,009796,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.4523197288687617,False
+habit_cfx_0305,009797_02,009797,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.12301382169682357,False
+habit_cfx_0306,009797_02,009797,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.12301382169682357,False
+habit_cfx_0307,009797_02,009797,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.12301382169682357,False
+habit_cfx_0308,009797_02,009797,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.12301382169682357,False
+habit_cfx_0309,009797_02,009797,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.17972383020721805,False
+habit_cfx_0310,009797_02,009797,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.17972383020721805,False
+habit_cfx_0311,009797_02,009797,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.17972383020721805,False
+habit_cfx_0312,009797_02,009797,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.17972383020721805,False
+habit_cfx_0313,009801_02,009801,S7788,iced cup,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.1370770066018925,False
+habit_cfx_0314,009801_02,009801,S7788,iced cup,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.1370770066018925,False
+habit_cfx_0315,009801_02,009801,S7788,iced cup,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.1370770066018925,False
+habit_cfx_0316,009801_02,009801,S7788,iced cup,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.1370770066018925,False
+habit_cfx_0317,009801_02,009801,S7788,iced cup,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.09278854646302195,False
+habit_cfx_0318,009801_02,009801,S7788,iced cup,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.09278854646302195,False
+habit_cfx_0319,009801_02,009801,S7788,iced cup,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.09278854646302195,False
+habit_cfx_0320,009801_02,009801,S7788,iced cup,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.09278854646302195,False
+habit_cfx_0321,007309_01,007309,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.15362660860230165,False
+habit_cfx_0322,007309_01,007309,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.15362660860230165,False
+habit_cfx_0323,007309_01,007309,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.15362660860230165,False
+habit_cfx_0324,007309_01,007309,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.15362660860230165,False
+habit_cfx_0325,007309_01,007309,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8802933259424847,False
+habit_cfx_0326,007309_01,007309,S8940,Airtight Container lid,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.8802933259424847,False
+habit_cfx_0327,007309_01,007309,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8802933259424847,False
+habit_cfx_0328,007309_01,007309,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8802933259424847,False
+habit_cfx_0329,007310_01,007310,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.09064752451156366,False
+habit_cfx_0330,007310_01,007310,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.09064752451156366,False
+habit_cfx_0331,007310_01,007310,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.09064752451156366,False
+habit_cfx_0332,007310_01,007310,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.09064752451156366,False
+habit_cfx_0333,007310_01,007310,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8393579383379276,False
+habit_cfx_0334,007310_01,007310,S8940,Airtight Container lid,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8393579383379276,False
+habit_cfx_0335,007310_01,007310,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8393579383379276,False
+habit_cfx_0336,007310_01,007310,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8393579383379276,False
+habit_cfx_0337,007312_01,007312,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.08678174114717235,False
+habit_cfx_0338,007312_01,007312,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.08678174114717235,False
+habit_cfx_0339,007312_01,007312,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.08678174114717235,False
+habit_cfx_0340,007312_01,007312,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.08678174114717235,False
+habit_cfx_0341,007312_01,007312,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8848110689785276,False
+habit_cfx_0342,007312_01,007312,S8940,Airtight Container lid,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8848110689785276,False
+habit_cfx_0343,007312_01,007312,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8848110689785276,False
+habit_cfx_0344,007312_01,007312,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8848110689785276,False
+habit_cfx_0345,007313_01,007313,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.09920401601832542,False
+habit_cfx_0346,007313_01,007313,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.09920401601832542,False
+habit_cfx_0347,007313_01,007313,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.09920401601832542,False
+habit_cfx_0348,007313_01,007313,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.09920401601832542,False
+habit_cfx_0349,007313_01,007313,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9073147454776027,False
+habit_cfx_0350,007313_01,007313,S8940,Airtight Container lid,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.9073147454776027,False
+habit_cfx_0351,007313_01,007313,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9073147454776027,False
+habit_cfx_0352,007313_01,007313,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9073147454776027,False
+habit_cfx_0353,007314_01,007314,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.09078680373478579,False
+habit_cfx_0354,007314_01,007314,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.09078680373478579,False
+habit_cfx_0355,007314_01,007314,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.09078680373478579,False
+habit_cfx_0356,007314_01,007314,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.09078680373478579,False
+habit_cfx_0357,007314_01,007314,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8876257132372228,False
+habit_cfx_0358,007314_01,007314,S8940,Airtight Container lid,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8876257132372228,False
+habit_cfx_0359,007314_01,007314,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8876257132372228,False
+habit_cfx_0360,007314_01,007314,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8876257132372228,False
+habit_cfx_0361,007315_01,007315,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.1384753344730794,False
+habit_cfx_0362,007315_01,007315,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.1384753344730794,False
+habit_cfx_0363,007315_01,007315,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.1384753344730794,False
+habit_cfx_0364,007315_01,007315,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.1384753344730794,False
+habit_cfx_0365,007315_01,007315,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.836361134028381,False
+habit_cfx_0366,007315_01,007315,S8940,Airtight Container lid,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.836361134028381,False
+habit_cfx_0367,007315_01,007315,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.836361134028381,False
+habit_cfx_0368,007315_01,007315,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.836361134028381,False
+habit_cfx_0369,007316_01,007316,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.07805624052736453,False
+habit_cfx_0370,007316_01,007316,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.07805624052736453,False
+habit_cfx_0371,007316_01,007316,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.07805624052736453,False
+habit_cfx_0372,007316_01,007316,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.07805624052736453,False
+habit_cfx_0373,007316_01,007316,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9328541876769552,False
+habit_cfx_0374,007316_01,007316,S8940,Airtight Container lid,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9328541876769552,False
+habit_cfx_0375,007316_01,007316,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9328541876769552,False
+habit_cfx_0376,007316_01,007316,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9328541876769552,False
+habit_cfx_0377,007317_01,007317,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.03390499846130472,False
+habit_cfx_0378,007317_01,007317,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.03390499846130472,False
+habit_cfx_0379,007317_01,007317,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.03390499846130472,False
+habit_cfx_0380,007317_01,007317,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.03390499846130472,False
+habit_cfx_0381,007317_01,007317,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8892940608877898,False
+habit_cfx_0382,007317_01,007317,S8940,Airtight Container lid,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.8892940608877898,False
+habit_cfx_0383,007317_01,007317,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.8892940608877898,False
+habit_cfx_0384,007317_01,007317,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.8892940608877898,False
+habit_cfx_0385,007321_01,007321,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.08685742760766907,False
+habit_cfx_0386,007321_01,007321,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.08685742760766907,False
+habit_cfx_0387,007321_01,007321,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.08685742760766907,False
+habit_cfx_0388,007321_01,007321,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.08685742760766907,False
+habit_cfx_0389,007321_01,007321,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9612387835801528,False
+habit_cfx_0390,007321_01,007321,S8940,Airtight Container lid,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9612387835801528,False
+habit_cfx_0391,007321_01,007321,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9612387835801528,False
+habit_cfx_0392,007321_01,007321,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9612387835801528,False
+habit_cfx_0393,007322_01,007322,S8940,Airtight Container lid,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.0840677091742321,False
+habit_cfx_0394,007322_01,007322,S8940,Airtight Container lid,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.0840677091742321,False
+habit_cfx_0395,007322_01,007322,S8940,Airtight Container lid,early,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.0840677091742321,False
+habit_cfx_0396,007322_01,007322,S8940,Airtight Container lid,early,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.0840677091742321,False
+habit_cfx_0397,007322_01,007322,S8940,Airtight Container lid,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9468591375438491,False
+habit_cfx_0398,007322_01,007322,S8940,Airtight Container lid,ready,counterfactual,S7414,True,False,True,False,hold_confirm,target_state_mismatch,0.9468591375438491,False
+habit_cfx_0399,007322_01,007322,S8940,Airtight Container lid,ready,counterfactual,S7788,False,False,False,False,hold_confirm,target_state_mismatch,0.9468591375438491,False
+habit_cfx_0400,007322_01,007322,S8940,Airtight Container lid,ready,counterfactual,S8975,False,False,False,False,hold_confirm,target_state_mismatch,0.9468591375438491,False
+habit_cfx_0401,005687_01,005687,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.13526361494986008,False
+habit_cfx_0402,005687_01,005687,S8975,100 cm Hotel Towel,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.13526361494986008,False
+habit_cfx_0403,005687_01,005687,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.13526361494986008,False
+habit_cfx_0404,005687_01,005687,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.13526361494986008,False
+habit_cfx_0405,005687_01,005687,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8921289323394731,False
+habit_cfx_0406,005687_01,005687,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.8921289323394731,False
+habit_cfx_0407,005687_01,005687,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8921289323394731,False
+habit_cfx_0408,005687_01,005687,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8921289323394731,False
+habit_cfx_0409,005688_01,005688,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.17343695786203922,False
+habit_cfx_0410,005688_01,005688,S8975,100 cm Hotel Towel,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.17343695786203922,False
+habit_cfx_0411,005688_01,005688,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.17343695786203922,False
+habit_cfx_0412,005688_01,005688,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.17343695786203922,False
+habit_cfx_0413,005688_01,005688,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.8274731719688633,False
+habit_cfx_0414,005688_01,005688,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.8274731719688633,False
+habit_cfx_0415,005688_01,005688,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.8274731719688633,False
+habit_cfx_0416,005688_01,005688,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.8274731719688633,False
+habit_cfx_0417,005691_01,005691,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.2173794409155415,False
+habit_cfx_0418,005691_01,005691,S8975,100 cm Hotel Towel,early,counterfactual,S7025,True,False,False,False,hold_confirm,target_state_mismatch,0.2173794409155415,False
+habit_cfx_0419,005691_01,005691,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.2173794409155415,False
+habit_cfx_0420,005691_01,005691,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.2173794409155415,False
+habit_cfx_0421,005691_01,005691,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9632364023524762,False
+habit_cfx_0422,005691_01,005691,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.9632364023524762,False
+habit_cfx_0423,005691_01,005691,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9632364023524762,False
+habit_cfx_0424,005691_01,005691,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9632364023524762,False
+habit_cfx_0425,005692_01,005692,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.07463346840987095,False
+habit_cfx_0426,005692_01,005692,S8975,100 cm Hotel Towel,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.07463346840987095,False
+habit_cfx_0427,005692_01,005692,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.07463346840987095,False
+habit_cfx_0428,005692_01,005692,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.07463346840987095,False
+habit_cfx_0429,005692_01,005692,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9685934670971063,False
+habit_cfx_0430,005692_01,005692,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.9685934670971063,False
+habit_cfx_0431,005692_01,005692,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9685934670971063,False
+habit_cfx_0432,005692_01,005692,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9685934670971063,False
+habit_cfx_0433,005693_01,005693,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.1601314203164515,False
+habit_cfx_0434,005693_01,005693,S8975,100 cm Hotel Towel,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.1601314203164515,False
+habit_cfx_0435,005693_01,005693,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.1601314203164515,False
+habit_cfx_0436,005693_01,005693,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.1601314203164515,False
+habit_cfx_0437,005693_01,005693,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9330952305113103,False
+habit_cfx_0438,005693_01,005693,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.9330952305113103,False
+habit_cfx_0439,005693_01,005693,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9330952305113103,False
+habit_cfx_0440,005693_01,005693,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9330952305113103,False
+habit_cfx_0441,005694_01,005694,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.1376208536925431,False
+habit_cfx_0442,005694_01,005694,S8975,100 cm Hotel Towel,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.1376208536925431,False
+habit_cfx_0443,005694_01,005694,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.1376208536925431,False
+habit_cfx_0444,005694_01,005694,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.1376208536925431,False
+habit_cfx_0445,005694_01,005694,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9597224076017676,False
+habit_cfx_0446,005694_01,005694,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.9597224076017676,False
+habit_cfx_0447,005694_01,005694,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9597224076017676,False
+habit_cfx_0448,005694_01,005694,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9597224076017676,False
+habit_cfx_0449,005695_01,005695,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.07763728156449755,False
+habit_cfx_0450,005695_01,005695,S8975,100 cm Hotel Towel,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.07763728156449755,False
+habit_cfx_0451,005695_01,005695,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.07763728156449755,False
+habit_cfx_0452,005695_01,005695,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.07763728156449755,False
+habit_cfx_0453,005695_01,005695,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.939338348591294,False
+habit_cfx_0454,005695_01,005695,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.939338348591294,False
+habit_cfx_0455,005695_01,005695,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.939338348591294,False
+habit_cfx_0456,005695_01,005695,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.939338348591294,False
+habit_cfx_0457,005696_01,005696,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.17975789327022199,False
+habit_cfx_0458,005696_01,005696,S8975,100 cm Hotel Towel,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.17975789327022199,False
+habit_cfx_0459,005696_01,005696,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.17975789327022199,False
+habit_cfx_0460,005696_01,005696,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.17975789327022199,False
+habit_cfx_0461,005696_01,005696,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9335241164932431,False
+habit_cfx_0462,005696_01,005696,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.9335241164932431,False
+habit_cfx_0463,005696_01,005696,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9335241164932431,False
+habit_cfx_0464,005696_01,005696,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9335241164932431,False
+habit_cfx_0465,005697_01,005697,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.08129516065073251,False
+habit_cfx_0466,005697_01,005697,S8975,100 cm Hotel Towel,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.08129516065073251,False
+habit_cfx_0467,005697_01,005697,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.08129516065073251,False
+habit_cfx_0468,005697_01,005697,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.08129516065073251,False
+habit_cfx_0469,005697_01,005697,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.9275869781370472,False
+habit_cfx_0470,005697_01,005697,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.9275869781370472,False
+habit_cfx_0471,005697_01,005697,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.9275869781370472,False
+habit_cfx_0472,005697_01,005697,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.9275869781370472,False
+habit_cfx_0473,005698_01,005698,S8975,100 cm Hotel Towel,early,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.0846057787399409,False
+habit_cfx_0474,005698_01,005698,S8975,100 cm Hotel Towel,early,counterfactual,S7025,False,False,False,False,hold_confirm,target_state_mismatch,0.0846057787399409,False
+habit_cfx_0475,005698_01,005698,S8975,100 cm Hotel Towel,early,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.0846057787399409,False
+habit_cfx_0476,005698_01,005698,S8975,100 cm Hotel Towel,early,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.0846057787399409,False
+habit_cfx_0477,005698_01,005698,S8975,100 cm Hotel Towel,ready,counterfactual,S6759,False,False,False,False,hold_confirm,target_state_mismatch,0.979608839198447,False
+habit_cfx_0478,005698_01,005698,S8975,100 cm Hotel Towel,ready,counterfactual,S7025,True,False,True,False,hold_confirm,target_state_mismatch,0.979608839198447,False
+habit_cfx_0479,005698_01,005698,S8975,100 cm Hotel Towel,ready,counterfactual,S7414,False,False,False,False,hold_confirm,target_state_mismatch,0.979608839198447,False
+habit_cfx_0480,005698_01,005698,S8975,100 cm Hotel Towel,ready,counterfactual,S8940,False,False,False,False,hold_confirm,target_state_mismatch,0.979608839198447,False

@@ -1,0 +1,76 @@
+{
+  "all_view_merge_budget": 0.3161490014093072,
+  "all_view_merge_budget_ratio": 0.053246951132410174,
+  "all_view_merge_posterior_l1": 0.3195669595401309,
+  "bootstrap_selected": [
+    {
+      "arm": "A2_false_split_m8",
+      "bootstrap": "two-stage seed-then-instance paired bootstrap",
+      "ci_high": "14.781749354395998",
+      "ci_low": "12.796496885092242",
+      "delta": "13.800661730659026",
+      "draws": "2000",
+      "instances_per_seed": "[897]",
+      "metric": "evidence_budget",
+      "outer_seeds": "5"
+    },
+    {
+      "arm": "A3_false_merge",
+      "bootstrap": "two-stage seed-then-instance paired bootstrap",
+      "ci_high": "-5.30078557908895",
+      "ci_low": "-5.943896331746367",
+      "delta": "-5.6212613983548705",
+      "draws": "2000",
+      "instances_per_seed": "[897]",
+      "metric": "evidence_budget",
+      "outer_seeds": "5"
+    }
+  ],
+  "false_split_m8_budget": 19.738072130423205,
+  "false_split_m8_budget_ratio": 3.324357051553512,
+  "false_split_m8_posterior_l1": 0.33984687164671684,
+  "native_accuracy": 0.6639910813823857,
+  "native_evidence_budget": 5.937410399764179,
+  "selected_rows": [
+    {
+      "accuracy": 0.6639910813823857,
+      "arm": "A0_native",
+      "mean_component_count": 3.0,
+      "mean_evidence_budget": 5.937410399764179,
+      "mean_posterior_l1_from_A0": 0.0,
+      "mean_score_drift_from_A0": 0.0,
+      "n": 4485,
+      "ncs_aurc_full_support": 0.23125835829932087
+    },
+    {
+      "accuracy": 0.6639910813823857,
+      "arm": "A1_conserved_exact_m8",
+      "mean_component_count": 3.0,
+      "mean_evidence_budget": 5.937410399764179,
+      "mean_posterior_l1_from_A0": 0.0,
+      "mean_score_drift_from_A0": 0.0,
+      "n": 4485,
+      "ncs_aurc_full_support": 0.23125835829932087
+    },
+    {
+      "accuracy": 0.6178372352285396,
+      "arm": "A2_false_split_m8",
+      "mean_component_count": 10.0,
+      "mean_evidence_budget": 19.738072130423205,
+      "mean_posterior_l1_from_A0": 0.33984687164671684,
+      "mean_score_drift_from_A0": 0.21802382251491148,
+      "n": 4485,
+      "ncs_aurc_full_support": 0.2896134598037854
+    },
+    {
+      "accuracy": 0.579041248606466,
+      "arm": "A3_false_merge",
+      "mean_component_count": 1.0,
+      "mean_evidence_budget": 0.3161490014093072,
+      "mean_posterior_l1_from_A0": 0.3195669595401309,
+      "mean_score_drift_from_A0": -0.23552780212621016,
+      "n": 4485,
+      "ncs_aurc_full_support": 0.2864547490426333
+    }
+  ]
+}

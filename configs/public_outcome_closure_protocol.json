@@ -1,0 +1,94 @@
+{
+  "version": "public-outcome-closure-1.0",
+  "locked_at": "2026-07-31",
+  "scope": "Donor-complete, record-paired outcome readout over frozen public per-view evidence; no emitter retraining.",
+  "primary_outcome": "PACT ncsAURC(false_split_m8) - ncsAURC(registered_copy_m8)",
+  "key_mechanistic_outcome": "mean posterior L1 drift(false_split_m8 from native) - mean posterior L1 drift(registered_copy_m8 from native)",
+  "secondary_outcomes": [
+    "accuracy",
+    "macro_f1",
+    "nll",
+    "brier",
+    "ece_10_equal_width_bins",
+    "risk_at_0.10_coverage",
+    "evidence_budget_ratio",
+    "top_class_flip_rate"
+  ],
+  "interventions": {
+    "native": "Each native view has a distinct registered parent.",
+    "registered_copy_m8": "The donor view has total multiplicity eight and every copy shares the donor parent.",
+    "false_split_m8": "Numerically identical donor copies are assigned distinct parents.",
+    "all_view_merge": "All native views share one declared parent; this is a coarsening boundary, not a superiority arm."
+  },
+  "donors": {
+    "policy": "Every native view is used once as donor.",
+    "primary_aggregation": "Compute each metric per seed and donor, average donors within seed, then average the five frozen seeds.",
+    "worst_donor": "Recomputed inside every bootstrap replicate; maximize loss/risk/drift metrics and minimize accuracy/F1."
+  },
+  "support": {
+    "selection": "For each pair, gamma_min is max(0.10, the largest top equal-score-group coverage over registered-copy and false-split curves across every donor and seed); gamma_max is min(0.90, the smallest full attainable coverage). Selection uses scores and record counts only, never labels.",
+    "tie_rule": "Analytic fractional inclusion within an equal-score group.",
+    "grid_points": 36,
+    "cross_pair_pooling": false
+  },
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20260731,
+    "unit": "class-stratified dataset record identifier",
+    "pairing": "All five seeds, all donors, all arms, and all methods attached to a sampled record are carried together.",
+    "interpretation": "Intervals are conditional on the five frozen emitter realizations.",
+    "interval": "two-sided percentile 95% CI",
+    "sign_filter": false
+  },
+  "integrity_gate": {
+    "float64_tolerance": 1e-12,
+    "required_equalities": [
+      "registered-copy posterior equals native posterior",
+      "predicted class equals native predicted class",
+      "non-vacuity equals native non-vacuity",
+      "evidence budget equals native evidence budget",
+      "selection-score tie groups equal native tie groups",
+      "all outcome metrics equal native outcome metrics"
+    ],
+    "failure_action": "Stop outcome inference."
+  },
+  "pairs": [
+    {
+      "pair_id": "HandWritten-Mfeat__TMC",
+      "backbone": "TMC",
+      "status": "RUN",
+      "records_per_seed": 200,
+      "views": 6
+    },
+    {
+      "pair_id": "HandWritten-Mfeat__RCML",
+      "backbone": "RCML",
+      "status": "RUN",
+      "records_per_seed": 400,
+      "views": 6
+    },
+    {
+      "pair_id": "PIE__RCML",
+      "backbone": "RCML",
+      "status": "BLOCKED_INPUT_NOT_RECOVERED",
+      "reason": "The frozen per-view PIE evidence ledger and model checkpoint are absent locally and on the retained server paths. Aggregate outcome rows cannot reconstruct donor-complete interventions. The no-retraining rule is retained."
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "path": "external/per_view_evidence.jsonl",
+      "sha256": "2245CD2B272542F0AA1BD0E4DAFF94DC962FCBE8B6B620247D5828E83D8EAB98",
+      "bytes": 8084570
+    },
+    {
+      "path": "experiments/topology_interventions.py",
+      "sha256": "97EB5F6DA4F10E2449EF64A29355F43E93395C45D530E1ED630309BA88F21CF5",
+      "bytes": 12415
+    },
+    {
+      "path": "src/action_admission/pcecf.py",
+      "sha256": "20173A49C27100AEBE1A631E4318F8F727F561370141A406520F219EB9667D5C",
+      "bytes": 7530
+    }
+  ]
+}

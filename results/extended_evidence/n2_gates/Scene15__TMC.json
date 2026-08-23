@@ -1,0 +1,7 @@
+{
+  "dataset": "Scene15",
+  "emitter": "TMC",
+  "scope": "eligibility only; no scientific claim",
+  "verdict": "UNAVAILABLE",
+  "blocking_field": "verified_processed_payload_and_per_view_export"
+}

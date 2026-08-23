@@ -1,0 +1,168 @@
+{
+  "analysis": "partition coarsening disclosure summary",
+  "budget_nonincrease_on_every_record_realization_edge": {
+    "HandWritten-Mfeat__RCML": true,
+    "HandWritten-Mfeat__TMC": true
+  },
+  "cover_edge_directions": {
+    "HandWritten-Mfeat__RCML": {
+      "native_nonvacuity": {
+        "coarsening_improves": {
+          "ci_95": [
+            0.07009345794392523,
+            0.2511974299065419
+          ],
+          "count": 160,
+          "fraction": 0.18691588785046728
+        },
+        "coarsening_worsens": {
+          "ci_95": [
+            0.5046144859813083,
+            0.7476635514018691
+          ],
+          "count": 630,
+          "fraction": 0.735981308411215
+        },
+        "tie": {
+          "ci_95": [
+            0.04672897196261682,
+            0.411214953271028
+          ],
+          "count": 66,
+          "fraction": 0.07710280373831775
+        }
+      },
+      "posterior_confidence": {
+        "coarsening_improves": {
+          "ci_95": [
+            0.0397196261682243,
+            0.0852803738317757
+          ],
+          "count": 53,
+          "fraction": 0.06191588785046729
+        },
+        "coarsening_worsens": {
+          "ci_95": [
+            0.4041764018691589,
+            0.6121787383177568
+          ],
+          "count": 458,
+          "fraction": 0.5350467289719626
+        },
+        "tie": {
+          "ci_95": [
+            0.3224007009345794,
+            0.5455607476635514
+          ],
+          "count": 345,
+          "fraction": 0.4030373831775701
+        }
+      }
+    },
+    "HandWritten-Mfeat__TMC": {
+      "native_nonvacuity": {
+        "coarsening_improves": {
+          "ci_95": [
+            0.0852803738317757,
+            0.20210280373831777
+          ],
+          "count": 146,
+          "fraction": 0.1705607476635514
+        },
+        "coarsening_worsens": {
+          "ci_95": [
+            0.6214953271028038,
+            0.8539719626168224
+          ],
+          "count": 627,
+          "fraction": 0.7324766355140186
+        },
+        "tie": {
+          "ci_95": [
+            0.011682242990654205,
+            0.24065420560747663
+          ],
+          "count": 83,
+          "fraction": 0.0969626168224299
+        }
+      },
+      "posterior_confidence": {
+        "coarsening_improves": {
+          "ci_95": [
+            0.0397196261682243,
+            0.12733644859813084
+          ],
+          "count": 80,
+          "fraction": 0.09345794392523364
+        },
+        "coarsening_worsens": {
+          "ci_95": [
+            0.5677278037383178,
+            0.9030373831775701
+          ],
+          "count": 683,
+          "fraction": 0.7978971962616822
+        },
+        "tie": {
+          "ci_95": [
+            0.0035046728971962616,
+            0.3855140186915888
+          ],
+          "count": 93,
+          "fraction": 0.10864485981308411
+        }
+      }
+    }
+  },
+  "native_non_tied_median_absolute_ncsAURC_delta": {
+    "HandWritten-Mfeat__RCML": {
+      "coarsening_improves": 0.0002739235486055729,
+      "coarsening_worsens": 0.0012130399609492333
+    },
+    "HandWritten-Mfeat__TMC": {
+      "coarsening_improves": 0.0011908846708200784,
+      "coarsening_worsens": 0.05881007964221806
+    }
+  },
+  "partition_zero_floor_counts": {
+    "HandWritten-Mfeat__RCML": {
+      "native_nonvacuity": 39,
+      "posterior_confidence": 114
+    },
+    "HandWritten-Mfeat__TMC": {
+      "native_nonvacuity": 35,
+      "posterior_confidence": 37
+    }
+  },
+  "protocol": {
+    "bootstrap_draws": 2000,
+    "bootstrap_unit": "class-stratified record identifier",
+    "cover_edges": 856,
+    "pairs": {
+      "HandWritten-Mfeat__RCML": {
+        "frozen_emitter_realizations": 5,
+        "records_per_realization": 400,
+        "views": 6
+      },
+      "HandWritten-Mfeat__TMC": {
+        "frozen_emitter_realizations": 5,
+        "records_per_realization": 200,
+        "views": 6
+      }
+    },
+    "partitions": 203,
+    "support": [
+      0.1,
+      0.9
+    ]
+  },
+  "source_artifacts": {
+    "configs/partition_coarsening_protocol.json": "CAEB69E7F4562250199598577573C60910A7F4E896B2C53A4EFBE0BCCE291E49",
+    "results/partition_coarsening_surface/COVER_EDGE_OUTCOMES.csv": "C94368ED3EFF183CF7F847F05C5D49051E22C09C40C3B05079C05305681BBA58",
+    "results/partition_coarsening_surface/COVER_EDGE_SUMMARY.csv": "32255B5424F3236719B35B23A9E35858C15F570323A9C958EF0344E2C3C049EE",
+    "results/partition_coarsening_surface/PARTITION_METRICS.csv": "8109146B844859DE7F5149820653F57C80826E9908D5BD4EC6F5C7132BCAFDA1",
+    "results/partition_coarsening_surface/RUN_MANIFEST.json": "681E72E95B498C7E612A3FECF3DBBDD82AB67C51F6D6756CB2D64E6C349C3AB1",
+    "results/partition_coarsening_surface/STRUCTURAL_GATE.json": "C8294B6EEEE3D06FCA6D98BE8F7852ECC4C2F7C2824B7DF26281F0AE86D82FD4"
+  },
+  "status": "PASS"
+}

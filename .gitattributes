@@ -1,0 +1,15 @@
+* text=auto eol=lf
+*.gz binary
+
+results/balanced_fm_panel/**/*.csv binary
+results/balanced_fm_panel/**/*.json binary
+results/balanced_fm_panel/**/*.jsonl binary
+results/balanced_fm_panel/**/*.sha256 binary
+results/h2o_stage3/*.csv binary
+results/h2o_stage3/*.json binary
+results/minimal_attribution_2x2/** binary
+results/public_outcome_closure/** binary
+results/score_verifier_factorial/** binary
+results/p0_estimand_closure/v1/inputs/** binary
+results/native_view_fm_provenance_transfer/** binary
+results/common_score_parity/** binary

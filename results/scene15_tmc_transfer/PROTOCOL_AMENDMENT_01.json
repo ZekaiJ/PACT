@@ -1,0 +1,24 @@
+﻿{
+    "schema_version":  "scene15-tmc-protocol-amendment-1.0",
+    "amended_utc":  "2026-08-13T00:46:31.8742459Z",
+    "parent_protocol_sha256":  "7c9858012b2f869533422348b871821fa3958f54f71961d58ef804e27c9bab05",
+    "reason":  "Resolve an ambiguity in the paper protocol before observing any 500-epoch native result: five-fold cross-validation selects one dataset-level learning rate, which is then held fixed across the 30 random train/test runs.",
+    "result_blinding":  {
+                            "completed_500_epoch_runs_before_amendment":  0,
+                            "inspected_native_accuracies_before_amendment":  0,
+                            "excluded_smoke":  "One 10-epoch runtime smoke test was executed with stdout suppressed; it is outside the locked scientific protocol and its generated metrics were not inspected."
+                        },
+    "revised_learning_rate_selection":  "Use seed 11 to create the prespecified stratified 80/20 split; conduct five-fold CV over the training partition for the four published candidates; select one learning rate by mean validation accuracy with published candidate order as tie-break; hold it fixed for all 30 final 500-epoch runs.",
+    "unchanged":  [
+                      "30 prespecified final seeds",
+                      "80/20 stratified outer splits",
+                      "500 epochs",
+                      "batch size 200",
+                      "TMC model and loss",
+                      "published target 0.6774",
+                      "absolute tolerance 0.02",
+                      "no tuning after results"
+                  ],
+    "runner_sha256":  "82d3e249f106cdcc17182b58cf89ccab4b23c7d6969937b4d94c3cd0a8f14622",
+    "manuscript_modified":  false
+}

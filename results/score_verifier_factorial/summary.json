@@ -1,0 +1,17 @@
+{
+  "current_policy_reproduction": "exact row-level match to canonical verifier outcomes",
+  "methods": [
+    "product_evidence_fusion",
+    "nested_evidential_composition",
+    "cautious_evidence_fusion",
+    "pcecf"
+  ],
+  "outer_fold_protocol": "each outer-fold score model and verifier threshold uses predictions generated under that fold's training-selected concentration",
+  "policy_definitions": {
+    "A_unanimous_three_source": "three-source unanimity; require three registered components",
+    "B_multi_source_three_component": "at least two supporting sources; retain the current requirement of three registered components",
+    "C_required_role_two_component": "at least two supporting sources; require language plus a physical role and two registered components"
+  },
+  "records": 31200,
+  "status": "PASS"
+}

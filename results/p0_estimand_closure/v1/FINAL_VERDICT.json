@@ -1,0 +1,31 @@
+{
+  "balanced_panel": {
+    "comparability_support": [
+      0.1,
+      0.39
+    ],
+    "registered_support": [
+      0.1,
+      0.9
+    ],
+    "status": "EXECUTED_COMPLETE",
+    "verdict": "COMPLETE_WITH_UNFAVORABLE_AND_REVERSED_ORDERINGS_RETAINED"
+  },
+  "controlled": {
+    "fixed_support": [
+      0.1,
+      0.35
+    ],
+    "status": "EXECUTED_COMPLETE",
+    "verdict": "COMPLETE"
+  },
+  "no_fabricated_results": true,
+  "no_sign_filter": true,
+  "repeated_scene_splits": {
+    "missing_inputs": [],
+    "status": "EXECUTED_COMPLETE",
+    "verdict": "EXECUTED_WITHOUT_SIGN_FILTER"
+  },
+  "status": "COMPLETE",
+  "version": "p0-estimand-closure-v1"
+}

@@ -1,0 +1,79 @@
+{
+  "version": "v1902",
+  "status": "retain_supervised_comparator",
+  "input_sha256": "638e910b42091863731fc4922c651411fac3836e855a178c26019e660a3c24c0",
+  "scene_nAURC_support": [
+    0.1,
+    0.4
+  ],
+  "joint_nAURC_support": [
+    0.1,
+    0.35
+  ],
+  "scene_holdout": {
+    "protocol": "for outer fold f, fold (f+1) mod 5 is validation and the remaining three folds are training",
+    "models": [
+      {
+        "holdout": "scene",
+        "model": "Ordered MLP",
+        "normalized_aurc": 0.0,
+        "naurc_support": "0.10--0.40",
+        "coverage": 0.13150641025641024,
+        "wrong_all": 0.0,
+        "correct_all": 0.13150641025641024
+      },
+      {
+        "holdout": "scene",
+        "model": "Deep Sets",
+        "normalized_aurc": 0.0,
+        "naurc_support": "0.10--0.40",
+        "coverage": 0.1301923076923077,
+        "wrong_all": 0.0,
+        "correct_all": 0.1301923076923077
+      },
+      {
+        "holdout": "scene",
+        "model": "Set Transformer",
+        "normalized_aurc": 0.0,
+        "naurc_support": "0.10--0.40",
+        "coverage": 0.13282051282051283,
+        "wrong_all": 0.0,
+        "correct_all": 0.13282051282051283
+      }
+    ],
+    "exact_runtime_feature_overlap_rate": 0.001346153846153846
+  },
+  "joint_scene_configuration_holdout": {
+    "protocol": "each test record is held out jointly by scene fold and stress configuration; thresholds use non-test scenes and non-test configurations",
+    "models": [
+      {
+        "holdout": "scene_and_configuration",
+        "model": "Nested evidential composition",
+        "normalized_aurc": 0.10927627375909556,
+        "naurc_support": "0.10--0.35",
+        "coverage": 0.15596153846153846,
+        "wrong_all": 0.0021153846153846153,
+        "correct_all": 0.15384615384615385
+      },
+      {
+        "holdout": "scene_and_configuration",
+        "model": "Set Transformer",
+        "normalized_aurc": 0.5578592231263529,
+        "naurc_support": "0.10--0.35",
+        "coverage": 0.09724358974358974,
+        "wrong_all": 0.05259615384615385,
+        "correct_all": 0.044647435897435896
+      }
+    ],
+    "exact_runtime_feature_overlap_rate": 0.0,
+    "set_transformer_nAURC_ci": {
+      "metric": "normalized_aurc",
+      "estimate": 0.5578592231263529,
+      "ci_low": 0.5361750788109675,
+      "ci_high": 0.5798797589706602,
+      "bootstraps": 2000
+    }
+  },
+  "interpretation": "Direct supervised source-set fusion interpolates accurately across held-out scenes when degradation configurations are represented during training, but it does not transfer reliably to an unseen configuration. The structured nested evidential composition is retained as the primary backbone.",
+  "claim_boundary": "The comparison uses controlled generator configurations and scene-disjoint folds. It does not establish open-world degradation, physical deployment, or participant-facing safety."
+}

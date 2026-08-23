@@ -1,0 +1,23 @@
+{
+  "analysis_status": "POST_HOC_SENSITIVITY",
+  "excluded_checkpoints": [
+    "llava_onevision_0_5b",
+    "llava_onevision_7b"
+  ],
+  "remaining_checkpoints": [
+    "internvl3_2b",
+    "internvl3_8b",
+    "qwen3vl_32b",
+    "qwen3vl_8b",
+    "smolvlm2_0_5b",
+    "smolvlm2_2_2b"
+  ],
+  "partition_count": 15,
+  "registered_phi_contrast": 0.406037607001406,
+  "registered_rank": 3,
+  "exact_one_sided_p": 0.2,
+  "distinct_statistic_values": 15,
+  "minimum_attainable_one_sided_p": 0.06666666666666667,
+  "can_reject_at_alpha_0_05": false,
+  "interpretation": "Removing both constant-READY LLaVA checkpoints does not confirm the declared family pairing."
+}

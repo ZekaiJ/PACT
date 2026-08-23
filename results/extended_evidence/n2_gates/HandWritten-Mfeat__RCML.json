@@ -1,0 +1,11 @@
+{
+  "dataset": "HandWritten-Mfeat",
+  "emitter": "RCML",
+  "scope": "eligibility only; no scientific claim",
+  "verdict": "PASS",
+  "blocking_field": null,
+  "payload_sha256": "8a9ad81f11c05fd7f07f1369bcbbaefc3d391bad10d3aa32366bd47d608eb05d",
+  "native_reproduction": "goalh_60_20_20_within_2pp",
+  "views": 6,
+  "classes": 10
+}

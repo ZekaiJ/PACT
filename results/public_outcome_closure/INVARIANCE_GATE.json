@@ -1,0 +1,36 @@
+{
+  "HandWritten-Mfeat__RCML": {
+    "checks": {
+      "budget": true,
+      "non_vacuity": true,
+      "outcomes": true,
+      "posterior": true,
+      "predicted_class": true,
+      "registration_blind_A1_A2": true,
+      "tie_groups": true
+    },
+    "max_budget_residual": 1.4210854715202004e-14,
+    "max_outcome_residual": 2.0816681711721684e-19,
+    "max_posterior_residual": 1.3877787807814457e-17,
+    "max_score_residual": 0.0,
+    "pass": true,
+    "tolerance": 1e-12
+  },
+  "HandWritten-Mfeat__TMC": {
+    "checks": {
+      "budget": true,
+      "non_vacuity": true,
+      "outcomes": true,
+      "posterior": true,
+      "predicted_class": true,
+      "registration_blind_A1_A2": true,
+      "tie_groups": true
+    },
+    "max_budget_residual": 3.552713678800501e-15,
+    "max_outcome_residual": 6.938893903907229e-20,
+    "max_posterior_residual": 6.938893903907228e-18,
+    "max_score_residual": 0.0,
+    "pass": true,
+    "tolerance": 1e-12
+  }
+}

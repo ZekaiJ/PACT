@@ -1,0 +1,50 @@
+name: Reproducibility report
+description: Report a result that does not reproduce or a command that fails.
+title: "[Reproducibility]: "
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Affected component
+      options:
+        - Quick start
+        - Unit tests
+        - Complete reproduction
+        - Controlled study
+        - Public multi-view transfer
+        - Foundation-model transfer
+        - HRC admission study
+        - Numerical-result index
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command or result file
+      placeholder: python analysis/verify_release.py
+    validations:
+      required: true
+  - type: textarea
+    id: mismatch
+    attributes:
+      label: Observed mismatch
+      description: State the reported value or expected check and the value or behavior you observed.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and revision
+      description: Include operating system, Python version, commit SHA, and any modified files.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Verification
+      options:
+        - label: I used an unmodified checkout at the stated commit.
+        - label: I did not include credentials, private data, or provider-restricted media.
+    validations:
+      required: true

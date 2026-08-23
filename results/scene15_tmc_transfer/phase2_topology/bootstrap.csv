@@ -1,0 +1,15 @@
+arm,metric,outer_seeds,instances_per_seed,delta,ci_low,ci_high,draws,bootstrap
+A1_conserved_exact_m2,evidence_budget,5,[897],0.0,0.0,0.0,2000,two-stage seed-then-instance paired bootstrap
+A1_conserved_exact_m2,component_count,5,[897],0.0,0.0,0.0,2000,two-stage seed-then-instance paired bootstrap
+A1_conserved_exact_m4,evidence_budget,5,[897],0.0,0.0,0.0,2000,two-stage seed-then-instance paired bootstrap
+A1_conserved_exact_m4,component_count,5,[897],0.0,0.0,0.0,2000,two-stage seed-then-instance paired bootstrap
+A1_conserved_exact_m8,evidence_budget,5,[897],0.0,0.0,0.0,2000,two-stage seed-then-instance paired bootstrap
+A1_conserved_exact_m8,component_count,5,[897],0.0,0.0,0.0,2000,two-stage seed-then-instance paired bootstrap
+A2_false_split_m2,evidence_budget,5,[897],1.9715231043798613,1.8292864449685282,2.1101674855366603,2000,two-stage seed-then-instance paired bootstrap
+A2_false_split_m2,component_count,5,[897],1.0,1.0,1.0,2000,two-stage seed-then-instance paired bootstrap
+A2_false_split_m4,evidence_budget,5,[897],5.914569313139584,5.491531046539663,6.338386680095557,2000,two-stage seed-then-instance paired bootstrap
+A2_false_split_m4,component_count,5,[897],3.0,3.0,3.0,2000,two-stage seed-then-instance paired bootstrap
+A2_false_split_m8,evidence_budget,5,[897],13.800661730659026,12.796496885092242,14.781749354395998,2000,two-stage seed-then-instance paired bootstrap
+A2_false_split_m8,component_count,5,[897],7.0,7.0,7.0,2000,two-stage seed-then-instance paired bootstrap
+A3_false_merge,evidence_budget,5,[897],-5.6212613983548705,-5.943896331746367,-5.30078557908895,2000,two-stage seed-then-instance paired bootstrap
+A3_false_merge,component_count,5,[897],-2.0,-2.0,-2.0,2000,two-stage seed-then-instance paired bootstrap

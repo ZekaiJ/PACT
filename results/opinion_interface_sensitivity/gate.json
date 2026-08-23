@@ -1,0 +1,101 @@
+{
+  "checks": {
+    "all_primary_metrics_finite": true,
+    "all_settings_have_31200_records": true,
+    "baseline_gate_pass": true,
+    "requested_setting_count_complete": true,
+    "setting_ids_unique": true
+  },
+  "claim_boundary": "Direction-free Stage-6 robustness replay on the frozen controlled opinion interface. It does not add native perception, physical execution, or a statistical independence claim.",
+  "common_support": [
+    0.1,
+    0.35
+  ],
+  "counts": {
+    "pact_lower_naurc_than_nested": 256,
+    "pact_lower_naurc_than_pooling": 256
+  },
+  "requested_settings": 256,
+  "settings": 256,
+  "status": "pass",
+  "summary": {
+    "nested_coverage": {
+      "max": 0.1319551282051282,
+      "median": 0.13110576923076922,
+      "min": 0.13044871794871796,
+      "q025": 0.13064102564102564,
+      "q975": 0.13155849358974359
+    },
+    "nested_naurc": {
+      "max": 0.22314839412948947,
+      "median": 0.11807985126030057,
+      "min": 0.10672326297421979,
+      "q025": 0.10857750221450187,
+      "q975": 0.1964378154668543
+    },
+    "nested_wrong_all": {
+      "max": 0.01730769230769231,
+      "median": 0.00040064102564102563,
+      "min": 0.0,
+      "q025": 0.0,
+      "q975": 0.01268830128205128
+    },
+    "pact_coverage": {
+      "max": 0.13147435897435897,
+      "median": 0.13110576923076922,
+      "min": 0.1305769230769231,
+      "q025": 0.13076923076923078,
+      "q975": 0.13137820512820514
+    },
+    "pact_minus_nested_naurc": {
+      "max": -0.04016625525616829,
+      "median": -0.05088685755466303,
+      "min": -0.1551153021863917,
+      "q025": -0.1289079731184211,
+      "q975": -0.04204076788621113
+    },
+    "pact_minus_pooling_naurc": {
+      "max": -0.113045239042867,
+      "median": -0.1420626753807777,
+      "min": -0.21926505254565282,
+      "q025": -0.20187338877202898,
+      "q975": -0.11895089153165074
+    },
+    "pact_naurc": {
+      "max": 0.06906470515604193,
+      "median": 0.0668727104901009,
+      "min": 0.06604064046897426,
+      "q025": 0.0661777166164039,
+      "q975": 0.06824416365298414
+    },
+    "pact_wrong_all": {
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "q025": 0.0,
+      "q975": 0.0
+    },
+    "pooling_coverage": {
+      "max": 0.13166666666666665,
+      "median": 0.13115384615384615,
+      "min": 0.13067307692307692,
+      "q025": 0.13080128205128205,
+      "q975": 0.13147435897435897
+    },
+    "pooling_naurc": {
+      "max": 0.28635316136544253,
+      "median": 0.20945206988202736,
+      "min": 0.1796022467609185,
+      "q025": 0.18566997666955046,
+      "q975": 0.268873656866399
+    },
+    "pooling_wrong_all": {
+      "max": 0.02798076923076923,
+      "median": 0.010657051282051282,
+      "min": 0.009775641025641026,
+      "q025": 0.010140224358974359,
+      "q975": 0.023229166666666665
+    }
+  },
+  "workers": 4
+}

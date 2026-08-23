@@ -1,0 +1,42 @@
+{
+  "CANONICAL_ANCHOR_CHECK.json": {
+    "bytes": 278,
+    "sha256": "bc04d538c830772b52003e018b98e3404c83f9cc732d323028ff20872ef300b6"
+  },
+  "INPUT_HASHES.json": {
+    "bytes": 930,
+    "sha256": "1f4d4db265b41b855c6f1f0c5c450a9e9bcf58fb5d10bc763a0aa6cb3bfb0593"
+  },
+  "MINIMAL_ATTRIBUTION_RESULT.json": {
+    "bytes": 34706,
+    "sha256": "1df6eb2bab8c1d9c5d497ee6568fd82d541700f025598e003e90b6a247129a6a"
+  },
+  "PROTOCOL_LOCK.json": {
+    "bytes": 1146,
+    "sha256": "2a1d6a4f9b8375e22cfe5aa04e9141ea2204bf2a30d12708f43dfed7c2c448bd"
+  },
+  "README.md": {
+    "bytes": 1082,
+    "sha256": "4699335b28d171bdeb321b34330319698e20452924f95751721d654a094294e0"
+  },
+  "accepted_count_cells.csv": {
+    "bytes": 3484,
+    "sha256": "7b8f63748431c33fb48c89f7c7b5254d31ae2dbc8aa7e67f86941c81fc12bb29"
+  },
+  "ncsaurc_cells.csv": {
+    "bytes": 2256,
+    "sha256": "1bc462ad8fd6c08ae73536f7df859269369b573e1e045335cc2f7ddab814d6b6"
+  },
+  "ncsaurc_factorial_effects.csv": {
+    "bytes": 3812,
+    "sha256": "02a13452c0094b2eaa3ad589b2ae08b76a379e22a66c7d6b8be6ba6395048447"
+  },
+  "operating_point_cells.csv": {
+    "bytes": 2004,
+    "sha256": "688dadccc13ddfe63cdc9bff6ee1aa63b6b56adc3d5abbed7013345d6aa5a365"
+  },
+  "route_transitions.csv": {
+    "bytes": 2341,
+    "sha256": "f6b120a1bb126302792dff90eb6c1da7e94a9b7689d25657cdbddf56937cf131"
+  }
+}

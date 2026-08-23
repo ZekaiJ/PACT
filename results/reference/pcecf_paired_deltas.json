@@ -1,0 +1,32 @@
+{
+  "table1_pcecf_minus_product": {
+    "ci_high": -0.12772624860269893,
+    "ci_low": -0.14006899615146307,
+    "estimand": "nAURC(pcecf) - nAURC(product_evidence_fusion)",
+    "fraction_below_zero": 1.0,
+    "left_method": "pcecf",
+    "mean": -0.13418753273608042,
+    "replicates": 2000,
+    "right_method": "product_evidence_fusion"
+  },
+  "table1_pcecf_minus_registered_lineage": {
+    "ci_high": -0.17474078511100535,
+    "ci_low": -0.19220663226278764,
+    "estimand": "nAURC(pcecf) - nAURC(registered_lineage_pooling)",
+    "fraction_below_zero": 1.0,
+    "left_method": "pcecf",
+    "mean": -0.18325646843818844,
+    "replicates": 2000,
+    "right_method": "registered_lineage_pooling"
+  },
+  "table2_pcecf_minus_nested": {
+    "ci_high": -0.056118066500494175,
+    "ci_low": -0.06719293278805778,
+    "estimand": "nAURC(pcecf) - nAURC(nested_evidential_composition)",
+    "fraction_below_zero": 1.0,
+    "left_method": "pcecf",
+    "mean": -0.06182831662300034,
+    "replicates": 2000,
+    "right_method": "nested_evidential_composition"
+  }
+}

@@ -1,0 +1,32 @@
+﻿{
+    "schema_version":  "scene15-tmc-protocol-amendment-2.0",
+    "amended_utc":  "2026-08-13T01:05:36.5082520Z",
+    "parent_amendment_sha256":  "57ea22dc9178fd04c3159e29149698c52e913feb630827f5e1ff950fe925d130",
+    "reason":  "Computational-only parallelization after two aborted runtime probes and before any 500-epoch validation or test result completed. Independent CV folds and final seeds may run concurrently on free server GPUs; all scientific settings, seeds, optimization steps, and acceptance rules are unchanged.",
+    "result_blinding":  {
+                            "completed_500_epoch_cv_tasks_before_amendment":  0,
+                            "completed_500_epoch_final_runs_before_amendment":  0,
+                            "inspected_native_accuracies_before_amendment":  0
+                        },
+    "execution":  {
+                      "physical_gpu_indices":  [
+                                                   1,
+                                                   2,
+                                                   3
+                                               ],
+                      "cv_tasks":  20,
+                      "maximum_concurrent_processes":  20,
+                      "final_run_workers":  3,
+                      "runner_sha256":  "87780afc2b7695b626dd535619ac90ec5328140e0f5e425dd83bd8d45fc75061"
+                  },
+    "unchanged":  [
+                      "dataset-level five-fold learning-rate selection",
+                      "30 prespecified final seeds",
+                      "80/20 stratified splits",
+                      "500 epochs",
+                      "batch size 200",
+                      "TMC model and loss",
+                      "PASS tolerance 0.02"
+                  ],
+    "manuscript_modified":  false
+}

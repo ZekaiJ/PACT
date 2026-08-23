@@ -1,0 +1,1424 @@
+{
+  "HandWritten-Mfeat__RCML": {
+    "max_absolute_residual": 1.1102230246251565e-16,
+    "pass": true,
+    "rows": [
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "accuracy",
+        "observed": 0.985,
+        "released": 0.985
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "macro_f1",
+        "observed": 0.9849845759091924,
+        "released": 0.9849845759091924
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "nll",
+        "observed": 0.39524711299884774,
+        "released": 0.3952471129988477
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "brier",
+        "observed": 0.12562748654961534,
+        "released": 0.12562748654961534
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "ece_10bin",
+        "observed": 0.2853529977855991,
+        "released": 0.2853529977855991
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0005548904790635545,
+        "released": 0.0005548904790635545
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "mean_component_count",
+        "observed": 6.0,
+        "released": 6.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "mean_evidence_budget",
+        "observed": 33.000984754292546,
+        "released": 33.000984754292546
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "mean_posterior_l1_from_A0",
+        "observed": 0.0,
+        "released": 0.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "mean_score_drift_from_A0",
+        "observed": 0.0,
+        "released": 0.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "accuracy",
+        "observed": 0.985,
+        "released": 0.985
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "macro_f1",
+        "observed": 0.9849845759091924,
+        "released": 0.9849845759091924
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "nll",
+        "observed": 0.39524711299884774,
+        "released": 0.3952471129988477
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "brier",
+        "observed": 0.12562748654961534,
+        "released": 0.12562748654961534
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "ece_10bin",
+        "observed": 0.2853529977855991,
+        "released": 0.2853529977855991
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0005548904790635545,
+        "released": 0.0005548904790635545
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "mean_component_count",
+        "observed": 6.0,
+        "released": 6.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "mean_evidence_budget",
+        "observed": 33.000984754292546,
+        "released": 33.000984754292546
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "mean_posterior_l1_from_A0",
+        "observed": 2.255140518769849e-20,
+        "released": 2.255140518769849e-20
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "mean_score_drift_from_A0",
+        "observed": 0.0,
+        "released": 0.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "accuracy",
+        "observed": 0.9675,
+        "released": 0.9675
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "macro_f1",
+        "observed": 0.9675148788018619,
+        "released": 0.9675148788018619
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "nll",
+        "observed": 0.31067313019964665,
+        "released": 0.31067313019964665
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "brier",
+        "observed": 0.09983447470670737,
+        "released": 0.09983447470670737
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "ece_10bin",
+        "observed": 0.19483890213276653,
+        "released": 0.1948389021327665
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.004250016080441865,
+        "released": 0.004250016080441865
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "mean_component_count",
+        "observed": 13.0,
+        "released": 13.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "mean_evidence_budget",
+        "observed": 73.1694260107645,
+        "released": 73.1694260107645
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "mean_posterior_l1_from_A0",
+        "observed": 0.22411090298099132,
+        "released": 0.2241109029809913
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "mean_score_drift_from_A0",
+        "observed": 0.10354697734958383,
+        "released": 0.10354697734958383
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "accuracy",
+        "observed": 0.9145,
+        "released": 0.9145
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "macro_f1",
+        "observed": 0.9134277867547782,
+        "released": 0.9134277867547782
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "nll",
+        "observed": 2.0435557032835296,
+        "released": 2.0435557032835296
+      },
+      {
+        "absolute_residual": 1.1102230246251565e-16,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "brier",
+        "observed": 0.8275441905338303,
+        "released": 0.8275441905338304
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "ece_10bin",
+        "observed": 0.7751014199936173,
+        "released": 0.7751014199936173
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.02116647594546486,
+        "released": 0.02116647594546486
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "mean_component_count",
+        "observed": 1.0,
+        "released": 1.0
+      },
+      {
+        "absolute_residual": 1.1102230246251565e-16,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "mean_evidence_budget",
+        "observed": 0.5316213656570354,
+        "released": 0.5316213656570353
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "mean_posterior_l1_from_A0",
+        "observed": 1.1370417256279266,
+        "released": 1.1370417256279266
+      },
+      {
+        "absolute_residual": 1.1102230246251565e-16,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "mean_score_drift_from_A0",
+        "observed": -0.7033824199998804,
+        "released": -0.7033824199998805
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "product",
+        "metric": "accuracy",
+        "observed": 0.983,
+        "released": 0.983
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "product",
+        "metric": "macro_f1",
+        "observed": 0.9829938123946791,
+        "released": 0.9829938123946791
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "product",
+        "metric": "nll",
+        "observed": 0.07397421846834042,
+        "released": 0.07397421846834042
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "product",
+        "metric": "brier",
+        "observed": 0.028409638373935415,
+        "released": 0.028409638373935415
+      },
+      {
+        "absolute_residual": 1.0408340855860843e-16,
+        "arm": "native",
+        "method": "product",
+        "metric": "ece_10bin",
+        "observed": 0.01791074738897364,
+        "released": 0.017910747388973535
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "product",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0003909446534174053,
+        "released": 0.0003909446534174053
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "accuracy",
+        "observed": 0.959,
+        "released": 0.959
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "macro_f1",
+        "observed": 0.9588384787319504,
+        "released": 0.9588384787319504
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "nll",
+        "observed": 0.16943475877761677,
+        "released": 0.16943475877761677
+      },
+      {
+        "absolute_residual": 1.3877787807814457e-17,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "brier",
+        "observed": 0.06101483158153101,
+        "released": 0.06101483158153102
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "ece_10bin",
+        "observed": 0.027383249393356617,
+        "released": 0.027383249393356617
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0026918907051924957,
+        "released": 0.0026918907051924957
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "accuracy",
+        "observed": 0.959,
+        "released": 0.959
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "macro_f1",
+        "observed": 0.9588384787319504,
+        "released": 0.9588384787319504
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "nll",
+        "observed": 0.16943475877761677,
+        "released": 0.16943475877761677
+      },
+      {
+        "absolute_residual": 1.3877787807814457e-17,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "brier",
+        "observed": 0.06101483158153101,
+        "released": 0.06101483158153102
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "ece_10bin",
+        "observed": 0.027383249393356617,
+        "released": 0.027383249393356617
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0026918907051924957,
+        "released": 0.0026918907051924957
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "accuracy",
+        "observed": 0.983,
+        "released": 0.983
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "macro_f1",
+        "observed": 0.9829938123946791,
+        "released": 0.9829938123946791
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "nll",
+        "observed": 0.07397421846834042,
+        "released": 0.07397421846834042
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "brier",
+        "observed": 0.028409638373935415,
+        "released": 0.028409638373935415
+      },
+      {
+        "absolute_residual": 1.0408340855860843e-16,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "ece_10bin",
+        "observed": 0.01791074738897364,
+        "released": 0.017910747388973535
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0003909446534174053,
+        "released": 0.0003909446534174053
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "accuracy",
+        "observed": 0.985,
+        "released": 0.985
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "macro_f1",
+        "observed": 0.9849941999557045,
+        "released": 0.9849941999557045
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "nll",
+        "observed": 0.22511363994190775,
+        "released": 0.22511363994190775
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "brier",
+        "observed": 0.06459966536048109,
+        "released": 0.06459966536048109
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "native",
+        "method": "nested",
+        "metric": "ece_10bin",
+        "observed": 0.15275359099692493,
+        "released": 0.15275359099692498
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0004544077230416837,
+        "released": 0.0004544077230416837
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "accuracy",
+        "observed": 0.9665,
+        "released": 0.9665
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "macro_f1",
+        "observed": 0.9664720794770736,
+        "released": 0.9664720794770736
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "nll",
+        "observed": 0.14827729382723853,
+        "released": 0.1482772938272385
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "brier",
+        "observed": 0.055958337142902645,
+        "released": 0.055958337142902645
+      },
+      {
+        "absolute_residual": 1.3877787807814457e-17,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "ece_10bin",
+        "observed": 0.051390083913884194,
+        "released": 0.05139008391388418
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.002804927599116473,
+        "released": 0.002804927599116473
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "accuracy",
+        "observed": 0.9665,
+        "released": 0.9665
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "macro_f1",
+        "observed": 0.9664720794770736,
+        "released": 0.9664720794770736
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "nll",
+        "observed": 0.14827729382723853,
+        "released": 0.1482772938272385
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "brier",
+        "observed": 0.055958337142902645,
+        "released": 0.055958337142902645
+      },
+      {
+        "absolute_residual": 1.3877787807814457e-17,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "ece_10bin",
+        "observed": 0.051390083913884194,
+        "released": 0.05139008391388418
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.002804927599116473,
+        "released": 0.002804927599116473
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "accuracy",
+        "observed": 0.985,
+        "released": 0.985
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "macro_f1",
+        "observed": 0.9849941999557045,
+        "released": 0.9849941999557045
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "nll",
+        "observed": 0.22511363994190775,
+        "released": 0.22511363994190775
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "brier",
+        "observed": 0.06459966536048109,
+        "released": 0.06459966536048109
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "ece_10bin",
+        "observed": 0.15275359099692493,
+        "released": 0.15275359099692498
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0004544077230416837,
+        "released": 0.0004544077230416837
+      }
+    ],
+    "tolerance": 1e-12
+  },
+  "HandWritten-Mfeat__TMC": {
+    "max_absolute_residual": 7.105427357601002e-15,
+    "pass": true,
+    "rows": [
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "accuracy",
+        "observed": 0.98,
+        "released": 0.98
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "macro_f1",
+        "observed": 0.9799874921826142,
+        "released": 0.9799874921826142
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "nll",
+        "observed": 0.650709477056065,
+        "released": 0.650709477056065
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "brier",
+        "observed": 0.2510324861135178,
+        "released": 0.2510324861135178
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "ece_10bin",
+        "observed": 0.43453361363657983,
+        "released": 0.43453361363657983
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0008360157136963482,
+        "released": 0.0008360157136963482
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "mean_component_count",
+        "observed": 6.0,
+        "released": 6.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "mean_evidence_budget",
+        "observed": 17.464904730789698,
+        "released": 17.464904730789698
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "mean_posterior_l1_from_A0",
+        "observed": 0.0,
+        "released": 0.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "PACT",
+        "metric": "mean_score_drift_from_A0",
+        "observed": 0.0,
+        "released": 0.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "accuracy",
+        "observed": 0.98,
+        "released": 0.98
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "macro_f1",
+        "observed": 0.9799874921826142,
+        "released": 0.9799874921826142
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "nll",
+        "observed": 0.650709477056065,
+        "released": 0.650709477056065
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "brier",
+        "observed": 0.2510324861135178,
+        "released": 0.2510324861135178
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "ece_10bin",
+        "observed": 0.43453361363657983,
+        "released": 0.43453361363657983
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0008360157136963482,
+        "released": 0.0008360157136963482
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "mean_component_count",
+        "observed": 6.0,
+        "released": 6.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "mean_evidence_budget",
+        "observed": 17.464904730789698,
+        "released": 17.464904730789698
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "mean_posterior_l1_from_A0",
+        "observed": 6.938893903907229e-21,
+        "released": 6.938893903907229e-21
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "PACT",
+        "metric": "mean_score_drift_from_A0",
+        "observed": 0.0,
+        "released": 0.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "accuracy",
+        "observed": 0.98,
+        "released": 0.98
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "macro_f1",
+        "observed": 0.9799874921826142,
+        "released": 0.9799874921826142
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "nll",
+        "observed": 0.585985412617593,
+        "released": 0.585985412617593
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "brier",
+        "observed": 0.22548941487217086,
+        "released": 0.22548941487217086
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "ece_10bin",
+        "observed": 0.38074817491779345,
+        "released": 0.3807481749177935
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0067764321251660995,
+        "released": 0.0067764321251660995
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "mean_component_count",
+        "observed": 13.0,
+        "released": 13.0
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "mean_evidence_budget",
+        "observed": 37.79739399729811,
+        "released": 37.797393997298116
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "mean_posterior_l1_from_A0",
+        "observed": 0.2480510304966773,
+        "released": 0.24805103049667732
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "PACT",
+        "metric": "mean_score_drift_from_A0",
+        "observed": 0.1179761713537902,
+        "released": 0.1179761713537902
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "accuracy",
+        "observed": 0.354,
+        "released": 0.354
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "macro_f1",
+        "observed": 0.25480167072649906,
+        "released": 0.25480167072649906
+      },
+      {
+        "absolute_residual": 4.440892098500626e-16,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "nll",
+        "observed": 2.2913320745307404,
+        "released": 2.291332074530741
+      },
+      {
+        "absolute_residual": 2.220446049250313e-16,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "brier",
+        "observed": 0.8976847665470259,
+        "released": 0.8976847665470261
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "ece_10bin",
+        "observed": 0.25223683724422186,
+        "released": 0.25223683724422186
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.4652814893588821,
+        "released": 0.4652814893588821
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "mean_component_count",
+        "observed": 1.0,
+        "released": 1.0
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "mean_evidence_budget",
+        "observed": 0.027720550157467272,
+        "released": 0.027720550157467272
+      },
+      {
+        "absolute_residual": 2.220446049250313e-16,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "mean_posterior_l1_from_A0",
+        "observed": 0.8995608981818441,
+        "released": 0.8995608981818444
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "PACT",
+        "metric": "mean_score_drift_from_A0",
+        "observed": -0.615653440984694,
+        "released": -0.615653440984694
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "product",
+        "metric": "accuracy",
+        "observed": 0.979,
+        "released": 0.979
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "product",
+        "metric": "macro_f1",
+        "observed": 0.9789348647566986,
+        "released": 0.9789348647566986
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "arm": "native",
+        "method": "product",
+        "metric": "nll",
+        "observed": 0.21003266757359912,
+        "released": 0.21003266757359915
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "product",
+        "metric": "brier",
+        "observed": 0.060698130097904,
+        "released": 0.060698130097904
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "native",
+        "method": "product",
+        "metric": "ece_10bin",
+        "observed": 0.1276683465372724,
+        "released": 0.12766834653727246
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "product",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.000738794294860999,
+        "released": 0.000738794294860999
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "accuracy",
+        "observed": 0.98,
+        "released": 0.98
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "macro_f1",
+        "observed": 0.9799874921826142,
+        "released": 0.9799874921826142
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "nll",
+        "observed": 0.20545133730270607,
+        "released": 0.20545133730270607
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "brier",
+        "observed": 0.05510022228864824,
+        "released": 0.05510022228864824
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "ece_10bin",
+        "observed": 0.07213445513955359,
+        "released": 0.07213445513955359
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "product",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0069634162585069485,
+        "released": 0.0069634162585069485
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "accuracy",
+        "observed": 0.98,
+        "released": 0.98
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "macro_f1",
+        "observed": 0.9799874921826142,
+        "released": 0.9799874921826142
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "nll",
+        "observed": 0.20545133730270607,
+        "released": 0.20545133730270607
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "brier",
+        "observed": 0.05510022228864824,
+        "released": 0.05510022228864824
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "ece_10bin",
+        "observed": 0.07213445513955359,
+        "released": 0.07213445513955359
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "product",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0069634162585069485,
+        "released": 0.0069634162585069485
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "accuracy",
+        "observed": 0.979,
+        "released": 0.979
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "macro_f1",
+        "observed": 0.9789348647566986,
+        "released": 0.9789348647566986
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "nll",
+        "observed": 0.21003266757359912,
+        "released": 0.21003266757359915
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "brier",
+        "observed": 0.060698130097904,
+        "released": 0.060698130097904
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "ece_10bin",
+        "observed": 0.1276683465372724,
+        "released": 0.12766834653727246
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "product",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.000738794294860999,
+        "released": 0.000738794294860999
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "accuracy",
+        "observed": 0.98,
+        "released": 0.98
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "macro_f1",
+        "observed": 0.9799874921826142,
+        "released": 0.9799874921826142
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "nll",
+        "observed": 0.5330295732310921,
+        "released": 0.5330295732310921
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "native",
+        "method": "nested",
+        "metric": "brier",
+        "observed": 0.19162217523472372,
+        "released": 0.19162217523472377
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "ece_10bin",
+        "observed": 0.3625431287890689,
+        "released": 0.3625431287890689
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "native",
+        "method": "nested",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0008060748840582397,
+        "released": 0.0008060748840582397
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "accuracy",
+        "observed": 0.98,
+        "released": 0.98
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "macro_f1",
+        "observed": 0.9799874921826142,
+        "released": 0.9799874921826142
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "nll",
+        "observed": 0.42400669249091477,
+        "released": 0.4240066924909147
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "brier",
+        "observed": 0.15621081886919017,
+        "released": 0.15621081886919014
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "ece_10bin",
+        "observed": 0.26480025504210397,
+        "released": 0.2648002550421039
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "registered_copy_m8",
+        "method": "nested",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0068791127071147155,
+        "released": 0.0068791127071147155
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "accuracy",
+        "observed": 0.98,
+        "released": 0.98
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "macro_f1",
+        "observed": 0.9799874921826142,
+        "released": 0.9799874921826142
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "nll",
+        "observed": 0.42400669249091477,
+        "released": 0.4240066924909147
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "brier",
+        "observed": 0.15621081886919017,
+        "released": 0.15621081886919014
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "ece_10bin",
+        "observed": 0.26480025504210397,
+        "released": 0.2648002550421039
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "false_split_m8",
+        "method": "nested",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0068791127071147155,
+        "released": 0.0068791127071147155
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "accuracy",
+        "observed": 0.98,
+        "released": 0.98
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "macro_f1",
+        "observed": 0.9799874921826142,
+        "released": 0.9799874921826142
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "nll",
+        "observed": 0.5330295732310921,
+        "released": 0.5330295732310921
+      },
+      {
+        "absolute_residual": 5.551115123125783e-17,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "brier",
+        "observed": 0.19162217523472372,
+        "released": 0.19162217523472377
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "ece_10bin",
+        "observed": 0.3625431287890689,
+        "released": 0.3625431287890689
+      },
+      {
+        "absolute_residual": 0.0,
+        "arm": "all_view_merge",
+        "method": "nested",
+        "metric": "ncs_aurc_full_support",
+        "observed": 0.0008060748840582397,
+        "released": 0.0008060748840582397
+      }
+    ],
+    "tolerance": 1e-12
+  }
+}

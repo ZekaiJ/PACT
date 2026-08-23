@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "rows": 100,
+  "max_ready_posterior_residual": 0.0,
+  "max_evidence_budget_residual": 1.7763568394002505e-15
+}

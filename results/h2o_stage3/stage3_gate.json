@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "denominator": {
+    "h2o_records": 60,
+    "commands": 5,
+    "settings": 4,
+    "decisions": 1200
+  },
+  "available_local_payload": "head-mounted RGB-D and camera-frame hand-object geometry",
+  "allocentric_payload": "camera-pose-transformed world-frame geometry",
+  "not_available": "a second fixed-camera RGB-D image stream",
+  "registered_lineage": "both roles descend from the same H2O frame annotation",
+  "maximum_distance_invariance_error_m": 4.492026037250518e-08,
+  "raw_registered_admission_nonincrease_violations": 318,
+  "pact_sv_admission_nonincrease_violations": 0,
+  "claim_boundary": "Real egocentric--allocentric evidence-role admission, not a two-camera, contract-accuracy, physical-robot, natural-command, or participant validation."
+}

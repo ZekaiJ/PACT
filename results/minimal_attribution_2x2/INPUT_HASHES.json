@@ -1,0 +1,26 @@
+{
+  "analysis": {
+    "path": "analysis/minimal_attribution_2x2.py",
+    "sha256": "4cf99d65cb770831250ada412a583905f7fd9f57e3c78e34c81dcf0b3050d534"
+  },
+  "config": {
+    "path": "configs/controlled_study.json",
+    "sha256": "a57d30e911b0bc9ae4c6ebbabb0f780b11924dcdd06448f593796e6387384424"
+  },
+  "evaluation_labels": {
+    "path": "data/controlled/evaluation_labels.jsonl.gz",
+    "sha256": "36d794850c1dea5dc878328d3b71a88eeca7be3ab7a8b452d60d08784705ecb8"
+  },
+  "operator": {
+    "path": "src/action_admission/pcecf.py",
+    "sha256": "20173a49c27100aebe1a631e4318f8f727f561370141a406520f219eb9667d5c"
+  },
+  "source_records": {
+    "path": "data/controlled/source_records.jsonl.gz",
+    "sha256": "d2f32efbf1674f8fa29e8d83e1453ec565c0ddd2b50031368fcc00cdf8b2784a"
+  },
+  "verifier": {
+    "path": "src/action_admission/verifier.py",
+    "sha256": "365b614b7e44e6a53ceb7661400de90ca428dfb806dfc7663d43d33ef073867a"
+  }
+}

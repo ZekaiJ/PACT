@@ -1,0 +1,317 @@
+{
+  "status": "pass",
+  "passed": 62,
+  "total": 62,
+  "checks": [
+    {
+      "check": "evidence_count",
+      "pass": true,
+      "detail": "60"
+    },
+    {
+      "check": "decision_count",
+      "pass": true,
+      "detail": "1200"
+    },
+    {
+      "check": "unique_evidence_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "unique_decision_ids",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "sequence_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "action_label_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "object_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "distance_invariance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "positive_depth",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "world_temporal_support",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all_lineage_registered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "setting_ego_plus_world_count",
+      "pass": true,
+      "detail": "300"
+    },
+    {
+      "check": "setting_ego_only_count",
+      "pass": true,
+      "detail": "300"
+    },
+    {
+      "check": "setting_world_only_count",
+      "pass": true,
+      "detail": "300"
+    },
+    {
+      "check": "setting_neither_count",
+      "pass": true,
+      "detail": "300"
+    },
+    {
+      "check": "paired_view_roles",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "ego_only_typed_hold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "world_only_typed_confirm",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "neither_typed_fallback",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_pact_sv_view_removal_violations",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "summary_ego_plus_world_raw_blind_admission_rate",
+      "pass": true,
+      "detail": "0.38 vs 0.38"
+    },
+    {
+      "check": "summary_ego_plus_world_raw_registered_admission_rate",
+      "pass": true,
+      "detail": "0.42333333333333334 vs 0.42333333333333334"
+    },
+    {
+      "check": "summary_ego_plus_world_pact_sv_admission_rate",
+      "pass": true,
+      "detail": "0.42333333333333334 vs 0.42333333333333334"
+    },
+    {
+      "check": "summary_ego_plus_world_pact_sv_release_authority_rate",
+      "pass": true,
+      "detail": "0.35 vs 0.35"
+    },
+    {
+      "check": "summary_ego_plus_world_route_sum",
+      "pass": true,
+      "detail": "1.0"
+    },
+    {
+      "check": "summary_ego_only_raw_blind_admission_rate",
+      "pass": true,
+      "detail": "0.73 vs 0.73"
+    },
+    {
+      "check": "summary_ego_only_raw_registered_admission_rate",
+      "pass": true,
+      "detail": "0.73 vs 0.73"
+    },
+    {
+      "check": "summary_ego_only_pact_sv_admission_rate",
+      "pass": true,
+      "detail": "0.0 vs 0.0"
+    },
+    {
+      "check": "summary_ego_only_pact_sv_release_authority_rate",
+      "pass": true,
+      "detail": "0.0 vs 0.0"
+    },
+    {
+      "check": "summary_ego_only_route_sum",
+      "pass": true,
+      "detail": "1.0"
+    },
+    {
+      "check": "summary_world_only_raw_blind_admission_rate",
+      "pass": true,
+      "detail": "0.6 vs 0.6"
+    },
+    {
+      "check": "summary_world_only_raw_registered_admission_rate",
+      "pass": true,
+      "detail": "0.6 vs 0.6"
+    },
+    {
+      "check": "summary_world_only_pact_sv_admission_rate",
+      "pass": true,
+      "detail": "0.0 vs 0.0"
+    },
+    {
+      "check": "summary_world_only_pact_sv_release_authority_rate",
+      "pass": true,
+      "detail": "0.0 vs 0.0"
+    },
+    {
+      "check": "summary_world_only_route_sum",
+      "pass": true,
+      "detail": "1.0"
+    },
+    {
+      "check": "summary_neither_raw_blind_admission_rate",
+      "pass": true,
+      "detail": "1.0 vs 1.0"
+    },
+    {
+      "check": "summary_neither_raw_registered_admission_rate",
+      "pass": true,
+      "detail": "1.0 vs 1.0"
+    },
+    {
+      "check": "summary_neither_pact_sv_admission_rate",
+      "pass": true,
+      "detail": "0.0 vs 0.0"
+    },
+    {
+      "check": "summary_neither_pact_sv_release_authority_rate",
+      "pass": true,
+      "detail": "0.0 vs 0.0"
+    },
+    {
+      "check": "summary_neither_route_sum",
+      "pass": true,
+      "detail": "1.0"
+    },
+    {
+      "check": "violations_raw_blind_ego_only_admission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_blind_ego_only_release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_blind_world_only_admission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_blind_world_only_release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_blind_neither_admission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_blind_neither_release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_registered_ego_only_admission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_registered_ego_only_release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_registered_world_only_admission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_registered_world_only_release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_registered_neither_admission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_raw_registered_neither_release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_pact_sv_ego_only_admission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_pact_sv_ego_only_release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_pact_sv_world_only_admission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_pact_sv_world_only_release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_pact_sv_neither_admission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "violations_pact_sv_neither_release",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "forbidden_fields_absent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_pdf_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "figure_png_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "gate_pass",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

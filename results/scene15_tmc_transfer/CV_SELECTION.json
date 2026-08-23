@@ -1,0 +1,56 @@
+{
+  "candidates": [
+    {
+      "fold_accuracies": [
+        0.713091922005571,
+        0.6991643454038997,
+        0.7075208913649025,
+        0.7252440725244073,
+        0.7252440725244073
+      ],
+      "learning_rate": 0.003,
+      "mean_validation_accuracy": 0.7140530607646376,
+      "population_std": 0.010156223296961265
+    },
+    {
+      "fold_accuracies": [
+        0.6810584958217271,
+        0.6657381615598886,
+        0.6573816155988857,
+        0.698744769874477,
+        0.6931659693165969
+      ],
+      "learning_rate": 0.001,
+      "mean_validation_accuracy": 0.6792178024343151,
+      "population_std": 0.015733796379430325
+    },
+    {
+      "fold_accuracies": [
+        0.5821727019498607,
+        0.5612813370473537,
+        0.575208913649025,
+        0.5843793584379359,
+        0.595536959553696
+      ],
+      "learning_rate": 0.0003,
+      "mean_validation_accuracy": 0.5797158541275743,
+      "population_std": 0.01129810323051814
+    },
+    {
+      "fold_accuracies": [
+        0.3064066852367688,
+        0.3565459610027855,
+        0.2994428969359331,
+        0.3319386331938633,
+        0.3068340306834031
+      ],
+      "learning_rate": 0.0001,
+      "mean_validation_accuracy": 0.3202336414105508,
+      "population_std": 0.021253614879806364
+    }
+  ],
+  "schema_version": "scene15-tmc-cv-selection-1.0",
+  "seed": 11,
+  "selected_learning_rate": 0.003,
+  "selection_rule": "maximum mean five-fold validation accuracy; published candidate order for exact ties"
+}

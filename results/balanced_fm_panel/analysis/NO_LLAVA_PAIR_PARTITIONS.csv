@@ -1,0 +1,16 @@
+rank,partition,phi_contrast,is_registered
+1,internvl3_2b + smolvlm2_0_5b | internvl3_8b + smolvlm2_2_2b | qwen3vl_32b + qwen3vl_8b,0.7502902079777277,False
+2,internvl3_2b + smolvlm2_0_5b | internvl3_8b + qwen3vl_32b | qwen3vl_8b + smolvlm2_2_2b,0.4538261677758962,False
+3,internvl3_2b + internvl3_8b | qwen3vl_32b + qwen3vl_8b | smolvlm2_0_5b + smolvlm2_2_2b,0.406037607001406,True
+4,internvl3_2b + smolvlm2_2_2b | internvl3_8b + smolvlm2_0_5b | qwen3vl_32b + qwen3vl_8b,0.3964851541819702,False
+5,internvl3_2b + smolvlm2_0_5b | internvl3_8b + qwen3vl_8b | qwen3vl_32b + smolvlm2_2_2b,0.3525615514255586,False
+6,internvl3_2b + internvl3_8b | qwen3vl_32b + smolvlm2_0_5b | qwen3vl_8b + smolvlm2_2_2b,0.1551770498715621,False
+7,internvl3_2b + qwen3vl_32b | internvl3_8b + smolvlm2_0_5b | qwen3vl_8b + smolvlm2_2_2b,0.1472879306379765,False
+8,internvl3_2b + internvl3_8b | qwen3vl_32b + smolvlm2_2_2b | qwen3vl_8b + smolvlm2_0_5b,-0.07266643294354805,False
+9,internvl3_2b + qwen3vl_8b | internvl3_8b + smolvlm2_0_5b | qwen3vl_32b + smolvlm2_2_2b,-0.0823940595840835,False
+10,internvl3_2b + qwen3vl_32b | internvl3_8b + qwen3vl_8b | smolvlm2_0_5b + smolvlm2_2_2b,-0.3474154991072919,False
+11,internvl3_2b + smolvlm2_2_2b | internvl3_8b + qwen3vl_8b | qwen3vl_32b + smolvlm2_0_5b,-0.3490788326931421,False
+12,internvl3_2b + qwen3vl_32b | internvl3_8b + smolvlm2_2_2b | qwen3vl_8b + smolvlm2_0_5b,-0.4283908825000766,False
+13,internvl3_2b + qwen3vl_8b | internvl3_8b + smolvlm2_2_2b | qwen3vl_32b + smolvlm2_0_5b,-0.4302293899070265,False
+14,internvl3_2b + smolvlm2_2_2b | internvl3_8b + qwen3vl_32b | qwen3vl_8b + smolvlm2_0_5b,-0.4756576991579146,False
+15,internvl3_2b + qwen3vl_8b | internvl3_8b + qwen3vl_32b | smolvlm2_0_5b + smolvlm2_2_2b,-0.4758328729790141,False

@@ -1,0 +1,109 @@
+{
+  "assignment_unit": "scene",
+  "fold_count": 5,
+  "folds": [
+    {
+      "fold_local_dirichlet_concentration": 8.0,
+      "outer_fold": 0,
+      "test_cluster_count": 50,
+      "test_record_count": 6500,
+      "test_scene_count": 10,
+      "test_scenes": [
+        "scene_001",
+        "scene_006",
+        "scene_011",
+        "scene_016",
+        "scene_021",
+        "scene_026",
+        "scene_031",
+        "scene_036",
+        "scene_041",
+        "scene_046"
+      ],
+      "train_record_count": 24700,
+      "train_scene_count": 38
+    },
+    {
+      "fold_local_dirichlet_concentration": 4.0,
+      "outer_fold": 1,
+      "test_cluster_count": 50,
+      "test_record_count": 6500,
+      "test_scene_count": 10,
+      "test_scenes": [
+        "scene_002",
+        "scene_007",
+        "scene_012",
+        "scene_017",
+        "scene_022",
+        "scene_027",
+        "scene_032",
+        "scene_037",
+        "scene_042",
+        "scene_047"
+      ],
+      "train_record_count": 24700,
+      "train_scene_count": 38
+    },
+    {
+      "fold_local_dirichlet_concentration": 8.0,
+      "outer_fold": 2,
+      "test_cluster_count": 50,
+      "test_record_count": 6500,
+      "test_scene_count": 10,
+      "test_scenes": [
+        "scene_003",
+        "scene_008",
+        "scene_013",
+        "scene_018",
+        "scene_023",
+        "scene_028",
+        "scene_033",
+        "scene_038",
+        "scene_043",
+        "scene_048"
+      ],
+      "train_record_count": 24700,
+      "train_scene_count": 38
+    },
+    {
+      "fold_local_dirichlet_concentration": 4.0,
+      "outer_fold": 3,
+      "test_cluster_count": 45,
+      "test_record_count": 5850,
+      "test_scene_count": 9,
+      "test_scenes": [
+        "scene_004",
+        "scene_009",
+        "scene_014",
+        "scene_019",
+        "scene_024",
+        "scene_029",
+        "scene_034",
+        "scene_039",
+        "scene_044"
+      ],
+      "train_record_count": 25350,
+      "train_scene_count": 39
+    },
+    {
+      "fold_local_dirichlet_concentration": 4.0,
+      "outer_fold": 4,
+      "test_cluster_count": 45,
+      "test_record_count": 5850,
+      "test_scene_count": 9,
+      "test_scenes": [
+        "scene_005",
+        "scene_010",
+        "scene_015",
+        "scene_020",
+        "scene_025",
+        "scene_030",
+        "scene_035",
+        "scene_040",
+        "scene_045"
+      ],
+      "train_record_count": 25350,
+      "train_scene_count": 39
+    }
+  ]
+}

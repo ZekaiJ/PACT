@@ -1,0 +1,24 @@
+{
+  "decoded_images": 11280,
+  "development_test_episode_overlap": 0,
+  "early_ready_exact_image_matches": 0,
+  "episodes": 696,
+  "errors": [],
+  "event_window_prompt_counts": [
+    20
+  ],
+  "events": 1128,
+  "frames": 11280,
+  "hashes": {
+    "PROTOCOL_LOCK.json": "a112e6221b69b316c0be005767f9bdf757a41edce172171fbb798cdb4b7c3b71",
+    "frame_manifest.csv": "308509060b6ce6c0f56855ea9d2d7e490109533b188ba770d6818137547fd2be",
+    "prompt_pack.jsonl": "1b7e6112b12a12d56826840b7e1f659a2f83b5f6e1419992495b5aea955f959a"
+  },
+  "parent_prompt_counts": [
+    4
+  ],
+  "parents": 11280,
+  "prompt_records": 45120,
+  "status": "PASS",
+  "unique_prompt_ids": 45120
+}

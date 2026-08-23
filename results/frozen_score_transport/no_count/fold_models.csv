@@ -1,0 +1,6 @@
+outer_fold,training_rows,positive_fraction,score_variant,feature_count
+0,98800,0.31355263157894736,posterior_features_without_observed_source_count,9
+1,98800,0.3119534412955466,posterior_features_without_observed_source_count,9
+2,98800,0.31247975708502024,posterior_features_without_observed_source_count,9
+3,101400,0.3130769230769231,posterior_features_without_observed_source_count,9
+4,101400,0.3124457593688363,posterior_features_without_observed_source_count,9

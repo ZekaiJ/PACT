@@ -1,0 +1,56 @@
+{
+  "association": {
+    "conditional_coerror_symmetric": {
+      "family_balanced_between": 0.6095982225538615,
+      "family_balanced_within": 0.7658383167669093,
+      "pair_weighted_between": 0.6004841961603099,
+      "pair_weighted_within": 0.7299583437355853
+    },
+    "error_cooccurrence_lift": {
+      "family_balanced_between": 2.0502899300143467,
+      "family_balanced_within": 2.990216886332721,
+      "pair_weighted_between": 2.1563320199300993,
+      "pair_weighted_within": 4.1014533995033196
+    },
+    "error_phi": {
+      "family_balanced_between": 0.35881746921383306,
+      "family_balanced_within": 0.6408349217617147,
+      "pair_weighted_between": 0.35880185855287533,
+      "pair_weighted_within": 0.6354271460089549
+    }
+  },
+  "base_cases": 84,
+  "block_permutation": {
+    "one_sided_exact_p": 0.5,
+    "partitions": 6,
+    "resolution_limit": 0.16666666666666666
+  },
+  "claim_boundary": "Within registered families showed higher empirical co-error on this fixed prompt-surface set, but the six-partition block-permutation result determines whether that separation is preferential to the registered partition. The analysis does not authenticate lineage or certify independence.",
+  "families": [
+    "InternVL3",
+    "LLaVA-OneVision",
+    "Qwen3-VL"
+  ],
+  "family_balanced_mean_phi_difference": 0.2820174525478817,
+  "llava_structured_output_validity": {
+    "total": 336,
+    "valid": 334
+  },
+  "models": [
+    "qwen3vl_8b",
+    "qwen3vl_32b",
+    "internvl3_8b",
+    "llava_onevision_7b"
+  ],
+  "pair_counts": {
+    "between_family": 80,
+    "within_family": 40
+  },
+  "rows": 1344,
+  "scene_bootstrap_ci95": [
+    0.20691365277291776,
+    0.3577033504976277
+  ],
+  "scene_clusters": 28,
+  "status": "PARTIAL_DESCRIPTIVE_ASSOCIATION"
+}

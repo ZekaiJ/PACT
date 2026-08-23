@@ -1,0 +1,11 @@
+{
+  "dataset": "PIE",
+  "emitter": "RCML",
+  "scope": "eligibility only; no scientific claim",
+  "verdict": "PASS",
+  "blocking_field": null,
+  "payload_sha256": "7b7f5b73b140c9e00d6d9a4ed78e0292b298bd12fbcfb2c96125795c7f8150f8",
+  "native_reproduction": "official_80_20_exact_published_0.9471",
+  "views": 3,
+  "classes": 68
+}

@@ -1,0 +1,185 @@
+﻿{
+    "status":  "LOCKED_BEFORE_FORCED_CHOICE_PILOT",
+    "created_utc":  "2026-07-27T00:11:18.915260+00:00",
+    "source_manifest":  "upstream HABIT case manifest; not redistributed; fixed by source_manifest_sha256",
+    "source_manifest_sha256":  "41a32974dec3ef4ea6d838aa06f22702dc3a736a6575820cff2c9ecb02f48cfd",
+    "full_cases_sha256":  "405433a79d665f8bb8b9b426b9198e32191054c7f2fd2a30c3a552d2bd1f8ee0",
+    "pilot_cases_sha256":  "6c48abfec14e1e28b49f2bae57b6888c2d28dc14c3d24abd7c9b8e2dac86b583",
+    "denominator":  {
+                        "rows":  2256,
+                        "events":  1128,
+                        "episodes":  696,
+                        "tasks":  6,
+                        "windows":  [
+                                        "early",
+                                        "ready"
+                                    ],
+                        "view_setting":  "all_five",
+                        "uncertainty_unit":  "episode clustered within task"
+                    },
+    "pilot":  {
+                  "rows":  20,
+                  "events":  10,
+                  "episodes":  10,
+                  "selection":  "task-round-robin; no output or label inspection"
+              },
+    "models":  [
+                   {
+                       "key":  "qwen3vl_8b",
+                       "family":  "Qwen3-VL",
+                       "model_id":  "Qwen/Qwen3-VL-8B-Instruct",
+                       "revision":  "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+                       "license":  "apache-2.0",
+                       "pipeline_tag":  "image-text-to-text",
+                       "private":  false,
+                       "gated":  false,
+                       "files":  16,
+                       "repository_bytes":  17545915883,
+                       "cached_before_gate":  true
+                   },
+                   {
+                       "key":  "qwen3vl_32b",
+                       "family":  "Qwen3-VL",
+                       "model_id":  "Qwen/Qwen3-VL-32B-Instruct",
+                       "revision":  "0cfaf48183f594c314753d30a4c4974bc75f3ccb",
+                       "license":  "apache-2.0",
+                       "pipeline_tag":  "image-text-to-text",
+                       "private":  false,
+                       "gated":  false,
+                       "files":  26,
+                       "repository_bytes":  66726519322,
+                       "cached_before_gate":  true
+                   },
+                   {
+                       "key":  "internvl3_2b",
+                       "family":  "InternVL3",
+                       "model_id":  "OpenGVLab/InternVL3-2B-hf",
+                       "revision":  "cb57a075cb75a2e6d1b668b128d48bb00ae321d2",
+                       "license":  "other",
+                       "pipeline_tag":  "image-text-to-text",
+                       "private":  false,
+                       "gated":  false,
+                       "files":  14,
+                       "repository_bytes":  4193915869,
+                       "cached_before_gate":  false
+                   },
+                   {
+                       "key":  "internvl3_8b",
+                       "family":  "InternVL3",
+                       "model_id":  "OpenGVLab/InternVL3-8B-hf",
+                       "revision":  "259a3b64a14623c0ec91a045cb43f7c5af5fa6af",
+                       "license":  "other",
+                       "pipeline_tag":  "image-text-to-text",
+                       "private":  false,
+                       "gated":  false,
+                       "files":  18,
+                       "repository_bytes":  15904822473,
+                       "cached_before_gate":  true
+                   },
+                   {
+                       "key":  "llava_onevision_0_5b",
+                       "family":  "LLaVA-OneVision",
+                       "model_id":  "llava-hf/llava-onevision-qwen2-0.5b-ov-hf",
+                       "revision":  "74dd0bf867a4cda7950c17663794267c60cf4b40",
+                       "license":  "apache-2.0",
+                       "pipeline_tag":  "image-text-to-text",
+                       "private":  false,
+                       "gated":  false,
+                       "files":  41,
+                       "repository_bytes":  14153111498,
+                       "cached_before_gate":  false
+                   },
+                   {
+                       "key":  "llava_onevision_7b",
+                       "family":  "LLaVA-OneVision",
+                       "model_id":  "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+                       "revision":  "0d50680527681998e456c7b78950205bedd8a068",
+                       "license":  "apache-2.0",
+                       "pipeline_tag":  "image-text-to-text",
+                       "private":  false,
+                       "gated":  false,
+                       "files":  21,
+                       "repository_bytes":  16073497233,
+                       "cached_before_gate":  true
+                   },
+                   {
+                       "key":  "smolvlm2_0_5b",
+                       "family":  "SmolVLM2",
+                       "model_id":  "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+                       "revision":  "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+                       "license":  "apache-2.0",
+                       "pipeline_tag":  "image-text-to-text",
+                       "private":  false,
+                       "gated":  false,
+                       "files":  38,
+                       "repository_bytes":  7917649732,
+                       "cached_before_gate":  false
+                   },
+                   {
+                       "key":  "smolvlm2_2_2b",
+                       "family":  "SmolVLM2",
+                       "model_id":  "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+                       "revision":  "482adb537c021c86670beed01cd58990d01e72e4",
+                       "license":  "apache-2.0",
+                       "pipeline_tag":  "image-text-to-text",
+                       "private":  false,
+                       "gated":  false,
+                       "files":  16,
+                       "repository_bytes":  8992155310,
+                       "cached_before_gate":  false
+                   }
+               ],
+    "registered_family_partition":  {
+                                        "qwen3vl_8b":  "Qwen3-VL",
+                                        "qwen3vl_32b":  "Qwen3-VL",
+                                        "internvl3_2b":  "InternVL3",
+                                        "internvl3_8b":  "InternVL3",
+                                        "llava_onevision_0_5b":  "LLaVA-OneVision",
+                                        "llava_onevision_7b":  "LLaVA-OneVision",
+                                        "smolvlm2_0_5b":  "SmolVLM2",
+                                        "smolvlm2_2_2b":  "SmolVLM2"
+                                    },
+    "forced_choice":  {
+                          "prompt_template":  "The image contains five synchronized camera views of the same human-robot interaction instant. Candidate instruction: {instruction}\nDecide whether the visible evidence supports immediate release now. Release is READY only when at least one view visibly shows the human hand or a human-held receiving support already contacting or supporting the object, and no visible view contradicts release. Missing, occluded, or conflicting support means NOT READY.\n{mapping}\nAnswer with one letter only:",
+                          "mappings":  {
+                                           "map0":  "A = NOT READY; B = READY.",
+                                           "map1":  "A = READY; B = NOT READY."
+                                       },
+                          "ready_log_odds":  "0.5*((logit_B-logit_A)_map0 + (logit_A-logit_B)_map1)",
+                          "probability":  "sigmoid(ready_log_odds)",
+                          "option_tokens":  [
+                                                "A",
+                                                "B"
+                                            ],
+                          "technical_gate":  "each option is one distinct token after the generation prompt; all logits finite; both mappings complete",
+                          "failure_policy":  "stop the checkpoint; never substitute generated self-confidence"
+                      },
+    "evidence_mapping":  {
+                             "class_order":  [
+                                                 "not_ready",
+                                                 "ready"
+                                             ],
+                             "budget_per_checkpoint":  2.0,
+                             "evidence":  "2*[1-p_ready,p_ready]",
+                             "test_rescaling":  false
+                         },
+    "comparators":  [
+                        "product",
+                        "nested_dirichlet",
+                        "hierarchy_matched_cautious",
+                        "pact_registered_family",
+                        "pact_false_split",
+                        "pact_false_merge",
+                        "105_unlabeled_pair_partitions"
+                    ],
+    "claim_policy":  {
+                         "positive":  "family registration captures part of measured co-error structure",
+                         "null":  "family registration remains a conservative accounting policy; model count is not independent corroboration",
+                         "excluded":  [
+                                          "physical safety",
+                                          "foundation-model release authority",
+                                          "independence authentication",
+                                          "test-selected calibration"
+                                      ]
+                     }
+}

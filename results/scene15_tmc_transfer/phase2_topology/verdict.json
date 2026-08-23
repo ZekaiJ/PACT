@@ -1,0 +1,24 @@
+{
+  "schema_version": "scene15-tmc-topology-1.0",
+  "pair_id": "Scene15__TMC",
+  "verdict": "PASS",
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "multiplicities": [
+    2,
+    4,
+    8
+  ],
+  "source_instances": 4485,
+  "checks": {
+    "exact_copy_posterior_invariance": true,
+    "exact_copy_budget_invariance": true,
+    "false_split_budget_increase": true,
+    "all_view_merge_budget_compression": true
+  }
+}

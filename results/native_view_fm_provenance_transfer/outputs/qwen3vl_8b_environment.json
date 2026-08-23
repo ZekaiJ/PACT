@@ -1,0 +1,18 @@
+{
+  "batch_size": 4,
+  "cuda_visible_devices": "2",
+  "gpu_names": [
+    "NVIDIA RTX 6000 Ada Generation"
+  ],
+  "model_config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+  "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+  "model_path": "/mnt/nvme2/david_workspace/hf_cache/hub/models--Qwen--Qwen3-VL-8B-Instruct/snapshots/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "option_token_ids": {
+    "A": 32,
+    "B": 33
+  },
+  "prompt_pack_sha256": "1b7e6112b12a12d56826840b7e1f659a2f83b5f6e1419992495b5aea955f959a",
+  "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "torch": "2.5.1+cu121",
+  "transformers": "5.9.0"
+}

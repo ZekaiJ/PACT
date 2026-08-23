@@ -1,0 +1,10 @@
+{
+  "pair_id": "HandWritten-Mfeat__TMC",
+  "verdict": "PASS",
+  "checks": {
+    "exact_copy_invariance": true,
+    "false_split_budget_increase": true,
+    "false_merge_budget_compression": true,
+    "registration_blind_A1_A2_equal": true
+  }
+}

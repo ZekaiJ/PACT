@@ -1,0 +1,49 @@
+﻿{
+    "experiment_id":  "E1_full_PACT_opinion_interface_robustness_v1",
+    "status":  "protocol_locked",
+    "locked_utc":  "2026-07-31T04:20:19.8504605Z",
+    "claim_role":  "robustness_closure",
+    "question":  "How does full PACT behave under the frozen opinion-interface stress design already reported for nested Dirichlet composition and registered pooling?",
+    "independent_unit":  "scene",
+    "nested_unit":  "record",
+    "pilot_settings":  16,
+    "full_settings":  256,
+    "sequence":  "scrambled Sobol seed 1924",
+    "common_support":  [
+                           0.1,
+                           0.35
+                       ],
+    "methods":  [
+                    "nested_evidential",
+                    "registered_lineage_pooling",
+                    "PACT"
+                ],
+    "identical_verifier":  true,
+    "fold_local_concentrations":  "transferred from frozen outer-training selection",
+    "primary_metrics":  [
+                            "ncsAURC_0.10_0.35",
+                            "PACT_minus_nested_ncsAURC",
+                            "PACT_minus_pooling_ncsAURC",
+                            "coverage",
+                            "wrong_all",
+                            "correct_all"
+                        ],
+    "directional_success_gate":  false,
+    "negative_results_retained":  true,
+    "manuscript_write_during_run":  false,
+    "canonical_sha256":  "42704D4D0416D7833F8BD0FB7028F5734B6B8D2AEED8DC825D16ACCE819A8B19",
+    "candidate_sha256":  "51919CAD12FAB05663C1DB614151C8BB67BBD095E70CB2DCC23781A484460B1C",
+    "runner_sha256":  "9E7154BA160D8CB40BED259BACD51C488E50E85F01DC3F7ABC16CEE3DEBD9A5C",
+    "frozen_inputs":  {
+                          "base_records":  "2F25D923963DFAE0DE27AFAD378ABBA67D9A7E03C763041A844136401882788C",
+                          "frozen_records":  "638E910B42091863731FC4922C651411FAC3836E855A178C26019E660A3C24C0",
+                          "nested_gate":  "8F6F19798D691005B42B4E4AA281DB3BCF47EEAB50458133A78E790A938F5B10",
+                          "pact_operator":  "A32F7B8953186ABF8ED2EA245A7648935A2155C7DE157C9217962B8475AFA7CA"
+                      },
+    "stop_rules":  [
+                       "baseline reproduction failure",
+                       "record universe mismatch",
+                       "nonfinite primary metric",
+                       "duplicate or missing setting id"
+                   ]
+}

@@ -1,0 +1,6 @@
+{
+  "PIE__RCML": {
+    "reason": "Frozen donor-level per-view evidence is unavailable; aggregate rows cannot reconstruct the intervention and emitter retraining is prohibited by the lock.",
+    "status": "BLOCKED_INPUT_NOT_RECOVERED"
+  }
+}

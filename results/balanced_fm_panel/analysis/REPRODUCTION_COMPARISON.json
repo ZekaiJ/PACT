@@ -1,0 +1,57 @@
+﻿[
+    {
+        "file":  "CHECKPOINT_PAIR_DEPENDENCE.csv",
+        "match":  true,
+        "sha256":  "d6ef5961396fa1c86ce5ce462c24b13537b5b420ba0c6730e27720e2c0059427"
+    },
+    {
+        "file":  "CLUSTER_BOOTSTRAP_CI.csv",
+        "match":  true,
+        "sha256":  "8294ad6cc8214b7c9deef1f744ef9254447dde229de3bd7629938c68579dec5c"
+    },
+    {
+        "file":  "FUSION_METRICS.csv",
+        "match":  true,
+        "sha256":  "f8159a442c008832b0b97671f5d1b8c778e97423cd8f9b98cf89c35ed4d7f5d7"
+    },
+    {
+        "file":  "INDIVIDUAL_CHECKPOINT_METRICS.csv",
+        "match":  true,
+        "sha256":  "57d4e2ef4088833e33f01c6089b2f8b4fc709f03cdba045bf4a9298ff5959d4f"
+    },
+    {
+        "file":  "PAIR_PARTITION_EXACT_TEST.csv",
+        "match":  true,
+        "sha256":  "6e3aee23ca5b7bf3e1c04f595636d04c6326533bcd025feefcbf62384abb0da6"
+    },
+    {
+        "file":  "PAIRED_CONTRAST_CI.csv",
+        "match":  true,
+        "sha256":  "ab98b015cd74194bf4ddcf0be10782df83686250f60e994439ace389382b5155"
+    },
+    {
+        "file":  "PAIRING_105_FUSION_METRICS.csv",
+        "match":  true,
+        "sha256":  "549b72a8b594fe39231be5c322fedbe1fd688835daf1eb7a77bae1808fb5701f"
+    },
+    {
+        "file":  "READY_ADMISSION_CURVES.csv",
+        "match":  true,
+        "sha256":  "d53676f2eb08b565e33ff26f666db4794ffa297b82d6113fb0d7effbe56c9ca2"
+    },
+    {
+        "file":  "TASK_MACRO_WORST.csv",
+        "match":  true,
+        "sha256":  "47a9c3cb578f49bb7b4e771b61bedb9a76a09152707a7cb1450f8a294e033d07"
+    },
+    {
+        "file":  "TASK_METRICS.csv",
+        "match":  true,
+        "sha256":  "bf7915bd1db17475c5306ba0c7f0034903273c8307240fbec6f6196c1547c99b"
+    },
+    {
+        "file":  "TOPOLOGY_METRICS.csv",
+        "match":  true,
+        "sha256":  "2657d2db63eff8544ce8bd9e032e997355e4309f32baa9b615865798f5d0e22f"
+    }
+]

@@ -1,0 +1,79 @@
+{
+  "anti_selection_rule": "supports, seeds, grids, candidate order, and contrast directions are fixed in code; no result is omitted or support changed based on PACT outcomes",
+  "balanced_panel": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 5401,
+    "bootstrap_unit": "episode within task",
+    "comparability_fractional_tie_support": [
+      0.1,
+      0.39
+    ],
+    "grid_points_each": 36,
+    "registered_fractional_tie_support": [
+      0.1,
+      0.9
+    ]
+  },
+  "controlled": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 1886,
+    "fixed_support": [
+      0.1,
+      0.35
+    ],
+    "support_grid_points": 36,
+    "threshold_targets": [
+      0.01,
+      0.6,
+      0.01
+    ]
+  },
+  "input_sha256": {
+    "analysis/run_p0_estimand_closure.py": "224a0ab0ac9c90666d4fa10f6cf76f4699e012cae136ced32ef8f6d86be326bf",
+    "analysis/verify_p0_estimand_closure.py": "08c686077d247948edb77e805aab5b411f68940ce57f01d4eb33e7a4213b2fcd",
+    "configs/controlled_study.json": "a57d30e911b0bc9ae4c6ebbabb0f780b11924dcdd06448f593796e6387384424",
+    "configs/pcecf_study.json": "280000a67d0f6d33ed2137a4c2a1dcb4b2b33252111974c6a4690c55b560df7a",
+    "data/controlled/evaluation_labels.jsonl.gz": "36d794850c1dea5dc878328d3b71a88eeca7be3ab7a8b452d60d08784705ecb8",
+    "data/controlled/source_records.jsonl.gz": "d2f32efbf1674f8fa29e8d83e1453ec565c0ddd2b50031368fcc00cdf8b2784a",
+    "experiments/controlled_study.py": "26ed39e517caf19ade0b686144fc161ffa91ff43522e4a30baf269f48c59453f",
+    "experiments/nested_selection.py": "447346169063201108b22e38554f69d648400ca9237a83588c8d8a4c049d546e",
+    "experiments/pcecf_study.py": "8a403c4be7f870d38d17ce6d6a3c516e0271b274cd85c90a29e779188e822ad6",
+    "results/balanced_fm_panel/analysis/FUSION_METRICS.csv": "f8159a442c008832b0b97671f5d1b8c778e97423cd8f9b98cf89c35ed4d7f5d7",
+    "results/balanced_fm_panel/outputs/internvl3_2b.jsonl": "a7e02c0e73df89939535dba934a002ba739bce3865dde4cbec070e717070fb1c",
+    "results/balanced_fm_panel/outputs/internvl3_8b.jsonl": "f029e4e881ad69be62e8fdd773a8831cfd96d60b11975547c4094cb365ba2e79",
+    "results/balanced_fm_panel/outputs/llava_onevision_0_5b.jsonl": "e8e3deb7da31f5ae5a122b98d3e366d4e9157fb2853a2e62321f90c750207262",
+    "results/balanced_fm_panel/outputs/llava_onevision_7b.jsonl": "dc455b86282445dd5af413d75cffd736844099f21d68f7903ac55a6e34a43ff0",
+    "results/balanced_fm_panel/outputs/qwen3vl_32b.jsonl": "15811d2a4aacc605e0f36acefab6843f719433d4d00a85a161e58d2eafeddb61",
+    "results/balanced_fm_panel/outputs/qwen3vl_8b.jsonl": "563c08742f474581755984e5f98da81f847fd46bfbb44c15e4f66cd53378d5f4",
+    "results/balanced_fm_panel/outputs/smolvlm2_0_5b.jsonl": "6a8faabb84d4eed71cd93bb21d6ebb661523e2362f9d4a7a0a85048474ecb11c",
+    "results/balanced_fm_panel/outputs/smolvlm2_2_2b.jsonl": "b911eb9b11953ac73cc6c31db6049e6093f428fbd8bcf38f809b7a8a9865007e",
+    "results/balanced_fm_panel/protocol/FM_PANEL_FULL_CASES.csv": "405433a79d665f8bb8b9b426b9198e32191054c7f2fd2a30c3a552d2bd1f8ee0",
+    "results/balanced_fm_panel/protocol/analyze_fm_panel.py": "259bdf361bc77861d489aef6a1ef2b36412c97c86b48e4e1ba3e601bb73dc2f5",
+    "src/action_admission/pcecf.py": "20173a49c27100aebe1a631e4318f8f727f561370141a406520f219eb9667d5c",
+    "results/p0_estimand_closure/v1/inputs/fold_thresholds.jsonl.gz": "ab0efcac8e483dd2462a32c098d97b42abae491a0a9e79e4806b4da8d409020c",
+    "results/p0_estimand_closure/v1/inputs/oof_predictions.jsonl.gz": "7337911f20d36dfbb9ae66fc40bb2e6bdf63afd60abf0070837921c518da2a1c",
+    "results/p0_estimand_closure/v1/inputs/table1_no_verifier_risk_coverage.csv": "7a6726722a75d0d13c9a3839401cbb448177a71207aeb9d10cb8b2fcccbac82b",
+    "results/p0_estimand_closure/v1/inputs/table2_shared_verifier_risk_coverage.csv": "d14293d663f8350c733c0dbd7fc54fa14f11546a3743b9aedde792ac7f8931de"
+  },
+  "repeated_scene_splits": {
+    "base_seed": 1930,
+    "complete_reselection_required": true,
+    "concentration_grid": [
+      4.0,
+      8.0,
+      12.0,
+      16.0,
+      24.0
+    ],
+    "outer_folds": 5,
+    "policy_targets": [
+      0.1,
+      0.13,
+      0.15
+    ],
+    "repeats": 50
+  },
+  "scope": "P0-2 estimand closure only",
+  "status": "LOCKED",
+  "version": "p0-estimand-closure-v1"
+}

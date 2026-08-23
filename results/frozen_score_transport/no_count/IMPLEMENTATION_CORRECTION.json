@@ -1,0 +1,16 @@
+{
+    "status":  "VERIFIED",
+    "issue":  "gate.json inherited hard-coded m=1 full-score anchors from M2",
+    "correction":  "write computed no-count m=1 anchors to gate.json",
+    "scientific_computation_changed":  false,
+    "pre_patch_script_sha256":  "400d09bfee7268084614580a894213935d6d259009671d19b87469fc1a9d40d4",
+    "post_patch_script_sha256":  "a718708e15c55bf696f1f49c0a55b9cad4f8811d8b4662bc4008958be5aadac3",
+    "pre_rerun_outputs":  {
+                              "stress_summary_sha256":  "e3429d3ff2b56e032b91096a5b8166936dbcb49f36dba4897ed3b48e39c8014f",
+                              "matched_contrast_sha256":  "81ea4b895edba43928f20228308bf58b9ecdc2e1af2416ef5526725fc165feb5"
+                          },
+    "post_rerun_outputs":  {
+                               "stress_summary_sha256":  "e3429d3ff2b56e032b91096a5b8166936dbcb49f36dba4897ed3b48e39c8014f",
+                               "matched_contrast_sha256":  "81ea4b895edba43928f20228308bf58b9ecdc2e1af2416ef5526725fc165feb5"
+                           }
+}

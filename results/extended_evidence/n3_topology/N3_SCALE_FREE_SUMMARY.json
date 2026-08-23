@@ -1,0 +1,33 @@
+{
+  "pairs": [
+    {
+      "baseline_budget": 17.464904730789698,
+      "conserved_copy_ratio_m8": 1.0,
+      "dataset_emitter": "HandWritten-Mfeat__TMC",
+      "exact_copy_posterior_l1_residual_m8": 6.938893903907229e-21,
+      "exact_copy_score_residual_m8": 0.0,
+      "false_merge_suppression_ratio": 0.0015872145073083288,
+      "false_split_amplification_ratio_m8": 2.164191249819034
+    },
+    {
+      "baseline_budget": 33.000984754292546,
+      "conserved_copy_ratio_m8": 1.0,
+      "dataset_emitter": "HandWritten-Mfeat__RCML",
+      "exact_copy_posterior_l1_residual_m8": 2.255140518769849e-20,
+      "exact_copy_score_residual_m8": 0.0,
+      "false_merge_suppression_ratio": 0.016109257636255404,
+      "false_split_amplification_ratio_m8": 2.2171891704306526
+    },
+    {
+      "baseline_budget": 16.119681818060737,
+      "conserved_copy_ratio_m8": 1.0,
+      "dataset_emitter": "PIE__RCML",
+      "exact_copy_posterior_l1_residual_m8": 0.0,
+      "exact_copy_score_residual_m8": 0.0,
+      "false_merge_suppression_ratio": 0.029819824926852742,
+      "false_split_amplification_ratio_m8": 3.2125717750376483
+    }
+  ],
+  "reason": "Ratios are comparable across emitter-specific evidence scales; absolute budget deltas are not.",
+  "status": "PASS_SCALE_FREE_SUMMARY"
+}

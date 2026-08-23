@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "decisions": 2400,
+  "baseline_decisions": 300,
+  "stress_decisions": 2100,
+  "raw_admission_nonincrease_violations": 582,
+  "raw_release_authority_nonincrease_violations": 218,
+  "pact_sv_admission_nonincrease_violations": 0,
+  "pact_sv_release_authority_nonincrease_violations": 0
+}

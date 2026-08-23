@@ -1,0 +1,257 @@
+{
+  "protocol": {
+    "clock": "time.perf_counter_ns",
+    "warmup_calls": 200,
+    "repeat_blocks": 5,
+    "timed_calls_per_block": 1000,
+    "memory_metric": "incremental peak traced Python allocation",
+    "memory_calls": 100,
+    "throughput_metric": "median over dedicated repeat blocks",
+    "source_counts": [
+      3,
+      8,
+      16,
+      32,
+      64
+    ],
+    "registered_graph_topology": "sparse disjoint pairs",
+    "execution": "single Python process; CPU affinity not set"
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.13",
+    "processor": "Intel(R) Core(TM) Ultra 7 155H",
+    "logical_cpu_count": 22
+  },
+  "source_count_scaling": [
+    {
+      "source_count": 3,
+      "method": "quality_weighted_vote",
+      "median_us": 13.9,
+      "p95_us": 20.7,
+      "throughput_calls_s": 71577.86239871732,
+      "throughput_repeat_sd": 4100.137797341159,
+      "repeat_median_sd_us": 1.1977061409210525,
+      "peak_traced_allocation_kib": 2.7109375,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 3,
+      "method": "evidential_composition",
+      "median_us": 14.8,
+      "p95_us": 22.4,
+      "throughput_calls_s": 63475.5397007763,
+      "throughput_repeat_sd": 1812.6468516836003,
+      "repeat_median_sd_us": 0.2683281572999745,
+      "peak_traced_allocation_kib": 3.4140625,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 3,
+      "method": "registered_graph_components",
+      "median_us": 2.0,
+      "p95_us": 2.1,
+      "throughput_calls_s": 470300.5220335795,
+      "throughput_repeat_sd": 10914.943838483521,
+      "repeat_median_sd_us": 0.08366600265340755,
+      "peak_traced_allocation_kib": 1.2890625,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 8,
+      "method": "quality_weighted_vote",
+      "median_us": 24.5,
+      "p95_us": 29.4,
+      "throughput_calls_s": 35645.28662374974,
+      "throughput_repeat_sd": 3869.507433830036,
+      "repeat_median_sd_us": 0.5770615218501405,
+      "peak_traced_allocation_kib": 3.015625,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 8,
+      "method": "evidential_composition",
+      "median_us": 51.0,
+      "p95_us": 103.4,
+      "throughput_calls_s": 26145.636424009015,
+      "throughput_repeat_sd": 2964.537794933765,
+      "repeat_median_sd_us": 4.903748566148148,
+      "peak_traced_allocation_kib": 5.046875,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 8,
+      "method": "registered_graph_components",
+      "median_us": 6.8,
+      "p95_us": 11.1,
+      "throughput_calls_s": 117258.03803850754,
+      "throughput_repeat_sd": 4265.813925007477,
+      "repeat_median_sd_us": 0.3834057902536164,
+      "peak_traced_allocation_kib": 1.9296875,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 16,
+      "method": "quality_weighted_vote",
+      "median_us": 49.5,
+      "p95_us": 82.1,
+      "throughput_calls_s": 16794.754662223895,
+      "throughput_repeat_sd": 565.94058931151,
+      "repeat_median_sd_us": 6.385393488266795,
+      "peak_traced_allocation_kib": 3.515625,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 16,
+      "method": "evidential_composition",
+      "median_us": 102.7,
+      "p95_us": 197.9,
+      "throughput_calls_s": 6546.4305587378485,
+      "throughput_repeat_sd": 1359.7303073426397,
+      "repeat_median_sd_us": 4.965178748041203,
+      "peak_traced_allocation_kib": 7.625,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 16,
+      "method": "registered_graph_components",
+      "median_us": 37.9,
+      "p95_us": 55.7,
+      "throughput_calls_s": 25342.696614976016,
+      "throughput_repeat_sd": 727.3882212862876,
+      "repeat_median_sd_us": 2.127674787179659,
+      "peak_traced_allocation_kib": 2.875,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 32,
+      "method": "quality_weighted_vote",
+      "median_us": 120.9,
+      "p95_us": 178.1,
+      "throughput_calls_s": 7576.99744806726,
+      "throughput_repeat_sd": 237.78902565567373,
+      "repeat_median_sd_us": 2.8468403537957676,
+      "peak_traced_allocation_kib": 4.515625,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 32,
+      "method": "evidential_composition",
+      "median_us": 216.0,
+      "p95_us": 350.1,
+      "throughput_calls_s": 4416.003419753049,
+      "throughput_repeat_sd": 174.01420495495546,
+      "repeat_median_sd_us": 4.624986486466737,
+      "peak_traced_allocation_kib": 12.875,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 32,
+      "method": "registered_graph_components",
+      "median_us": 129.2,
+      "p95_us": 176.0,
+      "throughput_calls_s": 7501.554697210997,
+      "throughput_repeat_sd": 119.61168422504034,
+      "repeat_median_sd_us": 2.487116804655547,
+      "peak_traced_allocation_kib": 4.3671875,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 64,
+      "method": "quality_weighted_vote",
+      "median_us": 227.95,
+      "p95_us": 318.5,
+      "throughput_calls_s": 4225.662192958102,
+      "throughput_repeat_sd": 211.03992078071892,
+      "repeat_median_sd_us": 6.162892989497715,
+      "peak_traced_allocation_kib": 6.515625,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 64,
+      "method": "evidential_composition",
+      "median_us": 403.1,
+      "p95_us": 568.1,
+      "throughput_calls_s": 2425.320148322879,
+      "throughput_repeat_sd": 67.06074741172755,
+      "repeat_median_sd_us": 5.6832429122816865,
+      "peak_traced_allocation_kib": 23.375,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 64,
+      "method": "registered_graph_components",
+      "median_us": 479.1,
+      "p95_us": 650.1,
+      "throughput_calls_s": 1976.8076967403035,
+      "throughput_repeat_sd": 31.93145188654816,
+      "repeat_median_sd_us": 9.750166665242185,
+      "peak_traced_allocation_kib": 8.96875,
+      "timed_calls": 5000
+    }
+  ],
+  "canonical_path": [
+    {
+      "source_count": 3,
+      "method": "quality_weighted_vote",
+      "median_us": 21.6,
+      "p95_us": 39.3,
+      "throughput_calls_s": 41979.94198372018,
+      "throughput_repeat_sd": 2620.1413157237525,
+      "repeat_median_sd_us": 0.48270073544588704,
+      "peak_traced_allocation_kib": 2.7109375,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 3,
+      "method": "evidential_composition",
+      "median_us": 27.9,
+      "p95_us": 57.1,
+      "throughput_calls_s": 34300.37524610519,
+      "throughput_repeat_sd": 1529.20831889413,
+      "repeat_median_sd_us": 0.7155417527999324,
+      "peak_traced_allocation_kib": 3.4140625,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 3,
+      "method": "registered_lineage_analysis",
+      "median_us": 37.5,
+      "p95_us": 53.7,
+      "throughput_calls_s": 25625.190587354995,
+      "throughput_repeat_sd": 1241.0232791558808,
+      "repeat_median_sd_us": 0.5019960159204475,
+      "peak_traced_allocation_kib": 3.4296875,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 3,
+      "method": "shared_verifier",
+      "median_us": 73.5,
+      "p95_us": 109.2,
+      "throughput_calls_s": 13279.947942604065,
+      "throughput_repeat_sd": 593.8027061874498,
+      "repeat_median_sd_us": 1.963733688665546,
+      "peak_traced_allocation_kib": 3.21875,
+      "timed_calls": 5000
+    },
+    {
+      "source_count": 3,
+      "method": "typed_record_end_to_end",
+      "median_us": 131.3,
+      "p95_us": 180.1,
+      "throughput_calls_s": 7147.191403929955,
+      "throughput_repeat_sd": 361.36673893712515,
+      "repeat_median_sd_us": 6.302221830434088,
+      "peak_traced_allocation_kib": 18.75,
+      "timed_calls": 5000
+    }
+  ],
+  "provenance": {
+    "script_sha256": "67bb8e2a6602f6fe6fe5edc2512cc1b378fdbfe1442afeb768c341b047cd76ec",
+    "output_sha256": {
+      "canonical_path.csv": "0a61e9f05d18ea0b4897d2ae79bb9f55530745b4ee5647ea7118ddbab3a16a23",
+      "source_count_scaling.csv": "f393292f9aa12d16421dabab9d5da1a7195c43706ebd63e04da2d2c1a1a9bf1f"
+    }
+  }
+}

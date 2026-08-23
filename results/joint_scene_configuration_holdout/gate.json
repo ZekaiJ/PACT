@@ -1,0 +1,42 @@
+{
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 1886,
+    "unit": "scene"
+  },
+  "claim_boundary": "Controlled joint scene--condition analysis. The main-study concentration schedule is transferred without reselection; score thresholds exclude the held condition and test scenes.",
+  "concentration_selection": "fixed main-study schedule; not reselected in the joint holdout",
+  "conditions": 13,
+  "curve_targets": [
+    0.01,
+    0.6,
+    0.01
+  ],
+  "input_sha256": {
+    "evaluation_labels": "36d794850c1dea5dc878328d3b71a88eeca7be3ab7a8b452d60d08784705ecb8",
+    "hierarchy_matched_cautious": "4494c1fc07e6a0bbeaa1d2b0b6e8138ce9a596cdd56f275e8a2bc1646309fb30",
+    "pact_operator": "20173a49c27100aebe1a631e4318f8f727f561370141a406520f219eb9667d5c",
+    "pcecf_study": "8a403c4be7f870d38d17ce6d6a3c516e0271b274cd85c90a29e779188e822ad6",
+    "source_records": "d2f32efbf1674f8fa29e8d83e1453ec565c0ddd2b50031368fcc00cdf8b2784a"
+  },
+  "pact_minus_nested": {
+    "ci95_high": -0.050738341844153156,
+    "ci95_low": -0.059520702954781346,
+    "point": -0.05512484296371992
+  },
+  "records": 31200,
+  "scenes": 48,
+  "status": "COMPLETE",
+  "support": [
+    0.1,
+    0.35
+  ],
+  "transferred_concentration_by_outer_fold": {
+    "0": 8.0,
+    "1": 4.0,
+    "2": 8.0,
+    "3": 4.0,
+    "4": 4.0
+  },
+  "version": "canonical-joint-holdout-v1"
+}

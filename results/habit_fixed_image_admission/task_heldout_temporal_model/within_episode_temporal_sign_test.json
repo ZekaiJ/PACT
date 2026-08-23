@@ -1,0 +1,26 @@
+{
+  "analysis": "one-sided exact paired sign test",
+  "endpoint_episodes": 60,
+  "episodes_per_task": {
+    "S6759": 10,
+    "S7025": 10,
+    "S7414": 10,
+    "S7788": 10,
+    "S8940": 10,
+    "S8975": 10
+  },
+  "inputs": {
+    "scripts/within_episode_temporal_sign_test.py": "6936221055be55606c30e2dc98664c7b5d9faaf7566d680099018447ef3fc505",
+    "task_heldout_delta_admission/task_heldout_delta_admission_decisions.csv": "4dbb21ebd77f10d30a7037efe08ef0aaf774d622773b2a3ced7b825533072251",
+    "task_heldout_delta_admission/task_heldout_delta_events.csv": "2998250c27acbf79adfd19de2c00230fa533c658c62e3d8796c7df4687dc0de3"
+  },
+  "mean_proximal_minus_early": 0.3088420759858028,
+  "negative_differences": 1,
+  "null": "early and event-proximal window labels are exchangeable within each selected episode",
+  "one_sided_exact_p": 5.2909066017292616e-17,
+  "positive_differences": 59,
+  "selected_event_id_sha256": "278bfaf3a35029a45480c85dbbc5a39e8ff15f7bd5faffc674128884f4b3d010",
+  "selection_rule": "condition=factual and window=ready in the released 720-case decision table",
+  "tasks": 6,
+  "ties": 0
+}

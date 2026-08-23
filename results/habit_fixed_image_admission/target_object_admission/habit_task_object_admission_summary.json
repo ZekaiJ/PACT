@@ -1,0 +1,326 @@
+{
+  "status": "pass",
+  "analysis_role": "task- and object-conditioned admission on fixed HABIT real-image events",
+  "denominator": {
+    "rows": 720,
+    "events": 60,
+    "episodes": 60,
+    "tasks": 6,
+    "rows_per_event": 12,
+    "composition": "2 temporal frames x 1 factual plus 5 counterfactual targets"
+  },
+  "admission_sources": {
+    "semantic_candidate": "schema-valid frozen VLM target match and release-readiness fields",
+    "target_state": "task/object identity derived from HABIT task metadata and compared with the queried target",
+    "temporal_state": "development-trained frozen ResNet-50 plus TF-IDF phase probability at its default 0.5 decision threshold",
+    "lineage": "the VLM and conventional encoder share visual parents and are combined by verification, not counted as independent votes"
+  },
+  "phase_source_validation": {
+    "selected_c": 10.0,
+    "development_rows": 792,
+    "development_episodes": 82,
+    "test_episodes": 696,
+    "episode_overlap": 0,
+    "identifier_overlap": 0,
+    "exact_image_sha256_overlap": 0
+  },
+  "candidate_only": {
+    "n": 720,
+    "admitted": 144,
+    "coverage": 0.2,
+    "correct_authorization_all": 0.07361111111111111,
+    "wrong_authorization_all": 0.12638888888888888,
+    "wrong_authorization_admitted": 0.6319444444444444,
+    "authorization_accuracy": 0.8638888888888889,
+    "ready_factual_recall": 0.8833333333333333
+  },
+  "evidence_verified": {
+    "n": 720,
+    "admitted": 52,
+    "coverage": 0.07222222222222222,
+    "correct_authorization_all": 0.07083333333333333,
+    "wrong_authorization_all": 0.001388888888888889,
+    "wrong_authorization_admitted": 0.019230769230769232,
+    "authorization_accuracy": 0.9861111111111112,
+    "ready_factual_recall": 0.85
+  },
+  "factorial_evidence_role_ablation": [
+    {
+      "method": "semantic_candidate",
+      "n": 720,
+      "admitted": 144,
+      "coverage": 0.2,
+      "correct_authorization_all": 0.07361111111111111,
+      "wrong_authorization_all": 0.12638888888888888,
+      "wrong_authorization_admitted": 0.6319444444444444,
+      "authorization_accuracy": 0.8638888888888889,
+      "ready_factual_recall": 0.8833333333333333,
+      "off_target_wrong_authorizations": 66,
+      "premature_factual_authorizations": 25
+    },
+    {
+      "method": "current_target_only",
+      "n": 720,
+      "admitted": 78,
+      "coverage": 0.10833333333333334,
+      "correct_authorization_all": 0.07361111111111111,
+      "wrong_authorization_all": 0.034722222222222224,
+      "wrong_authorization_admitted": 0.32051282051282054,
+      "authorization_accuracy": 0.9555555555555556,
+      "ready_factual_recall": 0.8833333333333333,
+      "off_target_wrong_authorizations": 0,
+      "premature_factual_authorizations": 25
+    },
+    {
+      "method": "temporal_source_only",
+      "n": 720,
+      "admitted": 105,
+      "coverage": 0.14583333333333334,
+      "correct_authorization_all": 0.07083333333333333,
+      "wrong_authorization_all": 0.075,
+      "wrong_authorization_admitted": 0.5142857142857142,
+      "authorization_accuracy": 0.9125,
+      "ready_factual_recall": 0.85,
+      "off_target_wrong_authorizations": 53,
+      "premature_factual_authorizations": 1
+    },
+    {
+      "method": "combined_verification",
+      "n": 720,
+      "admitted": 52,
+      "coverage": 0.07222222222222222,
+      "correct_authorization_all": 0.07083333333333333,
+      "wrong_authorization_all": 0.001388888888888889,
+      "wrong_authorization_admitted": 0.019230769230769232,
+      "authorization_accuracy": 0.9861111111111112,
+      "ready_factual_recall": 0.85,
+      "off_target_wrong_authorizations": 0,
+      "premature_factual_authorizations": 1
+    }
+  ],
+  "candidate_task_macro": {
+    "coverage": 0.19999999999999998,
+    "correct_authorization_all": 0.07361111111111111,
+    "wrong_authorization_all": 0.12638888888888888,
+    "wrong_authorization_admitted": 0.6129712154221958,
+    "authorization_accuracy": 0.8638888888888889,
+    "ready_factual_recall": 0.8833333333333333,
+    "worst_task_ready_factual_recall": 0.5,
+    "worst_task_sid": "S6759"
+  },
+  "verified_task_macro": {
+    "coverage": 0.07222222222222222,
+    "correct_authorization_all": 0.07083333333333333,
+    "wrong_authorization_all": 0.001388888888888889,
+    "wrong_authorization_admitted": 0.020833333333333332,
+    "authorization_accuracy": 0.9861111111111112,
+    "ready_factual_recall": 0.85,
+    "worst_task_ready_factual_recall": 0.5,
+    "worst_task_sid": "S6759"
+  },
+  "transition": {
+    "candidate_admissions": 144,
+    "candidate_to_nonadmission": 92,
+    "wrong_authorizations_blocked": 90,
+    "correct_authorizations_blocked": 2,
+    "blocked_wrong_fraction": 0.9782608695652174,
+    "candidate_correct_authorization_retention": 0.9622641509433961
+  },
+  "slice_counts": [
+    {
+      "method": "semantic_candidate",
+      "window": "early",
+      "condition": "factual",
+      "n": 60,
+      "admitted": 25,
+      "admission_rate": 0.4166666666666667
+    },
+    {
+      "method": "semantic_candidate",
+      "window": "early",
+      "condition": "counterfactual",
+      "n": 300,
+      "admitted": 13,
+      "admission_rate": 0.043333333333333335
+    },
+    {
+      "method": "semantic_candidate",
+      "window": "ready",
+      "condition": "factual",
+      "n": 60,
+      "admitted": 53,
+      "admission_rate": 0.8833333333333333
+    },
+    {
+      "method": "semantic_candidate",
+      "window": "ready",
+      "condition": "counterfactual",
+      "n": 300,
+      "admitted": 53,
+      "admission_rate": 0.17666666666666667
+    },
+    {
+      "method": "current_target_only",
+      "window": "early",
+      "condition": "factual",
+      "n": 60,
+      "admitted": 25,
+      "admission_rate": 0.4166666666666667
+    },
+    {
+      "method": "current_target_only",
+      "window": "early",
+      "condition": "counterfactual",
+      "n": 300,
+      "admitted": 0,
+      "admission_rate": 0.0
+    },
+    {
+      "method": "current_target_only",
+      "window": "ready",
+      "condition": "factual",
+      "n": 60,
+      "admitted": 53,
+      "admission_rate": 0.8833333333333333
+    },
+    {
+      "method": "current_target_only",
+      "window": "ready",
+      "condition": "counterfactual",
+      "n": 300,
+      "admitted": 0,
+      "admission_rate": 0.0
+    },
+    {
+      "method": "temporal_source_only",
+      "window": "early",
+      "condition": "factual",
+      "n": 60,
+      "admitted": 1,
+      "admission_rate": 0.016666666666666666
+    },
+    {
+      "method": "temporal_source_only",
+      "window": "early",
+      "condition": "counterfactual",
+      "n": 300,
+      "admitted": 0,
+      "admission_rate": 0.0
+    },
+    {
+      "method": "temporal_source_only",
+      "window": "ready",
+      "condition": "factual",
+      "n": 60,
+      "admitted": 51,
+      "admission_rate": 0.85
+    },
+    {
+      "method": "temporal_source_only",
+      "window": "ready",
+      "condition": "counterfactual",
+      "n": 300,
+      "admitted": 53,
+      "admission_rate": 0.17666666666666667
+    },
+    {
+      "method": "combined_verification",
+      "window": "early",
+      "condition": "factual",
+      "n": 60,
+      "admitted": 1,
+      "admission_rate": 0.016666666666666666
+    },
+    {
+      "method": "combined_verification",
+      "window": "early",
+      "condition": "counterfactual",
+      "n": 300,
+      "admitted": 0,
+      "admission_rate": 0.0
+    },
+    {
+      "method": "combined_verification",
+      "window": "ready",
+      "condition": "factual",
+      "n": 60,
+      "admitted": 51,
+      "admission_rate": 0.85
+    },
+    {
+      "method": "combined_verification",
+      "window": "ready",
+      "condition": "counterfactual",
+      "n": 300,
+      "admitted": 0,
+      "admission_rate": 0.0
+    }
+  ],
+  "task_balanced_episode_bootstrap": [
+    {
+      "metric": "wrong_authorization_all",
+      "verified_minus_candidate": -0.125,
+      "ci95_low": -0.13749999999999998,
+      "ci95_high": -0.1125,
+      "bootstrap_iterations": 10000,
+      "sampling_unit": "episode within each of six tasks"
+    },
+    {
+      "metric": "correct_authorization_all",
+      "verified_minus_candidate": -0.002777777777777782,
+      "ci95_low": -0.0069444444444444475,
+      "ci95_high": 0.0,
+      "bootstrap_iterations": 10000,
+      "sampling_unit": "episode within each of six tasks"
+    },
+    {
+      "metric": "ready_factual_recall",
+      "verified_minus_candidate": -0.033333333333333326,
+      "ci95_low": -0.08333333333333326,
+      "ci95_high": 0.0,
+      "bootstrap_iterations": 10000,
+      "sampling_unit": "episode within each of six tasks"
+    }
+  ],
+  "typed_decision_counts": {
+    "hold_confirm": 668,
+    "release": 52
+  },
+  "nonadmission_reason_counts": {
+    "target_not_visually_supported": 29,
+    "target_state_mismatch": 600,
+    "candidate_not_ready": 13,
+    "temporal_evidence_not_ready": 26,
+    "supported_release": 52
+  },
+  "policy_input_fields": [
+    "native_target_sid",
+    "parsed",
+    "phase_probability",
+    "query_target_sid",
+    "release_readiness",
+    "schema_valid",
+    "target_match"
+  ],
+  "forbidden_field_check": {
+    "evaluation_only_fields": [
+      "condition",
+      "expected_target_match",
+      "window"
+    ],
+    "violations": []
+  },
+  "claim_boundary": [
+    "This analysis evaluates evidence composition for action admission on fixed real multi-view observations.",
+    "The target identity is derived from HABIT task metadata and is used as source-state evidence, not as a learned object recognizer.",
+    "The early/event-proximal labels evaluate release timing; they are not available to the admission policy.",
+    "The result is not physical-safety certification, participant validation, or validation of the complete five-contract ontology."
+  ],
+  "input_sha256": {
+    "results\\habit_level2\\counterfactual_semantics\\scored_rows.csv": "1e6ebed8092374c62e411cb8d103b200c16ab34192d6af52f317e8a38fe3c097",
+    "results\\habit_level2\\nonfm_baseline\\nonfm_predictions.csv": "c515455257128a55e834f182fad159ae48d5fd343521a618724979124b77637c",
+    "results\\habit_level2\\nonfm_baseline\\HABIT_NONFM_BASELINE.json": "6c19451cf00f96abac23988e61cb4437f367da3b02959e0f582b60b2fe87e25d",
+    "results\\habit_level2\\HABIT_RELEASE_PROTOCOL_LOCK.json": "2ee284a1bd89a6a0cb26beb43c83bfb2354f193c500b4f4cd3305340011d52bf",
+    "scripts\\run_habit_task_object_admission.py": "50f2a8678c023f7b1a16e3148684f7a03aa74028bd99912765eb127efe504c2c"
+  }
+}

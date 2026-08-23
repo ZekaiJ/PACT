@@ -1,0 +1,14 @@
+{
+  "acquisition_parents": 1320,
+  "episodes": 82,
+  "events": 132,
+  "frames": 1320,
+  "hashes": {
+    "PROTOCOL_LOCK.json": "a112e6221b69b316c0be005767f9bdf757a41edce172171fbb798cdb4b7c3b71",
+    "frame_manifest.csv": "b7b64a823a4ef3323b4a5c7e90c2c5dbf8f5c1295ee9566f8b4c27ef52733828",
+    "prompt_pack.jsonl": "9c11255d8f3a1e2da3ea00cdfad0b4155570612a5c518532cb38f035279e29d4"
+  },
+  "prompt_records": 5280,
+  "status": "ASSAY_PACK_READY",
+  "surface_count": 4
+}

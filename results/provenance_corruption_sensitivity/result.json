@@ -1,0 +1,107 @@
+{
+  "bootstrap_draws": 1000,
+  "crossovers": [
+    {
+      "condition": "false_split",
+      "crossover_rate": 1.0,
+      "metric": "expected_cost",
+      "no_lineage_value": 0.8532692307692308,
+      "status": "identified_on_grid"
+    },
+    {
+      "condition": "false_merge",
+      "crossover_rate": null,
+      "metric": "expected_cost",
+      "no_lineage_value": 0.8532692307692308,
+      "status": "not_identified_within_grid"
+    },
+    {
+      "condition": "hidden_edge_deletion",
+      "crossover_rate": null,
+      "metric": "expected_cost",
+      "no_lineage_value": 0.8532692307692308,
+      "status": "not_identified_within_grid"
+    },
+    {
+      "condition": "forged_independence",
+      "crossover_rate": 1.0,
+      "metric": "expected_cost",
+      "no_lineage_value": 0.8532692307692308,
+      "status": "identified_on_grid"
+    },
+    {
+      "condition": "false_split",
+      "crossover_rate": 1.0,
+      "metric": "wrong_all",
+      "no_lineage_value": 0.08753205128205128,
+      "status": "identified_on_grid"
+    },
+    {
+      "condition": "false_merge",
+      "crossover_rate": null,
+      "metric": "wrong_all",
+      "no_lineage_value": 0.08753205128205128,
+      "status": "not_identified_within_grid"
+    },
+    {
+      "condition": "hidden_edge_deletion",
+      "crossover_rate": null,
+      "metric": "wrong_all",
+      "no_lineage_value": 0.08753205128205128,
+      "status": "not_identified_within_grid"
+    },
+    {
+      "condition": "forged_independence",
+      "crossover_rate": 1.0,
+      "metric": "wrong_all",
+      "no_lineage_value": 0.08753205128205128,
+      "status": "identified_on_grid"
+    }
+  ],
+  "false_split_and_forgery_observationally_equivalent": true,
+  "forged_independence_scope": "Internally consistent forged independence is unobservable to this interface; the experiment quantifies damage and does not test detection.",
+  "input_hashes": {
+    "E3_HRC\\E3_HRC-main\\src\\safe_fuse.py": "9b0897187bdbb66b914dcee32e3a496e186b1cbfa93b30856e66ef53921c16d5",
+    "results\\scientific_identity_closure\\current_source_records.jsonl": "638e910b42091863731fc4922c651411fac3836e855a178c26019e660a3c24c0",
+    "results\\stage2_robust_provenance\\stage2_gate.json": "aa4fc66824cff6d1cbaac0dd65ec18c4fa7e1226e8533169337c120d6bd8ac2c",
+    "results\\v1956_granularity_autoresearch\\a2_lineage_perturbation\\PREREGISTRATION.md": "14236056ca47010a6030627eb6fc8486ef881743fee7d77afc023c79318ba9dc",
+    "scripts\\run_v1851_registered_provenance_robustness.py": "8bc26fa6f40238e3ccce2cc0c61ce5a8e4c0690174bc5bbb5d3a66bbfc7cc877",
+    "scripts\\run_v1956_a2_lineage_perturbation.py": "9dee0ea52d58d50ed9dbed598ecf81262d0776224dd5ac68f2eeae3fe8ef826a",
+    "tables\\v1782_crossfit_native_ec_selected_configs.csv": "21b514847cdab1f266840907555b8d2ebdc5bd223363f15cfda129d1083df9a8"
+  },
+  "no_lineage_baseline": {
+    "admitted": 5266,
+    "condition": "no_lineage",
+    "correct": 2535,
+    "correct_all": 0.08125,
+    "coverage": 0.1687820512820513,
+    "expected_cost": 0.8532692307692308,
+    "n": 31200,
+    "rate": "",
+    "seed": "",
+    "wrong": 2731,
+    "wrong_admitted": 0.5186099506266616,
+    "wrong_all": 0.08753205128205128
+  },
+  "perturbation_seeds": 10,
+  "rates": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "records": 31200,
+  "scene_cue_clusters": 240,
+  "scenes": 48,
+  "status": "pass",
+  "validation_checks": {
+    "false_split_and_forgery_observationally_equivalent": true,
+    "false_split_reaches_no_lineage_at_full_corruption": true,
+    "hidden_edge_recovered_by_intact_manifest": true,
+    "output_grid_complete": true,
+    "scene_count_complete": true
+  },
+  "version": "v1956-a2"
+}

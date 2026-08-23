@@ -1,0 +1,40 @@
+{
+  "canonical_meet_anchor": 0.6294374684440601,
+  "directional_success_gate": "none; all signs and effect sizes are retained",
+  "formula_check": {
+    "checks": 90,
+    "maximum_absolute_residual": 1.6653345369377348e-16
+  },
+  "interpretation": "The join is an exact-copy-invariant ablation that retains partition monotonicity but violates the declared common-evidence cap and insertion non-amplification. Predictive direction does not define validity.",
+  "join_minus_meet": {
+    "aggregate_budget_ratio_join_over_meet": 1.3539437799766696,
+    "bootstrap_mean": 0.1626085414509519,
+    "ci_high": 0.1709257453558878,
+    "ci_low": 0.1535016355202933,
+    "contrast": "pact_join_minus_pact_meet",
+    "fraction_above_zero": 1.0,
+    "max_posterior_l1_join_vs_meet": 0.9034514399333962,
+    "mean_absolute_score_shift_join_vs_meet": 0.06296734871139105,
+    "mean_posterior_l1_join_vs_meet": 0.12274773031379173,
+    "point": 0.16231640262909508,
+    "prediction_flip_rate_join_vs_meet": 0.16230769230769232
+  },
+  "join_ncsaurc": 0.7917538710731552,
+  "records": 31200,
+  "scenes": 48,
+  "status": "PASS",
+  "structural_checks": {
+    "complete_scene_component_records": 24000,
+    "join_common_evidence_cap_violating_complete_coordinates": 120000,
+    "join_common_evidence_cap_violating_complete_record_fraction": 1.0,
+    "join_exact_duplicate_max_residual": 0.0,
+    "join_partition_coarsening_max_residual": 0.0,
+    "join_same_component_insertion_increase_complete_record_fraction": 0.963625,
+    "join_same_component_insertion_max_budget_increase_complete": 0.9737516483879021,
+    "join_same_component_insertion_mean_budget_increase_complete": 0.2088079807212512,
+    "meet_common_evidence_cap_max_residual": 0.0,
+    "meet_exact_duplicate_max_residual": 0.0,
+    "meet_same_component_insertion_increase_complete_record_fraction": 0.0,
+    "meet_same_component_insertion_mean_budget_change_complete": -0.17664257943632358
+  }
+}

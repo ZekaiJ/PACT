@@ -1,0 +1,69 @@
+{
+  "denominator": {
+    "checkpoints": 8,
+    "episodes": 696,
+    "events": 1128,
+    "rows": 2256,
+    "tasks": 6
+  },
+  "estimands": {
+    "controlled_comparability_sensitivity": {
+      "grid_points": 36,
+      "role": "comparability sensitivity; it does not replace the registered panel estimand",
+      "support": [
+        0.1,
+        0.39
+      ],
+      "tie_rule": "analytic fractional inclusion within equal-score group"
+    },
+    "registered": {
+      "grid_points": 36,
+      "support": [
+        0.1,
+        0.9
+      ],
+      "tie_rule": "analytic fractional inclusion within equal-score group"
+    }
+  },
+  "full_support_release_reproduction_max_abs_residual": 0.0,
+  "input_sha256": {
+    "results/balanced_fm_panel/outputs/internvl3_2b.jsonl": "a7e02c0e73df89939535dba934a002ba739bce3865dde4cbec070e717070fb1c",
+    "results/balanced_fm_panel/outputs/internvl3_8b.jsonl": "f029e4e881ad69be62e8fdd773a8831cfd96d60b11975547c4094cb365ba2e79",
+    "results/balanced_fm_panel/outputs/llava_onevision_0_5b.jsonl": "e8e3deb7da31f5ae5a122b98d3e366d4e9157fb2853a2e62321f90c750207262",
+    "results/balanced_fm_panel/outputs/llava_onevision_7b.jsonl": "dc455b86282445dd5af413d75cffd736844099f21d68f7903ac55a6e34a43ff0",
+    "results/balanced_fm_panel/outputs/qwen3vl_32b.jsonl": "15811d2a4aacc605e0f36acefab6843f719433d4d00a85a161e58d2eafeddb61",
+    "results/balanced_fm_panel/outputs/qwen3vl_8b.jsonl": "563c08742f474581755984e5f98da81f847fd46bfbb44c15e4f66cd53378d5f4",
+    "results/balanced_fm_panel/outputs/smolvlm2_0_5b.jsonl": "6a8faabb84d4eed71cd93bb21d6ebb661523e2362f9d4a7a0a85048474ecb11c",
+    "results/balanced_fm_panel/outputs/smolvlm2_2_2b.jsonl": "b911eb9b11953ac73cc6c31db6049e6093f428fbd8bcf38f809b7a8a9865007e",
+    "results/balanced_fm_panel/protocol/FM_PANEL_FULL_CASES.csv": "405433a79d665f8bb8b9b426b9198e32191054c7f2fd2a30c3a552d2bd1f8ee0"
+  },
+  "method_order_lower_ncsAURC_first": {
+    "controlled_comparability_fractional_tie": [
+      "product",
+      "pact_false_split",
+      "nested_dirichlet",
+      "pact_registered_family",
+      "hierarchy_matched_cautious",
+      "pact_false_merge"
+    ],
+    "registered_full_fractional_tie": [
+      "nested_dirichlet",
+      "pact_false_split",
+      "hierarchy_matched_cautious",
+      "pact_registered_family",
+      "product",
+      "pact_false_merge"
+    ]
+  },
+  "paired_bootstrap": {
+    "all rows of each sampled episode retained": true,
+    "paired_draws_shared_across_methods": true,
+    "replicates": 2000,
+    "seed": 5401,
+    "unit": "episode within task"
+  },
+  "status": "EXECUTED_COMPLETE",
+  "support_selection": "the 0.10--0.39 sensitivity was fixed for controlled-study comparability; no PACT panel outcome or contrast sign was consulted",
+  "verdict": "COMPLETE_WITH_UNFAVORABLE_AND_REVERSED_ORDERINGS_RETAINED",
+  "version": "p0-estimand-closure-v1"
+}

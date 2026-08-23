@@ -1,0 +1,26 @@
+{
+  "analysis": "exhaustive six-view registered-coarsening surface",
+  "analysis_script_sha256": "B6D2F884976533FF9C00A6FE039EA233D39467A48FE1707D7BCE491469CE8575",
+  "bootstrap_draws": 2000,
+  "bootstrap_unit": "class-stratified record identifier",
+  "cover_edges": 856,
+  "elapsed_seconds": 174.58237648010254,
+  "frozen_emitter_realizations": 5,
+  "input_sha256": "2245CD2B272542F0AA1BD0E4DAFF94DC962FCBE8B6B620247D5828E83D8EAB98",
+  "pairs": [
+    "HandWritten-Mfeat__TMC",
+    "HandWritten-Mfeat__RCML"
+  ],
+  "partitions": 203,
+  "protocol_sha256": "CAEB69E7F4562250199598577573C60910A7F4E896B2C53A4EFBE0BCCE291E49",
+  "scope": "PACT-specific coarsening analysis; the 203 partitions do not test false splitting and do not generalize to registration-blind comparators.",
+  "scores": [
+    "native_nonvacuity",
+    "posterior_confidence"
+  ],
+  "status": "PASS",
+  "support": [
+    0.1,
+    0.9
+  ]
+}

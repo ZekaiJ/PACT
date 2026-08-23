@@ -1,0 +1,55 @@
+{
+  "record_id": "example-001",
+  "sources": {
+    "language": {
+      "probabilities": {
+        "normal": 0.025,
+        "slow_clearance": 0.025,
+        "hold_confirm": 0.9,
+        "bounded_urgent": 0.025,
+        "retreat_fallback": 0.025
+      },
+      "quality": 0.9,
+      "conflict": 0.0,
+      "missing": false,
+      "schema_valid": true,
+      "source_route": {
+        "current_command_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "payload_text_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "source_status": "current"
+      }
+    },
+    "geometry": {
+      "probabilities": {
+        "normal": 0.04,
+        "slow_clearance": 0.12,
+        "hold_confirm": 0.72,
+        "bounded_urgent": 0.03,
+        "retreat_fallback": 0.09
+      },
+      "quality": 0.85,
+      "conflict": 0.0,
+      "missing": false,
+      "schema_valid": true
+    },
+    "risk": {
+      "probabilities": {
+        "normal": 0.04,
+        "slow_clearance": 0.18,
+        "hold_confirm": 0.62,
+        "bounded_urgent": 0.04,
+        "retreat_fallback": 0.12
+      },
+      "quality": 0.75,
+      "conflict": 0.0,
+      "missing": false,
+      "schema_valid": true
+    }
+  },
+  "registered_parents": {
+    "language": ["current-command"],
+    "geometry": ["current-scene"],
+    "risk": ["current-scene"]
+  }
+}
+

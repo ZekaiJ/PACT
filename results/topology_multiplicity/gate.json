@@ -1,0 +1,29 @@
+{
+  "arms": [
+    "registered",
+    "singleton",
+    "all_merge"
+  ],
+  "contrast_m1": 0.02434742656354877,
+  "contrast_m32": 0.4337567003573904,
+  "directional_success_gate": "none; all multiplicities and signs retained",
+  "formula_check": {
+    "checks": 90,
+    "maximum_absolute_residual": 1.6653345369377348e-16
+  },
+  "interpretation": "topology-multiplicity stress test, not a scaling law",
+  "multiplicities": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "records": 31200,
+  "registered_ncsaurc_max_residual": 0.0,
+  "scenes": 48,
+  "singleton_minus_registered_contrast_monotone_non_decreasing": true,
+  "status": "PASS",
+  "true_registered_components": 2
+}

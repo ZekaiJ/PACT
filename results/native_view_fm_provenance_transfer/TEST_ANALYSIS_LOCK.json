@@ -1,0 +1,37 @@
+﻿{
+    "status":  "LOCKED_BEFORE_HELDOUT_INFERENCE",
+    "inherited_analysis_lock_sha256":  "b7ec18160e547529bd9b6a9e7df09f14863c253648807031a31441408529cf60",
+    "bootstrap_seed":  20260801,
+    "bootstrap_replicates":  2000,
+    "resampling":  "sample episodes with replacement within each task; carry all event-window descendants; pair all arms within each draw",
+    "point_aggregation":  "compute within task, then equal-weight the six task estimates",
+    "ncsAURC":  {
+                    "coverage_grid":  "36 fixed points from 0.10 through 0.90 as stored in ANALYSIS_LOCK.json",
+                    "ties":  "fractional inclusion of the boundary score group",
+                    "normalization":  "trapezoidal area divided by 0.80",
+                    "primary_contrast":  "lineage_unaware minus acquisition_registered at m=4; positive favors registration"
+                },
+    "secondary":  {
+                      "accuracy":  "argmax posterior; NOT READY on exact tie",
+                      "nll":  "negative log probability of the reference class, clipped at 1e-12",
+                      "brier":  "sum of squared errors over both binary class probabilities",
+                      "ece":  "10 equal-count bins of predicted-class confidence versus correctness",
+                      "wrong_admission_all":  "fraction of all records that are wrong within the top 0.13 score coverage",
+                      "wrong_admission_conditional":  "wrong fraction among the top 0.13 score coverage",
+                      "budget_ratio":  "total fused evidence divided by native_one_per_view total evidence on the matched record",
+                      "posterior_l1":  "L1 distance from native_one_per_view posterior"
+                  },
+    "reporting":  {
+                      "m4":  "all five arms with point estimates and episode-bootstrap intervals",
+                      "multiplicity":  "primary ncsAURC contrast for m=1,2,4",
+                      "checkpoints":  "32B primary and 8B replication reported separately; no cross-checkpoint fusion",
+                      "failures":  "all task-level signs and null or adverse results retained"
+                  },
+    "result_prohibitions":  [
+                                "no held-out retuning",
+                                "no prompt or arm changes",
+                                "no support changes",
+                                "no deletion of adverse tasks",
+                                "no model selection from held-out outcomes"
+                            ]
+}

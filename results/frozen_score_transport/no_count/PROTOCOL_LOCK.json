@@ -1,0 +1,35 @@
+{
+  "analysis": "observed-source-count feature ablation under frozen multiplicity transport",
+  "parent_analysis": "results/frozen_score_transport/full/",
+  "protocol": {
+    "bootstrap": "2000 paired scene replicates",
+    "endpoint": "ncsAURC on [0.10,0.39]",
+    "excluded_feature": "observed-source count only",
+    "methods": [
+      "pact_registered",
+      "pact_singleton",
+      "pact_all_merge",
+      "nested_unaware"
+    ],
+    "multiplicities": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "outcome_rule": "retain every result and sign",
+    "refit_at_larger_multiplicity": false,
+    "retained_features": [
+      "posterior coordinates",
+      "posterior entropy",
+      "posterior peak",
+      "top-two margin"
+    ],
+    "training": "same m=1 outer-training rows as M2",
+    "verifier": "disabled"
+  },
+  "released_runner": "results/frozen_score_transport/no_count/run.py",
+  "status": "FROZEN_BEFORE_RUN"
+}

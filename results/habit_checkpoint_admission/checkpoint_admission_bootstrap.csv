@@ -1,0 +1,10 @@
+model,contrast,metric,point,ci95_low,ci95_high,bootstrap_draws,bootstrap_unit
+qwen3vl_8b,combined_minus_candidate,wrong_all,-0.125,-0.1375,-0.1125,10000,episode within task
+qwen3vl_8b,combined_minus_candidate,correct_all,-0.002777777777777782,-0.0069444444444444475,0.0,10000,episode within task
+qwen3vl_8b,combined_minus_candidate,ready_factual_recall,-0.033333333333333326,-0.08333333333333326,0.0,10000,episode within task
+qwen3vl_32b,combined_minus_candidate,wrong_all,-0.11805555555555557,-0.13194444444444445,-0.10416666666666667,10000,episode within task
+qwen3vl_32b,combined_minus_candidate,correct_all,-0.004166666666666666,-0.008333333333333331,0.0,10000,episode within task
+qwen3vl_32b,combined_minus_candidate,ready_factual_recall,-0.050000000000000044,-0.10000000000000009,0.0,10000,episode within task
+internvl3_8b,combined_minus_candidate,wrong_all,-0.09722222222222222,-0.11666666666666667,-0.07777777777777778,10000,episode within task
+internvl3_8b,combined_minus_candidate,correct_all,-0.004166666666666666,-0.008333333333333335,0.0,10000,episode within task
+internvl3_8b,combined_minus_candidate,ready_factual_recall,-0.050000000000000044,-0.10000000000000003,0.0,10000,episode within task

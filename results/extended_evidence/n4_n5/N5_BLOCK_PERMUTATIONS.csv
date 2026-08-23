@@ -1,0 +1,7 @@
+paired_models,family_balanced_mean_phi_delta
+qwen3vl_8b+qwen3vl_32b,0.2820174525478817
+qwen3vl_8b+internvl3_8b,0.3299369756251533
+qwen3vl_8b+llava_onevision_7b,0.14086089136164226
+qwen3vl_32b+internvl3_8b,0.28300952384981604
+qwen3vl_32b+llava_onevision_7b,0.09338027601500504
+internvl3_8b+llava_onevision_7b,0.1851329983575205

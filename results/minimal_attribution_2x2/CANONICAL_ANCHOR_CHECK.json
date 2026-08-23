@@ -1,0 +1,9 @@
+{
+  "expected_admitted_at_target_0p13": 4043,
+  "expected_ncsAURC": 0.08612194505919865,
+  "expected_wrong_at_target_0p13": 0,
+  "observed_admitted_at_target_0p13": 4043,
+  "observed_ncsAURC": 0.08612194505919865,
+  "observed_wrong_at_target_0p13": 0,
+  "pass": true
+}

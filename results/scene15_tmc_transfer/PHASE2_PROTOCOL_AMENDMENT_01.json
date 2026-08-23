@@ -1,0 +1,22 @@
+﻿{
+    "schema_version":  "scene15-tmc-phase2-amendment-1.0",
+    "amended_utc":  "2026-08-13T01:57:48.9267932Z",
+    "parent_phase2_lock_sha256":  "cd0fc7cb4366749513042b794fc54ec39e69806a291fe998e3b227543ec19203",
+    "reason":  "The five prespecified runs use different stratified test partitions, so record identifiers do not form a common cluster set across seeds. The canonical seed-averaged record bootstrap is therefore undefined for this extension.",
+    "result_blinding":  {
+                            "phase2_summary_values_inspected":  0,
+                            "phase2_bootstrap_values_inspected":  0,
+                            "failed_before_verdict":  true
+                        },
+    "revised_uncertainty":  "Two-stage paired bootstrap: resample the five outer seeds, then resample matched native/intervention instances within each selected seed; 2000 draws.",
+    "unchanged":  [
+                      "five analysis seeds",
+                      "frozen outputs",
+                      "interventions",
+                      "multiplicities",
+                      "metrics",
+                      "directional PASS checks"
+                  ],
+    "runner_sha256":  "9e355bfb4899cd5f0284e5452aa9cfe72a27696100add70782a22a731f6b9e80",
+    "manuscript_modified":  false
+}

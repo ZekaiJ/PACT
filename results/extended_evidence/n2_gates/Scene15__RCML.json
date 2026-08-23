@@ -1,0 +1,10 @@
+{
+  "dataset": "Scene15",
+  "emitter": "RCML",
+  "scope": "eligibility only; no scientific claim",
+  "verdict": "MISMATCH",
+  "blocking_field": "native_performance_reproduction",
+  "payload_sha256": "52a71c6c675d5b0c1e07189778716bc52b972b17b58d8156c01422bcce2e4442",
+  "observed_accuracy": 0.6972,
+  "published_accuracy": 0.7619
+}

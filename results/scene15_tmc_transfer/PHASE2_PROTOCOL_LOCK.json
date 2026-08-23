@@ -1,0 +1,43 @@
+﻿{
+    "schema_version":  "scene15-tmc-phase2-lock-1.0",
+    "locked_utc":  "2026-08-13T01:56:42.9194498Z",
+    "prerequisite_gate_sha256":  "cfc512c8c8d42040d61aa1df96dc9beebcc67e8520fed6222d64257c46eed24f",
+    "prerequisite_verdict":  "PASS",
+    "purpose":  "Frozen-output evidence-accounting interventions only",
+    "source":  {
+                   "seeds":  [
+                                 11,
+                                 23,
+                                 37,
+                                 53,
+                                 71
+                             ],
+                   "instances_per_seed":  897,
+                   "native_exports":  "final_runs/seed_\u003cseed\u003e/exports/seed_\u003cseed\u003e.jsonl.gz",
+                   "native_outputs_retrained":  false
+               },
+    "interventions":  {
+                          "baseline":  "three native Scene15 views declared separately countable",
+                          "exact_copy":  "duplicate one deterministic donor view at multiplicities 2, 4, and 8 while retaining its parent",
+                          "false_split":  "the same numerical duplicates at multiplicities 2, 4, and 8, each assigned a distinct parent",
+                          "all_view_merge":  "three native views assigned one shared parent"
+                      },
+    "metrics":  [
+                    "PACT posterior L1 displacement from native",
+                    "PACT selection-score drift",
+                    "component count",
+                    "evidence budget"
+                ],
+    "uncertainty":  "2000 record-cluster bootstrap draws over seed-averaged paired deltas",
+    "pass_checks":  [
+                        "exact-copy posterior invariance \u003c= 1e-9",
+                        "exact-copy mean budget invariance \u003c= 1e-9",
+                        "false-split budget increase 95% CI lower bound \u003e 0",
+                        "all-view-merge budget change 95% CI upper bound \u003c 0"
+                    ],
+    "code":  {
+                 "phase2_runner_sha256":  "fe4514b5f8dcb0e0bfc7da17b27465a744b851f8c9805022fc6e751da041174c",
+                 "canonical_topology_script_sha256":  "97eb5f6da4f10e2449ef64a29355f43e93395c45d530e1ed630309ba88f21cf5"
+             },
+    "manuscript_modified":  false
+}

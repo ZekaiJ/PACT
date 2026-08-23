@@ -1,0 +1,10 @@
+{
+  "README.md": "695df698a052f4bc37bb820b3459b7efaddb71570f4f22dfda7dc8edebdf15a1",
+  "complete_shared_score.csv": "b5d5aeb9e59cf975a46a063a913ab7d9f0c94fb7a57d1323b5b4cf34796dc2bd",
+  "posterior_metrics.csv": "7625113ddfb88f4148659bb9851a71840eaf8ac46645c318629db2500f3a7a6d",
+  "score_factorial.csv": "4b50a88284f39c55112da1fb04287e2613863a53a05520d6eba01a4ef23ad833",
+  "summary.json": "2254e6b0c65d6c1257345e54873a268b97e41eb93176f42ba44eb9165963ab0f",
+  "verifier_policy_summary.csv": "909b3e8b4393a1172d409822280019bd3d9c6bedcd5536ec8e500e613d9a51ae",
+  "verifier_policy_transitions.csv": "6d07df90fc695559cf8c8037d4eeec8bf6566f12ad7db98c32103335797ba814",
+  "verifier_policy_truth_table.csv": "41c72000497193c0248bb231d852a6cdfb462fee53785b78fafec81898c78fe5"
+}

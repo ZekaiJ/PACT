@@ -1,0 +1,14 @@
+{
+  "complete_scene_component_records": 24000,
+  "join_common_evidence_cap_violating_complete_coordinates": 120000,
+  "join_common_evidence_cap_violating_complete_record_fraction": 1.0,
+  "join_exact_duplicate_max_residual": 0.0,
+  "join_partition_coarsening_max_residual": 0.0,
+  "join_same_component_insertion_increase_complete_record_fraction": 0.963625,
+  "join_same_component_insertion_max_budget_increase_complete": 0.9737516483879021,
+  "join_same_component_insertion_mean_budget_increase_complete": 0.2088079807212512,
+  "meet_common_evidence_cap_max_residual": 0.0,
+  "meet_exact_duplicate_max_residual": 0.0,
+  "meet_same_component_insertion_increase_complete_record_fraction": 0.0,
+  "meet_same_component_insertion_mean_budget_change_complete": -0.17664257943632358
+}

@@ -1,0 +1,13 @@
+dataset,emitter,gate,native_reproduction,per_view_export,scientific_scope
+HandWritten/Mfeat,TMC,INCLUDE,PASS (within 2 percentage points),PASS,Outcome and topology analyses
+HandWritten/Mfeat,RCML,INCLUDE,PASS (within 2 percentage points),PASS,Outcome and topology analyses
+PIE,TMC,EXCLUDE,Not verified,Unavailable,No claim
+PIE,RCML,INCLUDE,"PASS (0.9471, published value)",PASS,Budget/topology analysis
+Scene15,TMC,INCLUDE,PASS (0.6679 vs 0.6774; 30 runs),PASS (5 topology seeds; all 30 retained),Frozen-output budget/posterior/accuracy/full-support-ordering extension
+Scene15,RCML,EXCLUDE,MISMATCH (0.6972 vs 0.7619),Available,No topology claim
+CUB,TMC,EXCLUDE,Not verified,Unavailable,No claim
+CUB,RCML,EXCLUDE,Not verified,Unavailable,No claim
+Caltech101,TMC,EXCLUDE,Not verified,Unavailable,No claim
+Caltech101,RCML,EXCLUDE,Not verified,Unavailable,No claim
+HMDB,TMC,EXCLUDE,Not verified,Unavailable,No claim
+HMDB,RCML,EXCLUDE,Not verified,Unavailable,No claim

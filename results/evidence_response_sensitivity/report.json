@@ -1,0 +1,117 @@
+{
+  "baseline_reproduction": {
+    "archived_stress_interval_naurc": {
+      "nested_evidential": 0.10945707573212302,
+      "registered_lineage": 0.18893356411489803
+    },
+    "canonical_nested_naurc": 0.14723886711862416,
+    "canonical_registered_naurc_archived": 0.21494829321991138,
+    "differences": {
+      "nested_canonical_naurc": 0.0,
+      "nested_coverage": 0.0,
+      "nested_stress_naurc": 0.0,
+      "nested_wrong_all": 0.0,
+      "registered_coverage": 0.0,
+      "registered_stress_naurc": 1.244471135308789e-06,
+      "registered_wrong_all": 0.0
+    },
+    "max_abs_difference": 1.244471135308789e-06,
+    "observed": {
+      "nested_evidential": {
+        "clean_correct_all": 0.8525,
+        "clean_coverage": 0.8525,
+        "correct_all": 0.13131410256410256,
+        "coverage": 0.13131410256410256,
+        "normalized_aurc": 0.10945707573212302,
+        "wrong_admitted": 0.0,
+        "wrong_all": 0.0
+      },
+      "registered_lineage": {
+        "clean_correct_all": 0.76,
+        "clean_coverage": 0.76,
+        "correct_all": 0.12041666666666667,
+        "coverage": 0.13102564102564102,
+        "normalized_aurc": 0.18893480858603334,
+        "wrong_admitted": 0.08096868884540118,
+        "wrong_all": 0.010608974358974359
+      }
+    },
+    "status": "pass",
+    "stress_common_support": [
+      0.1,
+      0.35
+    ],
+    "tolerance": 2e-06
+  },
+  "claim_boundary": "The nuisance sweep tests robustness of the controlled opinion interface; the paired response curve tests whether observable evidence degradation changes selective admission in the expected direction. Neither analysis constitutes raw-sensor, physical-execution, or participant validation.",
+  "evidence_response_summary": {
+    "checks": {
+      "direct_unoccluded_clean_outputs_exactly_invariant": true,
+      "overall_wrong_all_max_at_most_0_02": true,
+      "partial_clean_coverage_mean_monotone": true,
+      "partial_clean_coverage_median_monotone": true,
+      "partial_clean_coverage_monotone_in_at_least_80pct_pairs": true,
+      "ranking_preserved_in_at_least_95pct_response_settings": true
+    },
+    "monotone_pair_rate": 1.0,
+    "overall_wrong_all_max": 0.014583333333333334,
+    "partial_clean_coverage_mean_drop_0_5_to_1_5": 0.23329427083333332,
+    "partial_clean_coverage_median_drop_0_5_to_1_5": 0.23750000000000004,
+    "partial_clean_wrong_all_max": 0.09583333333333334
+  },
+  "nuisance_settings": 256,
+  "nuisance_summary": {
+    "baseline_nested_clean_coverage": 0.8525,
+    "naurc_gain_median": 0.08596024142512676,
+    "naurc_gain_q025": 0.054859859623251864,
+    "naurc_gain_q975": 0.09566932573820947,
+    "nested_clean_coverage_min": 0.8275,
+    "ranking_preservation_rate": 1.0,
+    "worst_clean_coverage_loss": 0.025000000000000022,
+    "worst_nested_minus_registered_wrong_all": -0.003942307692307691
+  },
+  "preflight": {
+    "checks": {
+      "base_record_count_240": true,
+      "baseline_rebuild_byte_exact": true,
+      "rebuilt_record_count_31200": true,
+      "transform_reference_permutation_invariant": true,
+      "transform_static_forbidden_hits_zero": true
+    },
+    "frozen_source_records_sha256": "638e910b42091863731fc4922c651411fac3836e855a178c26019e660a3c24c0",
+    "rebuilt_source_records_sha256": "638e910b42091863731fc4922c651411fac3836e855a178c26019e660a3c24c0",
+    "static_forbidden_hits": [],
+    "status": "pass"
+  },
+  "promotion_criteria": {
+    "nuisance::copy_mass_invariance": true,
+    "nuisance::frozen_baseline_reproduced": true,
+    "nuisance::median_naurc_gain_exceeds_0_03": true,
+    "nuisance::nested_lower_naurc_in_at_least_95pct_settings": true,
+    "nuisance::no_reference_field_leakage": true,
+    "nuisance::worst_anchor_wrong_all_margin_at_most_0_01": true,
+    "nuisance::worst_clean_coverage_loss_below_0_05": true,
+    "response::direct_unoccluded_clean_outputs_exactly_invariant": true,
+    "response::overall_wrong_all_max_at_most_0_02": true,
+    "response::partial_clean_coverage_mean_monotone": true,
+    "response::partial_clean_coverage_median_monotone": true,
+    "response::partial_clean_coverage_monotone_in_at_least_80pct_pairs": true,
+    "response::ranking_preserved_in_at_least_95pct_response_settings": true
+  },
+  "response_settings": 192,
+  "scientific_design": {
+    "evidence_response_question": "Does weaker partially occluded evidence induce selective withholding while leaving unoccluded cases unchanged?",
+    "frozen_components": "scene folds, verifier, evaluator, nested backbone choices, stress expansion, and acceptance protocol",
+    "nuisance_occlusion_strength": 1.0,
+    "nuisance_question": "Does the method ranking survive plausible opinion sharpness and quality/conflict parameterization?",
+    "nuisance_sequence": "scrambled Sobol seed 1935",
+    "response_levels": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "response_sequence": "paired scrambled Sobol seed 1946"
+  },
+  "status": "promote",
+  "version": "v1925"
+}

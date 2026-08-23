@@ -1,0 +1,56 @@
+{
+  "status": "LOCKED_BEFORE_FULL_INFERENCE",
+  "analysis_unit": {
+    "prediction": "event-window row",
+    "uncertainty": "episode resampled within task; both windows and all checkpoints retained",
+    "family_dependence": "checkpoint pair",
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 5401
+  },
+  "input": {
+    "class_order": ["not_ready", "ready"],
+    "reference": "early=not_ready; event-proximal ready=ready",
+    "checkpoint_evidence": "e_i=2*[1-p_ready,p_ready]",
+    "budget_per_checkpoint": 2.0,
+    "test_rescaling": false
+  },
+  "fusion": {
+    "product": "normalize the coordinatewise product of checkpoint probabilities",
+    "nested_dirichlet": "map each fixed-budget evidence vector to a subjective opinion and compose recursively with the manuscript operator",
+    "hierarchy_matched_cautious": "coordinatewise minimum of canonical conjunctive log weights within registered pairs, addition across pairs, then one normalization",
+    "pact_registered_family": "coordinatewise evidence meet within each registered pair and evidence sum across the four pairs",
+    "pact_false_split": "eight singleton registered components",
+    "pact_false_merge": "one eight-checkpoint registered component",
+    "random_pairings": "all 105 unlabeled partitions of eight checkpoints into four pairs"
+  },
+  "metrics": {
+    "classification": ["accuracy", "negative_log_likelihood", "unnormalized_multiclass_brier", "adaptive_ece_10"],
+    "ready_admission": {
+      "score": "fused p_ready",
+      "technical_eligibility": "all eight checkpoint outputs present and finite; no additional semantic verifier",
+      "coverages": "36 equally spaced points from 0.10 to 0.90",
+      "ties": "analytic proportional inclusion within a tied score group; no record-id tie break",
+      "reported": ["ncsAURC", "wrong_all", "correct_all", "conditional_wrong_admission"]
+    },
+    "topology": ["total_evidence_budget", "budget_ratio_to_registered_family", "posterior_l1_drift", "copy_invariance_residual"],
+    "dependence": ["checkpoint_pair_phi", "joint_error_lift", "conditional_co_error"]
+  },
+  "family_partition_test": {
+    "primary_statistic": "mean within-pair phi minus mean between-pair phi",
+    "reference_distribution": "all 105 unlabeled four-pair partitions",
+    "one_sided_p": "count(T_partition >= T_registered)/105",
+    "confirmed": "T_registered>0 and exact p<=0.05",
+    "null_policy": "report the null; family registration remains a conservative accounting policy, not an empirical dependence certificate",
+    "secondary_statistics": ["joint_error_lift", "conditional_co_error"]
+  },
+  "reporting": {
+    "retain_negative_results": true,
+    "manuscript_auto_edit": false,
+    "claims_excluded": [
+      "statistical independence of different families",
+      "foundation-model release authority",
+      "physical-robot validation",
+      "performance-selected family topology"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "HandWritten-Mfeat__RCML": {
+    "gamma_max": 0.9,
+    "gamma_min": 0.1,
+    "grid_points": 36,
+    "largest_top_tie_coverage": 0.0025,
+    "selection_uses_labels": false,
+    "tie_rule": "analytic fractional inclusion within equal-score group"
+  },
+  "HandWritten-Mfeat__TMC": {
+    "gamma_max": 0.9,
+    "gamma_min": 0.1,
+    "grid_points": 36,
+    "largest_top_tie_coverage": 0.005,
+    "selection_uses_labels": false,
+    "tie_rule": "analytic fractional inclusion within equal-score group"
+  }
+}

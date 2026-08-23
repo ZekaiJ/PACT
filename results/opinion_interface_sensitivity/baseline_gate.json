@@ -1,0 +1,87 @@
+{
+  "checks": {
+    "nested_and_pooling_baseline_pass": true,
+    "pact_stress_naurc_matches_archive": true,
+    "record_count_31200": true,
+    "upstream_preflight_pass": true
+  },
+  "input_hashes": {
+    "archived_pact_curve": "fbe5fa7e5b38a81831dd448d6fde8cf34d0c46f2f577c2a63721ba54acfc5d08",
+    "base_records": "2f25d923963dfae0de27afad378abba67d9a7e03c763041a844136401882788c",
+    "frozen_records": "638e910b42091863731fc4922c651411fac3836e855a178c26019e660a3c24c0",
+    "nested_gate": "8f6f19798d691005b42b4e4aa281db3bcf47eeab50458133a78e790a938f5b10",
+    "pact_operator": "a32f7b8953186abf8ed2ea245a7648935a2155c7de157c9217962b8475afa7ca",
+    "verifier": "1b12ac1a62762bb139a47b3abc990c96372f46ea54953f40930c89358447016b"
+  },
+  "pact_anchor_metrics": {
+    "clean_correct_all": 0.855,
+    "clean_coverage": 0.855,
+    "correct_all": 0.13118589743589743,
+    "coverage": 0.13118589743589743,
+    "normalized_aurc": 0.06632441594548148,
+    "wrong_admitted": 0.0,
+    "wrong_all": 0.0
+  },
+  "pact_stress_naurc_abs_difference": 0.0,
+  "pact_stress_naurc_archived": 0.06632441594548148,
+  "pact_stress_naurc_observed": 0.06632441594548148,
+  "status": "pass",
+  "tolerance": 2e-06,
+  "upstream_baseline": {
+    "archived_stress_interval_naurc": {
+      "nested_evidential": 0.10945707573212302,
+      "registered_lineage": 0.18893356411489803
+    },
+    "canonical_nested_naurc": 0.14723886711862416,
+    "canonical_registered_naurc_archived": 0.21494829321991138,
+    "differences": {
+      "nested_canonical_naurc": 0.0,
+      "nested_coverage": 0.0,
+      "nested_stress_naurc": 0.0,
+      "nested_wrong_all": 0.0,
+      "registered_coverage": 0.0,
+      "registered_stress_naurc": 1.244471135308789e-06,
+      "registered_wrong_all": 0.0
+    },
+    "max_abs_difference": 1.244471135308789e-06,
+    "observed": {
+      "nested_evidential": {
+        "clean_correct_all": 0.8525,
+        "clean_coverage": 0.8525,
+        "correct_all": 0.13131410256410256,
+        "coverage": 0.13131410256410256,
+        "normalized_aurc": 0.10945707573212302,
+        "wrong_admitted": 0.0,
+        "wrong_all": 0.0
+      },
+      "registered_lineage": {
+        "clean_correct_all": 0.76,
+        "clean_coverage": 0.76,
+        "correct_all": 0.12041666666666667,
+        "coverage": 0.13102564102564102,
+        "normalized_aurc": 0.18893480858603334,
+        "wrong_admitted": 0.08096868884540118,
+        "wrong_all": 0.010608974358974359
+      }
+    },
+    "status": "pass",
+    "stress_common_support": [
+      0.1,
+      0.35
+    ],
+    "tolerance": 2e-06
+  },
+  "upstream_preflight": {
+    "checks": {
+      "base_record_count_240": true,
+      "baseline_rebuild_byte_exact": true,
+      "rebuilt_record_count_31200": true,
+      "transform_reference_permutation_invariant": true,
+      "transform_static_forbidden_hits_zero": true
+    },
+    "frozen_source_records_sha256": "638e910b42091863731fc4922c651411fac3836e855a178c26019e660a3c24c0",
+    "rebuilt_source_records_sha256": "638e910b42091863731fc4922c651411fac3836e855a178c26019e660a3c24c0",
+    "static_forbidden_hits": [],
+    "status": "pass"
+  }
+}

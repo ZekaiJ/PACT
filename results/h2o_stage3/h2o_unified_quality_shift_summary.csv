@@ -1,0 +1,9 @@
+variant,n,raw_admission_rate,pact_sv_admission_rate,raw_admission_nonincrease_violations,raw_release_authority_nonincrease_violations,pact_sv_admission_nonincrease_violations,pact_sv_release_authority_nonincrease_violations,pact_sv_admit,pact_sv_hold,pact_sv_confirm,pact_sv_retreat,pact_sv_fallback
+baseline,300,0.42333333333333334,0.42333333333333334,0,0,0,0,105,173,22,0,0
+missing_depth,300,0.6,0.0,53,15,0,0,0,300,0,0,0
+missing_object_pose,300,1.0,0.0,173,75,0,0,0,0,0,0,300
+depth_quality_shift,300,0.5066666666666667,0.0,25,15,0,0,0,300,0,0,0
+object_pose_noise,300,1.0,0.0,173,75,0,0,0,300,0,0,0
+stale_world_geometry,300,0.6666666666666666,0.0,73,13,0,0,0,300,0,0,0
+high_source_conflict,300,0.0,0.0,0,0,0,0,0,300,0,0,0
+low_quality_all,300,0.7066666666666667,0.0,85,25,0,0,0,300,0,0,0

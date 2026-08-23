@@ -1,0 +1,84 @@
+{
+  "claim_boundary": "repeat quantiles describe sensitivity to scene-fold assignment; they are not independent-sample confidence intervals",
+  "complete_reselection": "scene folds, candidate backbone/concentration, and every score threshold are refit within each repeat",
+  "fixed_support": [
+    0.1,
+    0.35
+  ],
+  "fusion_negative_direction_repeats": 50,
+  "fusion_pact_minus_product": {
+    "max": -0.13520004903315574,
+    "mean": -0.1354723295625483,
+    "median": -0.13547538828394268,
+    "min": -0.13586921275801944,
+    "p025": -0.13572924635328246,
+    "p975": -0.13523564810230893
+  },
+  "original_split_self_check": {
+    "configured_concentrations": {
+      "0": 8.0,
+      "1": 4.0,
+      "2": 8.0,
+      "3": 4.0,
+      "4": 4.0
+    },
+    "passed": true,
+    "reselected_concentrations": {
+      "0": 8.0,
+      "1": 4.0,
+      "2": 8.0,
+      "3": 4.0,
+      "4": 4.0
+    }
+  },
+  "outer_folds": 5,
+  "repeats": 50,
+  "scene_groups": 48,
+  "seeds": [
+    1930,
+    1979
+  ],
+  "selection_candidates": [
+    "quality_weighted_fusion",
+    "product_evidence_fusion",
+    "cautious_evidence_fusion",
+    "lineage_unaware_pooling",
+    "registered_lineage_pooling",
+    "nested_evidential_composition_c4",
+    "nested_evidential_composition_c8",
+    "nested_evidential_composition_c12",
+    "nested_evidential_composition_c16",
+    "nested_evidential_composition_c24"
+  ],
+  "selection_frequency": {
+    "nested_evidential_composition_c12": 65,
+    "nested_evidential_composition_c16": 11,
+    "nested_evidential_composition_c24": 10,
+    "nested_evidential_composition_c4": 52,
+    "nested_evidential_composition_c8": 112
+  },
+  "selection_objective": [
+    "mean inner-fold expected cost",
+    "mean inner-fold wrong/all",
+    "negative mean inner-fold correct/all",
+    "predeclared candidate order"
+  ],
+  "selection_policy_targets": [
+    0.1,
+    0.13,
+    0.15
+  ],
+  "shared_verifier_negative_direction_repeats": 50,
+  "shared_verifier_pact_minus_nested": {
+    "max": -0.04076882336330226,
+    "mean": -0.047380132626807375,
+    "median": -0.0477379619129714,
+    "min": -0.051178998182726046,
+    "p025": -0.05039527976544782,
+    "p975": -0.04290784799812532
+  },
+  "status": "EXECUTED_COMPLETE",
+  "support_selection": "fixed before this run for comparability; no repeated-split PACT outcome was consulted",
+  "verdict": "EXECUTED_WITHOUT_SIGN_FILTER",
+  "version": "p0-estimand-closure-v1"
+}

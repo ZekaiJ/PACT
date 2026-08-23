@@ -1,0 +1,23 @@
+﻿{
+  "status": "LOCKED_ANALYSIS_CORRECTION",
+  "locked_utc": "2026-08-02T18:30:00Z",
+  "reason": "The locked non-vacuity score is a deterministic function of total evidence budget. Per-output and one-output-per-view arms have analytically constant budgets at fixed multiplicity, but floating-point summation noise had been treated as score variation by exact tie detection.",
+  "correction": {
+    "semantic_budget": "Use exact analytic budgets for arms whose budget follows from emitted evidence mass and retained-count semantics; preserve the original component-min evidence vector for posterior computation.",
+    "tie_handling": "Records with the same semantic score are treated as one tie group and fractionally included at coverage boundaries, as specified in the original analysis lock.",
+    "unchanged": [
+      "held-out outputs",
+      "prompts",
+      "model revisions",
+      "labels",
+      "coverage support",
+      "bootstrap seed and resampling unit",
+      "primary native non-vacuity estimand"
+    ]
+  },
+  "secondary_readouts": {
+    "posterior_confidence": "Post-hoc score diagnostic using max(p_ready, 1-p_ready) on the same frozen posteriors.",
+    "equal_cardinality_shuffled_grouping": "Post-hoc topology control. Five groups retain the acquisition-registered component count and surface cardinality, while cyclically assigning surface outputs from different physical views to each group."
+  },
+  "claim_boundary": "The amendment corrects a numerical tie implementation and adds labeled post-hoc diagnostics; it does not retroactively preregister the secondary readouts."
+}

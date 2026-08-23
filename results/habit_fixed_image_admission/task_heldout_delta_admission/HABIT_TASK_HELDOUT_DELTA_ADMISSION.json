@@ -1,0 +1,152 @@
+{
+  "status": "pass",
+  "analysis_role": "task-held-out temporal-change evidence composed with fixed semantic candidates and current target state",
+  "runtime_evidence": "the event-proximal score is compared with an earlier pre-release observation from the same episode; positive change is required",
+  "claim_boundary": "The result evaluates sequential pre-release evidence, not single-image phase recognition or an unseen-task robot policy.",
+  "candidate_only": {
+    "n": 720,
+    "admitted": 144,
+    "coverage": 0.2,
+    "correct_authorization_all": 0.07361111111111111,
+    "wrong_authorization_all": 0.12638888888888888,
+    "wrong_authorization_admitted": 0.6319444444444444,
+    "authorization_accuracy": 0.8638888888888889,
+    "ready_factual_recall": 0.8833333333333333
+  },
+  "task_heldout_delta_admission": {
+    "n": 720,
+    "admitted": 53,
+    "coverage": 0.07361111111111111,
+    "correct_authorization_all": 0.07361111111111111,
+    "wrong_authorization_all": 0.0,
+    "wrong_authorization_admitted": 0.0,
+    "authorization_accuracy": 0.9902777777777778,
+    "ready_factual_recall": 0.8833333333333333
+  },
+  "task_heldout_task_macro": {
+    "coverage": 0.07361111111111111,
+    "correct_authorization_all": 0.07361111111111111,
+    "wrong_authorization_all": 0.0,
+    "wrong_authorization_admitted": 0.0,
+    "authorization_accuracy": 0.9902777777777777,
+    "ready_factual_recall": 0.8833333333333333,
+    "worst_task_ready_factual_recall": 0.5,
+    "worst_task_sid": "S6759"
+  },
+  "task_heldout_by_task": [
+    {
+      "sid": "S6759",
+      "task": "Power Cable",
+      "n": 120,
+      "admitted": 5,
+      "coverage": 0.041666666666666664,
+      "correct_authorization_all": 0.041666666666666664,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 0.9583333333333334,
+      "ready_factual_recall": 0.5
+    },
+    {
+      "sid": "S7025",
+      "task": "Organizing box",
+      "n": 120,
+      "admitted": 10,
+      "coverage": 0.08333333333333333,
+      "correct_authorization_all": 0.08333333333333333,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 1.0,
+      "ready_factual_recall": 1.0
+    },
+    {
+      "sid": "S7414",
+      "task": "Paper to-go box",
+      "n": 120,
+      "admitted": 10,
+      "coverage": 0.08333333333333333,
+      "correct_authorization_all": 0.08333333333333333,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 1.0,
+      "ready_factual_recall": 1.0
+    },
+    {
+      "sid": "S7788",
+      "task": "iced cup",
+      "n": 120,
+      "admitted": 9,
+      "coverage": 0.075,
+      "correct_authorization_all": 0.075,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 0.9916666666666667,
+      "ready_factual_recall": 0.9
+    },
+    {
+      "sid": "S8940",
+      "task": "Airtight Container lid",
+      "n": 120,
+      "admitted": 10,
+      "coverage": 0.08333333333333333,
+      "correct_authorization_all": 0.08333333333333333,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 1.0,
+      "ready_factual_recall": 1.0
+    },
+    {
+      "sid": "S8975",
+      "task": "100 cm Hotel Towel",
+      "n": 120,
+      "admitted": 9,
+      "coverage": 0.075,
+      "correct_authorization_all": 0.075,
+      "wrong_authorization_all": 0.0,
+      "wrong_authorization_admitted": 0.0,
+      "authorization_accuracy": 0.9916666666666667,
+      "ready_factual_recall": 0.9
+    }
+  ],
+  "in_domain_absolute_admission": {
+    "n": 720,
+    "admitted": 52,
+    "coverage": 0.07222222222222222,
+    "correct_authorization_all": 0.07083333333333333,
+    "wrong_authorization_all": 0.001388888888888889,
+    "wrong_authorization_admitted": 0.019230769230769232,
+    "authorization_accuracy": 0.9861111111111112,
+    "ready_factual_recall": 0.85
+  },
+  "paired_task_balanced_bootstrap": [
+    {
+      "metric": "wrong_authorization_all",
+      "task_heldout_minus_in_domain": -0.001388888888888889,
+      "ci95_low": -0.004166666666666667,
+      "ci95_high": 0.0,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "metric": "correct_authorization_all",
+      "task_heldout_minus_in_domain": 0.002777777777777782,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0069444444444444475,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "metric": "ready_factual_recall",
+      "task_heldout_minus_in_domain": 0.033333333333333326,
+      "ci95_low": 0.0,
+      "ci95_high": 0.08333333333333326,
+      "bootstrap_iterations": 10000
+    }
+  ],
+  "promotion_checks": {
+    "wrong_all_within_0_002_of_in_domain": true,
+    "candidate_correct_retention_at_least_0_90": true,
+    "task_folds_not_worse_than_in_domain_wrong_all": 6
+  },
+  "input_sha256": {
+    "results\\habit_level2\\task_heldout_admission\\task_heldout_phase_predictions.csv": "5aa1348223aa546c2bdc39d5be1befc446987f98cfc917d55499d2c04a271524",
+    "scripts\\run_habit_task_heldout_delta_admission.py": "ee077e6a1822d6f5df0d624b1a32f999c262e14ea4c9525da234f113fab36df1"
+  }
+}

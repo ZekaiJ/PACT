@@ -1,0 +1,11 @@
+{
+  "dataset": "HandWritten-Mfeat",
+  "emitter": "TMC",
+  "scope": "eligibility only; no scientific claim",
+  "verdict": "PASS",
+  "blocking_field": null,
+  "payload_sha256": "d731ec02aaa97cf9a5826df68b0dd1e73ba61a82ba3c8f64606ba402926c885b",
+  "native_reproduction": "within_2pp_gate",
+  "views": 6,
+  "classes": 10
+}

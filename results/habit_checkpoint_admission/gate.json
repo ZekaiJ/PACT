@@ -1,0 +1,58 @@
+{
+  "analysis": "fixed target-plus-event admission across three frozen checkpoints",
+  "analysis_script_sha256": "7f958c68a864907370d4fc513d4dce4954c3673f4f5302766b0dae32a80c8c0e",
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20260811,
+    "unit": "episode within task"
+  },
+  "claim_boundary": "Frozen-output checkpoint robustness of one fixed admission rule; not a claim of checkpoint independence, closed-loop execution, or physical safety.",
+  "episode_clusters": 60,
+  "expected_counts": {
+    "internvl3_8b/candidate_only": {
+      "admitted": 98,
+      "correct_admitted": 27,
+      "wrong_admitted": 71
+    },
+    "internvl3_8b/combined": {
+      "admitted": 25,
+      "correct_admitted": 24,
+      "wrong_admitted": 1
+    },
+    "qwen3vl_32b/candidate_only": {
+      "admitted": 143,
+      "correct_admitted": 57,
+      "wrong_admitted": 86
+    },
+    "qwen3vl_32b/combined": {
+      "admitted": 55,
+      "correct_admitted": 54,
+      "wrong_admitted": 1
+    },
+    "qwen3vl_8b/candidate_only": {
+      "admitted": 144,
+      "correct_admitted": 53,
+      "wrong_admitted": 91
+    },
+    "qwen3vl_8b/combined": {
+      "admitted": 52,
+      "correct_admitted": 51,
+      "wrong_admitted": 1
+    }
+  },
+  "inputs": {
+    "results/habit_checkpoint_admission/event_proximity_predictions.csv": "f225a340e9f0bd697afcef4f40dc17117963503abc060855c53221c84b30624e",
+    "results/habit_checkpoint_admission/event_proximity_source_gate.json": "7b3b5ccaf2a4507fe9b2e3ba7ff442393bd65a60586290536f91345fc113f2a9",
+    "results/habit_checkpoint_admission/foundation_model_source_gate.json": "e1aed6a2506ca3a73277bc49d3f5ddd1cb99889192a9abe3194cb44e1bcbf0e6",
+    "results/habit_checkpoint_admission/scored_rows_three_checkpoint.csv": "4d573b7578dcc331b449113dd81812e14e28e1c15eb63a9cc8dd913e79227f0a"
+  },
+  "models": [
+    "qwen3vl_8b",
+    "qwen3vl_32b",
+    "internvl3_8b"
+  ],
+  "rows_per_model": 720,
+  "status": "PASS",
+  "tasks": 6,
+  "threshold": 0.5
+}

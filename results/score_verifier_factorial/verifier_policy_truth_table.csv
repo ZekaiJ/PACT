@@ -1,0 +1,9 @@
+supporting_sources,supporting_components,language_plus_physical_roles,scenario,A_unanimous_three_source,B_multi_source_three_component,C_required_role_two_component
+1,1,False,single source,not_invoked,not_invoked,not_invoked
+2,1,True,"language + physical, reused component",not_invoked,confirm,confirm
+2,2,True,"language + physical, distinct components",not_invoked,confirm,admit
+2,1,False,"two physical sources, reused component",not_invoked,confirm,confirm
+2,2,False,"two physical sources, distinct components",not_invoked,confirm,confirm
+3,1,True,"three sources, one component",confirm,confirm,confirm
+3,2,True,"three sources, two components",confirm,confirm,admit
+3,3,True,"three sources, three components",admit,admit,admit

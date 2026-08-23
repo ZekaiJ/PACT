@@ -1,0 +1,129 @@
+{
+  "claims_excluded": [
+    "statistical independence of different families",
+    "foundation-model release authority",
+    "physical-robot validation",
+    "performance-selected family topology"
+  ],
+  "constant_class_checkpoints": [
+    "internvl3_2b",
+    "llava_onevision_0_5b",
+    "llava_onevision_7b"
+  ],
+  "denominator": {
+    "checkpoints": 8,
+    "episodes": 696,
+    "events": 1128,
+    "families": 4,
+    "rows": 2256,
+    "tasks": 6
+  },
+  "family_partition_test": {
+    "bootstrap_ci95": [
+      0.4284710630813926,
+      0.4555366263508833
+    ],
+    "confirmed": false,
+    "interpretation": "family registration remains a conservative accounting policy, not an empirical dependence certificate",
+    "one_sided_exact_p": 0.08571428571428572,
+    "partitions": 105,
+    "registered_phi_contrast": 0.4424113194715254,
+    "registered_rank_descending": 7
+  },
+  "fusion_metrics": [
+    {
+      "accuracy": 0.8577127659574468,
+      "adaptive_ece_10": 0.05842537274944514,
+      "method": "product",
+      "ncsAURC": 0.16535927895126154,
+      "negative_log_likelihood": 0.4412654777819937,
+      "unnormalized_multiclass_brier": 0.22814121697657225
+    },
+    {
+      "accuracy": 0.8648049645390071,
+      "adaptive_ece_10": 0.19110915023556804,
+      "method": "nested_dirichlet",
+      "ncsAURC": 0.16424020060799088,
+      "negative_log_likelihood": 0.4500616126010441,
+      "unnormalized_multiclass_brier": 0.27331941172429436
+    },
+    {
+      "accuracy": 0.8648049645390071,
+      "adaptive_ece_10": 0.2680852684891598,
+      "method": "hierarchy_matched_cautious",
+      "ncsAURC": 0.16462471361229097,
+      "negative_log_likelihood": 0.544947007102639,
+      "unnormalized_multiclass_brier": 0.3551778445615593
+    },
+    {
+      "accuracy": 0.8661347517730497,
+      "adaptive_ece_10": 0.30617627198594144,
+      "method": "pact_registered_family",
+      "ncsAURC": 0.16495748413533468,
+      "negative_log_likelihood": 0.5958567109002637,
+      "unnormalized_multiclass_brier": 0.4036537894458374
+    },
+    {
+      "accuracy": 0.8661347517730497,
+      "adaptive_ece_10": 0.30685618873753323,
+      "method": "pact_false_split",
+      "ncsAURC": 0.16431451705544503,
+      "negative_log_likelihood": 0.5971862518345629,
+      "unnormalized_multiclass_brier": 0.40493044472733475
+    },
+    {
+      "accuracy": 0.762854609929078,
+      "adaptive_ece_10": 0.18314487991307915,
+      "method": "pact_false_merge",
+      "ncsAURC": 0.1714560984059739,
+      "negative_log_likelihood": 0.5966155739750288,
+      "unnormalized_multiclass_brier": 0.40509811829119136
+    }
+  ],
+  "protocol": {
+    "analysis_lock_sha256": "5a708f65a358f90bfa7f24c5f7023e1d39a4306ed52cdf18e6147ca09567b387",
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 5401,
+    "input_sha256": {
+      "results\\balanced_fm_panel\\outputs\\internvl3_2b.jsonl": "a7e02c0e73df89939535dba934a002ba739bce3865dde4cbec070e717070fb1c",
+      "results\\balanced_fm_panel\\outputs\\internvl3_8b.jsonl": "f029e4e881ad69be62e8fdd773a8831cfd96d60b11975547c4094cb365ba2e79",
+      "results\\balanced_fm_panel\\outputs\\llava_onevision_0_5b.jsonl": "e8e3deb7da31f5ae5a122b98d3e366d4e9157fb2853a2e62321f90c750207262",
+      "results\\balanced_fm_panel\\outputs\\llava_onevision_7b.jsonl": "dc455b86282445dd5af413d75cffd736844099f21d68f7903ac55a6e34a43ff0",
+      "results\\balanced_fm_panel\\outputs\\qwen3vl_32b.jsonl": "15811d2a4aacc605e0f36acefab6843f719433d4d00a85a161e58d2eafeddb61",
+      "results\\balanced_fm_panel\\outputs\\qwen3vl_8b.jsonl": "563c08742f474581755984e5f98da81f847fd46bfbb44c15e4f66cd53378d5f4",
+      "results\\balanced_fm_panel\\outputs\\smolvlm2_0_5b.jsonl": "6a8faabb84d4eed71cd93bb21d6ebb661523e2362f9d4a7a0a85048474ecb11c",
+      "results\\balanced_fm_panel\\outputs\\smolvlm2_2_2b.jsonl": "b911eb9b11953ac73cc6c31db6049e6093f428fbd8bcf38f809b7a8a9865007e",
+      "results\\balanced_fm_panel\\protocol\\FM_PANEL_FULL_CASES.csv": "405433a79d665f8bb8b9b426b9198e32191054c7f2fd2a30c3a552d2bd1f8ee0"
+    },
+    "pilot_gate_sha256": "ea77a61a7554793bd1f9beebc0471c7820efb39bcb989d5aa70120a40448198d"
+  },
+  "status": "PASS_COMPLETE",
+  "topology": [
+    {
+      "mean_budget_ratio_to_registered": 1.0,
+      "mean_posterior_l1_drift": 0.0,
+      "mean_total_evidence_budget": 6.989373507551166,
+      "topology": "registered_family"
+    },
+    {
+      "mean_budget_ratio_to_registered": 2.3057474150873274,
+      "mean_posterior_l1_drift": 0.006341983753112087,
+      "mean_total_evidence_budget": 16.0,
+      "topology": "false_split"
+    },
+    {
+      "mean_budget_ratio_to_registered": 0.09862483210703897,
+      "mean_posterior_l1_drift": 0.09505405245404953,
+      "mean_total_evidence_budget": 0.694074446897318,
+      "topology": "false_merge"
+    },
+    {
+      "max_budget_invariance_residual": 0.0,
+      "max_posterior_l1_invariance_residual": 0.0,
+      "mean_budget_ratio_to_registered": 1.0,
+      "mean_posterior_l1_drift": 0.0,
+      "mean_total_evidence_budget": 6.989373507551166,
+      "topology": "registered_exact_copy"
+    }
+  ]
+}

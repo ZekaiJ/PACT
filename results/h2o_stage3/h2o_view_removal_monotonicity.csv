@@ -1,0 +1,10 @@
+method,removed_to_setting,comparisons,admission_nonincrease_violations,release_authority_nonincrease_violations
+raw_blind,ego_only,300,105,6
+raw_blind,world_only,300,66,18
+raw_blind,neither,300,186,78
+raw_registered,ego_only,300,92,3
+raw_registered,world_only,300,53,15
+raw_registered,neither,300,173,75
+pact_sv,ego_only,300,0,0
+pact_sv,world_only,300,0,0
+pact_sv,neither,300,0,0

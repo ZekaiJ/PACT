@@ -1,0 +1,44 @@
+{
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 56201,
+  "directional_success_gate": "none; all signs and effect sizes are retained",
+  "equal_cardinality_contrasts": [
+    {
+      "aggregate_budget_ratio": 0.8028911962665626,
+      "bootstrap_mean": 0.19890802743157418,
+      "ci_high": 0.21070259358283858,
+      "ci_low": 0.18614431441663812,
+      "contrast": "wrong_LG_R_minus_registered_L_GR",
+      "fraction_above_zero": 1.0,
+      "mean_absolute_score_shift": 0.0915594208147148,
+      "mean_posterior_l1": 0.31768810480514925,
+      "point": 0.19880837906032967,
+      "prediction_flip_rate": 0.5354166666666667
+    },
+    {
+      "aggregate_budget_ratio": 0.7780882553872452,
+      "bootstrap_mean": 0.20110989049670988,
+      "ci_high": 0.21876793909713893,
+      "ci_low": 0.18459475961316119,
+      "contrast": "wrong_LR_G_minus_registered_L_GR",
+      "fraction_above_zero": 1.0,
+      "mean_absolute_score_shift": 0.05871960554581279,
+      "mean_posterior_l1": 0.3108546727350941,
+      "point": 0.20127650787455498,
+      "prediction_flip_rate": 0.513974358974359
+    }
+  ],
+  "formula_check": {
+    "checks": 48,
+    "maximum_absolute_residual": 0.0
+  },
+  "interpretation_boundary": "The equal-cardinality controls test the registered pairing under fixed opinions, component count, concentration schedule, eligibility, native score definition, and verifier-off protocol. They do not authenticate ancestry or identify a general causal effect of provenance registration.",
+  "records": 31200,
+  "registered_anchor": 0.6294374684440601,
+  "scenes": 48,
+  "status": "PASS",
+  "support": [
+    0.1,
+    0.39
+  ]
+}

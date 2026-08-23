@@ -1,0 +1,44 @@
+[
+  {
+    "minimum_relative_cost": 0.6310576923076923,
+    "point_optimal_policies": [
+      "always_continue"
+    ],
+    "wrong_to_nonadmission_ratio": 1
+  },
+  {
+    "minimum_relative_cost": 0.8702564102564102,
+    "point_optimal_policies": [
+      "B_multi_source_three_component"
+    ],
+    "wrong_to_nonadmission_ratio": 2
+  },
+  {
+    "minimum_relative_cost": 0.8702564102564102,
+    "point_optimal_policies": [
+      "B_multi_source_three_component"
+    ],
+    "wrong_to_nonadmission_ratio": 5
+  },
+  {
+    "minimum_relative_cost": 0.8702564102564102,
+    "point_optimal_policies": [
+      "B_multi_source_three_component"
+    ],
+    "wrong_to_nonadmission_ratio": 10
+  },
+  {
+    "minimum_relative_cost": 0.8702564102564102,
+    "point_optimal_policies": [
+      "B_multi_source_three_component"
+    ],
+    "wrong_to_nonadmission_ratio": 20
+  },
+  {
+    "minimum_relative_cost": 0.8702564102564102,
+    "point_optimal_policies": [
+      "B_multi_source_three_component"
+    ],
+    "wrong_to_nonadmission_ratio": 50
+  }
+]

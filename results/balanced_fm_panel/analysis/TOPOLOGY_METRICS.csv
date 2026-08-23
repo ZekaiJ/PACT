@@ -1,0 +1,5 @@
+topology,mean_total_evidence_budget,mean_budget_ratio_to_registered,mean_posterior_l1_drift,max_budget_invariance_residual,max_posterior_l1_invariance_residual
+registered_family,6.989373507551166,1.0,0.0,,
+false_split,16.0,2.3057474150873274,0.006341983753112087,,
+false_merge,0.694074446897318,0.09862483210703897,0.09505405245404953,,
+registered_exact_copy,6.989373507551166,1.0,0.0,0.0,0.0

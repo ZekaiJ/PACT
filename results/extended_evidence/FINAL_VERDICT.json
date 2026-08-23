@@ -1,0 +1,45 @@
+{
+  "schema_version": "extended-evidence-2.0",
+  "status": "COMPLETE_WITH_CORRECTED_BOUNDED_RESULTS",
+  "canonical_modified": false,
+  "canonical_tex_sha256": "df130225f7cf1974867b9d4c8cae1cb59b883aad860e59bb4ad52262ec74c8ec",
+  "n1": "PASS_BUILD_AND_TYPED_SOURCE_LEDGER",
+  "n2": {
+    "pass": 3,
+    "mismatch": 1,
+    "unavailable": 8,
+    "protocol_status": "CODE_LOCKED_BEFORE_N2_INVENTORY_NOT_FORMALLY_PREREGISTERED"
+  },
+  "n3": {
+    "eligible_pairs": 3,
+    "pass": 3,
+    "regression": "PASS_FROZEN_REFERENCE",
+    "false_split_amplification_ratio_m8": [2.164191249819034, 2.2171891704306526, 3.2125717750376483],
+    "false_merge_suppression_ratio": [0.0015872145073083288, 0.016109257636255404, 0.029819824926852742]
+  },
+  "n4": {
+    "generation": "PASS_720_ROWS_THREE_FAMILIES",
+    "llava_target_conditioned_gate": "HOLD",
+    "interpretation": "TARGET_CONDITIONING_BOUNDARY"
+  },
+  "n5": {
+    "verdict": "NEGATIVE_NOT_CONFIRMED",
+    "supersedes": "PARTIAL_DESCRIPTIVE_ASSOCIATION",
+    "correct_checkpoint_pair_counts": {"within_family": 1, "between_family": 5},
+    "pooled_matched_surfaces": {
+      "registered_phi": 0.549066213215239,
+      "between_mean_phi": 0.3293370160370644,
+      "registered_phi_contrast": 0.21972919717817457,
+      "registered_partition_rank": 1,
+      "exact_one_sided_p": 0.16666666666666666
+    },
+    "prompt_surface_exact_p_values": [0.5, 0.5, 0.16666666666666666, 0.16666666666666666],
+    "invalid_output_sensitivity": "UNCHANGED_EXACT_P"
+  },
+  "integration": {
+    "n3": "ELIGIBLE_FOR_AUTHOR_REVIEW_USING_SCALE_FREE_RATIOS",
+    "n4": "ELIGIBLE_AS_TARGET_CONDITIONING_BOUNDARY_IN_RESULTS",
+    "n5": "ELIGIBLE_AS_ONE_NEGATIVE_BOUNDARY_SENTENCE_ONLY",
+    "candidate_promotion": "READY_INTACT_PENDING_EXPLICIT_AUTHOR_APPROVAL"
+  }
+}

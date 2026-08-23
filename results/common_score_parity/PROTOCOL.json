@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "analysis": "frozen-output common-score parity",
+  "support": [
+    0.1,
+    0.39
+  ],
+  "outer_folds": 5,
+  "score_training_methods": [
+    "product_evidence_fusion",
+    "nested_evidential_composition",
+    "cautious_evidence_fusion",
+    "pcecf"
+  ],
+  "score_training_excludes_target_comparators": true,
+  "target_comparators": [
+    "registered_lineage_pooling",
+    "hierarchical_cautious_cumulative"
+  ],
+  "features": [
+    "posterior coordinates",
+    "entropy",
+    "peak",
+    "margin",
+    "observed-source count"
+  ],
+  "thresholds": "refitted on each comparator's outer-training rows for every readout",
+  "reproduction_tolerance": 1e-12,
+  "main_factorial_max_abs_error": 0.0,
+  "target_native_max_abs_error": 0.0,
+  "inputs": {
+    "results/p0_estimand_closure/v1/inputs/oof_predictions.jsonl.gz": "7337911f20d36dfbb9ae66fc40bb2e6bdf63afd60abf0070837921c518da2a1c",
+    "data/controlled/source_records.jsonl.gz": "d2f32efbf1674f8fa29e8d83e1453ec565c0ddd2b50031368fcc00cdf8b2784a",
+    "data/controlled/evaluation_labels.jsonl.gz": "36d794850c1dea5dc878328d3b71a88eeca7be3ab7a8b452d60d08784705ecb8",
+    "results/score_verifier_factorial/score_factorial.csv": "4b50a88284f39c55112da1fb04287e2613863a53a05520d6eba01a4ef23ad833",
+    "results/reference/pcecf_fusion_only.csv": "967c24619b0b8c1017f7b6f1eac393844c85d67d080de8198ef11376f6023791"
+  }
+}

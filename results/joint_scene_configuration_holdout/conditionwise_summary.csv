@@ -1,0 +1,14 @@
+held_condition,eligible,reason,pact_minus_nested,ci95_low,ci95_high,valid_bootstrap_draws
+adversarial_consensus_wrong,False,"pcecf, scene scene_001: curve support 0.000000--0.000000 misses fixed support",,,,
+all_sources_missing,False,"pcecf, scene scene_001: curve support 0.000000--0.000000 misses fixed support",,,,
+clean_control,False,"pcecf, scene scene_001: curve support 0.320000--1.000000 misses fixed support",,,,
+conflict_bit_dropout_all_wrong,False,"pcecf, scene scene_001: curve support 0.000000--0.000000 misses fixed support",,,,
+geometry_missing_language_low_quality,True,,-0.4108480784179027,-0.4574602461529961,-0.37342592548818276,2000
+language_missing_context_noisy,True,,0.025204829735051004,0.0091726610172915,0.04114481771467311,2000
+overconfident_contradictory_sources,True,,0.11600323297635884,0.09203074269014289,0.14231417337577235,2000
+partial_disagreement_low_quality,True,,-0.05542759734124041,-0.060003547323770286,-0.051079373484664584,2000
+risk_missing_language_overconfident_wrong,False,"pcecf, scene scene_001: curve support 0.000000--0.140000 misses fixed support",,,,
+schema_invalid_language_distribution,False,"pcecf, scene scene_001: curve support 0.000000--0.000000 misses fixed support",,,,
+stale_context_previous_scene,False,"pcecf, scene scene_034: curve support 0.180000--1.000000 misses fixed support",,,,
+stale_language_previous_cue,False,"pcecf, scene scene_001: curve support 0.000000--0.000000 misses fixed support",,,,
+unsafe_urgency_injection,False,"pcecf, scene scene_001: curve support 0.000000--0.000000 misses fixed support",,,,

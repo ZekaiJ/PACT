@@ -1,0 +1,67 @@
+{
+  "checks": {
+    "common_support_width": true,
+    "integrity": true,
+    "parent_traceability_rate": true,
+    "positive_early_to_ready_tasks": true,
+    "primary_nonconstant_tasks": true,
+    "valid_mapping_rate": true
+  },
+  "hashes": {
+    "ANALYSIS_LOCK.json": "b7ec18160e547529bd9b6a9e7df09f14863c253648807031a31441408529cf60",
+    "PROTOCOL_LOCK.json": "a112e6221b69b316c0be005767f9bdf757a41edce172171fbb798cdb4b7c3b71",
+    "assay32.jsonl": "f6cc186e08fc7d3941feca9359e487af0cdd8f102e3d67d1fa14a4685f62fecb",
+    "assay32_environment.json": "6b8b7d6a91ca6c5e72ade2e24cc6d7cf1e4174b7a376a105e7f57a724dc6f583",
+    "prompt_pack.jsonl": "9c11255d8f3a1e2da3ea00cdfad0b4155570612a5c518532cb38f035279e29d4"
+  },
+  "interpretation": {
+    "common_support": "locked fractional-tie coverage grid",
+    "primary_nonconstant": "the locked m=4 acquisition-registered PACT selection score varies within task",
+    "scope": "development gate only; no held-out test outcome inspected"
+  },
+  "observed": {
+    "common_support_width": 0.8,
+    "errors": [],
+    "parent_traceability_rate": 1.0,
+    "positive_early_to_ready_tasks": 5,
+    "primary_nonconstant_tasks": 6,
+    "rows": 5280,
+    "task_mean_p_ready_delta": {
+      "task_01": 0.200381607525845,
+      "task_02": 0.4118948475474835,
+      "task_03": 0.5440899635319145,
+      "task_04": 0.4780189865104384,
+      "task_05": -0.2027464476088588,
+      "task_06": 0.5324960335296781
+    },
+    "task_primary_score_ranges": {
+      "task_01": {
+        "acquisition_registered": 0.019544222456668203,
+        "lineage_unaware": 0.0
+      },
+      "task_02": {
+        "acquisition_registered": 0.11673580826714791,
+        "lineage_unaware": 1.1102230246251565e-16
+      },
+      "task_03": {
+        "acquisition_registered": 0.05923269635084938,
+        "lineage_unaware": 1.1102230246251565e-16
+      },
+      "task_04": {
+        "acquisition_registered": 0.027687476471869754,
+        "lineage_unaware": 1.1102230246251565e-16
+      },
+      "task_05": {
+        "acquisition_registered": 0.26171213997012666,
+        "lineage_unaware": 1.1102230246251565e-16
+      },
+      "task_06": {
+        "acquisition_registered": 0.09619832742834167,
+        "lineage_unaware": 1.1102230246251565e-16
+      }
+    },
+    "unique_ids": 5280,
+    "valid_mapping_rate": 1.0
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,29 @@
+{
+  "canonical_sha256": "D2AA80B4FE71C3CB056F390BA4F98E808A23C758AE9B929EBE2634BDFF49C2A6",
+  "checks": {
+    "all_bootstrap_rows_are_2000_draws": true,
+    "analysis_snapshot_matches_commit_worktree": true,
+    "canonical_unchanged": true,
+    "conservation_point_zero_within_tolerance": true,
+    "contrast_row_count": true,
+    "manifest_hashes": true,
+    "mechanistic_ci_positive_on_both_pairs": true,
+    "no_cross_pair_summary_row": true,
+    "pie_is_explicitly_blocked": true,
+    "point_row_count": true,
+    "primary_ci_positive_on_both_pairs": true,
+    "protocol_snapshot_matches_commit_worktree": true,
+    "support_is_0p10_0p90": true,
+    "support_is_label_free": true,
+    "two_pair_invariance_pass": true,
+    "two_pair_legacy_reproduction_pass": true
+  },
+  "counts": {
+    "manifest_files": 13,
+    "pair_outcome_rows": 240,
+    "paired_contrast_rows": 120
+  },
+  "max_legacy_residual": 7.105427357601002e-15,
+  "max_registered_copy_posterior_residual": 1.3877787807814457e-17,
+  "verdict": "PASS"
+}

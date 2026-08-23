@@ -1,0 +1,31 @@
+{
+  "directional_success_gate": "none; all multiplicities and signs retained",
+  "gap_change_m1_to_m32": -0.20086049862337885,
+  "gap_sign_change": true,
+  "m1_nested_shared_score_ncsaurc": 0.6038463398870473,
+  "m1_pact_shared_score_ncsaurc": 0.776297187923261,
+  "m1_posterior_reproduction_max_residual": 0.0,
+  "multiplicities": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "pact_minus_nested_gap_by_multiplicity": {
+    "1": 0.1724508480362137,
+    "16": -0.07544998793496782,
+    "2": 0.12933776985163903,
+    "32": -0.02840965058716516,
+    "4": -0.06716856786406167,
+    "8": -0.09681956231456734
+  },
+  "records": 31200,
+  "scenes": 48,
+  "score_fit": "m=1 outer-training only; coefficients frozen for every larger multiplicity",
+  "score_variant": "posterior features without observed-source count",
+  "status": "PASS",
+  "threshold_fit": "outer-training score quantiles at each multiplicity; no labels",
+  "verifier": "disabled"
+}

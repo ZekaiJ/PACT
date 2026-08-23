@@ -1,0 +1,33 @@
+{
+  "analysis_status": "secondary post-hoc mechanistic attribution",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 51402,
+  "bootstrap_unit": "scene",
+  "directional_acceptance_rule": null,
+  "factor_F0": "PACT fusion with each fixed catalog slot assigned a singleton parent",
+  "factor_F1": "PACT fusion with the current registered partition",
+  "factor_V0": "current verifier with only the provenance predicate disabled",
+  "factor_V1": "current full verifier under primary policy A",
+  "fixed": [
+    "controlled records and labels",
+    "scene folds",
+    "fold-local evidence concentration",
+    "evidence adapter and prior",
+    "native non-vacuity score",
+    "common eligibility",
+    "non-provenance verifier predicates",
+    "train-only threshold protocol",
+    "denominator within each declared stratum"
+  ],
+  "fixed_support_sensitivity": [
+    0.1,
+    0.35
+  ],
+  "operating_target": 0.13,
+  "primary_support": [
+    0.1,
+    0.39
+  ],
+  "retain_regardless_of_sign": true,
+  "verifier_partition_fixed": "current registered partition in both fusion arms; F changes only operator aggregation"
+}

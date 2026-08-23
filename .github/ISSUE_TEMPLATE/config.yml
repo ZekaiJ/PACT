@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Reproducibility guide
+    url: https://github.com/ZekaiJ/provenance-aware-action-admission/blob/main/docs/REPRODUCIBILITY.md
+    about: Review the released execution sequence and input boundaries before filing a report.
+  - name: Security policy
+    url: https://github.com/ZekaiJ/provenance-aware-action-admission/security/policy
+    about: Report security-sensitive problems without disclosing private information in a public issue.

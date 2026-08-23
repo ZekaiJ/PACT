@@ -1,0 +1,24 @@
+{
+  "analysis": "algebraic candidate-formation and score-ordering decomposition",
+  "candidate_conditional_reference_gap": 0.07250000000000001,
+  "claim_boundary": "Exact algebraic decomposition of the observed native-score gap; not a causal mediation analysis.",
+  "excess_above_reference_gap": 0.06154528993670605,
+  "excess_gap_fraction": 0.45913802689946587,
+  "input_sha256": {
+    "results/equal_cardinality_topology/native_random_references.csv": "7876332035daaa7c846eebc0ba89ea801711079b0dd250136f846ebbb62eaca7",
+    "results/reference/pcecf_fusion_only.csv": "967c24619b0b8c1017f7b6f1eac393844c85d67d080de8198ef11376f6023791"
+  },
+  "pact_excess_above_reference": 0.012458301777393488,
+  "pact_native_ncsAURC": 0.6294374684440601,
+  "pact_random_order_reference": 0.6169791666666666,
+  "product_excess_above_reference": 0.07400359171409954,
+  "product_native_ncsAURC": 0.7634827583807662,
+  "product_random_order_reference": 0.6894791666666666,
+  "reference_gap_fraction": 0.5408619731005341,
+  "status": "PASS",
+  "support": [
+    0.1,
+    0.39
+  ],
+  "total_product_minus_pact_gap": 0.13404528993670606
+}

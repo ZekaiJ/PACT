@@ -1,0 +1,100 @@
+{
+  "accepted_count_diagnostic": {
+    "all_requested_counts_met": true,
+    "role": "secondary retrospective score-only diagnostic",
+    "selection": "eligible held-out rows ranked within outer fold",
+    "tie_break": "record_id ascending",
+    "uses_evaluation_labels_for_selection": false
+  },
+  "denominator": {
+    "outer_folds": 5,
+    "records": 31200,
+    "scenes": 48
+  },
+  "fixed_support": [
+    0.1,
+    0.35
+  ],
+  "frozen_outer_train_thresholds_sha256": "ab0efcac8e483dd2462a32c098d97b42abae491a0a9e79e4806b4da8d409020c",
+  "frozen_predictions_sha256": "7337911f20d36dfbb9ae66fc40bb2e6bdf63afd60abf0070837921c518da2a1c",
+  "paired_bootstrap": {
+    "all_deterministic_records_retained_with_sampled_scene": true,
+    "paired_draws_shared_across_methods": true,
+    "replicates": 2000,
+    "seed": 1886,
+    "unit": "scene"
+  },
+  "primary_contrasts": [
+    {
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 1886,
+      "contrast": "pcecf-minus-product_evidence_fusion",
+      "estimator": "outer_train_threshold",
+      "fraction_below_zero": 1.0,
+      "left_method": "pcecf",
+      "metric": "ncsAURC",
+      "metric_direction": "lower_is_better",
+      "observed_direction": "favors_pcecf",
+      "paired_bootstrap_ci95_high": -0.12783027241269115,
+      "paired_bootstrap_ci95_low": -0.1425215190983509,
+      "paired_bootstrap_mean": -0.13562597973399462,
+      "point_difference": -0.13543165405631785,
+      "right_method": "product_evidence_fusion",
+      "statistical_unit": "scene",
+      "support_max": 0.35,
+      "support_min": 0.1,
+      "table": "fusion_no_verifier"
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 1886,
+      "contrast": "pcecf-minus-registered_lineage_pooling",
+      "estimator": "outer_train_threshold",
+      "fraction_below_zero": 1.0,
+      "left_method": "pcecf",
+      "metric": "ncsAURC",
+      "metric_direction": "lower_is_better",
+      "observed_direction": "favors_pcecf",
+      "paired_bootstrap_ci95_high": -0.18111956346645025,
+      "paired_bootstrap_ci95_low": -0.20100764870834956,
+      "paired_bootstrap_mean": -0.19085298649490634,
+      "point_difference": -0.19067389828249692,
+      "right_method": "registered_lineage_pooling",
+      "statistical_unit": "scene",
+      "support_max": 0.35,
+      "support_min": 0.1,
+      "table": "fusion_no_verifier"
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 1886,
+      "contrast": "pcecf-minus-nested_evidential_composition",
+      "estimator": "outer_train_threshold",
+      "fraction_below_zero": 1.0,
+      "left_method": "pcecf",
+      "metric": "ncsAURC",
+      "metric_direction": "lower_is_better",
+      "observed_direction": "favors_pcecf",
+      "paired_bootstrap_ci95_high": -0.045703827308616295,
+      "paired_bootstrap_ci95_low": -0.05551623333121764,
+      "paired_bootstrap_mean": -0.05066393264559413,
+      "point_difference": -0.05061293171567799,
+      "right_method": "nested_evidential_composition",
+      "statistical_unit": "scene",
+      "support_max": 0.35,
+      "support_min": 0.1,
+      "table": "shared_verifier"
+    }
+  ],
+  "primary_estimator": "frozen method-specific score thresholds fitted on outer-training scenes; all held-out ties at the fitted threshold are admitted",
+  "status": "EXECUTED_COMPLETE",
+  "support_grid_points": 36,
+  "support_selection": "fixed before this run for comparability; no PACT outcome or contrast sign was consulted",
+  "threshold_curve_targets": [
+    0.01,
+    0.6,
+    0.01
+  ],
+  "verdict": "COMPLETE",
+  "version": "p0-estimand-closure-v1"
+}

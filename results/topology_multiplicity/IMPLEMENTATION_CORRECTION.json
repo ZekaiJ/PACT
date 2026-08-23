@@ -1,0 +1,9 @@
+{
+  "correction": "Added native_eligible=eligible and fold_local_concentration to the row schema required by the reused canonical evaluator.",
+  "failed_run_error": "KeyError: native_eligible in canonical evaluate_curve",
+  "failed_run_outputs_used": false,
+  "new_runner_sha256": "dbb602a7519cfb67f995ea19eff55acae69f47a7ad419777d434a65021f5f714",
+  "old_runner_sha256": "7f340b66473512169de434d313d1e83afbb7ab37423a676958f5b3f26f22fe4e",
+  "scientific_protocol_changed": false,
+  "status": "IMPLEMENTATION_ONLY_CORRECTION_BEFORE_SUCCESSFUL_RUN"
+}

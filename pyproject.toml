@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "provenance-action-admission"
+version = "1.3.5"
+description = "Provenance-aware evidence conservation for multi-view fusion and typed action admission."
+keywords = ["information fusion", "multi-view learning", "evidential fusion", "provenance", "robotics"]
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Zekai Jin"},
+  {name = "Hanrong Zhang"},
+  {name = "Yihong Tang"},
+  {name = "Fei Hu"},
+  {name = "Zhen Dong"},
+  {name = "Yi Shao"},
+]
+dependencies = [
+  "numpy>=1.26",
+  "matplotlib>=3.8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Repository = "https://github.com/ZekaiJ/provenance-aware-action-admission"
+Issues = "https://github.com/ZekaiJ/provenance-aware-action-admission/issues"
+Documentation = "https://github.com/ZekaiJ/provenance-aware-action-admission/tree/main/docs"

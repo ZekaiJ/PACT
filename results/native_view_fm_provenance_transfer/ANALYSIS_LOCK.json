@@ -1,0 +1,125 @@
+{
+  "arms": {
+    "acquisition_registered": "within each physical view, the m surface outputs share one component; five views remain five components",
+    "all_view_merge": "all 5m outputs form one component",
+    "exact_dedup": "retain one instance of each exactly equal binary evidence vector, then treat retained vectors as singletons",
+    "lineage_unaware": "all 5m outputs are singleton components",
+    "native_one_per_view": "canonical surface only, one output for each of five physical views"
+  },
+  "assay_gate": {
+    "decision": "gate may stop test inference but may not alter prompts, arms, support, endpoints, or model revisions",
+    "parent_traceability_rate": 1.0,
+    "positive_mean_p_ready_early_to_ready_tasks_min": 5,
+    "primary_nonconstant_tasks_min": 5,
+    "split": "development only",
+    "valid_mapping_rate_min": 0.99
+  },
+  "claim_boundary": "physical-view components are declared separately countable acquisitions, not certified statistically independent sources",
+  "fusion": {
+    "across_components": "sum",
+    "base_rate": [
+      0.5,
+      0.5
+    ],
+    "posterior": "(E + W*a)/(sum(E)+W)",
+    "predicted_class": "argmax posterior with NOT READY first on exact ties",
+    "prior_strength_W": 2.0,
+    "selection_score": "1-W/(W+sum(E))",
+    "source_evidence": "2*[1-p_ready,p_ready]",
+    "within_component": "coordinatewise minimum"
+  },
+  "heldout_policy": "run the frozen 1,128-event test only after the development assay passes; never retune from held-out outcomes",
+  "labels": {
+    "early": 0,
+    "ready": 1
+  },
+  "locked_utc": "2026-08-02T01:23:48.304298+00:00",
+  "models": "Qwen3-VL-32B primary and Qwen3-VL-8B replication analyzed separately",
+  "multiplicity": {
+    "mechanism_series": [
+      1,
+      2,
+      4
+    ],
+    "primary_m": 4,
+    "rule": "m uses the first m surfaces in the frozen order",
+    "surface_order": [
+      "canonical",
+      "evidence_first",
+      "criterion_first",
+      "compact"
+    ]
+  },
+  "primary_estimand": {
+    "contrast": "ncsAURC(lineage_unaware,m=4)-ncsAURC(acquisition_registered,m=4)",
+    "coverage_grid": [
+      0.1,
+      0.122857142857,
+      0.145714285714,
+      0.168571428571,
+      0.191428571429,
+      0.214285714286,
+      0.237142857143,
+      0.26,
+      0.282857142857,
+      0.305714285714,
+      0.328571428571,
+      0.351428571429,
+      0.374285714286,
+      0.397142857143,
+      0.42,
+      0.442857142857,
+      0.465714285714,
+      0.488571428571,
+      0.511428571429,
+      0.534285714286,
+      0.557142857143,
+      0.58,
+      0.602857142857,
+      0.625714285714,
+      0.648571428571,
+      0.671428571429,
+      0.694285714286,
+      0.717142857143,
+      0.74,
+      0.762857142857,
+      0.785714285714,
+      0.808571428571,
+      0.831428571429,
+      0.854285714286,
+      0.877142857143,
+      0.9
+    ],
+    "direction": "positive values favor acquisition registration",
+    "point_estimate": "equal-weight mean of six task-specific contrasts",
+    "risk": "prediction error among retained event-window records",
+    "tie_handling": "fractional inclusion within equal-score groups"
+  },
+  "secondary": {
+    "admission_at_coverage": 0.13,
+    "admission_metrics": [
+      "all-case wrong-admission rate",
+      "conditional wrong-admission rate"
+    ],
+    "budget_ratio_reference": "native_one_per_view per matched event-window",
+    "classification": [
+      "accuracy",
+      "negative log likelihood",
+      "unnormalized binary Brier",
+      "adaptive ECE with 10 equal-count bins"
+    ],
+    "mechanism_checks": [
+      "registered exact-copy residual",
+      "parent traceability",
+      "exact-dedup retained count"
+    ],
+    "posterior_drift_reference": "L1 distance from native_one_per_view per matched event-window"
+  },
+  "smoke_used_for": "technical validity only; no endpoint, arm, prompt, or support was selected from smoke values",
+  "status": "LOCKED_AFTER_TECHNICAL_SMOKE_BEFORE_ASSAY_SCORING",
+  "uncertainty": {
+    "interval": "two-sided percentile 95%",
+    "replicates": 2000,
+    "sampling": "sample episodes with replacement within task; carry every event, window, view, surface, and arm from each sampled episode"
+  }
+}

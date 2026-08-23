@@ -1,0 +1,5 @@
+setting,setting_label,n,raw_blind_admission_rate,raw_registered_admission_rate,pact_sv_admission_rate,pact_sv_release_authority_rate,pact_sv_admit_rate,pact_sv_hold_rate,pact_sv_confirm_rate,pact_sv_retreat_rate,pact_sv_fallback_rate,mean_registered_confidence
+ego_plus_world,Ego + world,300,0.38,0.42333333333333334,0.42333333333333334,0.35,0.35,0.5766666666666667,0.07333333333333333,0.0,0.0,0.47059425996666665
+ego_only,Ego only,300,0.73,0.73,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.6145953318333333
+world_only,World only,300,0.6,0.6,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.5222421067
+neither,Neither,300,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.8980379924999999

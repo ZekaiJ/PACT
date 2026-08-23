@@ -1,0 +1,9 @@
+method,score,subset,verifier,csaurc_0p10_0p39,coverage_at_target_0p13,wrong_all_at_target_0p13,correct_all_at_target_0p13
+product_evidence_fusion,shared_outer_train_logistic,complete,False,0.4047205486750942,0.13119791666666666,0.05416666666666667,0.07703125
+product_evidence_fusion,shared_outer_train_logistic,complete,True,0.23160675795030977,0.1309375,0.024322916666666666,0.10661458333333333
+nested_evidential_composition,shared_outer_train_logistic,complete,False,0.431911402740013,0.1315625,0.05609375,0.07546875
+nested_evidential_composition,shared_outer_train_logistic,complete,True,0.047504950814972434,0.13145833333333334,0.00026041666666666666,0.13119791666666666
+cautious_evidence_fusion,shared_outer_train_logistic,complete,False,0.38378269714794083,0.13130208333333335,0.047760416666666666,0.08354166666666667
+cautious_evidence_fusion,shared_outer_train_logistic,complete,True,0.10921889354488276,0.130625,0.0008333333333333334,0.12979166666666667
+pcecf,shared_outer_train_logistic,complete,False,0.8031749910597724,0.13098958333333333,0.1071875,0.023802083333333335
+pcecf,shared_outer_train_logistic,complete,True,0.36716417526687056,0.12838541666666667,0.049895833333333334,0.07848958333333333

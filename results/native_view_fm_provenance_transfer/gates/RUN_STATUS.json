@@ -1,0 +1,54 @@
+{
+  "canonical_modified": false,
+  "canonical_tex_sha256": "e647c95d35b3f43a5a63bee8076d9142ab35040c7bb01d91172394ed02fc3912",
+  "final_result_audit": "FINAL_RESULT_AUDIT.json",
+  "final_result_audit_sha256": "78042db42e9210fcb6dbb0679062db1a47852995a3e057fda630bbb07eeece1f",
+  "next_gate": "Integrate the frozen result into an isolated manuscript candidate, then run a formal candidate-to-canonical promotion audit; do not open another experiment family.",
+  "primary_32b": {
+    "m2_contrast": {
+      "ci_high": 0.06935280592158558,
+      "ci_low": 0.007879874107608494,
+      "estimate": 0.04270977814549115,
+      "m": 2,
+      "positive_draw_fraction": 0.9925
+    },
+    "m4_contrast": {
+      "ci_high": 0.0471991751514219,
+      "ci_low": 0.0059391562566507815,
+      "estimate": 0.02687454317558688,
+      "m": 4,
+      "positive_draw_fraction": 0.997
+    },
+    "outputs_sha256": "d604f4380ccf17362dfa671cb06a3075c3d7401c337ad4cd7f1ec3fa3f62db67",
+    "rows": 45120
+  },
+  "recorded_utc": "2026-08-02T14:09:15.749061+00:00",
+  "replication_8b": {
+    "m2_contrast": {
+      "ci_high": 0.19878156419937204,
+      "ci_low": 0.14898065760059906,
+      "estimate": 0.17277228428291336,
+      "m": 2,
+      "positive_draw_fraction": 1.0
+    },
+    "m4_contrast": {
+      "ci_high": 0.11282464630264086,
+      "ci_low": 0.053474696121106384,
+      "estimate": 0.08355634211695456,
+      "m": 4,
+      "positive_draw_fraction": 1.0
+    },
+    "outputs_sha256": "30a6c9590cd1f94229314b5e1518d8bcb9a0352ba5fd63800d39501fa4664e2d",
+    "rows": 45120
+  },
+  "status": "FROZEN_RESULTS_COMPLETE",
+  "verification": {
+    "all_ids_unique": true,
+    "all_probabilities_valid": true,
+    "all_raw_rows_complete": true,
+    "all_status_ok": true,
+    "canonical_manuscript_written_by_experiment": false,
+    "canonical_tex_sha256": "e647c95d35b3f43a5a63bee8076d9142ab35040c7bb01d91172394ed02fc3912",
+    "independent_primary_recompute_pass": true
+  }
+}

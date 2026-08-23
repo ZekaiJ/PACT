@@ -1,0 +1,29 @@
+{
+  "protocol_version": "pc-ecf-controlled-study-1.0",
+  "common_coverage": [
+    0.1,
+    0.39
+  ],
+  "fixed_coverage_target": 0.13,
+  "statistical_unit": "scene",
+  "hierarchical_cautious_reference": {
+    "fusion_only_normalized_aurc": 0.8597383184173139,
+    "shared_verifier_normalized_aurc": 0.20942073348163584,
+    "absolute_tolerance": 1e-12,
+    "exact_duplicate_max_l1": 1e-12,
+    "exact_duplicate_max_score_delta": 1e-12,
+    "exact_duplicate_flip_rate": 0.0
+  },
+  "validation_tolerances": {
+    "table1": {
+      "exact_duplicate_max_l1": 1e-12,
+      "exact_duplicate_flip_rate": 0.0,
+      "clean_scene_macro_accuracy_margin": 0.020833333333333332,
+      "naurc_margin_vs_registered_lineage": 0.01
+    },
+    "table2": {
+      "naurc_margin_vs_nested_evidential": 0.01,
+      "fixed_target_wrong_all_margin": 0.0020833333333333333
+    }
+  }
+}

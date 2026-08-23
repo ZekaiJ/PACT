@@ -1,0 +1,92 @@
+{
+  "arms": {
+    "acquisition_registered": "prompt surfaces from one acquisition share one component",
+    "all_view_merge": "all outputs for an event-window share one component",
+    "exact_dedup": "deduplicate identical evidence vectors, then count remaining vectors separately",
+    "lineage_unaware": "every prompt-surface output is a singleton component",
+    "native_one_per_view": "canonical surface only, one output per physical view"
+  },
+  "assay": {
+    "episodes": 82,
+    "events": 132,
+    "purpose": "technical and directional gate only; no test outcome is inspected",
+    "split": "development",
+    "tasks": 6
+  },
+  "assay_gates": {
+    "common_support_width_min": 0.2,
+    "parent_traceability_rate": 1.0,
+    "positive_early_to_ready_tasks_min": 5,
+    "primary_nonconstant_tasks_min": 5,
+    "valid_mapping_rate_min": 0.99
+  },
+  "forced_choice": {
+    "evidence": "2*[1-p_ready,p_ready]",
+    "map0": "A = NOT READY; B = READY.",
+    "map1": "A = READY; B = NOT READY.",
+    "probability": "sigmoid(ready_log_odds)",
+    "ready_log_odds": "0.5*((logit_B-logit_A)_map0 + (logit_A-logit_B)_map1)"
+  },
+  "model_policy": "analyze checkpoints separately; never fuse their evidence in the primary estimand",
+  "models": [
+    {
+      "id": "Qwen/Qwen3-VL-32B-Instruct",
+      "revision": "0cfaf48183f594c314753d30a4c4974bc75f3ccb",
+      "role": "primary"
+    },
+    {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "role": "replication"
+    }
+  ],
+  "multiplicity": [
+    1,
+    2,
+    4
+  ],
+  "parent_interpretation": "declared acquisition reuse; not a claim of statistical independence",
+  "parent_policy": "sha256(event_id + ':' + window + ':' + physical_view_id)",
+  "primary_endpoint": "ncsAURC(lineage_unaware)-ncsAURC(acquisition_registered) on common coverage support",
+  "promotion_test": {
+    "episodes": 696,
+    "events": 1128,
+    "split": "frozen held-out test",
+    "statistical_unit": "episode, sampled within task",
+    "tasks": 6,
+    "views": [
+      "front_view",
+      "left_wrist_view",
+      "right_wrist_view",
+      "human_front_view",
+      "exo_view"
+    ]
+  },
+  "question": "Do repeated estimates of one physical acquisition and estimates from distinct physical camera acquisitions contribute different countable evidence?",
+  "resampling": "2000 paired bootstrap replicates; sample episodes within task and carry all descendants",
+  "secondary_endpoints": [
+    "accuracy",
+    "NLL",
+    "Brier",
+    "ECE",
+    "wrong-admission rate",
+    "budget ratio",
+    "posterior L1 drift"
+  ],
+  "source_hashes": {
+    "event_split": "900a8b9e07a9d2ccd36d460ffc16402cf47cbb6ca7963babc49d95b8754dcd2f",
+    "task_cases": "405433a79d665f8bb8b9b426b9198e32191054c7f2fd2a30c3a552d2bd1f8ee0"
+  },
+  "status": "LOCKED_BEFORE_MODEL_INFERENCE",
+  "stop_conditions": [
+    "invalid or constant primary output",
+    "no common support",
+    "post-outcome prompt, support, threshold, model, or arm selection"
+  ],
+  "surfaces": [
+    "canonical",
+    "evidence_first",
+    "criterion_first",
+    "compact"
+  ]
+}

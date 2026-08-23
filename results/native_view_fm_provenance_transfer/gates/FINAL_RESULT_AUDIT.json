@@ -1,0 +1,359 @@
+{
+  "analysis_amendment": {
+    "claim_boundary": "The amendment corrects a numerical tie implementation and adds labeled post-hoc diagnostics; it does not retroactively preregister the secondary readouts.",
+    "correction": {
+      "semantic_budget": "Use exact analytic budgets for arms whose budget follows from emitted evidence mass and retained-count semantics; preserve the original component-min evidence vector for posterior computation.",
+      "tie_handling": "Records with the same semantic score are treated as one tie group and fractionally included at coverage boundaries, as specified in the original analysis lock.",
+      "unchanged": [
+        "held-out outputs",
+        "prompts",
+        "model revisions",
+        "labels",
+        "coverage support",
+        "bootstrap seed and resampling unit",
+        "primary native non-vacuity estimand"
+      ]
+    },
+    "locked_utc": "2026-08-02T18:30:00Z",
+    "reason": "The locked non-vacuity score is a deterministic function of total evidence budget. Per-output and one-output-per-view arms have analytically constant budgets at fixed multiplicity, but floating-point summation noise had been treated as score variation by exact tie detection.",
+    "secondary_readouts": {
+      "equal_cardinality_shuffled_grouping": "Post-hoc topology control. Five groups retain the acquisition-registered component count and surface cardinality, while cyclically assigning surface outputs from different physical views to each group.",
+      "posterior_confidence": "Post-hoc score diagnostic using max(p_ready, 1-p_ready) on the same frozen posteriors."
+    },
+    "status": "LOCKED_ANALYSIS_CORRECTION"
+  },
+  "experiment": "Native-view foundation-model provenance transfer",
+  "generated_utc": "2026-08-02T18:30:00Z",
+  "interpretation_constraints": [
+    "The original native non-vacuity score is constant for lineage-unaware and one-output-per-view arms at fixed multiplicity; fractional tie handling therefore returns their task error rate.",
+    "The primary 32B native-score contrast at m=4 includes zero, whereas the 8B replication contrast is positive.",
+    "The post-hoc posterior-confidence contrast is positive for 32B and includes zero for 8B; selective effects depend on checkpoint and score readout.",
+    "The equal-cardinality shuffled grouping and posterior-confidence readout are labeled post-hoc diagnostics, not preregistered primary endpoints.",
+    "Task-level signs remain heterogeneous, and the study does not support checkpoint-universal selective dominance."
+  ],
+  "locks": {
+    "analysis_amendment_sha256": "26a2020990e890ae015e024f91744516a45d3afbdbd15c8d7a473fd6d262bd25",
+    "analysis_lock_sha256": "b7ec18160e547529bd9b6a9e7df09f14863c253648807031a31441408529cf60",
+    "prompt_pack_content_sha256": "1b7e6112b12a12d56826840b7e1f659a2f83b5f6e1419992495b5aea955f959a",
+    "protocol_lock_sha256": "a112e6221b69b316c0be005767f9bdf757a41edce172171fbb798cdb4b7c3b71",
+    "test_analysis_lock_sha256": "d6c027fcb520e92b1cee3e5675ee3e94e1a20a257a086790dc773da9904e97f7"
+  },
+  "models": {
+    "primary_32b": {
+      "analysis_artifact_sha256": {
+        "PRIMARY_RESULT.json": "d3467f58b22637034ef4efc78af7ea7ba954c4bd33eba7f55a8d638a3b437097",
+        "bootstrap_intervals.csv": "43fd4f561504125ff1fc4796fe3d00bbdf58554ce85c364f7da115eba06b2ddb",
+        "paired_contrasts.csv": "e25a38b05b42c99b91fdeb5f60f95eef5d59dee5895ab6d51860009f902a9b3b",
+        "point_estimates.csv": "5d8b04c22950b3cfbcf677d2d73f9522735cc51f9aa1d96f04c901e7f5138d09",
+        "records.csv": "bd5bb409759b32d26ee505ef29bd7afabe5902515c7055527c7994e439daf1a5"
+      },
+      "common_score_contrasts": [
+        {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "estimate": 0.0,
+          "m": 1,
+          "positive_draw_fraction": 0.0
+        },
+        {
+          "ci_high": 0.004277526218222671,
+          "ci_low": -0.018216323915709823,
+          "estimate": -0.0021835944939062046,
+          "m": 2,
+          "positive_draw_fraction": 0.315
+        },
+        {
+          "ci_high": 0.027150995059368428,
+          "ci_low": 0.006886384529046386,
+          "estimate": 0.01798611267734873,
+          "m": 4,
+          "positive_draw_fraction": 1.0
+        }
+      ],
+      "environment_sha256": "dc3fdaaa8ae896d5a180a8c2e45d9ac8c1f56cd2a7a595b20267aec3791198e9",
+      "independent_common_score_recompute": [
+        0.0,
+        -0.0021835944939062046,
+        0.01798611267734873
+      ],
+      "independent_primary_recompute": [
+        0.0,
+        0.04275119256299803,
+        0.022435621698132513
+      ],
+      "m4_point_estimates": {
+        "acquisition_registered": {
+          "accuracy": 0.7834860887823613,
+          "brier": 0.32640257296801983,
+          "budget_ratio": 0.7832227626538465,
+          "ece10": 0.25494219575401833,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.22567468536468357,
+          "ncsAURC_common_confidence": 0.17015427397474314,
+          "ncsAURC_random": 0.21651391121763877,
+          "nll": 0.48924497947240586,
+          "posterior_l1": 0.1452509183266121,
+          "wrong_admission_all_at_0.13": 0.03130240799636121,
+          "wrong_admission_conditional_at_0.13": 0.2407877538181632
+        },
+        "all_view_merge": {
+          "accuracy": 0.5493011706262013,
+          "brier": 0.4195049851963002,
+          "budget_ratio": 0.0380057376105568,
+          "ece10": 0.30397625227023994,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.2327080593127,
+          "ncsAURC_common_confidence": 0.2380028842754052,
+          "ncsAURC_random": 0.45069882937379874,
+          "nll": 0.6074961954723993,
+          "posterior_l1": 0.29752089241400786,
+          "wrong_admission_all_at_0.13": 0.020137614678899084,
+          "wrong_admission_conditional_at_0.13": 0.15490472829922372
+        },
+        "exact_dedup": {
+          "accuracy": 0.7558901895333,
+          "brier": 0.336222411517825,
+          "budget_ratio": 3.8389861321134107,
+          "ece10": 0.24007344032688127,
+          "exact_dedup_retained": 19.194930660567053,
+          "ncsAURC": 0.2660903073705804,
+          "ncsAURC_common_confidence": 0.1845376752701526,
+          "ncsAURC_random": 0.24410981046670013,
+          "nll": 0.49043929827242655,
+          "posterior_l1": 0.1581874260861025,
+          "wrong_admission_all_at_0.13": 0.03624371178720536,
+          "wrong_admission_conditional_at_0.13": 0.27879778297850283
+        },
+        "lineage_unaware": {
+          "accuracy": 0.751889692937184,
+          "brier": 0.3349381879176538,
+          "budget_ratio": 4.0,
+          "ece10": 0.23769777982128062,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.2481103070628161,
+          "ncsAURC_common_confidence": 0.18814038665209187,
+          "ncsAURC_random": 0.2481103070628161,
+          "nll": 0.488820189087723,
+          "posterior_l1": 0.15872014866980885,
+          "wrong_admission_all_at_0.13": 0.032254339918166085,
+          "wrong_admission_conditional_at_0.13": 0.2481103070628161
+        },
+        "native_one_per_view": {
+          "accuracy": 0.7446488123683356,
+          "brier": 0.3615123576647244,
+          "budget_ratio": 1.0,
+          "ece10": 0.23088313032349503,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.25535118763166437,
+          "ncsAURC_common_confidence": 0.20642300730978924,
+          "ncsAURC_random": 0.25535118763166437,
+          "nll": 0.531000510833754,
+          "posterior_l1": 0.0,
+          "wrong_admission_all_at_0.13": 0.03319565439211637,
+          "wrong_admission_conditional_at_0.13": 0.2553511876316644
+        },
+        "shuffled_equal_cardinality": {
+          "accuracy": 0.6533855241523564,
+          "brier": 0.3692567104756737,
+          "budget_ratio": 0.30058020567463534,
+          "ece10": 0.2357359349009511,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.19718782856295183,
+          "ncsAURC_common_confidence": 0.2116522580112906,
+          "ncsAURC_random": 0.3466144758476435,
+          "nll": 0.5337178010746769,
+          "posterior_l1": 0.16481900573418695,
+          "wrong_admission_all_at_0.13": 0.020902140672782874,
+          "wrong_admission_conditional_at_0.13": 0.1607856974829452
+        }
+      },
+      "output_content_sha256": "d604f4380ccf17362dfa671cb06a3075c3d7401c337ad4cd7f1ec3fa3f62db67",
+      "primary_contrasts": [
+        {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "estimate": 0.0,
+          "m": 1,
+          "positive_draw_fraction": 0.0
+        },
+        {
+          "ci_high": 0.06940451308623696,
+          "ci_low": 0.007934171646266187,
+          "estimate": 0.04275119256299803,
+          "m": 2,
+          "positive_draw_fraction": 0.9925
+        },
+        {
+          "ci_high": 0.05609608390936802,
+          "ci_low": -0.013074097682892052,
+          "estimate": 0.022435621698132513,
+          "m": 4,
+          "positive_draw_fraction": 0.876
+        }
+      ]
+    },
+    "replication_8b": {
+      "analysis_artifact_sha256": {
+        "PRIMARY_RESULT.json": "b1d63af5156b84b8a314e7082020a778cb8db38bb07e19c364055b34a700f005",
+        "bootstrap_intervals.csv": "e5b10baa260a52969eb9f2e1b07787a7d3994469b63766e0d94aef0d1ea8d49d",
+        "paired_contrasts.csv": "7edfe38c753ed2eb2781040f76a1c9afddd194d07c6968f40a104d58cb850963",
+        "point_estimates.csv": "f056f3948b7f4c8a7acbc54773c2f185ca080cd7f73d7dbd95a2c599951f8a03",
+        "records.csv": "d5bca8f8d6b06bf0d719f37ee1ebd85bb11d57c4cce236b307b8ffd37100c1c8"
+      },
+      "common_score_contrasts": [
+        {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "estimate": 0.0,
+          "m": 1,
+          "positive_draw_fraction": 0.0
+        },
+        {
+          "ci_high": 0.015990001465175173,
+          "ci_low": -0.016916068928099867,
+          "estimate": -0.00424741275909879,
+          "m": 2,
+          "positive_draw_fraction": 0.278
+        },
+        {
+          "ci_high": 0.002358325299294627,
+          "ci_low": -0.03572390526796439,
+          "estimate": -0.01563815894421408,
+          "m": 4,
+          "positive_draw_fraction": 0.049
+        }
+      ],
+      "environment_sha256": "3be82996e7202054fd5247e450ce0cae3776139444a13d3c6b4c1ffbfe968a2b",
+      "independent_common_score_recompute": [
+        0.0,
+        -0.00424741275909879,
+        -0.01563815894421408
+      ],
+      "independent_primary_recompute": [
+        0.0,
+        0.17277228428291336,
+        0.12022891909135464
+      ],
+      "m4_point_estimates": {
+        "acquisition_registered": {
+          "accuracy": 0.5922295769414342,
+          "brier": 0.43015189068008364,
+          "budget_ratio": 0.4764595800892957,
+          "ece10": 0.32404398433297327,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.25618230382794005,
+          "ncsAURC_common_confidence": 0.2560256372377984,
+          "ncsAURC_random": 0.4077704230585657,
+          "nll": 0.6036626320218305,
+          "posterior_l1": 0.21261150955646935,
+          "wrong_admission_all_at_0.13": 0.02261006289308176,
+          "wrong_admission_conditional_at_0.13": 0.17392356071601356
+        },
+        "all_view_merge": {
+          "accuracy": 0.5770659154720019,
+          "brier": 0.426206758881783,
+          "budget_ratio": 0.028092101460508636,
+          "ece10": 0.2871009012315017,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.25704548024616264,
+          "ncsAURC_common_confidence": 0.2550563691186437,
+          "ncsAURC_random": 0.42293408452799813,
+          "nll": 0.6167073882704558,
+          "posterior_l1": 0.4919011224199203,
+          "wrong_admission_all_at_0.13": 0.017844036697247708,
+          "wrong_admission_conditional_at_0.13": 0.1372618207480593
+        },
+        "exact_dedup": {
+          "accuracy": 0.613045342637169,
+          "brier": 0.3861498041368166,
+          "budget_ratio": 3.6770747149120404,
+          "ece10": 0.2584091622931131,
+          "exact_dedup_retained": 18.3853735745602,
+          "ncsAURC": 0.4315489159888439,
+          "ncsAURC_common_confidence": 0.24256481403966268,
+          "ncsAURC_random": 0.3869546573628309,
+          "nll": 0.551480555522722,
+          "posterior_l1": 0.2762326618056273,
+          "wrong_admission_all_at_0.13": 0.06436050863227155,
+          "wrong_admission_conditional_at_0.13": 0.49508083563285804
+        },
+        "lineage_unaware": {
+          "accuracy": 0.6235887770807053,
+          "brier": 0.3849195125910474,
+          "budget_ratio": 4.0,
+          "ece10": 0.24379802864785882,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.3764112229192947,
+          "ncsAURC_common_confidence": 0.24038747829358434,
+          "ncsAURC_random": 0.3764112229192947,
+          "nll": 0.5496620457438787,
+          "posterior_l1": 0.27458618780527494,
+          "wrong_admission_all_at_0.13": 0.04893345897950832,
+          "wrong_admission_conditional_at_0.13": 0.3764112229192947
+        },
+        "native_one_per_view": {
+          "accuracy": 0.5325471698113208,
+          "brier": 0.5611546838417013,
+          "budget_ratio": 1.0,
+          "ece10": 0.3360245404684293,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.4674528301886793,
+          "ncsAURC_common_confidence": 0.25243216569777205,
+          "ncsAURC_random": 0.4674528301886793,
+          "nll": 0.7645026753636088,
+          "posterior_l1": 0.0,
+          "wrong_admission_all_at_0.13": 0.0607688679245283,
+          "wrong_admission_conditional_at_0.13": 0.4674528301886793
+        },
+        "shuffled_equal_cardinality": {
+          "accuracy": 0.5957424503664313,
+          "brier": 0.4164699567583108,
+          "budget_ratio": 0.28094294556403154,
+          "ece10": 0.2989607067642363,
+          "exact_dedup_retained": NaN,
+          "ncsAURC": 0.24587402093773758,
+          "ncsAURC_common_confidence": 0.25539876133551714,
+          "ncsAURC_random": 0.4042575496335687,
+          "nll": 0.5866249423124787,
+          "posterior_l1": 0.23352007059403979,
+          "wrong_admission_all_at_0.13": 0.021666666666666667,
+          "wrong_admission_conditional_at_0.13": 0.16666666666666666
+        }
+      },
+      "output_content_sha256": "30a6c9590cd1f94229314b5e1518d8bcb9a0352ba5fd63800d39501fa4664e2d",
+      "primary_contrasts": [
+        {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "estimate": 0.0,
+          "m": 1,
+          "positive_draw_fraction": 0.0
+        },
+        {
+          "ci_high": 0.19878156419937204,
+          "ci_low": 0.14898065760059906,
+          "estimate": 0.17277228428291336,
+          "m": 2,
+          "positive_draw_fraction": 1.0
+        },
+        {
+          "ci_high": 0.1495101697610471,
+          "ci_low": 0.08925080286878569,
+          "estimate": 0.12022891909135464,
+          "m": 4,
+          "positive_draw_fraction": 1.0
+        }
+      ]
+    }
+  },
+  "status": "FROZEN_RESULTS_COMPLETE_WITH_LOCKED_TIE_CORRECTION",
+  "verification": {
+    "all_ids_unique": true,
+    "all_parent_records_traceable": true,
+    "all_probabilities_valid": true,
+    "all_raw_rows_complete": true,
+    "all_status_ok": true,
+    "independent_primary_recompute_pass": true,
+    "semantic_tie_checks_pass": true
+  }
+}

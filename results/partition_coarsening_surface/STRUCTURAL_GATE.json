@@ -1,0 +1,22 @@
+[
+  {
+    "budget_nonincrease_on_every_record_seed_edge": true,
+    "cover_edges": 856,
+    "interpretation": "Implementation-consistency check for the registered-coarsening budget order; not an empirical proof of the analytic corollary.",
+    "max_budget_violation": 0.0,
+    "max_coarse_minus_fine_budget_residual": -0.012458576634344354,
+    "pair_id": "HandWritten-Mfeat__TMC",
+    "partitions": 203,
+    "tolerance": 1e-12
+  },
+  {
+    "budget_nonincrease_on_every_record_seed_edge": true,
+    "cover_edges": 856,
+    "interpretation": "Implementation-consistency check for the registered-coarsening budget order; not an empirical proof of the analytic corollary.",
+    "max_budget_violation": 0.0,
+    "max_coarse_minus_fine_budget_residual": -0.008226319158202156,
+    "pair_id": "HandWritten-Mfeat__RCML",
+    "partitions": 203,
+    "tolerance": 1e-12
+  }
+]

@@ -1,0 +1,19 @@
+fusion,stratum,threshold_protocol,from_V0,to_V1,records,scenes_with_transition
+F0_singleton,all_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",admit,admit,1657,48
+F0_singleton,all_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",admit,confirm,2400,48
+F0_singleton,all_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",fallback,fallback,2400,48
+F0_singleton,all_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",hold,hold,1842,48
+F0_singleton,all_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",score_withhold,score_withhold,22901,48
+F1_registered,all_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",admit,admit,1667,48
+F1_registered,all_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",admit,confirm,2400,48
+F1_registered,all_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",hold,hold,1744,48
+F1_registered,all_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",score_withhold,score_withhold,25389,48
+F0_singleton,complete_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",admit,admit,403,24
+F0_singleton,complete_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",admit,confirm,2400,48
+F0_singleton,complete_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",fallback,fallback,2400,48
+F0_singleton,complete_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",hold,hold,611,21
+F0_singleton,complete_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",score_withhold,score_withhold,15786,48
+F1_registered,complete_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",admit,admit,408,24
+F1_registered,complete_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",admit,confirm,2400,48
+F1_registered,complete_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",hold,hold,553,22
+F1_registered,complete_records,"V0 outer-train-fitted target 0.13, held fixed for V0-to-V1 transition",score_withhold,score_withhold,18239,48

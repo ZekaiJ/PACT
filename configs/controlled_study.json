@@ -1,0 +1,41 @@
+{
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 1886,
+  "common_coverage": [
+    0.1,
+    0.39
+  ],
+  "dirichlet_concentration_by_fold": {
+    "0": 8.0,
+    "1": 4.0,
+    "2": 8.0,
+    "3": 4.0,
+    "4": 4.0
+  },
+  "evaluation_labels_sha256": "1e338e40c55477c57e103c5e5686def46a45f298c3efa8f129c0fd1b8d3d10e7",
+  "expected": {
+    "cautious_evidence_fusion": {
+      "normalized_aurc": 0.27419013185522934
+    },
+    "lineage_unaware_pooling": {
+      "normalized_aurc": 0.21028298978093793
+    },
+    "nested_evidential_composition": {
+      "fixed_target_admitted": 4062,
+      "fixed_target_wrong": 0,
+      "normalized_aurc": 0.14796288754853812
+    },
+    "product_evidence_fusion": {
+      "normalized_aurc": 0.24847530301806373
+    },
+    "quality_weighted_fusion": {
+      "normalized_aurc": 0.2694516804428747
+    },
+    "registered_lineage_pooling": {
+      "normalized_aurc": 0.20960151685537792
+    }
+  },
+  "fixed_target": 0.13,
+  "fold_count": 5,
+  "source_records_sha256": "4a32afc3c009ee7181811635c5739db9544f820ae6d7cc6c8d568005cf7bb635"
+}

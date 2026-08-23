@@ -1,0 +1,211 @@
+{
+  "status": "PASS_720_THREE_CHECKPOINT_COMPLETION",
+  "qwen32_scientific_gate": "PASS_TARGET_CONDITIONED_OFF_TARGET_RECURRENCE",
+  "main_text_eligible": true,
+  "denominator": {
+    "checkpoints": 3,
+    "model_families": 2,
+    "rows_per_checkpoint": 720,
+    "total_scored_rows": 2160,
+    "episode_clusters": 60,
+    "model_episode_rows": 180,
+    "tasks": 6,
+    "model_task_rows": 18,
+    "images": 120,
+    "targets_per_image": 6,
+    "event_proximal_factual_rows_per_checkpoint": 60,
+    "event_proximal_counterfactual_rows_per_checkpoint": 300,
+    "source_target_cells": 108,
+    "pairwise_checkpoint_comparisons": 3
+  },
+  "models": {
+    "qwen3vl_8b": {
+      "premature_factual_ready": {
+        "estimate": 0.4166666666666667,
+        "ci95_low": 0.3333333333333333,
+        "ci95_high": 0.5166666666666667
+      },
+      "factual_ready": {
+        "estimate": 0.8833333333333333,
+        "ci95_low": 0.8166666666666668,
+        "ci95_high": 0.9500000000000001
+      },
+      "nonfactual_ready_rate": {
+        "estimate": 0.17666666666666667,
+        "ci95_low": 0.15666666666666668,
+        "ci95_high": 0.19666666666666668
+      },
+      "factual_minus_nonfactual_ready": {
+        "estimate": 0.7066666666666667,
+        "ci95_low": 0.6366666666666667,
+        "ci95_high": 0.7733333333333333
+      },
+      "any_nonfactual_ready": {
+        "estimate": 0.6333333333333333,
+        "ci95_low": 0.5666666666666667,
+        "ci95_high": 0.7000000000000001
+      },
+      "factual_match": {
+        "estimate": 0.9666666666666667,
+        "ci95_low": 0.9166666666666666,
+        "ci95_high": 1.0
+      },
+      "nonfactual_nonmatch_rate": {
+        "estimate": 0.7999999999999999,
+        "ci95_low": 0.7799999999999999,
+        "ci95_high": 0.82
+      }
+    },
+    "qwen3vl_32b": {
+      "premature_factual_ready": {
+        "estimate": 0.3666666666666667,
+        "ci95_low": 0.31666666666666665,
+        "ci95_high": 0.43333333333333335
+      },
+      "factual_ready": {
+        "estimate": 0.9500000000000001,
+        "ci95_low": 0.9,
+        "ci95_high": 1.0
+      },
+      "nonfactual_ready_rate": {
+        "estimate": 0.14,
+        "ci95_low": 0.11333333333333334,
+        "ci95_high": 0.16666666666666666
+      },
+      "factual_minus_nonfactual_ready": {
+        "estimate": 0.81,
+        "ci95_low": 0.7533333333333334,
+        "ci95_high": 0.86
+      },
+      "any_nonfactual_ready": {
+        "estimate": 0.6,
+        "ci95_low": 0.5166666666666667,
+        "ci95_high": 0.6833333333333332
+      },
+      "factual_match": {
+        "estimate": 0.9500000000000001,
+        "ci95_low": 0.9,
+        "ci95_high": 1.0
+      },
+      "nonfactual_nonmatch_rate": {
+        "estimate": 0.86,
+        "ci95_low": 0.8333333333333334,
+        "ci95_high": 0.8866666666666667
+      }
+    },
+    "internvl3_8b": {
+      "premature_factual_ready": {
+        "estimate": 0.26666666666666666,
+        "ci95_low": 0.21666666666666667,
+        "ci95_high": 0.31666666666666665
+      },
+      "factual_ready": {
+        "estimate": 0.45,
+        "ci95_low": 0.3666666666666667,
+        "ci95_high": 0.5333333333333333
+      },
+      "nonfactual_ready_rate": {
+        "estimate": 0.16333333333333333,
+        "ci95_low": 0.12666666666666668,
+        "ci95_high": 0.20000000000000004
+      },
+      "factual_minus_nonfactual_ready": {
+        "estimate": 0.2866666666666667,
+        "ci95_low": 0.20666666666666667,
+        "ci95_high": 0.37000000000000005
+      },
+      "any_nonfactual_ready": {
+        "estimate": 0.4666666666666666,
+        "ci95_low": 0.3666666666666667,
+        "ci95_high": 0.5666666666666667
+      },
+      "factual_match": {
+        "estimate": 1.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      "nonfactual_nonmatch_rate": {
+        "estimate": 0.4366666666666667,
+        "ci95_low": 0.39666666666666667,
+        "ci95_high": 0.47341666666666554
+      }
+    }
+  },
+  "gates": {
+    "qwen3vl_8b": {
+      "tasks_with_nonzero_nonfactual_ready_rate": 6,
+      "off_target_recurrence": true,
+      "target_conditioned_gap": true,
+      "promotion_status": "PASS_TARGET_CONDITIONED_OFF_TARGET_RECURRENCE"
+    },
+    "qwen3vl_32b": {
+      "tasks_with_nonzero_nonfactual_ready_rate": 5,
+      "off_target_recurrence": true,
+      "target_conditioned_gap": true,
+      "promotion_status": "PASS_TARGET_CONDITIONED_OFF_TARGET_RECURRENCE"
+    },
+    "internvl3_8b": {
+      "tasks_with_nonzero_nonfactual_ready_rate": 5,
+      "off_target_recurrence": true,
+      "target_conditioned_gap": true,
+      "promotion_status": "PASS_TARGET_CONDITIONED_OFF_TARGET_RECURRENCE"
+    }
+  },
+  "pairwise": [
+    {
+      "left_model": "qwen3vl_8b",
+      "right_model": "qwen3vl_32b",
+      "aligned_rows": 720,
+      "event_proximal_counterfactual_rows": 300,
+      "readiness_agreement_all": 0.875,
+      "target_match_agreement_all": 0.8694444444444445,
+      "both_nonfactual_ready_rate": 0.1,
+      "either_nonfactual_ready_rate": 0.21666666666666667,
+      "offdiagonal_pearson": 0.8335285525205389,
+      "offdiagonal_spearman": 0.7090390899846638
+    },
+    {
+      "left_model": "qwen3vl_8b",
+      "right_model": "internvl3_8b",
+      "aligned_rows": 720,
+      "event_proximal_counterfactual_rows": 300,
+      "readiness_agreement_all": 0.7166666666666667,
+      "target_match_agreement_all": 0.6861111111111111,
+      "both_nonfactual_ready_rate": 0.013333333333333334,
+      "either_nonfactual_ready_rate": 0.32666666666666666,
+      "offdiagonal_pearson": -0.19676676236187102,
+      "offdiagonal_spearman": -0.20534438356254148
+    },
+    {
+      "left_model": "qwen3vl_32b",
+      "right_model": "internvl3_8b",
+      "aligned_rows": 720,
+      "event_proximal_counterfactual_rows": 300,
+      "readiness_agreement_all": 0.7388888888888889,
+      "target_match_agreement_all": 0.6652777777777777,
+      "both_nonfactual_ready_rate": 0.013333333333333334,
+      "either_nonfactual_ready_rate": 0.29,
+      "offdiagonal_pearson": -0.12389702623077853,
+      "offdiagonal_spearman": -0.2787309528440095
+    }
+  ],
+  "bootstrap": {
+    "iterations": 10000,
+    "seed": 20260721,
+    "unit": "episode resampled within each source task"
+  },
+  "family_accounting": {
+    "qwen3vl_8b_and_32b": "one registered Qwen3-VL model family",
+    "internvl3_8b": "second model family",
+    "three_checkpoint_majority": "diagnostic only; not independent corroboration"
+  },
+  "claim_boundary": "This fixed-image intervention tests whether off-target readiness recurs at a larger Qwen3-VL checkpoint and across two registered model families on the same 60 HABIT episodes. It does not establish checkpoint independence, calibrated readiness, general VLM behavior, end-to-end action validity, or physical safety.",
+  "sha256": {
+    "prompt_pack": "7e715e2589da69ab2e217fda77d6a60dd4c6488da1991e0420587e88a435ac32",
+    "reference": "2d17a56f4a70bd8d20f2621117d183e21942f8ace21e892b941e071f44626f5f",
+    "qwen3vl_8b_raw": "e1c1e39948c2135db6e80b992a126cb9018c066a0ad3a55bbd5a0e79f6344cac",
+    "qwen3vl_32b_raw": "79c548102386f066bdfad77ec05023b385e3d4c51a5edec2f8f9f065ab72a90d",
+    "internvl3_8b_raw": "944fabbb6aeb1adb470fff648a156b1c075ae47831fd4a7caa4ef2b311e2c712",
+    "analysis_script": "0add1b6f4f9157793424a5428326920791a4384d787bafb93ddf639ae03c07c8"
+  }
+}

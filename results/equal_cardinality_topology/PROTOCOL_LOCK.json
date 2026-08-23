@@ -1,0 +1,71 @@
+{
+  "analysis": "M1 equal-cardinality topology control",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 56201,
+    "unit": "scene"
+  },
+  "controlled_config_sha256": "A57D30E911B0BC9AE4C6EBBABB0F780B11924DCDD06448F593796E6387384424",
+  "directional_success_gate": "none; all signs and effect sizes are retained",
+  "evaluation_labels_file_sha256": "36D794850C1DEA5DC878328D3B71A88EECA7BE3AB7A8B452D60D08784705ECB8",
+  "fixed_elements": [
+    "31200 controlled records and 48 scene clusters",
+    "fold-local transferred concentrations",
+    "common eligibility rule",
+    "fixed-catalog component completeness",
+    "native non-vacuity score",
+    "outer-training threshold protocol",
+    "verifier disabled"
+  ],
+  "operator_source_sha256": "20173A49C27100AEBE1A631E4318F8F727F561370141A406520F219EB9667D5C",
+  "partitions": {
+    "registered_L_GR": [
+      [
+        "language"
+      ],
+      [
+        "geometry",
+        "risk"
+      ]
+    ],
+    "singleton_L_G_R": [
+      [
+        "language"
+      ],
+      [
+        "geometry"
+      ],
+      [
+        "risk"
+      ]
+    ],
+    "wrong_LG_R": [
+      [
+        "language",
+        "geometry"
+      ],
+      [
+        "risk"
+      ]
+    ],
+    "wrong_LR_G": [
+      [
+        "language",
+        "risk"
+      ],
+      [
+        "geometry"
+      ]
+    ]
+  },
+  "primary_contrasts": [
+    "ncsAURC(wrong_LG_R) - ncsAURC(registered_L_GR)",
+    "ncsAURC(wrong_LR_G) - ncsAURC(registered_L_GR)"
+  ],
+  "primary_support": [
+    0.1,
+    0.39
+  ],
+  "release_note": "Manuscript-hash and repository-commit checks were analysis-time freeze controls; the public runner verifies released code, data, labels, and configuration.",
+  "source_records_file_sha256": "D2F32EFBF1674F8FA29E8D83E1453EC565C0DDD2B50031368FCC00CDF8B2784A"
+}

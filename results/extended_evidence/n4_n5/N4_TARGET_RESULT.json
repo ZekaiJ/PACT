@@ -1,0 +1,176 @@
+{
+  "claim_boundary": "The fixed-image intervention tests recurrence across three registered model families. It does not establish family independence, calibrated readiness, or action safety.",
+  "gates": {
+    "internvl3_8b": {
+      "off_target_recurrence": true,
+      "status": "PASS",
+      "target_conditioned_gap": true,
+      "tasks_with_nonzero_nonfactual_ready_rate": 5
+    },
+    "llava_onevision_7b": {
+      "off_target_recurrence": true,
+      "status": "HOLD",
+      "target_conditioned_gap": false,
+      "tasks_with_nonzero_nonfactual_ready_rate": 6
+    },
+    "qwen3vl_8b": {
+      "off_target_recurrence": true,
+      "status": "PASS",
+      "target_conditioned_gap": true,
+      "tasks_with_nonzero_nonfactual_ready_rate": 6
+    }
+  },
+  "models": {
+    "internvl3_8b": {
+      "any_nonfactual_ready": {
+        "ci95_high": 0.5666666666666667,
+        "ci95_low": 0.3666666666666667,
+        "estimate": 0.4666666666666666
+      },
+      "factual_match": {
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0
+      },
+      "factual_minus_nonfactual_ready": {
+        "ci95_high": 0.37,
+        "ci95_low": 0.20666666666666667,
+        "estimate": 0.2866666666666667
+      },
+      "factual_ready": {
+        "ci95_high": 0.5333333333333333,
+        "ci95_low": 0.3666666666666667,
+        "estimate": 0.45
+      },
+      "nonfactual_nonmatch_rate": {
+        "ci95_high": 0.4766666666666666,
+        "ci95_low": 0.39666666666666667,
+        "estimate": 0.4366666666666667
+      },
+      "nonfactual_ready_rate": {
+        "ci95_high": 0.20000000000000004,
+        "ci95_low": 0.12666666666666668,
+        "estimate": 0.16333333333333333
+      },
+      "premature_factual_ready": {
+        "ci95_high": 0.31666666666666665,
+        "ci95_low": 0.21666666666666667,
+        "estimate": 0.26666666666666666
+      }
+    },
+    "llava_onevision_7b": {
+      "any_nonfactual_ready": {
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0
+      },
+      "factual_match": {
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0
+      },
+      "factual_minus_nonfactual_ready": {
+        "ci95_high": 0.07666666666666665,
+        "ci95_low": -0.05666666666666667,
+        "estimate": 0.00999999999999999
+      },
+      "factual_ready": {
+        "ci95_high": 0.9333333333333332,
+        "ci95_low": 0.7999999999999999,
+        "estimate": 0.8666666666666667
+      },
+      "nonfactual_nonmatch_rate": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0
+      },
+      "nonfactual_ready_rate": {
+        "ci95_high": 0.8766666666666668,
+        "ci95_low": 0.8333333333333334,
+        "estimate": 0.8566666666666668
+      },
+      "premature_factual_ready": {
+        "ci95_high": 0.8833333333333333,
+        "ci95_low": 0.7833333333333333,
+        "estimate": 0.8333333333333334
+      }
+    },
+    "qwen3vl_8b": {
+      "any_nonfactual_ready": {
+        "ci95_high": 0.7000000000000001,
+        "ci95_low": 0.5666666666666667,
+        "estimate": 0.6333333333333333
+      },
+      "factual_match": {
+        "ci95_high": 1.0,
+        "ci95_low": 0.9166666666666666,
+        "estimate": 0.9666666666666667
+      },
+      "factual_minus_nonfactual_ready": {
+        "ci95_high": 0.7733333333333333,
+        "ci95_low": 0.6366666666666667,
+        "estimate": 0.7066666666666667
+      },
+      "factual_ready": {
+        "ci95_high": 0.9500000000000001,
+        "ci95_low": 0.8166666666666668,
+        "estimate": 0.8833333333333333
+      },
+      "nonfactual_nonmatch_rate": {
+        "ci95_high": 0.82,
+        "ci95_low": 0.7799999999999999,
+        "estimate": 0.7999999999999999
+      },
+      "nonfactual_ready_rate": {
+        "ci95_high": 0.19666666666666668,
+        "ci95_low": 0.15666666666666668,
+        "estimate": 0.17666666666666667
+      },
+      "premature_factual_ready": {
+        "ci95_high": 0.5166666666666667,
+        "ci95_low": 0.3333333333333333,
+        "estimate": 0.4166666666666667
+      }
+    }
+  },
+  "pairwise": [
+    {
+      "aligned_rows": 720,
+      "both_nonfactual_ready_rate": 0.013333333333333334,
+      "either_nonfactual_ready_rate": 0.32666666666666666,
+      "event_proximal_counterfactual_rows": 300,
+      "left_model": "qwen3vl_8b",
+      "offdiagonal_pearson": -0.19676676236187102,
+      "offdiagonal_spearman": -0.20534438356254148,
+      "readiness_agreement_all": 0.7166666666666667,
+      "right_model": "internvl3_8b",
+      "target_match_agreement_all": 0.6861111111111111
+    },
+    {
+      "aligned_rows": 720,
+      "both_nonfactual_ready_rate": 0.17333333333333334,
+      "either_nonfactual_ready_rate": 0.86,
+      "event_proximal_counterfactual_rows": 300,
+      "left_model": "qwen3vl_8b",
+      "offdiagonal_pearson": 0.23254074980555295,
+      "offdiagonal_spearman": 0.28179043743641913,
+      "readiness_agreement_all": 0.30833333333333335,
+      "right_model": "llava_onevision_7b",
+      "target_match_agreement_all": 0.23333333333333334
+    },
+    {
+      "aligned_rows": 720,
+      "both_nonfactual_ready_rate": 0.15333333333333332,
+      "either_nonfactual_ready_rate": 0.8666666666666667,
+      "event_proximal_counterfactual_rows": 300,
+      "left_model": "internvl3_8b",
+      "offdiagonal_pearson": 0.17455743347284644,
+      "offdiagonal_spearman": 0.07481178599935374,
+      "readiness_agreement_all": 0.22361111111111112,
+      "right_model": "llava_onevision_7b",
+      "target_match_agreement_all": 0.5444444444444444
+    }
+  ],
+  "rows_per_model": 720,
+  "status": "PASS_720_ROWS_THREE_FAMILIES"
+}

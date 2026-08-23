@@ -1,0 +1,878 @@
+{
+  "analyses": {
+    "all_matched_surfaces_invalid_excluded": {
+      "between_pair_means": {
+        "conditional_coerror_symmetric": 0.5733331320449807,
+        "error_cooccurrence_lift": 1.9125295960875264,
+        "error_phi": 0.3294597283674042
+      },
+      "checkpoint_pair_counts": {
+        "between_family": 5,
+        "within_family": 1
+      },
+      "exact_one_sided_p": 0.16666666666666666,
+      "invalid_policy": "exclude_invalid",
+      "pair_metrics": [
+        {
+          "conditional_coerror_symmetric": 0.6163522012578616,
+          "error_cooccurrence_lift": 4.2264150943396235,
+          "error_phi": 0.549066213215239,
+          "left_model": "qwen3vl_8b",
+          "n": 336,
+          "n00": 268,
+          "n01": 23,
+          "n10": 15,
+          "n11": 30,
+          "registered_relation": "within_family",
+          "right_model": "qwen3vl_32b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.6787123572170302,
+          "error_cooccurrence_lift": 3.0006230529595017,
+          "error_phi": 0.5377732292114369,
+          "left_model": "qwen3vl_8b",
+          "n": 336,
+          "n00": 227,
+          "n01": 64,
+          "n10": 2,
+          "n11": 43,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5783687943262411,
+          "error_cooccurrence_lift": 1.6581560283687942,
+          "error_phi": 0.29470580860668744,
+          "left_model": "qwen3vl_8b",
+          "n": 334,
+          "n00": 143,
+          "n01": 146,
+          "n10": 3,
+          "n11": 42,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5219538000352671,
+          "error_cooccurrence_lift": 2.1922059601481223,
+          "error_phi": 0.35267132814564334,
+          "left_model": "qwen3vl_32b",
+          "n": 336,
+          "n00": 213,
+          "n01": 70,
+          "n10": 16,
+          "n11": 37,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.47164793255720594,
+          "error_cooccurrence_lift": 1.3073063026896827,
+          "error_phi": 0.15144632496107682,
+          "left_model": "qwen3vl_32b",
+          "n": 334,
+          "n00": 132,
+          "n01": 149,
+          "n10": 14,
+          "n11": 39,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.6159827760891591,
+          "error_cooccurrence_lift": 1.4043566362715298,
+          "error_phi": 0.31070195091217667,
+          "left_model": "internvl3_8b",
+          "n": 334,
+          "n00": 124,
+          "n01": 105,
+          "n10": 22,
+          "n11": 83,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        }
+      ],
+      "partition_scores": [
+        {
+          "paired_models": "qwen3vl_8b+qwen3vl_32b",
+          "phi_contrast": 0.21960648484783474
+        },
+        {
+          "paired_models": "qwen3vl_8b+internvl3_8b",
+          "phi_contrast": 0.2060549040432722
+        },
+        {
+          "paired_models": "qwen3vl_32b+internvl3_8b",
+          "phi_contrast": -0.016067377235680025
+        },
+        {
+          "paired_models": "internvl3_8b+llava_onevision_7b",
+          "phi_contrast": -0.06643062991584003
+        },
+        {
+          "paired_models": "qwen3vl_8b+llava_onevision_7b",
+          "phi_contrast": -0.0856260006824271
+        },
+        {
+          "paired_models": "qwen3vl_32b+llava_onevision_7b",
+          "phi_contrast": -0.25753738105715984
+        }
+      ],
+      "permutation_resolution": 0.16666666666666666,
+      "registered_pair": {
+        "conditional_coerror_symmetric": 0.6163522012578616,
+        "error_cooccurrence_lift": 4.2264150943396235,
+        "error_phi": 0.549066213215239,
+        "left_model": "qwen3vl_8b",
+        "n": 336,
+        "n00": 268,
+        "n01": 23,
+        "n10": 15,
+        "n11": 30,
+        "registered_relation": "within_family",
+        "right_model": "qwen3vl_32b"
+      },
+      "registered_partition_rank": 1,
+      "registered_phi_contrast": 0.21960648484783474,
+      "variants": [
+        "canonical",
+        "rules_first",
+        "schema_first",
+        "wrapper_paraphrase"
+      ]
+    },
+    "all_matched_surfaces_primary": {
+      "between_pair_means": {
+        "conditional_coerror_symmetric": 0.5738591438332503,
+        "error_cooccurrence_lift": 1.9098933509050355,
+        "error_phi": 0.3293370160370644
+      },
+      "checkpoint_pair_counts": {
+        "between_family": 5,
+        "within_family": 1
+      },
+      "exact_one_sided_p": 0.16666666666666666,
+      "invalid_policy": "invalid_as_error",
+      "pair_metrics": [
+        {
+          "conditional_coerror_symmetric": 0.6163522012578616,
+          "error_cooccurrence_lift": 4.2264150943396235,
+          "error_phi": 0.549066213215239,
+          "left_model": "qwen3vl_8b",
+          "n": 336,
+          "n00": 268,
+          "n01": 23,
+          "n10": 15,
+          "n11": 30,
+          "registered_relation": "within_family",
+          "right_model": "qwen3vl_32b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.6787123572170302,
+          "error_cooccurrence_lift": 3.0006230529595017,
+          "error_phi": 0.5377732292114369,
+          "left_model": "qwen3vl_8b",
+          "n": 336,
+          "n00": 227,
+          "n01": 64,
+          "n10": 2,
+          "n11": 43,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5771929824561404,
+          "error_cooccurrence_lift": 1.6505263157894736,
+          "error_phi": 0.2918266869961753,
+          "left_model": "qwen3vl_8b",
+          "n": 336,
+          "n00": 143,
+          "n01": 148,
+          "n10": 3,
+          "n11": 42,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5219538000352671,
+          "error_cooccurrence_lift": 2.1922059601481223,
+          "error_phi": 0.35267132814564334,
+          "left_model": "qwen3vl_32b",
+          "n": 336,
+          "n00": 213,
+          "n01": 70,
+          "n10": 16,
+          "n11": 37,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.4705561072492552,
+          "error_cooccurrence_lift": 1.3012909632571998,
+          "error_phi": 0.1487411707495479,
+          "left_model": "qwen3vl_32b",
+          "n": 336,
+          "n00": 132,
+          "n01": 151,
+          "n10": 14,
+          "n11": 39,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.6208804722085588,
+          "error_cooccurrence_lift": 1.4048204623708804,
+          "error_phi": 0.3156726650825185,
+          "left_model": "internvl3_8b",
+          "n": 336,
+          "n00": 124,
+          "n01": 105,
+          "n10": 22,
+          "n11": 85,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        }
+      ],
+      "partition_scores": [
+        {
+          "paired_models": "qwen3vl_8b+qwen3vl_32b",
+          "phi_contrast": 0.21972919717817457
+        },
+        {
+          "paired_models": "qwen3vl_8b+internvl3_8b",
+          "phi_contrast": 0.2061776163736121
+        },
+        {
+          "paired_models": "qwen3vl_32b+internvl3_8b",
+          "phi_contrast": -0.01594466490534019
+        },
+        {
+          "paired_models": "internvl3_8b+llava_onevision_7b",
+          "phi_contrast": -0.06034306058108996
+        },
+        {
+          "paired_models": "qwen3vl_8b+llava_onevision_7b",
+          "phi_contrast": -0.08895823428470179
+        },
+        {
+          "paired_models": "qwen3vl_32b+llava_onevision_7b",
+          "phi_contrast": -0.26066085378065473
+        }
+      ],
+      "permutation_resolution": 0.16666666666666666,
+      "registered_pair": {
+        "conditional_coerror_symmetric": 0.6163522012578616,
+        "error_cooccurrence_lift": 4.2264150943396235,
+        "error_phi": 0.549066213215239,
+        "left_model": "qwen3vl_8b",
+        "n": 336,
+        "n00": 268,
+        "n01": 23,
+        "n10": 15,
+        "n11": 30,
+        "registered_relation": "within_family",
+        "right_model": "qwen3vl_32b"
+      },
+      "registered_partition_rank": 1,
+      "registered_phi_contrast": 0.21972919717817457,
+      "variants": [
+        "canonical",
+        "rules_first",
+        "schema_first",
+        "wrapper_paraphrase"
+      ]
+    },
+    "surface_canonical": {
+      "between_pair_means": {
+        "conditional_coerror_symmetric": 0.5537037037037037,
+        "error_cooccurrence_lift": 1.8063738156761413,
+        "error_phi": 0.33397279195416535
+      },
+      "checkpoint_pair_counts": {
+        "between_family": 5,
+        "within_family": 1
+      },
+      "exact_one_sided_p": 0.5,
+      "invalid_policy": "invalid_as_error",
+      "pair_metrics": [
+        {
+          "conditional_coerror_symmetric": 0.5104166666666667,
+          "error_cooccurrence_lift": 3.0625000000000004,
+          "error_phi": 0.4084358614778782,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 63,
+          "n01": 5,
+          "n10": 9,
+          "n11": 7,
+          "registered_relation": "within_family",
+          "right_model": "qwen3vl_32b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.7465277777777778,
+          "error_cooccurrence_lift": 2.916666666666667,
+          "error_phi": 0.6398771166858558,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 56,
+          "n01": 12,
+          "n10": 1,
+          "n11": 15,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5574127906976745,
+          "error_cooccurrence_lift": 1.5872093023255816,
+          "error_phi": 0.29170290976948166,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 38,
+          "n01": 30,
+          "n10": 3,
+          "n11": 13,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.4212962962962963,
+          "error_cooccurrence_lift": 1.8148148148148147,
+          "error_phi": 0.2289431983866363,
+          "left_model": "qwen3vl_32b",
+          "n": 84,
+          "n00": 52,
+          "n01": 20,
+          "n10": 5,
+          "n11": 7,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.31976744186046513,
+          "error_cooccurrence_lift": 0.9767441860465118,
+          "error_phi": -0.00972295372195204,
+          "left_model": "qwen3vl_32b",
+          "n": 84,
+          "n00": 35,
+          "n01": 37,
+          "n10": 6,
+          "n11": 6,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.7235142118863049,
+          "error_cooccurrence_lift": 1.7364341085271318,
+          "error_phi": 0.5190636886508051,
+          "left_model": "internvl3_8b",
+          "n": 84,
+          "n00": 38,
+          "n01": 19,
+          "n10": 3,
+          "n11": 24,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        }
+      ],
+      "partition_scores": [
+        {
+          "paired_models": "qwen3vl_8b+internvl3_8b",
+          "phi_contrast": 0.35219257577328594
+        },
+        {
+          "paired_models": "internvl3_8b+llava_onevision_7b",
+          "phi_contrast": 0.20721646213122513
+        },
+        {
+          "paired_models": "qwen3vl_8b+qwen3vl_32b",
+          "phi_contrast": 0.07446306952371284
+        },
+        {
+          "paired_models": "qwen3vl_8b+llava_onevision_7b",
+          "phi_contrast": -0.06561647252636299
+        },
+        {
+          "paired_models": "qwen3vl_32b+internvl3_8b",
+          "phi_contrast": -0.14092812618577744
+        },
+        {
+          "paired_models": "qwen3vl_32b+llava_onevision_7b",
+          "phi_contrast": -0.42732750871608344
+        }
+      ],
+      "permutation_resolution": 0.16666666666666666,
+      "registered_pair": {
+        "conditional_coerror_symmetric": 0.5104166666666667,
+        "error_cooccurrence_lift": 3.0625000000000004,
+        "error_phi": 0.4084358614778782,
+        "left_model": "qwen3vl_8b",
+        "n": 84,
+        "n00": 63,
+        "n01": 5,
+        "n10": 9,
+        "n11": 7,
+        "registered_relation": "within_family",
+        "right_model": "qwen3vl_32b"
+      },
+      "registered_partition_rank": 3,
+      "registered_phi_contrast": 0.07446306952371284,
+      "variants": [
+        "canonical"
+      ]
+    },
+    "surface_rules_first": {
+      "between_pair_means": {
+        "conditional_coerror_symmetric": 0.6412698412698412,
+        "error_cooccurrence_lift": 2.9666666666666672,
+        "error_phi": 0.4216802361991043
+      },
+      "checkpoint_pair_counts": {
+        "between_family": 5,
+        "within_family": 1
+      },
+      "exact_one_sided_p": 0.5,
+      "invalid_policy": "invalid_as_error",
+      "pair_metrics": [
+        {
+          "conditional_coerror_symmetric": 0.606060606060606,
+          "error_cooccurrence_lift": 5.090909090909091,
+          "error_phi": 0.5501047109652416,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 70,
+          "n01": 3,
+          "n10": 5,
+          "n11": 6,
+          "registered_relation": "within_family",
+          "right_model": "qwen3vl_32b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.8928571428571428,
+          "error_cooccurrence_lift": 6.000000000000001,
+          "error_phi": 0.8680003787638844,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 70,
+          "n01": 3,
+          "n10": 0,
+          "n11": 11,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5982142857142857,
+          "error_cooccurrence_lift": 1.5000000000000002,
+          "error_phi": 0.2744858206782723,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 28,
+          "n01": 45,
+          "n10": 0,
+          "n11": 11,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.6388888888888888,
+          "error_cooccurrence_lift": 4.666666666666667,
+          "error_phi": 0.5680375574437544,
+          "left_model": "qwen3vl_32b",
+          "n": 84,
+          "n00": 68,
+          "n01": 7,
+          "n10": 2,
+          "n11": 7,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.4513888888888889,
+          "error_cooccurrence_lift": 1.1666666666666667,
+          "error_phi": 0.08164965809277261,
+          "left_model": "qwen3vl_32b",
+          "n": 84,
+          "n00": 26,
+          "n01": 49,
+          "n10": 2,
+          "n11": 7,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.625,
+          "error_cooccurrence_lift": 1.5,
+          "error_phi": 0.31622776601683794,
+          "left_model": "internvl3_8b",
+          "n": 84,
+          "n00": 28,
+          "n01": 42,
+          "n10": 0,
+          "n11": 14,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        }
+      ],
+      "partition_scores": [
+        {
+          "paired_models": "qwen3vl_8b+internvl3_8b",
+          "phi_contrast": 0.5098992761245086
+        },
+        {
+          "paired_models": "qwen3vl_32b+internvl3_8b",
+          "phi_contrast": 0.14994389054035262
+        },
+        {
+          "paired_models": "qwen3vl_8b+qwen3vl_32b",
+          "phi_contrast": 0.12842447476613733
+        },
+        {
+          "paired_models": "internvl3_8b+llava_onevision_7b",
+          "phi_contrast": -0.15222785917194714
+        },
+        {
+          "paired_models": "qwen3vl_8b+llava_onevision_7b",
+          "phi_contrast": -0.2023181935782259
+        },
+        {
+          "paired_models": "qwen3vl_32b+llava_onevision_7b",
+          "phi_contrast": -0.43372158868082555
+        }
+      ],
+      "permutation_resolution": 0.16666666666666666,
+      "registered_pair": {
+        "conditional_coerror_symmetric": 0.606060606060606,
+        "error_cooccurrence_lift": 5.090909090909091,
+        "error_phi": 0.5501047109652416,
+        "left_model": "qwen3vl_8b",
+        "n": 84,
+        "n00": 70,
+        "n01": 3,
+        "n10": 5,
+        "n11": 6,
+        "registered_relation": "within_family",
+        "right_model": "qwen3vl_32b"
+      },
+      "registered_partition_rank": 3,
+      "registered_phi_contrast": 0.12842447476613733,
+      "variants": [
+        "rules_first"
+      ]
+    },
+    "surface_schema_first": {
+      "between_pair_means": {
+        "conditional_coerror_symmetric": 0.5885934373749501,
+        "error_cooccurrence_lift": 2.1263025210084034,
+        "error_phi": 0.3567693113073254
+      },
+      "checkpoint_pair_counts": {
+        "between_family": 5,
+        "within_family": 1
+      },
+      "exact_one_sided_p": 0.16666666666666666,
+      "invalid_policy": "invalid_as_error",
+      "pair_metrics": [
+        {
+          "conditional_coerror_symmetric": 0.7818627450980392,
+          "error_cooccurrence_lift": 4.529411764705883,
+          "error_phi": 0.7257946509373269,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 66,
+          "n01": 6,
+          "n10": 1,
+          "n11": 11,
+          "registered_relation": "within_family",
+          "right_model": "qwen3vl_32b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.7333333333333334,
+          "error_cooccurrence_lift": 3.8500000000000005,
+          "error_phi": 0.6504205370373848,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 63,
+          "n01": 9,
+          "n10": 1,
+          "n11": 11,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.6224489795918368,
+          "error_cooccurrence_lift": 1.7142857142857142,
+          "error_phi": 0.3450327796711771,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 35,
+          "n01": 37,
+          "n10": 0,
+          "n11": 12,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5441176470588236,
+          "error_cooccurrence_lift": 2.4705882352941173,
+          "error_phi": 0.41409802336975204,
+          "left_model": "qwen3vl_32b",
+          "n": 84,
+          "n00": 57,
+          "n01": 10,
+          "n10": 7,
+          "n11": 10,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5150060024009604,
+          "error_cooccurrence_lift": 1.3109243697478992,
+          "error_phi": 0.1853129799536994,
+          "left_model": "qwen3vl_32b",
+          "n": 84,
+          "n00": 31,
+          "n01": 36,
+          "n10": 4,
+          "n11": 13,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.528061224489796,
+          "error_cooccurrence_lift": 1.2857142857142856,
+          "error_phi": 0.1889822365046136,
+          "left_model": "internvl3_8b",
+          "n": 84,
+          "n00": 30,
+          "n01": 34,
+          "n10": 5,
+          "n11": 15,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        }
+      ],
+      "partition_scores": [
+        {
+          "paired_models": "qwen3vl_8b+qwen3vl_32b",
+          "phi_contrast": 0.36902533963000145
+        },
+        {
+          "paired_models": "qwen3vl_8b+internvl3_8b",
+          "phi_contrast": 0.27857640295007097
+        },
+        {
+          "paired_models": "qwen3vl_32b+internvl3_8b",
+          "phi_contrast": -0.0050106134510883305
+        },
+        {
+          "paired_models": "qwen3vl_8b+llava_onevision_7b",
+          "phi_contrast": -0.0878889058893782
+        },
+        {
+          "paired_models": "internvl3_8b+llava_onevision_7b",
+          "phi_contrast": -0.2751495576892545
+        },
+        {
+          "paired_models": "qwen3vl_32b+llava_onevision_7b",
+          "phi_contrast": -0.2795526655503515
+        }
+      ],
+      "permutation_resolution": 0.16666666666666666,
+      "registered_pair": {
+        "conditional_coerror_symmetric": 0.7818627450980392,
+        "error_cooccurrence_lift": 4.529411764705883,
+        "error_phi": 0.7257946509373269,
+        "left_model": "qwen3vl_8b",
+        "n": 84,
+        "n00": 66,
+        "n01": 6,
+        "n10": 1,
+        "n11": 11,
+        "registered_relation": "within_family",
+        "right_model": "qwen3vl_32b"
+      },
+      "registered_partition_rank": 1,
+      "registered_phi_contrast": 0.36902533963000145,
+      "variants": [
+        "schema_first"
+      ]
+    },
+    "surface_wrapper_paraphrase": {
+      "between_pair_means": {
+        "conditional_coerror_symmetric": 0.605631469979296,
+        "error_cooccurrence_lift": 1.7066666666666666,
+        "error_phi": 0.3201501006096338
+      },
+      "checkpoint_pair_counts": {
+        "between_family": 5,
+        "within_family": 1
+      },
+      "exact_one_sided_p": 0.16666666666666666,
+      "invalid_policy": "invalid_as_error",
+      "pair_metrics": [
+        {
+          "conditional_coerror_symmetric": 0.7,
+          "error_cooccurrence_lift": 5.6,
+          "error_phi": 0.5948496901286525,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 69,
+          "n01": 9,
+          "n10": 0,
+          "n11": 6,
+          "registered_relation": "within_family",
+          "right_model": "qwen3vl_32b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5652173913043478,
+          "error_cooccurrence_lift": 1.826086956521739,
+          "error_phi": 0.2520816345981441,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 38,
+          "n01": 40,
+          "n10": 0,
+          "n11": 6,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5714285714285714,
+          "error_cooccurrence_lift": 2.0,
+          "error_phi": 0.2773500981126146,
+          "left_model": "qwen3vl_8b",
+          "n": 84,
+          "n00": 42,
+          "n01": 36,
+          "n10": 0,
+          "n11": 6,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5746376811594203,
+          "error_cooccurrence_lift": 1.5826086956521739,
+          "error_phi": 0.2988719547378492,
+          "left_model": "qwen3vl_32b",
+          "n": 84,
+          "n00": 36,
+          "n01": 33,
+          "n10": 2,
+          "n11": 13,
+          "registered_relation": "between_family",
+          "right_model": "internvl3_8b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.5880952380952381,
+          "error_cooccurrence_lift": 1.7333333333333334,
+          "error_phi": 0.34191842968811503,
+          "left_model": "qwen3vl_32b",
+          "n": 84,
+          "n00": 40,
+          "n01": 29,
+          "n10": 2,
+          "n11": 13,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        },
+        {
+          "conditional_coerror_symmetric": 0.7287784679089027,
+          "error_cooccurrence_lift": 1.3913043478260867,
+          "error_phi": 0.4305283859114459,
+          "left_model": "internvl3_8b",
+          "n": 84,
+          "n00": 28,
+          "n01": 10,
+          "n10": 14,
+          "n11": 32,
+          "registered_relation": "between_family",
+          "right_model": "llava_onevision_7b"
+        }
+      ],
+      "partition_scores": [
+        {
+          "paired_models": "qwen3vl_8b+qwen3vl_32b",
+          "phi_contrast": 0.27469958951901874
+        },
+        {
+          "paired_models": "internvl3_8b+llava_onevision_7b",
+          "phi_contrast": 0.0775140244583708
+        },
+        {
+          "paired_models": "qwen3vl_32b+llava_onevision_7b",
+          "phi_contrast": -0.028817923009626267
+        },
+        {
+          "paired_models": "qwen3vl_32b+internvl3_8b",
+          "phi_contrast": -0.08047369294994522
+        },
+        {
+          "paired_models": "qwen3vl_8b+llava_onevision_7b",
+          "phi_contrast": -0.10629992090022677
+        },
+        {
+          "paired_models": "qwen3vl_8b+internvl3_8b",
+          "phi_contrast": -0.13662207711759133
+        }
+      ],
+      "permutation_resolution": 0.16666666666666666,
+      "registered_pair": {
+        "conditional_coerror_symmetric": 0.7,
+        "error_cooccurrence_lift": 5.6,
+        "error_phi": 0.5948496901286525,
+        "left_model": "qwen3vl_8b",
+        "n": 84,
+        "n00": 69,
+        "n01": 9,
+        "n10": 0,
+        "n11": 6,
+        "registered_relation": "within_family",
+        "right_model": "qwen3vl_32b"
+      },
+      "registered_partition_rank": 1,
+      "registered_phi_contrast": 0.27469958951901874,
+      "variants": [
+        "wrapper_paraphrase"
+      ]
+    }
+  },
+  "authorized_claim": "Registered family membership did not provide confirmatory stratification on four checkpoints. Error association nevertheless remained positive after pooling matched prompt surfaces for every checkpoint pair, including cross-family pairs; this is descriptive evidence of broadly shared failure structure, not lineage validation or independence certification.",
+  "implementation_error_found": {
+    "correct_pair_counts": {
+      "between_family": 5,
+      "within_family": 1
+    },
+    "description": "The old analysis mixed same-checkpoint prompt pairs with checkpoint-pair evidence.",
+    "old_pair_counts": {
+      "between_family": 80,
+      "within_family": 40
+    }
+  },
+  "parser_sensitivity": {
+    "exact_p_unchanged": true,
+    "invalid_as_error_phi_contrast": 0.21972919717817457,
+    "invalid_excluded_phi_contrast": 0.21960648484783474,
+    "invalid_rows": 2
+  },
+  "primary_summary": {
+    "between_mean_lift": 1.9098933509050355,
+    "between_mean_phi": 0.3293370160370644,
+    "cross_family_lift_range": [
+      1.3012909632571998,
+      3.0006230529595017
+    ],
+    "exact_one_sided_p": 0.16666666666666666,
+    "registered_lift": 4.2264150943396235,
+    "registered_partition_rank": 1,
+    "registered_phi": 0.549066213215239,
+    "registered_phi_contrast": 0.21972919717817457
+  },
+  "prompt_surface_exact_p_values": [
+    0.5,
+    0.5,
+    0.16666666666666666,
+    0.16666666666666666
+  ],
+  "reason": "The preregistered unit is the checkpoint pair (one within-family and five between-family pairs), not checkpoint-by-prompt source pairs. The registered pair ranks first when matched prompt surfaces are pooled, but the exact test has only six partitions (p=1/6) and prompt-specific ranks vary (p in {1/6, 1/2}); family stratification is therefore not confirmed.",
+  "status": "NEGATIVE_NOT_CONFIRMED",
+  "supersedes": "N5_DEPENDENCE_RESULT.json status PARTIAL_DESCRIPTIVE_ASSOCIATION"
+}

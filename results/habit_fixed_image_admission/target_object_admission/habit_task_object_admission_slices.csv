@@ -1,0 +1,17 @@
+method,window,condition,n,admitted,admission_rate
+semantic_candidate,early,factual,60,25,0.4166666666666667
+semantic_candidate,early,counterfactual,300,13,0.043333333333333335
+semantic_candidate,ready,factual,60,53,0.8833333333333333
+semantic_candidate,ready,counterfactual,300,53,0.17666666666666667
+current_target_only,early,factual,60,25,0.4166666666666667
+current_target_only,early,counterfactual,300,0,0.0
+current_target_only,ready,factual,60,53,0.8833333333333333
+current_target_only,ready,counterfactual,300,0,0.0
+temporal_source_only,early,factual,60,1,0.016666666666666666
+temporal_source_only,early,counterfactual,300,0,0.0
+temporal_source_only,ready,factual,60,51,0.85
+temporal_source_only,ready,counterfactual,300,53,0.17666666666666667
+combined_verification,early,factual,60,1,0.016666666666666666
+combined_verification,early,counterfactual,300,0,0.0
+combined_verification,ready,factual,60,51,0.85
+combined_verification,ready,counterfactual,300,0,0.0
