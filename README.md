@@ -178,7 +178,11 @@ The verification command checks the package tests, file manifest, released analy
 
 The repository does not redistribute provider-restricted media, model weights, or licensed datasets. Acquisition requirements and redistribution boundaries are documented in [`docs/DATA.md`](docs/DATA.md), [`docs/THIRD_PARTY_ASSETS.md`](docs/THIRD_PARTY_ASSETS.md), and [`docs/RELEASE_SCOPE.md`](docs/RELEASE_SCOPE.md).
 
-PACT is a research implementation of decision-level evidence accounting and typed action admission. It is not a certified robot safety controller and should not serve as the sole execution authority around people. The repository does not currently assert a project-wide software or data license; third-party materials remain governed by their original terms.
+PACT is a research implementation of decision-level evidence accounting and typed action admission. It is not a certified robot safety controller and should not serve as the sole execution authority around people.
+
+## License
+
+PACT software, scripts, and tests are released under the [MIT License](LICENSE). Original documentation, controlled data, result tables, and figures owned by the PACT contributors are released under [CC BY 4.0](LICENSE-DATA). These grants do not relicense third-party datasets, model weights, source media, or implementations. HABIT attribution and modification notices are provided in [NOTICE.md](NOTICE.md), with the complete redistribution boundary in [docs/THIRD_PARTY_ASSETS.md](docs/THIRD_PARTY_ASSETS.md).
 
 ## Contributing
 

@@ -1,0 +1,15 @@
+PACT first-party research artifacts license
+
+Except where another source or license is identified, original documentation,
+controlled data, result tables, and figures authored by the PACT contributors
+are licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0):
+
+https://creativecommons.org/licenses/by/4.0/
+
+This grant applies only to material for which the PACT contributors hold the
+necessary rights. It does not relicense third-party datasets, source media,
+model weights, implementations, trademarks, or other third-party material.
+Those materials remain subject to their original terms. See NOTICE.md and
+docs/THIRD_PARTY_ASSETS.md.
+

@@ -12,4 +12,4 @@ This repository releases:
 
 It does not release provider media, model weights, private infrastructure records, or physical-robot safety certification. Third-party materials remain subject to their original terms; public access to this repository does not grant rights to those materials.
 
-No project-wide software or data license is asserted in the current artifact. A license should be added only after all authors and relevant institutions approve it.
+PACT software, scripts, and tests are licensed under the MIT License. Original documentation, controlled data, result tables, and figures owned by the PACT contributors are licensed under CC BY 4.0. Neither licence applies to third-party material or expands the redistribution boundary above. See [`LICENSE`](../LICENSE), [`LICENSE-DATA`](../LICENSE-DATA), and [`NOTICE.md`](../NOTICE.md).
