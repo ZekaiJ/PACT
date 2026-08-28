@@ -49,8 +49,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10890,
-      "sha256": "f313571cc1f0b238aa17934596174a854487a75a19334e4f7185aeef46772fba"
+      "bytes": 9936,
+      "sha256": "ce033f78535c7427676846023e1228f46ef674cf9d8868aa673cd292ba1b8c0a"
     },
     {
       "path": "SECURITY.md",
@@ -234,8 +234,8 @@
     },
     {
       "path": "docs/RELEASE_SCOPE.md",
-      "bytes": 1277,
-      "sha256": "be9a034d8b8516b0cfd86e8975cef990408e84e6ffb2db4089bb46585c23b330"
+      "bytes": 1502,
+      "sha256": "5dd6bf8d1c7d9551a40accba0a7d1d739eb30d5a372514646afa976dff103d39"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
@@ -244,8 +244,8 @@
     },
     {
       "path": "docs/THIRD_PARTY_ASSETS.md",
-      "bytes": 2421,
-      "sha256": "601ae2248852cce3302cb1d0c3d5e65f60e99e7208bfa0a39bfa1ffa43ebf20b"
+      "bytes": 3382,
+      "sha256": "e35aca5a05574ecc2b77f31df6f361abf582cb43fe4bb4ca18d058818638fa07"
     },
     {
       "path": "docs/index.md",

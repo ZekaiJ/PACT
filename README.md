@@ -1,54 +1,53 @@
 <div align="center">
 
-<img src="assets/pact-logo.png" width="220" alt="PACT logo" />
+<img src="assets/pact-logo.png" width="220" alt="PACT logo">
 
 # PACT
 
-**P**rovenance-**A**ware evidence **C**onservation and **T**yped action admission
+### Provenance-conserving multi-view fusion for typed action admission
 
-Reference implementation and released experiments for<br />
-**Not All Agreement Counts as Corroboration: Provenance-Conserving Multi-View Fusion for Action Admission in Human–Robot Collaboration**
+Repeated inference can produce agreement without adding an observation. **PACT preserves that distinction before a robot action is admitted.**
 
-Zekai Jin · Hanrong Zhang · Yihong Tang · Fei Hu · Zhen Dong · Yi Shao
+<img src="assets/pact_overview.png" width="100%" alt="PACT distinguishes repeated outputs from separately countable evidence before action admission.">
 
-[Why PACT](#why-pact) · [Quick start](#quick-start) · [Method](#method) · [Results](#results) · [Reproduce](#reproduce) · [Citation](#citation)
+[Why PACT](#why-pact) · [Quick start](#quick-start) · [Method](#method) · [Results](#results) · [Run the studies](#run-the-studies) · [Citation](#citation)
 
-[![Tests](https://github.com/ZekaiJ/provenance-aware-action-admission/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ZekaiJ/provenance-aware-action-admission/actions/workflows/tests.yml)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-1f5a94.svg)](https://www.python.org/)
-[![Citation](https://img.shields.io/badge/cite-CITATION.cff-6f42c1.svg)](CITATION.cff)
+[![Tests](https://github.com/ZekaiJ/PACT/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ZekaiJ/PACT/actions/workflows/tests.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Software: MIT](https://img.shields.io/badge/software-MIT-2E8B57.svg)](LICENSE)
+[![Research materials: CC BY 4.0](https://img.shields.io/badge/research_materials-CC_BY_4.0-8A2BE2.svg)](LICENSE-DATA)
 
 </div>
 
-> **PACT asks a question that ordinary fusion leaves implicit: which outputs are allowed to count separately?**
+Official implementation for **“Not All Agreement Counts as Corroboration: Provenance-Conserving Multi-View Fusion for Typed Action Admission in Human–Robot Collaboration.”**
 
-Prompt variation, repeated sampling, self-consistency, and related checkpoints can multiply agreement without adding a new observation. PACT uses provenance to distinguish repeated computation from separately countable support before evidence is combined or an action is admitted.
-
-<p align="center">
-  <img src="assets/pact_overview.png" width="100%" alt="PACT motivation: repeated computation can multiply agreeing outputs without adding evidence, whereas support from separately countable provenance components can corroborate a candidate action." />
-</p>
+Zekai Jin · Hanrong Zhang · Yihong Tang · Fei Hu · Zhen Dong · Yi Shao
 
 ## Why PACT
 
-Reliability and conflict describe the quality of individual source values. PACT addresses a different question: how many evidential contributions those values represent.
+Multimodal models can query one scene repeatedly through prompt variation, stochastic decoding, or related checkpoints. The resulting predictions may agree, yet they can still trace back to the same observation and the same evidence-producing process. Counting each output as fresh support can therefore make an action appear better corroborated than the observations warrant.
 
-| Situation | PACT interpretation | Decision consequence |
-|---|---|---|
-| Several outputs descend from one acquisition | One provenance component | Agreement is retained, but it does not become additional evidence |
-| Outputs belong to separately countable components | One budget per component | Common support is accumulated across components |
-| A candidate scores highly | Candidate selection | Permission still depends on ordered, reason-specific admission checks |
+PACT treats evidence provenance as part of the fusion problem. It groups source records that reuse a parent process, conserves their common support within each group, and accumulates support only across groups declared separately countable. Candidate ranking and action admission remain separate: a high score proposes an action, while typed checks determine whether the available evidence permits its release.
 
-This separation gives PACT three useful properties: copies retained within a component do not amplify support; false splitting can inflate the evidence budget; and over-broad merging can suppress complementary evidence.
+| Question | PACT's answer |
+|---|---|
+| When does agreement add evidence? | When support comes from separately countable provenance components. |
+| What happens to repeated outputs? | Their agreement is retained inside one component without multiplying its evidence budget. |
+| Does the highest-scoring action execute automatically? | No. Admission also checks command consistency, source validity, risk support, and corroboration. |
+| What happens when a check fails? | The system returns a reason-specific `hold`, `confirm`, or `fallback` outcome. |
 
 ## Quick start
 
+PACT requires Python 3.10 or later.
+
 ```bash
-git clone https://github.com/ZekaiJ/provenance-aware-action-admission.git
-cd provenance-aware-action-admission
+git clone https://github.com/ZekaiJ/PACT.git
+cd PACT
 python -m pip install -e .
 python examples/pact_quickstart.py
 ```
 
-Python 3.10 or later is required. The example constructs three source opinions: geometry and risk share a scene parent, while language forms a separate component. It prints the posterior, provenance components, and selection score:
+Expected output:
 
 ```text
 posterior: [0.5917, 0.1286, 0.1059, 0.0907, 0.0831]
@@ -56,8 +55,10 @@ provenance components: (('geometry', 'risk'), ('language',))
 selection score: 0.7364
 ```
 
+The public API exposes `SourceEvidence`, `pact_fuse`, and `pact_registered_components` from `action_admission`.
+
 <details>
-<summary><strong>Minimal Python example</strong></summary>
+<summary>Minimal Python example</summary>
 
 ```python
 import numpy as np
@@ -90,17 +91,15 @@ print(result.posterior, result.selection_score, result.group_ids)
 
 ## Method
 
-<p align="center">
-  <img src="assets/pact_method_overview.png" width="100%" alt="PACT method overview from simulation-grounded source representation through provenance topology, coordinatewise conservation, cross-component accumulation, posterior projection, score selection, and typed admission." />
-</p>
+<img src="assets/pact_method_overview.png" width="100%" alt="PACT maps source evidence and provenance topology to a posterior score and typed action admission.">
 
-For source evidence $e_i \in \mathbb{R}_{\geq 0}^{K}$ with parent sets $P_i$, PACT connects sources whose parent sets overlap,
+For source evidence $e_i \in \mathbb{R}_{\geq 0}^{K}$ with parent sets $P_i$, PACT connects records whose parent sets overlap. The connected components form the provenance partition $\Pi_P$:
 
 $$
 (i,j) \in E_{\mathrm{prov}} \quad \Longleftrightarrow \quad P_i \cap P_j \neq \varnothing.
 $$
 
-The connected components form the provenance partition $\Pi_P$. Within each component, PACT retains the coordinatewise common support; across separately countable components, it adds the resulting budgets:
+Within each component, the coordinatewise meet retains support shared by every member. PACT then adds the component budgets across separately countable components:
 
 $$
 b_C = \bigwedge_{i\in C} e_i,
@@ -108,86 +107,81 @@ b_C = \bigwedge_{i\in C} e_i,
 E_{\Pi} = \sum_{C\in\Pi_P} b_C.
 $$
 
-Posterior projection and non-vacuity rank candidate contracts. Typed admission then evaluates command consistency, source validity, risk support, and component corroboration in order, preserving the reason for hold, confirmation, or fallback. An admitted action is eligible for downstream execution; admission is not execution itself.
+Posterior projection ranks candidate action contracts. Typed admission then evaluates command consistency, source validity, risk support, and component corroboration in order, preserving the reason for withholding an action.
 
-See [`docs/PACT.md`](docs/PACT.md) for the complete operator and [`docs/PAPER_TO_CODE.md`](docs/PAPER_TO_CODE.md) for its implementation map.
+The [method notes](docs/PACT.md) define the operator and its assumptions. [From paper to code](docs/PAPER_TO_CODE.md) connects the mathematical objects to the public API.
 
 ## Results
 
-The released studies are organized around three questions.
+The studies test the same mechanism at four scales: algebraic properties, controlled provenance interventions, public multi-view predictions, and offline human–robot action admission.
 
-| Question | Evidence in this repository | Scope |
+| Study | Main finding | Evaluation scope |
 |---|---|---|
-| **Do copies create evidence?** | Exact copies retained within their component leave PACT unchanged; false splitting increases the counted budget. [`Topology and multiplicity`](results/topology_multiplicity/README.md) · [`Operator characterization`](results/operator_characterization/README.md) | Algebraic properties and controlled provenance interventions |
-| **How do partition errors change support?** | Across all 856 single-merge cover relations among 203 six-view partitions, coarsening never increases the PACT budget, although selective ordering may improve or worsen. [`Partition coarsening surface`](results/partition_coarsening_surface/README.md) | Budget monotonicity does not imply utility monotonicity |
-| **Are accounting, ranking, and permission interchangeable?** | Under the stated admission rule and method-specific scores, complete PACT attains ncsAURC 0.0861 over $[0.10,0.39]$, compared with 0.1479 for nested Dirichlet composition, across 31,200 evaluations from 48 scene clusters. [`Reference comparison`](results/reference/) · [`Fusion and admission attribution`](results/minimal_attribution_2x2/README.md) | Benchmark-, score-, and rule-specific comparison |
+| Exact-copy intervention | Same-component copies leave the PACT budget, posterior, score, and typed decision unchanged. | Registered provenance held fixed |
+| Partition coarsening | All 856 single-merge relations preserve the predicted nonincreasing budget ordering. | 203 partitions of six-view predictions |
+| Controlled comparison | PACT attains ncsAURC 0.0861, compared with 0.1479 for nested Dirichlet under the stated common admission policy. | 31,200 evaluations nested within 48 scene clusters |
+| Multi-view transfer | Splitting inflates and merging suppresses counted support; predictive effects vary by dataset, model, and score. | Public feature views, multi-camera VLM outputs, and checkpoint panels |
+| Offline HRC admission | Target-identity and event-proximity evidence retains 51 of 53 reference-consistent Qwen3-VL-8B candidates while withholding 90 of 91 reference-inconsistent candidates. | 60 held-out episodes; offline pre-execution evaluation |
 
-Further studies transfer the accounting mechanism to public feature-view predictions, multi-camera VLM outputs, and checkpoint families. In the downstream 720-case HRC evaluation, target-identity and event-proximity evidence retains 51 of 53 episode-reference-consistent Qwen3-VL-8B candidates while withholding 90 of 91 episode-reference-inconsistent admissions. See the [`result index`](results/INDEX.md) for the complete set of analyses.
+These results characterize evidence accounting and offline action admission. They do not certify a deployed robot or establish zero operational risk.
 
-## Reproduce
+## Run the studies
 
-Choose the shortest path for the question you want to inspect:
+Start with the question you want to inspect.
 
-| Goal | Command |
+| Goal | Command or result |
 |---|---|
 | Run one PACT decision | `python examples/pact_quickstart.py` |
 | Compare same-parent and false-split copies | `python examples/copy_assignment_demo.py` |
-| Check the core operator and admission properties | `python -m unittest discover -s tests -v` |
-| Run the main controlled study | `python experiments/pcecf_study.py --output outputs/pcecf_study` |
-| Verify the complete release | `python analysis/verify_release.py` |
+| Check core operator and admission properties | `python -m unittest discover -s tests -v` |
+| Run the controlled comparison | `python experiments/pcecf_study.py --output outputs/pcecf_study` |
+| Examine topology and multiplicity | [Topology and multiplicity](results/topology_multiplicity/README.md) |
+| Inspect all single-merge relations | [Partition coarsening surface](results/partition_coarsening_surface/README.md) |
+| Transfer to public multi-view predictions | [Public prediction study](results/public_outcome_closure/README.md) |
+| Transfer to multi-camera VLM outputs | [Multi-camera study](results/native_view_fm_provenance_transfer/README.md) |
+| Compare related checkpoints | [Checkpoint-family study](results/balanced_fm_panel/README.md) |
+| Inspect offline HRC admission | [HRC admission study](results/habit_fixed_image_admission/README.md) |
 
-The verification command checks the package tests, file manifest, released analyses, and numerical-result bindings. For focused instructions, use the [`documentation guide`](docs/index.md), [`reproducibility notes`](docs/REPRODUCIBILITY.md), and [`result index`](results/INDEX.md).
-
-<details>
-<summary><strong>Paper-to-repository guide</strong></summary>
-
-| Paper component | Entry point or result |
-|---|---|
-| Fusion properties and boundary cases | `python -m unittest discover -s tests -v` |
-| Fusion and admission comparison | `python analysis/minimal_attribution_2x2.py --output outputs/minimal_attribution_2x2` |
-| Topology and multiplicity interventions | [`results/topology_multiplicity/`](results/topology_multiplicity/README.md) |
-| Equal-cardinality regrouping | [`results/equal_cardinality_topology/`](results/equal_cardinality_topology/README.md) |
-| Public multi-view transfer | [`results/public_outcome_closure/`](results/public_outcome_closure/README.md) |
-| Exhaustive partition coarsening | [`results/partition_coarsening_surface/`](results/partition_coarsening_surface/README.md) |
-| Joint scene–configuration holdout | [`results/joint_scene_configuration_holdout/`](results/joint_scene_configuration_holdout/README.md) |
-| Multi-camera VLM transfer | [`results/native_view_fm_provenance_transfer/`](results/native_view_fm_provenance_transfer/README.md) |
-| Checkpoint-family analysis | [`results/balanced_fm_panel/`](results/balanced_fm_panel/README.md) |
-| HRC admission studies | [`results/habit_fixed_image_admission/`](results/habit_fixed_image_admission/README.md) |
-
-</details>
+For the recommended order, environment notes, and complete result index, see the [documentation guide](docs/index.md), [experimental details](docs/REPRODUCIBILITY.md), and [result index](results/INDEX.md).
 
 <details>
-<summary><strong>Repository layout</strong></summary>
+<summary>Repository layout</summary>
 
 ```text
 .
-|-- src/action_admission/          # PACT and typed admission
-|-- examples/                      # small executable examples
-|-- experiments/                   # controlled studies and interventions
-|-- analysis/                      # statistical analyses and release checks
-|-- configs/                       # study specifications
-|-- data/controlled/               # released inputs and separate labels
-|-- results/                       # tables, summaries, and no-media outputs
-|-- docs/                          # method, data, scope, and reproduction notes
-`-- tests/                         # deterministic properties and boundary cases
+├── src/action_admission/          # fusion and typed admission
+├── examples/                      # small executable examples
+├── experiments/                   # controlled studies and interventions
+├── analysis/                      # statistical analyses
+├── configs/                       # study settings
+├── data/controlled/               # controlled source records and labels
+├── results/                       # result tables and summaries
+├── docs/                          # method, data, and experiment notes
+└── tests/                         # operator properties and boundary cases
 ```
 
 </details>
 
 ## Data and scope
 
-The repository does not redistribute provider-restricted media, model weights, or licensed datasets. Acquisition requirements and redistribution boundaries are documented in [`docs/DATA.md`](docs/DATA.md), [`docs/THIRD_PARTY_ASSETS.md`](docs/THIRD_PARTY_ASSETS.md), and [`docs/RELEASE_SCOPE.md`](docs/RELEASE_SCOPE.md).
+The repository does not redistribute provider-restricted media, model weights, or datasets whose licenses prohibit redistribution. [Data documentation](docs/DATA.md) describes acquisition and preparation; [third-party assets](docs/THIRD_PARTY_ASSETS.md) records licenses and attribution.
 
-PACT is a research implementation of decision-level evidence accounting and typed action admission. It is not a certified robot safety controller and should not serve as the sole execution authority around people.
+PACT assumes that parent sets or another provenance partition are supplied. It does not infer causal independence from output values. Admission denotes eligibility for downstream execution, not execution itself.
 
 ## License
 
-PACT software, scripts, and tests are released under the [MIT License](LICENSE). Original documentation, controlled data, result tables, and figures owned by the PACT contributors are released under [CC BY 4.0](LICENSE-DATA). These grants do not relicense third-party datasets, model weights, source media, or implementations. HABIT attribution and modification notices are provided in [NOTICE.md](NOTICE.md), with the complete redistribution boundary in [docs/THIRD_PARTY_ASSETS.md](docs/THIRD_PARTY_ASSETS.md).
+- Software, scripts, and tests: [MIT License](LICENSE)
+- Contributor-owned documentation, controlled data, result tables, and figures: [CC BY 4.0](LICENSE-DATA)
+- HABIT and other third-party materials: their original terms apply; attribution and modification notices are retained in [NOTICE.md](NOTICE.md) and [Third-party assets](docs/THIRD_PARTY_ASSETS.md)
+
+These licenses do not relicense third-party datasets, model weights, source media, or external implementations.
 
 ## Contributing
 
-Focused bug reports and reproducibility improvements are welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`SECURITY.md`](SECURITY.md) before opening an issue or pull request.
+Focused bug reports, questions, and improvements are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md) before opening an issue or pull request.
 
 ## Citation
 
-Citation metadata are provided in [`CITATION.cff`](CITATION.cff). A publication DOI will be added after assignment.
+Citation metadata are available in [`CITATION.cff`](CITATION.cff). A publication DOI and final BibTeX entry will be added after assignment.
+
+If PACT helps your research, please cite the associated manuscript and consider starring the repository.
