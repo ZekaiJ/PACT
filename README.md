@@ -10,8 +10,9 @@ Repeated inference can produce agreement without adding an observation. **PACT p
 
 <img src="assets/pact_overview.png" width="100%" alt="PACT distinguishes repeated outputs from separately countable evidence before action admission.">
 
-[Why PACT](#why-pact) · [Quick start](#quick-start) · [Method](#method) · [Results](#results) · [Run the studies](#run-the-studies) · [Citation](#citation)
+[Paper](https://arxiv.org/abs/2609.01662) · [PDF](https://arxiv.org/pdf/2609.01662) · [Why PACT](#why-pact) · [Quick start](#quick-start) · [Method](#method) · [Results](#results) · [Run the studies](#run-the-studies) · [Citation](#citation)
 
+[![arXiv](https://img.shields.io/badge/arXiv-2609.01662-b31b1b.svg)](https://arxiv.org/abs/2609.01662)
 [![Tests](https://github.com/ZekaiJ/PACT/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ZekaiJ/PACT/actions/workflows/tests.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Software: MIT](https://img.shields.io/badge/software-MIT-2E8B57.svg)](LICENSE)
@@ -19,7 +20,7 @@ Repeated inference can produce agreement without adding an observation. **PACT p
 
 </div>
 
-Official implementation for **“Not All Agreement Counts as Corroboration: Provenance-Conserving Multi-View Fusion for Typed Action Admission in Human–Robot Collaboration.”**
+Official implementation for [**“Not All Agreement Counts as Corroboration: Provenance-Conserving Multi-View Fusion for Typed Action Admission in Human–Robot Collaboration”**](https://arxiv.org/abs/2609.01662).
 
 Zekai Jin · Hanrong Zhang · Yihong Tang · Fei Hu · Zhen Dong · Yi Shao
 
@@ -182,6 +183,19 @@ Focused bug reports, questions, and improvements are welcome. Please read [CONTR
 
 ## Citation
 
-Citation metadata are available in [`CITATION.cff`](CITATION.cff). A publication DOI and final BibTeX entry will be added after assignment.
+Citation metadata are available in [`CITATION.cff`](CITATION.cff). Please cite the arXiv manuscript:
+
+```bibtex
+@article{jin2026agreement,
+  title         = {Not All Agreement Counts as Corroboration: Provenance-Conserving Multi-View Fusion for Typed Action Admission in Human--Robot Collaboration},
+  author        = {Jin, Zekai and Zhang, Hanrong and Tang, Yihong and Hu, Fei and Dong, Zhen and Shao, Yi},
+  journal       = {arXiv preprint arXiv:2609.01662},
+  year          = {2026},
+  eprint        = {2609.01662},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2609.01662}
+}
+```
 
 If PACT helps your research, please cite the associated manuscript and consider starring the repository.

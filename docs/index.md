@@ -7,6 +7,7 @@ implementation, experiments, and results.
 
 | Question | Read or run |
 |---|---|
+| Where can I read the paper? | [arXiv:2609.01662](https://arxiv.org/abs/2609.01662) ([PDF](https://arxiv.org/pdf/2609.01662)) |
 | What problem does PACT solve? | [Why PACT](../README.md#why-pact) |
 | How does the conservation operator work? | [PACT operator](PACT.md) |
 | How do I run one example? | `python examples/pact_quickstart.py` |
