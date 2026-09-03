@@ -10,7 +10,7 @@ Repeated inference can produce agreement without adding an observation. **PACT p
 
 <img src="assets/pact_overview.png" width="100%" alt="PACT distinguishes repeated outputs from separately countable evidence before action admission.">
 
-[Paper](https://arxiv.org/abs/2609.01662) · [PDF](https://arxiv.org/pdf/2609.01662) · [Why PACT](#why-pact) · [Quick start](#quick-start) · [Method](#method) · [Results](#results) · [Run the studies](#run-the-studies) · [Citation](#citation)
+[Paper](https://arxiv.org/abs/2609.01662) · [PDF](https://arxiv.org/pdf/2609.01662) · [Documentation](docs/index.md) · [Reproduce the studies](#reproduce-the-studies) · [Citation](#citation)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2609.01662-b31b1b.svg)](https://arxiv.org/abs/2609.01662)
 [![Tests](https://github.com/ZekaiJ/PACT/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ZekaiJ/PACT/actions/workflows/tests.yml)
@@ -24,18 +24,19 @@ Official implementation for [**“Not All Agreement Counts as Corroboration: Pro
 
 Zekai Jin · Hanrong Zhang · Yihong Tang · Fei Hu · Zhen Dong · Yi Shao
 
-## Why PACT
+## Research question
 
 Multimodal models can query one scene repeatedly through prompt variation, stochastic decoding, or related checkpoints. The resulting predictions may agree, yet they can still trace back to the same observation and the same evidence-producing process. Counting each output as fresh support can therefore make an action appear better corroborated than the observations warrant.
 
-PACT treats evidence provenance as part of the fusion problem. It groups source records that reuse a parent process, conserves their common support within each group, and accumulates support only across groups declared separately countable. Candidate ranking and action admission remain separate: a high score proposes an action, while typed checks determine whether the available evidence permits its release.
+PACT asks when model agreement constitutes additional evidence. It treats provenance as part of the fusion state, so repeated outputs can refine a prediction without multiplying the support available for action admission.
 
-| Question | PACT's answer |
-|---|---|
-| When does agreement add evidence? | When support comes from separately countable provenance components. |
-| What happens to repeated outputs? | Their agreement is retained inside one component without multiplying its evidence budget. |
-| Does the highest-scoring action execute automatically? | No. Admission also checks command consistency, source validity, risk support, and corroboration. |
-| What happens when a check fails? | The system returns a reason-specific `hold`, `confirm`, or `fallback` outcome. |
+## PACT at a glance
+
+| Layer | Operation | Role in the decision |
+|---|---|---|
+| Provenance accounting | Connect records that reuse an evidence-producing parent. | Defines which outputs may contribute separately countable support. |
+| Evidence conservation | Retain common support within each component, then add support across components. | Prevents repeated inference from inflating the evidence budget. |
+| Typed admission | Evaluate command consistency, source validity, risk support, and corroboration after ranking. | Releases an eligible action or returns a reason-specific `hold`, `confirm`, or `fallback`. |
 
 ## Quick start
 
@@ -112,9 +113,9 @@ Posterior projection ranks candidate action contracts. Typed admission then eval
 
 The [method notes](docs/PACT.md) define the operator and its assumptions. [From paper to code](docs/PAPER_TO_CODE.md) connects the mathematical objects to the public API.
 
-## Results
+## Evidence
 
-The studies test the same mechanism at four scales: algebraic properties, controlled provenance interventions, public multi-view predictions, and offline human–robot action admission.
+The evaluation follows the mechanism from operator properties to controlled interventions, public multi-view predictions, and offline human–robot action admission.
 
 | Study | Main finding | Evaluation scope |
 |---|---|---|
@@ -126,7 +127,7 @@ The studies test the same mechanism at four scales: algebraic properties, contro
 
 These results characterize evidence accounting and offline action admission. They do not certify a deployed robot or establish zero operational risk.
 
-## Run the studies
+## Reproduce the studies
 
 Start with the question you want to inspect.
 
@@ -143,7 +144,7 @@ Start with the question you want to inspect.
 | Compare related checkpoints | [Checkpoint-family study](results/balanced_fm_panel/README.md) |
 | Inspect offline HRC admission | [HRC admission study](results/habit_fixed_image_admission/README.md) |
 
-For the recommended order, environment notes, and complete result index, see the [documentation guide](docs/index.md), [experimental details](docs/REPRODUCIBILITY.md), and [result index](results/INDEX.md).
+For the recommended sequence, environment notes, and complete result index, see the [documentation guide](docs/index.md), [reproducibility notes](docs/REPRODUCIBILITY.md), and [result index](results/INDEX.md).
 
 <details>
 <summary>Repository layout</summary>
@@ -198,4 +199,4 @@ Citation metadata are available in [`CITATION.cff`](CITATION.cff). Please cite t
 }
 ```
 
-If PACT helps your research, please cite the associated manuscript and consider starring the repository.
+If PACT supports your research, please cite the associated manuscript.

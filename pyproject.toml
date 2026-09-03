@@ -26,6 +26,7 @@ dependencies = [
 where = ["src"]
 
 [project.urls]
-Repository = "https://github.com/ZekaiJ/provenance-aware-action-admission"
-Issues = "https://github.com/ZekaiJ/provenance-aware-action-admission/issues"
-Documentation = "https://github.com/ZekaiJ/provenance-aware-action-admission/tree/main/docs"
+Paper = "https://arxiv.org/abs/2609.01662"
+Repository = "https://github.com/ZekaiJ/PACT"
+Issues = "https://github.com/ZekaiJ/PACT/issues"
+Documentation = "https://github.com/ZekaiJ/PACT/tree/main/docs"

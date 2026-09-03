@@ -39,8 +39,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1002,
-      "sha256": "9a88c932a2d15631a7a6fb5f96a1f8b7c322b0c472a8ce07952099ea9c6d2cd6"
+      "bytes": 1566,
+      "sha256": "6b36b6b939e44f416395c0aada136b049cd0ba4afe492774298c96aac097c7ab"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,8 +49,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9936,
-      "sha256": "ce033f78535c7427676846023e1228f46ef674cf9d8868aa673cd292ba1b8c0a"
+      "bytes": 10443,
+      "sha256": "ae875fb6e3ef9804244fa96b255055007814ceff37d8818ce02ba24c6b8ff70f"
     },
     {
       "path": "SECURITY.md",
@@ -249,8 +249,8 @@
     },
     {
       "path": "docs/index.md",
-      "bytes": 1663,
-      "sha256": "ff97fb8375410c10437702530a81da946757421a5f4878ac76b831fc479b5345"
+      "bytes": 1792,
+      "sha256": "1e9de3c3510f3cf6fd29432a1b3978b46223e24bd978c69997a535107588a996"
     },
     {
       "path": "examples/copy_assignment_demo.py",
@@ -309,8 +309,8 @@
     },
     {
       "path": "pyproject.toml",
-      "bytes": 935,
-      "sha256": "31bceab6e5db6f7b4358a69db1fedc49847620c032d7149782a57e7bb4208cf8"
+      "bytes": 891,
+      "sha256": "993a7567b44763daff0b07d316e8c308e9b3a277a2ad1b0575b27307175e2b99"
     },
     {
       "path": "requirements-release.txt",
